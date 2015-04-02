@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>The value of estimates for a team - Seven Steps</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aldric Giacomoni" />
+    <meta name="description" content="How estimating is a valuable practice for teams" />
+    <meta name="keywords" content="agile, estimation" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Seven Steps</a></h1>
+        <p>Words... words, they&#39;re all we have to go on! - Rosencrantz and Guildenstern are dead</p>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/trevoke">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+        <form method="get" id="searchform" action="http://www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="as_sitesearch" value="blog.trevoke.net">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>The value of estimates for a team</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">What this entry is and is not about</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This entry talks about estimates in a relatively perfect world. This entry does <i>not</i> talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Why talk about estimating at all</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Estimating work to be done before it is done. Great if you know what the work is. Software development teams often have no idea what the work really will be until they do it. Give a sculptor a block of wood and they'll have to work carefully, as they uncover the imperfections within the wood. How long will it take to reveal a bust of Artemis drawing an arrow? The sculptor doesn't really know beforehand.
+</p>
+
+<p>
+Yet, there is value in having a way to know at a grander scale how much work can be accomplished. Evaluating this allows us to discuss how much work can be done before a given deadline, as well as the overall health of the team (through <b>changes to this measurement over time</b>).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">What is an estimate</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+An estimate is a representation of the team's understanding of the complexity of the work required to accomplish a desired feature. Since it is done with imperfect knowledge, it will be wrong. That is why it is called an estimate.
+</p>
+
+<p>
+In order to separate the idea of estimate from the idea of "how long this work will take", the estimate is not given in units of time (e.g. an hour, a day, two weeks...). Since the idea of an estimate is to represent complexity, time does not map well. Some teams use t-shirt sizes (S, M, L, XL), some teams use the Fibonacci series (1, 2, 3, 5, ...). Each unit of work would then be given such a "size".
+</p>
+
+<p>
+An estimate can be understood, then, as a completely wrong and overall meaningless number. So why is this a good idea?
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Estimates over time</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">The velocity</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+When you have time boundaries (note: kanban users, this is your red flag), you can stack up the value of the estimates of the units of work accomplished over that period of time and get a number called <b>velocity</b>. The velocity tells you how much complexity of work the team has gone through in a given period of time. Remember: this is all based on a number which we know to be wrong and meaningless, by definition.
+</p>
+
+<p>
+So far, this all sounds like a load of hard work for no reason at all. So why is this a good idea?
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">Attaining self-consistency</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Over time, a team which is allowed to generate its own estimates based on the units of work they receive will gravitate towards a self-consistent system. This means that units of work will be understood to relate to each other based on complexity (e.g. "Remember when we did X? This is the same kind of work, isn't it?")
+</p>
+
+<p>
+Over time, this means that velocity will also become consistent. It will become a wrong and meaningless number created from other wrong and meaningless numbers. However, at this point in time, the team has something it did not have before: self-consistency. The numbers will be wrong in the same way.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">The value of self-consistent estimates</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+I have worked on teams where the velocity was 4 and teams where the velocity was 78. This means that over time, the stable number obtained based on accomplished work complexity during a unit of time turned out to <b>predictably</b> be this number. This says <i>nothing</i> about "how fast" or "how slow" the team got work done. It does mean that after estimating a new feature, the team could then have a conversation about the translation of that number to the unit of time.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="right">Team velocity per unit of time</td>
+<td class="right">Estimate for new feature</td>
+<td class="left">Reasonable estimated time span for feature completion</td>
+</tr>
+
+<tr>
+<td class="right">78</td>
+<td class="right">12</td>
+<td class="left">1/6</td>
+</tr>
+
+<tr>
+<td class="right">4</td>
+<td class="right">12</td>
+<td class="left">3</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+This can then lead to discussing scope. In the first case, that feature translates to a relatively short amount of time. In the second case, it is a choice that will have significant impact (no other work can happen during three units of time).
+</p>
+</div>
+</div>
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">How estimates fit in the team's process ecosystem</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Estimates will always be wrong; that's why they're called estimates. As long as the team is allowed to estimate the work without external pressures, the team will eventually gravitate towards a self-consistent system of estimates. This means that while all estimates are always going to be wrong, they will be right <b>relative to each other</b> and that is the only thing that matters. The velocity, built on top of this self-consistent system, is also a number which only makes sense in the system within which it was built, but which allows nonetheless effective conversations to happen and valuable data to be gathered.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2015-04-02</span>
+        <span title="last modification date" class="post-info">2015-04-02</span>
+        <span title="tags" class="post-info"><a href="/tags/agile/">agile</a> <a href="/tags/estimation/">estimation</a></span>
+        <span title="author" class="post-info">Aldric Giacomoni</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+      </section>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="/media/js/main.js"></script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.x (<a href="http://orgmode.org">Org mode</a> 8.x)</p>
+        <p>
+          Copyright &copy; 2012 - <span id="footerYear"></span> <a href="mailto:trevoke &lt;at&gt; gmail &lt;dot&gt; com">Aldric Giacomoni</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+          <script type="text/javascript">document.getElementById("footerYear").innerHTML = (new Date()).getFullYear();</script>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
