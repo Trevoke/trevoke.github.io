@@ -1,0 +1,17 @@
+* intro
+There are *excellent* tools for sending and receiving email.
+Also, emacs, for all its awesomeness, is still essentially single-threaded, therefore fetching and sending mail might not be desirable.
+In other words, I'm going to want to use emacs for things that *I* need to do, and follow the UN*X philosophy of using the right tool for the job.
+So here's what the workflow will look like:
+1. Retrieve email with offlineimap
+2. index email with notmuch
+3. use emacs with a major mode using notmuch
+* install offlineimaprc
+configure it
+run it
+* install notmuch
+configure it
+run it
+* install gpg
+get a key pair
+keybase.io ?

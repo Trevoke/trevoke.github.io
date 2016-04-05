@@ -1,0 +1,17 @@
+* Sqlup.el : the story of the minor mode that could
+** Or, how Ι stopped worrying and learned to love emacs
+** Because, why spend five minutes doing something you can spend ten years automating?
+* In this talk, you will learn
+* In this talk, you will not learn (aka pull requests, please!)
+* Origin story
+Teaching at GA, no caps lock key...
+* The first idea
+A friend who uses emacs told me "Oh, you can probably do that easily by checking a list of keywords..."
+* Suggestions
+Sounds like you're reimplementing abbrevs
+* List of keywords
+* Actually using sql.el
+* Problems
+What if you're in comments?
+* References
+http://nullprogram.com/blog/2013/02/06/
