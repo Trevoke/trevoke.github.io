@@ -1,7 +1,4 @@
-As far as:
-#+BEGIN_QUOTE
- A rapid test suite means refactoring is psychologically easier to entertain as an idea.
-#+END_QUOTE
+* A rapid test suite means refactoring is psychologically easier to entertain as an idea.
 
 Many of the devs I've worked with don't have the resilience of a plumber. That is, they're not happily willing to dive into the bowels of an application, apply or relieve pressure somewhere, and follow the pipes all the way to the leaks. They're also generally not very willing to dive into the bowels of an application, follow all the pipes, and develop an empirical understanding of what is actually happening.
 
