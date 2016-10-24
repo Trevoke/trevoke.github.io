@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Dependency Injection - Seven Steps</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aldric Giacomoni" />
+    <meta name="description" content="Dependency Injection is good. You should use it. Here&#39;s why and how." />
+    <meta name="keywords" content="testing, design patterns, dependency injection" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Seven Steps</a></h1>
+        <p>Words... words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are dead</p>
+        <ul>
+          <li><a href="/_drafts/">_Drafts</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/wip/">Wip</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/trevoke">GitHub</a></li>
+        </ul>
+        <form method="get" id="searchform" action="http://www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="q" value="site:blog.trevoke.net">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>Dependency Injection</h1>
+<p>
+Dependency injection is a tool to limit the coupling in a codebase. One of its key benefits is that you can pass any object that fulfills the required interface (in Ruby, that means you can limit the duck type to whatever the method uses) and have complete control over it for testing purposes.
+</p>
+
+<p>
+My favorite example of it, because it’s extremely simple to understand AND derives actual production value, is in Avdi Grimm’s Objects on Rails book (<a href="http://objectsonrails.com/#sec-8">http://objectsonrails.com/#sec-8</a> and the couple of pages that follow it), where he passes in a stub with the limited API of <code>.now()</code> to be able to call <code>DateTime.now</code> in his code and return a controlled DateTime object. In practice, it means he passes in the <code>DateTime</code> class by default as his time provider, instead of passing in a timestamp.
+</p>
+
+<p>
+By just using it exactly as in that example, I’ve improved the testability and maintainability of quite a few codebases
+</p>
+
+<p>
+And got quite close to fully removing <code>timecop</code> sometimes. <code>timecop</code> is evil.
+</p>
+
+
+
+
+
+<p>
+I recommend the `Design Patterns` book. If you don’t want to burden yourself with the whole thing (it’s not exactly an entertaining read), then `Design Patterns in Ruby` has a significant subset of them using Ruby and Ruby’s stdlib where applicable. Even if it is just to say “Well, I’m ​*never*​ using the Singleton pattern” or “The Observer pattern is clearly evil” (my opinions), I believe it is a necessary read.
+</p>
+
+<p>
+Granted, if you’re not touching any OO code at all, that read becomes less necessary.
+</p>
+
+<p>
+While the patterns are abstract, their implementation, or the way I work to implement them, is related to business domain logic — otherwise, as you said, they feel empty, and the codebase benefits they provide are lessened because they’re not actively helping the developers reading the code.
+</p>
+
+
+
+
+<p>
+Dev work is teamwork, and design patterns, however weak, are the current best language we have for communication for those ideas. You have to write code other people can understand.
+</p>
+
+
+
+
+
+<p>
+Sometimes a pattern is The Right Move, and that's worth noting.
+</p>
+
+<p>
+As an example, I implemented Event Sourcing for a company tracking the internal currency credits they gave to customers based on refunds. Event Sourcing is how you handle that situation, and that's the end of the story (*). All information is tracked.
+</p>
+
+<p>
+-- (*) it's never the end of the story, but bear with me.
+</p>
+
+
+
+
+
+<p>
+I'll see if I can come up with examples where using DI or some other patterns actually have significant pragmatic benefits. The only one that I ​*know*​ the DI pattern yields, used properly, is the ability to keep the test suite really snappy because you don't have to use all your logic.
+</p>
+
+<p>
+For instance, a few years ago a friend was working on his open source project, and he told me "my tests will drive down all the way to the database". The other perspective I had, and still have today, is that with DI you could decouple. Trusting that the ORM has been tested by other people, you save a TON of time because you're not creating rows, updating rows, deleting rows, truncating tables, etc, for every single test.
+</p>
+
+
+
+<p>
+I would have passed an object that had the basic API I needed, matching whatever API was what I used through production (paranoia would lead to the creation of an adapter layer so that I don't bind my tests to activerecord-specific API, but that can just as easily be like shooting a fly with a cannonball), and that would have allowed my tests to remain within  the same layer of abstraction all the time.
+</p>
+
+
+
+
+
+<p>
+I think the whole picture is bigger than that. For instance, here's tests I've written which might benefit from using DI by allowing the tests to pass in a stub instead of ​*actually*​ creating a file during testing:
+</p>
+
+<p>
+<a href="https://github.com/Trevoke/SGFParser/blob/master/spec/writer_spec.rb">https://github.com/Trevoke/SGFParser/blob/master/spec/writer_spec.rb</a>
+</p>
+
+<p>
+And writing the file is necessary because my code looks like
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-ruby"><span style="color: #597bc5;">def</span> <span style="color: #f9cf80;">save</span>(root_node, filename)
+  <span style="color: #adadad; font-style: italic;">#</span><span style="color: #adadad; font-style: italic;">TODO - accept any I/O object</span>
+  stringify_tree_from root_node
+
+  <span style="color: #fdb86b;">File</span>.open(filename, <span style="color: #99ad6a;">'w'</span>) { |f| f &lt;&lt; <span style="color: #c6b8fc;">@sgf</span> }
+<span style="color: #597bc5;">end</span>
+</pre>
+</div>
+
+<p>
+The method signature could just as easily be `def save(root_node, filename, filesystem_handler=File)` -- and that way, I wouldn't have to write to a file and then delete a file from the filesystem. (edited)
+</p>
+
+<p>
+A guy here just said that DI was similar to using an oscilloscope: either you're reading signals or you're injecting signals into it
+</p>
+
+<p>
+For procedural code, I have no idea if DI makes sense. I don't even know if they're the same world.
+</p>
+
+<p>
+For functional, microservices, etc., yes, DI exists and can be useful.
+</p>
+
+<p>
+n Elixir, since you have objects (for lack of a better word) that reference OTP apps, and since you use those to send messages, you pass those objects (generally stored as the variable `pid`, I believe) to other methods that then send messages to it. In this particular example, any other way to do it would imply so much coupling that the code would be really quite ugly.
+</p>
+
+<p>
+In Javascript, which has higher-order functions, you can use DI by creating a function and doing subsequent `.bind()` calls to it as you pass it around, and using `.call()` on it at the place you actually want to use it.
+</p>
+
+
+
+
+
+<p>
+TODO the javascript code <a href="https://gist.github.com/Trevoke/43845b019ae7a1b66454">https://gist.github.com/Trevoke/43845b019ae7a1b66454</a>
+</p>
+
+
+
+
+<p>
+If you go to the database with your tests and your tests aren't database-level tests, you're by definition creating integration tests of some sort.
+That habit is the reason `Rails` apps tend to get sagging test suites and start using `CircleCI` with 26 parallellized containers (that and `factory girl` makes it too damn easy to add rows to the database).
+</p>
+
+<p>
+A test suite should run in under a minute. Browser-level tests are still a pain in my ass but I believe they should be included in that time.
+</p>
+
+
+<p>
+From this perspective I'm jumping on a high horse of pragmatism, so let me know if I should get off of it.
+</p>
+
+<p>
+Nothing is more important in a codebase than changeability (the right changeability).
+In fact, on the topic, one of my favorite tweets is the following one: <a href="https://twitter.com/moss/status/555148884154912769">https://twitter.com/moss/status/555148884154912769</a>
+</p>
+
+<blockquote>
+<p>
+Just replaced dependency injection with a shared global constant, because it'll make my code easier to change, and that trumps all else. -- Moss Collum
+</p>
+</blockquote>
+
+
+
+
+
+
+
+<p>
+My definition of integration test is "any test which verifies that two units/components work properly together"
+</p>
+
+<p>
+If I could get a team of six or seven of the best devs I know, we likely could have and maintain a valuable test suite running for a complex project in about that time. It does require being critical at every step. A tool like DI becomes important. In Ruby,  this is also where you might end up with `verifying doubles`, which check that your object still has the API of the API it is doubling for.
+</p>
+
+<p>
+There are caveats, but for the Rails world, there are three main things which cause a Rails app's tests to become painful:
+</p>
+
+<ol class="org-ol">
+<li>Writing to the DB</li>
+<li>Browser-driven acceptance tests</li>
+<li>using VCR</li>
+<li>"initializing Rails takes too damn long".  <a href="https://www.destroyallsoftware.com/screencasts/catalog/fast-tests-with-and-without-rails">https://www.destroyallsoftware.com/screencasts/catalog/fast-tests-with-and-without-rails</a></li>
+</ol>
+
+
+<p>
+And the fact that these three things take time is usually the consequence of deadlines and/or inexperience.
+</p>
+
+<p>
+Factories, the leading cause of DB writes, make sense when it's too damn hard to instantiate an object having the correct characteristics because the model has grown too complicated -- and that's because validations and DB relationships are part and parcel of the default model object, when they are usually completely orthogonal to what you care to test.
+</p>
+
+<p>
+Browser-level testing is a trickier one to solve. As I mentioned, still a pain in my ass. I have a few ideas but none I've ​*tried*​ so I won't speak to them.
+</p>
+
+<p>
+As far as VCR, I'd have separate tests that run once a day or so checking that the API for the external dependency still works, and the code would work against an adapter layer / stubs that are completely controlled.
+</p>
+
+
+
+
+<p>
+I highly recommend buying the entire catalog of screencasts, as Gary Bernhardt's Destroy All Software screencasts are all carefully polished gems.
+</p>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2016-04-26</span>
+        <span title="last modification date" class="post-info">2016-05-22</span>
+        <span title="tags" class="post-info"><a href="/tags/testing/">testing</a></span>
+        <span title="author" class="post-info">Aldric Giacomoni</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2016/04/26/dependency-injection";
+          var disqus_url = "http://blog.trevoke.net/blog/2016/04/26/dependency-injection";
+          var disqus_shortname = 'seven-steps';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2479931-6']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+        <p>
+          Copyright &copy; 2012 - 2013 <a href="mailto:trevoke &lt;at&gt; gmail &lt;dot&gt; com">Aldric Giacomoni</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
