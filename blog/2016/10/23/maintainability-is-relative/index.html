@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Maintainability Is Relative - Seven Steps</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aldric Giacomoni" />
+    <meta name="description" content="How maintainable does your code need to be? It depends" />
+    <meta name="keywords" content="code, maintainability, testing" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="/">Seven Steps</a></h1>
+        <p>Words... words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are dead</p>
+        <ul>
+          <li><a href="/_drafts/">_Drafts</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/wip/">Wip</a></li>
+          <li><a href="/tags/">Tags</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="https://github.com/trevoke">GitHub</a></li>
+        </ul>
+        <form method="get" id="searchform" action="http://www.google.com/search">
+          <input type="text" class="field" name="q" id="s" placeholder="Search">
+          <input type="hidden" name="q" value="site:blog.trevoke.net">
+        </form>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>Maintainability Is Relative</h1>
+<p>
+I just found a great example of the variability of the need of creating maintainable code.
+</p>
+
+<p>
+Somewhere around 2006, I created a script that posts to the Livejournal community <span class="underline">daily_tao</span> a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+</p>
+
+<p>
+I temporarily wasn't sure of where that script was. I remembered it was running off of a cronjob, so… Some machine with a *nix-like OS. Then I remembered and found it. I'm going to offer two versions of the code to you: the one that is in the cronjob, and .. A rewrite that I never deleted (and now of course, I have no idea why I never did).
+</p>
+
+<p>
+The original:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #adadad; font-style: italic;">#</span><span style="color: #adadad; font-style: italic;">!/bin/</span><span style="color: #597bc5;">bash</span>
+
+<span style="color: #597bc5;">cd</span> /home/user/www/tao
+<span style="color: #c6b8fc;">TAO_COUNTER</span>=<span style="color: #fa8072;">`cat .taocounter`</span>
+
+<span style="color: #597bc5;">if</span> (( $<span style="color: #c6b8fc;">TAO_COUNTER</span> &gt; 80 ))
+   <span style="color: #597bc5;">then</span> <span style="color: #c6b8fc;">TAO_COUNTER</span>=0
+<span style="color: #597bc5;">fi</span>
+
+
+awk <span style="color: #99ad6a;">'/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}'</span> <span style="color: #c6b8fc;">sec</span>=$<span style="color: #c6b8fc;">TAO_COUNTER</span> tao.txt &gt; .body
+<span style="color: #597bc5;">echo</span> <span style="color: #99ad6a;">'-'</span> &gt;&gt; .body
+<span style="color: #597bc5;">echo</span> <span style="color: #99ad6a;">'-'</span> &gt;&gt; .body
+awk <span style="color: #99ad6a;">'/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}'</span> <span style="color: #c6b8fc;">sec</span>=$<span style="color: #c6b8fc;">TAO_COUNTER</span> beatricetao.txt &gt;&gt; .body
+
+<span style="color: #c6b8fc;">TAO_COUNTER</span>=$(($<span style="color: #c6b8fc;">TAO_COUNTER</span> +1));
+<span style="color: #597bc5;">echo</span> $<span style="color: #c6b8fc;">TAO_COUNTER</span> &gt; .taocounter
+
+<span style="color: #597bc5;">echo</span> <span style="color: #99ad6a;">'-'</span> &gt;&gt; .body
+<span style="color: #597bc5;">echo</span> <span style="color: #99ad6a;">' '</span> &gt;&gt; .body
+<span style="color: #597bc5;">echo</span> <span style="color: #99ad6a;">'The first version is from the Fortune files. The second version is the Beatrice Tao.'</span> &gt;&gt; .body
+
+<span style="color: #adadad; font-style: italic;"># </span><span style="color: #adadad; font-style: italic;">jlj -bf .body -ec daily_tao -es `cat .taocounter` -ne -s</span>
+cat .body | ./clive -u username -w password -j daily_tao -s <span style="color: #fa8072;">`cat .taocounter`</span> --charset utf8
+</pre>
+</div>
+
+<p>
+I saw this, and it didn't make a ton of sense. Thankfully it's a very short script so I was able to piece it together quickly. Today I probably wouldn't write it this way, but… It works, so why would I touch it?
+</p>
+
+<p>
+The new script is in Ruby. I say new because I learned Ruby after Bash, and once I knew Ruby, it was my preferred language. I'm guessing I wanted to rewrite the script so it would be more legible, and then… For some reason, I never replaced it.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-ruby"><span style="color: #adadad; font-style: italic;">#</span><span style="color: #adadad; font-style: italic;">!/usr/bin/ruby</span>
+
+<span style="color: #fdb86b;">Dir</span>.chdir <span style="color: #99ad6a;">'/home/user/www/tao'</span>
+
+<span style="color: #adadad; font-style: italic;"># </span><span style="color: #adadad; font-style: italic;">Arrays go from 0... infinity</span>
+<span style="color: #adadad; font-style: italic;"># </span><span style="color: #adadad; font-style: italic;">Tao goes from 1 to 81</span>
+<span style="color: #adadad; font-style: italic;"># </span><span style="color: #adadad; font-style: italic;">Counter therefore goes from 0 to 80 and loops.</span>
+
+counter = <span style="color: #fdb86b;">File</span>.open(<span style="color: #99ad6a;">'.taocounter'</span>, <span style="color: #99ad6a;">'r'</span>) { |f| f.readline.strip.to_i }
+
+tao = <span style="color: #fdb86b;">File</span>.open(<span style="color: #99ad6a;">'tao.txt'</span>, <span style="color: #99ad6a;">'r'</span>) { |f| f.readlines(<span style="color: #99ad6a;">'%'</span>) }
+beatrice = <span style="color: #fdb86b;">File</span>.open(<span style="color: #99ad6a;">'beatricetao.txt'</span>, <span style="color: #99ad6a;">'r'</span>) { |f| f.readlines(<span style="color: #99ad6a;">'%'</span>) }
+<span style="color: #fdb86b;">Disclaimer</span>=<span style="color: #99ad6a;">"The first version is from the Fortune files - a program for random quotes on GNU/Linux.\n The second version is the Beatrice Tao, available online, reproduced here with permission.."</span>
+
+<span style="color: #fdb86b;">File</span>.open(<span style="color: #99ad6a;">'.body'</span>, <span style="color: #99ad6a;">'w'</span>) { |f| f &lt;&lt; <span style="color: #99ad6a;">"</span><span style="color: #c6b8fc;">#{tao[counter]}</span><span style="color: #99ad6a;">\n\n________________\n\n</span><span style="color: #c6b8fc;">#{beatrice[counter]}</span><span style="color: #99ad6a;">\n\n</span><span style="color: #c6b8fc;">#{Disclaimer}</span><span style="color: #99ad6a;">"</span> }
+
+<span style="color: #99ad6a;">`cat .body | ./clive -u username -w password -j daily_tao -s "Tao Te Ching: Chapter </span><span style="color: #c6b8fc;">#{counter+1}</span><span style="color: #99ad6a;">" --charset utf8`</span>
+counter = 0 <span style="color: #597bc5;">if</span> (counter +=1 ) &gt; 80
+<span style="color: #fdb86b;">File</span>.open(<span style="color: #99ad6a;">'.taocounter'</span>, <span style="color: #99ad6a;">'w'</span>) { |f| f &lt;&lt; counter }
+</pre>
+</div>
+
+<p>
+My favorite thing here is probably the second-to-last line of the Ruby script.
+</p>
+
+<p>
+There are no tests for any of this, because I definitely wrote this before I knew you could test your code.
+</p>
+
+<p>
+And the question remains: should I write tests? Should I refactor? Should I fix it, rewrite it, etc?
+</p>
+
+<p>
+And the answer remains: No. It works. There are no new features to add. Just leave it be.
+</p>
+
+</div>
+</div>
+    <div>
+      <div class="post-meta">
+        <span title="post date" class="post-info">2016-10-23</span>
+        <span title="last modification date" class="post-info">2016-10-23</span>
+        <span title="tags" class="post-info"><a href="/tags/maintainability/">maintainability</a></span>
+        <span title="author" class="post-info">Aldric Giacomoni</span>
+      </div>
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          //var disqus_developer = 1;
+          var disqus_identifier = "/blog/2016/10/23/maintainability-is-relative";
+          var disqus_url = "http://blog.trevoke.net/blog/2016/10/23/maintainability-is-relative";
+          var disqus_shortname = 'seven-steps';
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2479931-6']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+      <div class="footer">
+        <p>Generated by <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+        <p>
+          Copyright &copy; 2012 - 2013 <a href="mailto:trevoke &lt;at&gt; gmail &lt;dot&gt; com">Aldric Giacomoni</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/kelvinh/org-page" target="_blank">org-page</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
