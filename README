@@ -1,7 +1,0 @@
-Personal site of Aldric Giacomoni, managed by emacs, org mode, git and org-page.
-
-Remember:
-
-1. The `source` directory is where the org files go
-2. The `master` directory is where the compiled HTML goes
-3. the `wip` directory in `master` is only there because, well, there's currently no clean way to have a draft in the `source` directory.
