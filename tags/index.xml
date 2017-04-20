@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/index.xml</link>
+    <description>Recent content in Tags on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 -0500</lastBuildDate>
+    <atom:link href="http://blog.trevoke.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://blog.trevoke.net/tags/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile</title>
+      <link>http://blog.trevoke.net/tags/agile/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coding</title>
+      <link>http://blog.trevoke.net/tags/coding/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>http://blog.trevoke.net/tags/development/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elixir</title>
+      <link>http://blog.trevoke.net/tags/elixir/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/elixir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>http://blog.trevoke.net/tags/emacs/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimation</title>
+      <link>http://blog.trevoke.net/tags/estimation/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maintainability</title>
+      <link>http://blog.trevoke.net/tags/maintainability/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/maintainability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phoenix</title>
+      <link>http://blog.trevoke.net/tags/phoenix/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/phoenix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychology</title>
+      <link>http://blog.trevoke.net/tags/psychology/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/psychology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sanity</title>
+      <link>http://blog.trevoke.net/tags/sanity/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/sanity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Srp</title>
+      <link>http://blog.trevoke.net/tags/srp/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/srp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stress</title>
+      <link>http://blog.trevoke.net/tags/stress/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/stress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tdd</title>
+      <link>http://blog.trevoke.net/tags/tdd/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>http://blog.trevoke.net/tags/testing/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

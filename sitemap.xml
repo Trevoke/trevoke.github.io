@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/maintainability-is-relative/</loc>
+    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</loc>
+    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/elixir/</loc>
+    <lastmod>2016-03-31T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</loc>
+    <lastmod>2015-04-02T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</loc>
+    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/</loc>
+    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/agile/</loc>
+    <lastmod>2015-04-02T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/coding/</loc>
+    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/development/</loc>
+    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/elixir/</loc>
+    <lastmod>2016-03-31T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/emacs/</loc>
+    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/estimation/</loc>
+    <lastmod>2015-04-02T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/maintainability/</loc>
+    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/phoenix/</loc>
+    <lastmod>2016-03-31T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/</loc>
+    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/psychology/</loc>
+    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sanity/</loc>
+    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/</loc>
+    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/srp/</loc>
+    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/stress/</loc>
+    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/</loc>
+    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/tdd/</loc>
+    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/testing/</loc>
+    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

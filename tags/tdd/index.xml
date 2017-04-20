@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tdd on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/tdd/index.xml</link>
+    <description>Recent content in Tdd on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017</copyright>
+    <atom:link href="http://blog.trevoke.net/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>      Benefits of a rapid test suite</title>
+      <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
+      <description>&lt;h1 id=&#34;the-value-of-a-rapid-test-suite&#34;&gt;The value of a rapid test suite&lt;/h1&gt;
+
+&lt;h2 id=&#34;developers-and-codebases&#34;&gt;Developers and codebases&lt;/h2&gt;
+
+&lt;p&gt;The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.&lt;/p&gt;
+
+&lt;p&gt;Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.&lt;/p&gt;
+
+&lt;p&gt;The understanding of the core domain and/or the early code remains mostly intellectual and abstract, not based on really reading and understanding the code.&lt;/p&gt;
+
+&lt;p&gt;This happens mainly for one important reason: &lt;strong&gt;the cost in time and energy to understanding that code is usually high, and the return on investment is usually nebulous&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The cost to understanding is high because the tools one can use to gain the understanding tend to be onerous. The code is rarely as readable as it could be, and choices made in organizing code means there are levels of indirection to juggle in one&#39;s head.&lt;/p&gt;
+
+&lt;p&gt;A developer will dive into that code when needed, which usually means &#34;when a bug is found&#34;, or sometimes &#34;when something is missing&#34;.&lt;/p&gt;
+
+&lt;h2 id=&#34;learning-as-a-fundamental-skill&#34;&gt;Learning as a fundamental skill&lt;/h2&gt;
+
+&lt;p&gt;A developer&#39;s work is really thought work. The code is just a means to an end. And code needs to be changeable, otherwise it gets in the way of the thought work.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+“What no wife of a writer can ever understand is that a writer is working when he&#39;s staring out the window” – Burton Rascoe
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;When you have built a test suite that runs quickly, and you trust that it is representative of the intended behavior of your system, you can go in, make any change, run the test suite, and see what breaks.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As developers, we learn for a living. We explore. We modify our neural pathways. This is intensive work. When we learn a new language, a new library, or a new tool, there is a very simple pattern that we follow: &#34;Change one thing and see what happens&#34;. We can rely on this because we have computers, and computers are really good at doing this very quickly.&lt;/p&gt;
+
+&lt;h3 id=&#34;tdd&#34;&gt;TDD&lt;/h3&gt;
+
+&lt;p&gt;Test-Driven Design is a tool that is meant to enable that practice. Over time, you are building up hundreds of &#34;Change one thing and see what happens&#34;. With strict, careful TDD, you build hundreds or thousands of these test cases, letting you build confidence that your system is working as intended. There are many, many principles, guidelines and rules of thumbs to help write effective tests, just like there are many tools and techniques. Books have been written and holy wars have been fought, so I will not dive into this particular topic.&lt;/p&gt;
+
+&lt;h3 id=&#34;caring-for-the-test-suite&#34;&gt;Caring for the test suite&lt;/h3&gt;
+
+&lt;p&gt;With careful pruning and nurturing of the test suite, and making sure that only the elements under test are being used, one can build a test suite that runs very quickly.&lt;/p&gt;
+
+&lt;p&gt;How often do you &lt;strong&gt;actually&lt;/strong&gt; have to test that logging in works? Most teams I&#39;ve seen test that logging in works with every single browser-level test they have.&lt;/p&gt;
+
+&lt;p&gt;How often do you &lt;strong&gt;actually&lt;/strong&gt; have to save something to the database? If you have an abstraction on top of your storage layer, the answer might be &#34;never&#34;.&lt;/p&gt;
+
+&lt;h2 id=&#34;playing&#34;&gt;Playing&lt;/h2&gt;
+
+&lt;p&gt;A rapid test suite makes changing the codebase accessible. It can transform exploration into play. It encourages &#34;What ifs&#34;, and &#34;I wonder&#34;. It enables &#34;Eureka!&#34; moments.&lt;/p&gt;
+
+&lt;p&gt;It transforms painstaking exploration into play. Playing is a very effective way to learn. &lt;em&gt;This behavioral change is critical&lt;/em&gt;. Doing a Google search for &#34;learning play study adults&#34; yields &lt;a href=&#34;http://www.helpguide.org/articles/emotional-health/benefits-of-play-for-adults.htm&#34; title=&#34;many&#34;&gt;many&lt;/a&gt; &lt;a href=&#34;http://www.npr.org/sections/ed/2014/08/06/336360521/play-doesnt-end-with-childhood-why-adults-need-recess-too&#34; title=&#34;results&#34;&gt;results&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;stress&#34;&gt;Stress&lt;/h2&gt;
+
+&lt;p&gt;It turns out stress &lt;a href=&#34;http://the-programmers-stone.com/about/neuroscience/&#34; title=&#34;lowers cognitive flexibility&#34;&gt;lowers cognitive flexibility&lt;/a&gt;. Given the &lt;a href=&#34;http://the-programmers-stone.com/about/implications-for-software-engineers/&#34; title=&#34;&amp;quot;puzzle nature&amp;quot;&#34;&gt;&#34;puzzle nature&#34;&lt;/a&gt; of programming, one may conclude that keeping the stress level low around the engineers is simply a sound business decision. That developers play is a known trope.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://blog.trevoke.net/images/xkcd-compiling.png&#34; alt=&#34;/images/xkcd-compiling.png&#34; title=&#34;/images/xkcd-compiling.png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;it-all-starts-with-play&#34;&gt;It all starts with play&lt;/h2&gt;
+
+&lt;p&gt;When your team can literally play with the codebase, you might be surprised at what other behavioral changes will take place. Learning something new? Spiking new behavior? Making sweeping changes? Nothing is impossible.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

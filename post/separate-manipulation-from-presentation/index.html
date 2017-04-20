@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>      Lesson from emacs: keep data easy to manipulate and easy to present | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">January 27, 2015</h2>
+    <h1 class="title">      Lesson from emacs: keep data easy to manipulate and easy to present</h1>
+    <div class="content">
+      <h1 id="spreadsheets">Spreadsheets</h1>
+
+<p>Spreadsheets are evil. And do you know why? Because they're too powerful. Here is the sweet spot of spreadsheets: <strong>tables of related data on which calculations need to be made</strong>. Here is not the sweet spot of spreadsheets: <strong>everything else</strong>.</p>
+
+<p>Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I've also learned that there was such a thing as the Single Responsibility Principle.</p>
+
+<h1 id="single-responsibility-principle">Single Responsibility Principle</h1>
+
+<p>The Single Responsibility Principle, in code, states that a class (or a function, or really any logical set of code) must have one and only one reason to change. This is very strong.</p>
+
+<p>Let's take a spreadsheet which is a visualization of a schedule. This spreadsheet can change if we're going to change the color a particular scheduled item, or the dates of the scheduled item, or who's doing the scheduled thing, or the granularity or the schedule, or something around a scheduled item. Not that I'm counting, but I think that's more than one.</p>
+
+<h2 id="separation-of-concerns">Separation of concerns</h2>
+
+<p>Separating your concerns helps with that. Among other things, a single concern is, well, a single thing, so it helps make sure there's just one reason for a set of code to change. When I'm looking at data, I've basically got three concerns:</p>
+
+<ol>
+<li>Storing the data</li>
+<li>Manipulating the data</li>
+<li>Visualizing the data</li>
+</ol>
+
+<p>If I can find a way of storing the data in such  a way that manipulating it is about as painless as it gets, then I am much more likely to want to play with the data, and therefore I am much more likely to come to new realizations about it.</p>
+
+<h1 id="emacs">emacs</h1>
+
+<p>Emacs is a beast with many uses, but it is <strong>definitely</strong> organized. And it is, of course, mostly about modifying plain-text, though it has a large support for richer formats. Many of the plain-text modes support exporting and converting to other formats, which is also a driving force behind many of the powerful use cases for emacs.</p>
+
+<h2 id="org-mode">org-mode</h2>
+
+<p>Enter org-mode.</p>
+
+<p>Org-mode is about organizing things. It's basically an outline mode with Getting Things Done features on crack. My favorite org-mode feature to date is how it handles tables, precisely because it is such a wonderful example of the separation of concerns that I'm talking about here. Here's a small example.</p>
+
+<h3 id="tables">Tables</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of Birth</th>
+<th>Income</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Joe</td>
+<td>30</td>
+<td><1984-02-20 Mon></td>
+<td>84000</td>
+</tr>
+
+<tr>
+<td>Mark</td>
+<td>40</td>
+<td><1974-04-15 Mon></td>
+<td>120000</td>
+</tr>
+
+<tr>
+<td>Sophie</td>
+<td>44</td>
+<td><1970-08-28 Fri></td>
+<td>150000</td>
+</tr>
+
+<tr>
+<td>Anna</td>
+<td>26</td>
+<td><1988-02-29 Mon></td>
+<td>160000</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here is how I wrote this table:</p>
+
+<ol>
+<li>I typed |Name|Age|Date of Birth|Income| and then I pressed <TAB></li>
+<li>I typed Joe, <TAB>, <TAB>, C-c . (Ctrl+C then the period character), which dropped me in emacs' calendar, I wrote a date and pressed enter, then <TAB></li>
+<li>I typed 84000 then I pressed <TAB></li>
+<li>I repeated for the next lines</li>
+<li>I wrote the last line, a formula line, to calculate how old they are today, and pressed C-u C-c C-c, which is "recalculate everything"</li>
+</ol>
+
+<p>And this is how it looked to me in plain text:</p>
+
+<pre><code>
+| Name   | Age | Date of Birth    | Income |
+|--------+-----+------------------+--------|
+| Joe    |  30 | &lt;1984-02-20 Mon&gt; |  84000 |
+| Mark   |  40 | &lt;1974-04-15 Mon&gt; | 120000 |
+| Sophie |  44 | &lt;1970-08-28 Fri&gt; | 150000 |
+| Anna   |  26 | &lt;1988-02-29 Mon&gt; | 160000 |
+#+TBLFM: $2=(now()-$3)/365;%d
+</code></pre>
+
+<p>It is important to note that emacs' org-mode did all the row alignment for me. Honesty dictates that I mention I actually had to ask how to do the calculation <a href="https://emacs.stackexchange.com/questions/7750/org-mode-in-a-table-calculate-a-persons-age-based-on-their-birthday" title="here">here</a>, because I didn't know about the `now()` function.</p>
+
+<p>But let's say I realize that the date of birth is better before the age:</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Date of Birth</th>
+<th>Age</th>
+<th>Income</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Joe</td>
+<td><1984-02-20 Mon></td>
+<td>30</td>
+<td>84000</td>
+</tr>
+
+<tr>
+<td>Mark</td>
+<td><1974-04-15 Mon></td>
+<td>40</td>
+<td>120000</td>
+</tr>
+
+<tr>
+<td>Sophie</td>
+<td><1970-08-28 Fri></td>
+<td>44</td>
+<td>150000</td>
+</tr>
+
+<tr>
+<td>Anna</td>
+<td><1988-02-29 Mon></td>
+<td>26</td>
+<td>160000</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here's how much work this was:</p>
+
+<ol>
+<li>Go to the Age column</li>
+<li>Press Alt+Right</li>
+<li>Watch as the column moves and the formula is updated, all for me. (note in the example below how the formula changed!)</li>
+</ol>
+
+<pre><code>
+| Name   | Date of Birth    | Age | Income |
+|--------+------------------+-----+--------|
+| Joe    | &lt;1984-02-20 Mon&gt; |  30 |  84000 |
+| Mark   | &lt;1974-04-15 Mon&gt; |  40 | 120000 |
+| Sophie | &lt;1970-08-28 Fri&gt; |  44 | 150000 |
+| Anna   | &lt;1988-02-29 Mon&gt; |  26 | 160000 |
+#+TBLFM: $3=(now()-$2)/365;%d
+</code></pre>
+
+<p>And now what if I want the names to be ordered alphabetically, like so?</p>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of Birth</th>
+<th>Income</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anna</td>
+<td>26</td>
+<td><1988-02-29 Mon></td>
+<td>160000</td>
+</tr>
+
+<tr>
+<td>Joe</td>
+<td>30</td>
+<td><1984-02-20 Mon></td>
+<td>84000</td>
+</tr>
+
+<tr>
+<td>Mark</td>
+<td>40</td>
+<td><1974-04-15 Mon></td>
+<td>120000</td>
+</tr>
+
+<tr>
+<td>Sophie</td>
+<td>44</td>
+<td><1970-08-28 Fri></td>
+<td>150000</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code>
+| Name   | Age | Date of Birth    | Income |
+|--------+-----+------------------+--------|
+| Anna   |  26 | &lt;1988-02-29 Mon&gt; | 160000 |
+| Joe    |  30 | &lt;1984-02-20 Mon&gt; |  84000 |
+| Mark   |  40 | &lt;1974-04-15 Mon&gt; | 120000 |
+| Sophie |  44 | &lt;1970-08-28 Fri&gt; | 150000 |
+#+TBLFM: $2=(now()-$3)/365;%d
+</code></pre>
+
+<p>Simple enough! There's a function in org-mode called org-table-sort-lines that'll do it for me. And now I notice that when I made up the data for this table, as the names go up in the alphabet, so do the ages go up. Yet, even if I did not know about it, I could have just done the following:</p>
+
+<ol>
+<li>Go to a row</li>
+<li>Press Alt-Up or Alt-Down to move it up or down</li>
+<li>Repeat until rows are organized as I wish</li>
+</ol>
+
+<p>And do you know how much work it was to transform all this plain text into the HTML you're reading? Barely any, in large part because the blogging engine I use is an emacs package.</p>
+
+<p>The beautiful thing about this is: if I find that I need to reorganize my sections, I can equally simply use Alt-Up or Alt-Down to move them, along with all the text below it, up or down. And then I can re-generate the HTML.</p>
+
+<p>I do the work I want to do in plain-text, because it can be made very easy to manipulate, and then we come up with a powerful visualization. The visualization is only for reading, not for manipulating. A visualization is generated, but otherwise generally static</p>
+
+<h2 id="other-examples-of-visualization-or-otherwise-human-readable-data-unsuited-for-manipulation">Other examples of visualization or otherwise human-readable data, unsuited for manipulation</h2>
+
+<p>My favorite other example is SQL versus key-value stores. The fairly famous D3.js library is also a good example.</p>
+
+<h1 id="back-to-spreadsheets">Back to spreadsheets</h1>
+
+<p>Use spreadsheets, but only to learn things about your data. Then find a visualization that makes sense, and generate it based on your data. You'll be much happier in the long run. I promise.</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

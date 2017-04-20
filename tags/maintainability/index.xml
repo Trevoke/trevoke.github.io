@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maintainability on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/maintainability/index.xml</link>
+    <description>Recent content in Maintainability on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017</copyright>
+    <atom:link href="http://blog.trevoke.net/tags/maintainability/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>      Maintainability Is Relative</title>
+      <link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
+      <description>&lt;p&gt;I just found a great example of the variability of the need of creating maintainable code.&lt;/p&gt;
+
+&lt;p&gt;Somewhere around 2006, I created a script that posts to the Livejournal community &lt;span style=&#34;text-decoration: underline;&#34;&gt;daily_tao&lt;/span&gt; a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.&lt;/p&gt;
+
+&lt;p&gt;I temporarily wasn&#39;t sure of where that script was. I remembered it was running off of a cronjob, so… Some machine with a *nix-like OS. Then I remembered and found it. I&#39;m going to offer two versions of the code to you: the one that is in the cronjob, and .. A rewrite that I never deleted (and now of course, I have no idea why I never did).&lt;/p&gt;
+
+&lt;p&gt;The original:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;
+  #!/bin/bash
+
+  cd /home/user/www/tao
+  TAO_COUNTER=`cat .taocounter`
+
+  if (( $TAO_COUNTER &amp;gt; 80 ))
+     then TAO_COUNTER=0
+  fi
+
+
+  awk &#39;/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}&#39; sec=$TAO_COUNTER tao.txt &amp;gt; .body
+  echo &#39;-&#39; &amp;gt;&amp;gt; .body
+  echo &#39;-&#39; &amp;gt;&amp;gt; .body
+  awk &#39;/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}&#39; sec=$TAO_COUNTER beatricetao.txt &amp;gt;&amp;gt; .body
+
+  TAO_COUNTER=$(($TAO_COUNTER +1));
+  echo $TAO_COUNTER &amp;gt; .taocounter
+
+  echo &#39;-&#39; &amp;gt;&amp;gt; .body
+  echo &#39; &#39; &amp;gt;&amp;gt; .body
+  echo &#39;The first version is from the Fortune files. The second version is the Beatrice Tao.&#39; &amp;gt;&amp;gt; .body
+
+  # jlj -bf .body -ec daily_tao -es `cat .taocounter` -ne -s
+  cat .body | ./clive -u username -w password -j daily_tao -s `cat .taocounter` --charset utf8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I saw this, and it didn&#39;t make a ton of sense. Thankfully it&#39;s a very short script so I was able to piece it together quickly. Today I probably wouldn&#39;t write it this way, but… It works, so why would I touch it?&lt;/p&gt;
+
+&lt;p&gt;The new script is in Ruby. I say new because I learned Ruby after Bash, and once I knew Ruby, it was my preferred language. I&#39;m guessing I wanted to rewrite the script so it would be more legible, and then… For some reason, I never replaced it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;
+  #!/usr/bin/ruby
+
+  Dir.chdir &#39;/home/user/www/tao&#39;
+
+  # Arrays go from 0... infinity
+  # Tao goes from 1 to 81
+  # Counter therefore goes from 0 to 80 and loops.
+
+  counter = File.open(&#39;.taocounter&#39;, &#39;r&#39;) { |f| f.readline.strip.to_i }
+
+  tao = File.open(&#39;tao.txt&#39;, &#39;r&#39;) { |f| f.readlines(&#39;%&#39;) }
+  beatrice = File.open(&#39;beatricetao.txt&#39;, &#39;r&#39;) { |f| f.readlines(&#39;%&#39;) }
+  Disclaimer=&amp;quot;The first version is from the Fortune files - a program for random quotes on GNU/Linux.\n The second version is the Beatrice Tao, available online, reproduced here with permission..&amp;quot;
+
+  File.open(&#39;.body&#39;, &#39;w&#39;) { |f| f &amp;lt;&amp;lt; &amp;quot;#{tao[counter]}\n\n________________\n\n#{beatrice[counter]}\n\n#{Disclaimer}&amp;quot; }
+
+  `cat .body | ./clive -u username -w password -j daily_tao -s &amp;quot;Tao Te Ching: Chapter #{counter+1}&amp;quot; --charset utf8`
+  counter = 0 if (counter +=1 ) &amp;gt; 80
+  File.open(&#39;.taocounter&#39;, &#39;w&#39;) { |f| f &amp;lt;&amp;lt; counter }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My favorite thing here is probably the second-to-last line of the Ruby script.&lt;/p&gt;
+
+&lt;p&gt;There are no tests for any of this, because I definitely wrote this before I knew you could test your code.&lt;/p&gt;
+
+&lt;p&gt;And the question remains: should I write tests? Should I refactor? Should I fix it, rewrite it, etc?&lt;/p&gt;
+
+&lt;p&gt;And the answer remains: No. It works. There are no new features to add. Just leave it be.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
