@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/index.xml</link>
+    <link>http://blog.trevoke.net/tags/</link>
     <description>Recent content in Tags on Seven steps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Sun, 23 Oct 2016 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://blog.trevoke.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title></title>
@@ -74,6 +76,24 @@
     </item>
     
     <item>
+      <title>Language</title>
+      <link>http://blog.trevoke.net/tags/language/</link>
+      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>http://blog.trevoke.net/tags/learning/</link>
+      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Maintainability</title>
       <link>http://blog.trevoke.net/tags/maintainability/</link>
       <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
@@ -88,6 +108,15 @@
       <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/tags/phoenix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>http://blog.trevoke.net/tags/programming/</link>
+      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/programming/</guid>
       <description></description>
     </item>
     

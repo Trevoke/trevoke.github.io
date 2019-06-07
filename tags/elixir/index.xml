@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elixir on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/elixir/index.xml</link>
+    <link>http://blog.trevoke.net/tags/elixir/</link>
     <description>Recent content in Elixir on Seven steps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017</copyright>
-    <atom:link href="http://blog.trevoke.net/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Thu, 31 Mar 2016 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>      Why Elixir is the next Great Tech</title>
@@ -15,27 +18,7 @@
       <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/post/elixir/</guid>
-      <description>&lt;h1 id=&#34;elixir-because&#34;&gt;Elixir, because:&lt;/h1&gt;
-
-&lt;p&gt;I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially.&lt;/li&gt;
-&lt;li&gt;TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.&lt;/li&gt;
-&lt;li&gt;Elixir takes all of the syntax niceness from Ruby, so it&#39;s pretty and easy to read.&lt;/li&gt;
-&lt;li&gt;Elixir makes OTP incredibly convenient to use, which means that one is able to create and communicate with processes with concise and expressive code.&lt;/li&gt;
-&lt;li&gt;Elixir&#39;s Phoenix Framework makes both stateless (traditional request/response) and stateful (anything from long-polling to websockets) connections very simple to use, by providing powerful abstractions based on OTP. The code remains readable.&lt;/li&gt;
-&lt;li&gt;The websocket connections are easy to set up and easy to scale, maintaining a single state via the socket: a tempting idea for folks using the Flux architecture in the front-end.&lt;/li&gt;
-&lt;li&gt;Elixir&#39;s Phoenix Framework takes from all the lessons of Rails and Javascript of the past decade and has created a testable, maintainable, and extendable web MVC framework that in reality, is just another OTP application.&lt;/li&gt;
-&lt;li&gt;As we depend more and more on external services (API, either internal or external), fault tolerance becomes top-of-mind when building robust systems. This is another problem Erlang solved years ago through supervisors and managing how to handle failures.&lt;/li&gt;
-&lt;li&gt;Elixir/OTP allows for incredible uptime by letting you write code in such a way you can actually do hot reloading.&lt;/li&gt;
-&lt;li&gt;Elixir is one of the few non-lisp languages to implement real macros. This allows you to create your own domain language in your code should you need it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As we move more towards microservices, and given that a microservice is the unit of thought in Elixir (an OTP app is just a service that can receive messages, send messages, and hold state), it will become a de-facto choice, because it is a superior abstraction to the existing options.&lt;/p&gt;
-
-&lt;p&gt;Elixir and Phoenix are the new present. Bow to our new tech stack overlord.&lt;/p&gt;
-</description>
+      <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
     </item>
     
   </channel>

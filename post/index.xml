@@ -2,13 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Seven steps</title>
-    <link>http://blog.trevoke.net/post/index.xml</link>
+    <link>http://blog.trevoke.net/post/</link>
     <description>Recent content in Posts on Seven steps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 17:43:39 -0400</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The first step in learning any new programming language</title>
+      <link>http://blog.trevoke.net/post/learn-a-new-prog/</link>
+      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
+      <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
+    </item>
     
     <item>
       <title>      Maintainability Is Relative</title>
@@ -16,75 +27,9 @@
       <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
-      <description>&lt;p&gt;I just found a great example of the variability of the need of creating maintainable code.&lt;/p&gt;
-
-&lt;p&gt;Somewhere around 2006, I created a script that posts to the Livejournal community &lt;span style=&#34;text-decoration: underline;&#34;&gt;daily_tao&lt;/span&gt; a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.&lt;/p&gt;
-
-&lt;p&gt;I temporarily wasn&#39;t sure of where that script was. I remembered it was running off of a cronjob, so… Some machine with a *nix-like OS. Then I remembered and found it. I&#39;m going to offer two versions of the code to you: the one that is in the cronjob, and .. A rewrite that I never deleted (and now of course, I have no idea why I never did).&lt;/p&gt;
-
-&lt;p&gt;The original:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;
-  #!/bin/bash
-
-  cd /home/user/www/tao
-  TAO_COUNTER=`cat .taocounter`
-
-  if (( $TAO_COUNTER &amp;gt; 80 ))
-     then TAO_COUNTER=0
-  fi
-
-
-  awk &#39;/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}&#39; sec=$TAO_COUNTER tao.txt &amp;gt; .body
-  echo &#39;-&#39; &amp;gt;&amp;gt; .body
-  echo &#39;-&#39; &amp;gt;&amp;gt; .body
-  awk &#39;/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}&#39; sec=$TAO_COUNTER beatricetao.txt &amp;gt;&amp;gt; .body
-
-  TAO_COUNTER=$(($TAO_COUNTER +1));
-  echo $TAO_COUNTER &amp;gt; .taocounter
-
-  echo &#39;-&#39; &amp;gt;&amp;gt; .body
-  echo &#39; &#39; &amp;gt;&amp;gt; .body
-  echo &#39;The first version is from the Fortune files. The second version is the Beatrice Tao.&#39; &amp;gt;&amp;gt; .body
-
-  # jlj -bf .body -ec daily_tao -es `cat .taocounter` -ne -s
-  cat .body | ./clive -u username -w password -j daily_tao -s `cat .taocounter` --charset utf8
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I saw this, and it didn&#39;t make a ton of sense. Thankfully it&#39;s a very short script so I was able to piece it together quickly. Today I probably wouldn&#39;t write it this way, but… It works, so why would I touch it?&lt;/p&gt;
-
-&lt;p&gt;The new script is in Ruby. I say new because I learned Ruby after Bash, and once I knew Ruby, it was my preferred language. I&#39;m guessing I wanted to rewrite the script so it would be more legible, and then… For some reason, I never replaced it.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;
-  #!/usr/bin/ruby
-
-  Dir.chdir &#39;/home/user/www/tao&#39;
-
-  # Arrays go from 0... infinity
-  # Tao goes from 1 to 81
-  # Counter therefore goes from 0 to 80 and loops.
-
-  counter = File.open(&#39;.taocounter&#39;, &#39;r&#39;) { |f| f.readline.strip.to_i }
-
-  tao = File.open(&#39;tao.txt&#39;, &#39;r&#39;) { |f| f.readlines(&#39;%&#39;) }
-  beatrice = File.open(&#39;beatricetao.txt&#39;, &#39;r&#39;) { |f| f.readlines(&#39;%&#39;) }
-  Disclaimer=&amp;quot;The first version is from the Fortune files - a program for random quotes on GNU/Linux.\n The second version is the Beatrice Tao, available online, reproduced here with permission..&amp;quot;
-
-  File.open(&#39;.body&#39;, &#39;w&#39;) { |f| f &amp;lt;&amp;lt; &amp;quot;#{tao[counter]}\n\n________________\n\n#{beatrice[counter]}\n\n#{Disclaimer}&amp;quot; }
-
-  `cat .body | ./clive -u username -w password -j daily_tao -s &amp;quot;Tao Te Ching: Chapter #{counter+1}&amp;quot; --charset utf8`
-  counter = 0 if (counter +=1 ) &amp;gt; 80
-  File.open(&#39;.taocounter&#39;, &#39;w&#39;) { |f| f &amp;lt;&amp;lt; counter }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My favorite thing here is probably the second-to-last line of the Ruby script.&lt;/p&gt;
-
-&lt;p&gt;There are no tests for any of this, because I definitely wrote this before I knew you could test your code.&lt;/p&gt;
-
-&lt;p&gt;And the question remains: should I write tests? Should I refactor? Should I fix it, rewrite it, etc?&lt;/p&gt;
-
-&lt;p&gt;And the answer remains: No. It works. There are no new features to add. Just leave it be.&lt;/p&gt;
-</description>
+      <description>I just found a great example of the variability of the need of creating maintainable code.
+Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+I temporarily wasn&#39;t sure of where that script was.</description>
     </item>
     
     <item>
@@ -93,64 +38,8 @@
       <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
-      <description>&lt;h1 id=&#34;the-value-of-a-rapid-test-suite&#34;&gt;The value of a rapid test suite&lt;/h1&gt;
-
-&lt;h2 id=&#34;developers-and-codebases&#34;&gt;Developers and codebases&lt;/h2&gt;
-
-&lt;p&gt;The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.&lt;/p&gt;
-
-&lt;p&gt;Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.&lt;/p&gt;
-
-&lt;p&gt;The understanding of the core domain and/or the early code remains mostly intellectual and abstract, not based on really reading and understanding the code.&lt;/p&gt;
-
-&lt;p&gt;This happens mainly for one important reason: &lt;strong&gt;the cost in time and energy to understanding that code is usually high, and the return on investment is usually nebulous&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;The cost to understanding is high because the tools one can use to gain the understanding tend to be onerous. The code is rarely as readable as it could be, and choices made in organizing code means there are levels of indirection to juggle in one&#39;s head.&lt;/p&gt;
-
-&lt;p&gt;A developer will dive into that code when needed, which usually means &#34;when a bug is found&#34;, or sometimes &#34;when something is missing&#34;.&lt;/p&gt;
-
-&lt;h2 id=&#34;learning-as-a-fundamental-skill&#34;&gt;Learning as a fundamental skill&lt;/h2&gt;
-
-&lt;p&gt;A developer&#39;s work is really thought work. The code is just a means to an end. And code needs to be changeable, otherwise it gets in the way of the thought work.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-“What no wife of a writer can ever understand is that a writer is working when he&#39;s staring out the window” – Burton Rascoe
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;When you have built a test suite that runs quickly, and you trust that it is representative of the intended behavior of your system, you can go in, make any change, run the test suite, and see what breaks.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As developers, we learn for a living. We explore. We modify our neural pathways. This is intensive work. When we learn a new language, a new library, or a new tool, there is a very simple pattern that we follow: &#34;Change one thing and see what happens&#34;. We can rely on this because we have computers, and computers are really good at doing this very quickly.&lt;/p&gt;
-
-&lt;h3 id=&#34;tdd&#34;&gt;TDD&lt;/h3&gt;
-
-&lt;p&gt;Test-Driven Design is a tool that is meant to enable that practice. Over time, you are building up hundreds of &#34;Change one thing and see what happens&#34;. With strict, careful TDD, you build hundreds or thousands of these test cases, letting you build confidence that your system is working as intended. There are many, many principles, guidelines and rules of thumbs to help write effective tests, just like there are many tools and techniques. Books have been written and holy wars have been fought, so I will not dive into this particular topic.&lt;/p&gt;
-
-&lt;h3 id=&#34;caring-for-the-test-suite&#34;&gt;Caring for the test suite&lt;/h3&gt;
-
-&lt;p&gt;With careful pruning and nurturing of the test suite, and making sure that only the elements under test are being used, one can build a test suite that runs very quickly.&lt;/p&gt;
-
-&lt;p&gt;How often do you &lt;strong&gt;actually&lt;/strong&gt; have to test that logging in works? Most teams I&#39;ve seen test that logging in works with every single browser-level test they have.&lt;/p&gt;
-
-&lt;p&gt;How often do you &lt;strong&gt;actually&lt;/strong&gt; have to save something to the database? If you have an abstraction on top of your storage layer, the answer might be &#34;never&#34;.&lt;/p&gt;
-
-&lt;h2 id=&#34;playing&#34;&gt;Playing&lt;/h2&gt;
-
-&lt;p&gt;A rapid test suite makes changing the codebase accessible. It can transform exploration into play. It encourages &#34;What ifs&#34;, and &#34;I wonder&#34;. It enables &#34;Eureka!&#34; moments.&lt;/p&gt;
-
-&lt;p&gt;It transforms painstaking exploration into play. Playing is a very effective way to learn. &lt;em&gt;This behavioral change is critical&lt;/em&gt;. Doing a Google search for &#34;learning play study adults&#34; yields &lt;a href=&#34;http://www.helpguide.org/articles/emotional-health/benefits-of-play-for-adults.htm&#34; title=&#34;many&#34;&gt;many&lt;/a&gt; &lt;a href=&#34;http://www.npr.org/sections/ed/2014/08/06/336360521/play-doesnt-end-with-childhood-why-adults-need-recess-too&#34; title=&#34;results&#34;&gt;results&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;stress&#34;&gt;Stress&lt;/h2&gt;
-
-&lt;p&gt;It turns out stress &lt;a href=&#34;http://the-programmers-stone.com/about/neuroscience/&#34; title=&#34;lowers cognitive flexibility&#34;&gt;lowers cognitive flexibility&lt;/a&gt;. Given the &lt;a href=&#34;http://the-programmers-stone.com/about/implications-for-software-engineers/&#34; title=&#34;&amp;quot;puzzle nature&amp;quot;&#34;&gt;&#34;puzzle nature&#34;&lt;/a&gt; of programming, one may conclude that keeping the stress level low around the engineers is simply a sound business decision. That developers play is a known trope.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.trevoke.net/images/xkcd-compiling.png&#34; alt=&#34;/images/xkcd-compiling.png&#34; title=&#34;/images/xkcd-compiling.png&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;it-all-starts-with-play&#34;&gt;It all starts with play&lt;/h2&gt;
-
-&lt;p&gt;When your team can literally play with the codebase, you might be surprised at what other behavioral changes will take place. Learning something new? Spiking new behavior? Making sweeping changes? Nothing is impossible.&lt;/p&gt;
-</description>
+      <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
+Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
     </item>
     
     <item>
@@ -159,27 +48,7 @@
       <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/post/elixir/</guid>
-      <description>&lt;h1 id=&#34;elixir-because&#34;&gt;Elixir, because:&lt;/h1&gt;
-
-&lt;p&gt;I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially.&lt;/li&gt;
-&lt;li&gt;TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.&lt;/li&gt;
-&lt;li&gt;Elixir takes all of the syntax niceness from Ruby, so it&#39;s pretty and easy to read.&lt;/li&gt;
-&lt;li&gt;Elixir makes OTP incredibly convenient to use, which means that one is able to create and communicate with processes with concise and expressive code.&lt;/li&gt;
-&lt;li&gt;Elixir&#39;s Phoenix Framework makes both stateless (traditional request/response) and stateful (anything from long-polling to websockets) connections very simple to use, by providing powerful abstractions based on OTP. The code remains readable.&lt;/li&gt;
-&lt;li&gt;The websocket connections are easy to set up and easy to scale, maintaining a single state via the socket: a tempting idea for folks using the Flux architecture in the front-end.&lt;/li&gt;
-&lt;li&gt;Elixir&#39;s Phoenix Framework takes from all the lessons of Rails and Javascript of the past decade and has created a testable, maintainable, and extendable web MVC framework that in reality, is just another OTP application.&lt;/li&gt;
-&lt;li&gt;As we depend more and more on external services (API, either internal or external), fault tolerance becomes top-of-mind when building robust systems. This is another problem Erlang solved years ago through supervisors and managing how to handle failures.&lt;/li&gt;
-&lt;li&gt;Elixir/OTP allows for incredible uptime by letting you write code in such a way you can actually do hot reloading.&lt;/li&gt;
-&lt;li&gt;Elixir is one of the few non-lisp languages to implement real macros. This allows you to create your own domain language in your code should you need it.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As we move more towards microservices, and given that a microservice is the unit of thought in Elixir (an OTP app is just a service that can receive messages, send messages, and hold state), it will become a de-facto choice, because it is a superior abstraction to the existing options.&lt;/p&gt;
-
-&lt;p&gt;Elixir and Phoenix are the new present. Bow to our new tech stack overlord.&lt;/p&gt;
-</description>
+      <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
     </item>
     
     <item>
@@ -188,70 +57,7 @@
       <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</guid>
-      <description>&lt;h1 id=&#34;what-this-entry-is-and-is-not-about&#34;&gt;What this entry is and is not about&lt;/h1&gt;
-
-&lt;p&gt;This entry talks about estimates in a relatively perfect world. This entry does &lt;em&gt;not&lt;/em&gt; talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.&lt;/p&gt;
-
-&lt;h1 id=&#34;why-talk-about-estimating-at-all&#34;&gt;Why talk about estimating at all&lt;/h1&gt;
-
-&lt;p&gt;Estimating work to be done before it is done. Great if you know what the work is. Software development teams often have no idea what the work really will be until they do it. Give a sculptor a block of wood and they&#39;ll have to work carefully, as they uncover the imperfections within the wood. How long will it take to reveal a bust of Artemis drawing an arrow? The sculptor doesn&#39;t really know beforehand.&lt;/p&gt;
-
-&lt;p&gt;Yet, there is value in having a way to know at a grander scale how much work can be accomplished. Evaluating this allows us to discuss how much work can be done before a given deadline, as well as the overall health of the team (through &lt;strong&gt;changes to this measurement over time&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;h1 id=&#34;what-is-an-estimate&#34;&gt;What is an estimate&lt;/h1&gt;
-
-&lt;p&gt;An estimate is a representation of the team&#39;s understanding of the complexity of the work required to accomplish a desired feature. Since it is done with imperfect knowledge, it will be wrong. That is why it is called an estimate.&lt;/p&gt;
-
-&lt;p&gt;In order to separate the idea of estimate from the idea of &#34;how long this work will take&#34;, the estimate is not given in units of time (e.g. an hour, a day, two weeks...). Since the idea of an estimate is to represent complexity, time does not map well. Some teams use t-shirt sizes (S, M, L, XL), some teams use the Fibonacci series (1, 2, 3, 5, ...). Each unit of work would then be given such a &#34;size&#34;.&lt;/p&gt;
-
-&lt;p&gt;An estimate can be understood, then, as a completely wrong and overall meaningless number. So why is this a good idea?&lt;/p&gt;
-
-&lt;h1 id=&#34;estimates-over-time&#34;&gt;Estimates over time&lt;/h1&gt;
-
-&lt;h2 id=&#34;the-velocity&#34;&gt;The velocity&lt;/h2&gt;
-
-&lt;p&gt;When you have time boundaries (note: kanban users, this is your red flag), you can stack up the value of the estimates of the units of work accomplished over that period of time and get a number called &lt;strong&gt;velocity&lt;/strong&gt;. The velocity tells you how much complexity of work the team has gone through in a given period of time. Remember: this is all based on a number which we know to be wrong and meaningless, by definition.&lt;/p&gt;
-
-&lt;p&gt;So far, this all sounds like a load of hard work for no reason at all. So why is this a good idea?&lt;/p&gt;
-
-&lt;h2 id=&#34;attaining-self-consistency&#34;&gt;Attaining self-consistency&lt;/h2&gt;
-
-&lt;p&gt;Over time, a team which is allowed to generate its own estimates based on the units of work they receive will gravitate towards a self-consistent system. This means that units of work will be understood to relate to each other based on complexity (e.g. &#34;Remember when we did X? This is the same kind of work, isn&#39;t it?&#34;)&lt;/p&gt;
-
-&lt;p&gt;Over time, this means that velocity will also become consistent. It will become a wrong and meaningless number created from other wrong and meaningless numbers. However, at this point in time, the team has something it did not have before: self-consistency. The numbers will be wrong in the same way.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-value-of-self-consistent-estimates&#34;&gt;The value of self-consistent estimates&lt;/h1&gt;
-
-&lt;p&gt;I have worked on teams where the velocity was 4 and teams where the velocity was 78. This means that over time, the stable number obtained based on accomplished work complexity during a unit of time turned out to &lt;strong&gt;predictably&lt;/strong&gt; be this number. This says &lt;em&gt;nothing&lt;/em&gt; about &#34;how fast&#34; or &#34;how slow&#34; the team got work done. It does mean that after estimating a new feature, the team could then have a conversation about the translation of that number to the unit of time.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Team velocity&lt;/td&gt;
-&lt;td&gt;Estimate for new feature&lt;/td&gt;
-&lt;td&gt;Reasonable estimated time to completion&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;78&lt;/td&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;1/6&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;12&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;This can then lead to discussing scope. In the first case, that feature translates to a relatively short amount of time. In the second case, it is a choice that will have significant impact (no other work can happen during three units of time).&lt;/p&gt;
-
-&lt;h1 id=&#34;how-estimates-fit-in-the-team-s-process-ecosystem&#34;&gt;How estimates fit in the team&#39;s process ecosystem&lt;/h1&gt;
-
-&lt;p&gt;Estimates will always be wrong; that&#39;s why they&#39;re called estimates. As long as the team is allowed to estimate the work without external pressures, the team will eventually gravitate towards a self-consistent system of estimates. This means that while all estimates are always going to be wrong, they will be right &lt;strong&gt;relative to each other&lt;/strong&gt; and that is the only thing that matters. The velocity, built on top of this self-consistent system, is also a number which only makes sense in the system within which it was built, but which allows nonetheless effective conversations to happen and valuable data to be gathered.&lt;/p&gt;
-</description>
+      <description>What this entry is and is not about Why talk about estimating at all This entry talks about estimates in a relatively perfect world. This entry does not talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates. Estimating work to be done before it is done. Great if you know what the work is.</description>
     </item>
     
     <item>
@@ -260,240 +66,8 @@
       <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
       
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
-      <description>&lt;h1 id=&#34;spreadsheets&#34;&gt;Spreadsheets&lt;/h1&gt;
-
-&lt;p&gt;Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: &lt;strong&gt;tables of related data on which calculations need to be made&lt;/strong&gt;. Here is not the sweet spot of spreadsheets: &lt;strong&gt;everything else&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I&#39;ve also learned that there was such a thing as the Single Responsibility Principle.&lt;/p&gt;
-
-&lt;h1 id=&#34;single-responsibility-principle&#34;&gt;Single Responsibility Principle&lt;/h1&gt;
-
-&lt;p&gt;The Single Responsibility Principle, in code, states that a class (or a function, or really any logical set of code) must have one and only one reason to change. This is very strong.&lt;/p&gt;
-
-&lt;p&gt;Let&#39;s take a spreadsheet which is a visualization of a schedule. This spreadsheet can change if we&#39;re going to change the color a particular scheduled item, or the dates of the scheduled item, or who&#39;s doing the scheduled thing, or the granularity or the schedule, or something around a scheduled item. Not that I&#39;m counting, but I think that&#39;s more than one.&lt;/p&gt;
-
-&lt;h2 id=&#34;separation-of-concerns&#34;&gt;Separation of concerns&lt;/h2&gt;
-
-&lt;p&gt;Separating your concerns helps with that. Among other things, a single concern is, well, a single thing, so it helps make sure there&#39;s just one reason for a set of code to change. When I&#39;m looking at data, I&#39;ve basically got three concerns:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Storing the data&lt;/li&gt;
-&lt;li&gt;Manipulating the data&lt;/li&gt;
-&lt;li&gt;Visualizing the data&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If I can find a way of storing the data in such  a way that manipulating it is about as painless as it gets, then I am much more likely to want to play with the data, and therefore I am much more likely to come to new realizations about it.&lt;/p&gt;
-
-&lt;h1 id=&#34;emacs&#34;&gt;emacs&lt;/h1&gt;
-
-&lt;p&gt;Emacs is a beast with many uses, but it is &lt;strong&gt;definitely&lt;/strong&gt; organized. And it is, of course, mostly about modifying plain-text, though it has a large support for richer formats. Many of the plain-text modes support exporting and converting to other formats, which is also a driving force behind many of the powerful use cases for emacs.&lt;/p&gt;
-
-&lt;h2 id=&#34;org-mode&#34;&gt;org-mode&lt;/h2&gt;
-
-&lt;p&gt;Enter org-mode.&lt;/p&gt;
-
-&lt;p&gt;Org-mode is about organizing things. It&#39;s basically an outline mode with Getting Things Done features on crack. My favorite org-mode feature to date is how it handles tables, precisely because it is such a wonderful example of the separation of concerns that I&#39;m talking about here. Here&#39;s a small example.&lt;/p&gt;
-
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Date of Birth&lt;/th&gt;
-&lt;th&gt;Income&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Joe&lt;/td&gt;
-&lt;td&gt;30&lt;/td&gt;
-&lt;td&gt;&lt;1984-02-20 Mon&gt;&lt;/td&gt;
-&lt;td&gt;84000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Mark&lt;/td&gt;
-&lt;td&gt;40&lt;/td&gt;
-&lt;td&gt;&lt;1974-04-15 Mon&gt;&lt;/td&gt;
-&lt;td&gt;120000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sophie&lt;/td&gt;
-&lt;td&gt;44&lt;/td&gt;
-&lt;td&gt;&lt;1970-08-28 Fri&gt;&lt;/td&gt;
-&lt;td&gt;150000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Anna&lt;/td&gt;
-&lt;td&gt;26&lt;/td&gt;
-&lt;td&gt;&lt;1988-02-29 Mon&gt;&lt;/td&gt;
-&lt;td&gt;160000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Here is how I wrote this table:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;I typed |Name|Age|Date of Birth|Income| and then I pressed &lt;TAB&gt;&lt;/li&gt;
-&lt;li&gt;I typed Joe, &lt;TAB&gt;, &lt;TAB&gt;, C-c . (Ctrl+C then the period character), which dropped me in emacs&#39; calendar, I wrote a date and pressed enter, then &lt;TAB&gt;&lt;/li&gt;
-&lt;li&gt;I typed 84000 then I pressed &lt;TAB&gt;&lt;/li&gt;
-&lt;li&gt;I repeated for the next lines&lt;/li&gt;
-&lt;li&gt;I wrote the last line, a formula line, to calculate how old they are today, and pressed C-u C-c C-c, which is &#34;recalculate everything&#34;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And this is how it looked to me in plain text:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-| Name   | Age | Date of Birth    | Income |
-|--------+-----+------------------+--------|
-| Joe    |  30 | &amp;lt;1984-02-20 Mon&amp;gt; |  84000 |
-| Mark   |  40 | &amp;lt;1974-04-15 Mon&amp;gt; | 120000 |
-| Sophie |  44 | &amp;lt;1970-08-28 Fri&amp;gt; | 150000 |
-| Anna   |  26 | &amp;lt;1988-02-29 Mon&amp;gt; | 160000 |
-#+TBLFM: $2=(now()-$3)/365;%d
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It is important to note that emacs&#39; org-mode did all the row alignment for me. Honesty dictates that I mention I actually had to ask how to do the calculation &lt;a href=&#34;https://emacs.stackexchange.com/questions/7750/org-mode-in-a-table-calculate-a-persons-age-based-on-their-birthday&#34; title=&#34;here&#34;&gt;here&lt;/a&gt;, because I didn&#39;t know about the `now()` function.&lt;/p&gt;
-
-&lt;p&gt;But let&#39;s say I realize that the date of birth is better before the age:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Date of Birth&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Income&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Joe&lt;/td&gt;
-&lt;td&gt;&lt;1984-02-20 Mon&gt;&lt;/td&gt;
-&lt;td&gt;30&lt;/td&gt;
-&lt;td&gt;84000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Mark&lt;/td&gt;
-&lt;td&gt;&lt;1974-04-15 Mon&gt;&lt;/td&gt;
-&lt;td&gt;40&lt;/td&gt;
-&lt;td&gt;120000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sophie&lt;/td&gt;
-&lt;td&gt;&lt;1970-08-28 Fri&gt;&lt;/td&gt;
-&lt;td&gt;44&lt;/td&gt;
-&lt;td&gt;150000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Anna&lt;/td&gt;
-&lt;td&gt;&lt;1988-02-29 Mon&gt;&lt;/td&gt;
-&lt;td&gt;26&lt;/td&gt;
-&lt;td&gt;160000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Here&#39;s how much work this was:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Go to the Age column&lt;/li&gt;
-&lt;li&gt;Press Alt+Right&lt;/li&gt;
-&lt;li&gt;Watch as the column moves and the formula is updated, all for me. (note in the example below how the formula changed!)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code&gt;
-| Name   | Date of Birth    | Age | Income |
-|--------+------------------+-----+--------|
-| Joe    | &amp;lt;1984-02-20 Mon&amp;gt; |  30 |  84000 |
-| Mark   | &amp;lt;1974-04-15 Mon&amp;gt; |  40 | 120000 |
-| Sophie | &amp;lt;1970-08-28 Fri&amp;gt; |  44 | 150000 |
-| Anna   | &amp;lt;1988-02-29 Mon&amp;gt; |  26 | 160000 |
-#+TBLFM: $3=(now()-$2)/365;%d
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And now what if I want the names to be ordered alphabetically, like so?&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;th&gt;Date of Birth&lt;/th&gt;
-&lt;th&gt;Income&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Anna&lt;/td&gt;
-&lt;td&gt;26&lt;/td&gt;
-&lt;td&gt;&lt;1988-02-29 Mon&gt;&lt;/td&gt;
-&lt;td&gt;160000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Joe&lt;/td&gt;
-&lt;td&gt;30&lt;/td&gt;
-&lt;td&gt;&lt;1984-02-20 Mon&gt;&lt;/td&gt;
-&lt;td&gt;84000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Mark&lt;/td&gt;
-&lt;td&gt;40&lt;/td&gt;
-&lt;td&gt;&lt;1974-04-15 Mon&gt;&lt;/td&gt;
-&lt;td&gt;120000&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Sophie&lt;/td&gt;
-&lt;td&gt;44&lt;/td&gt;
-&lt;td&gt;&lt;1970-08-28 Fri&gt;&lt;/td&gt;
-&lt;td&gt;150000&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;pre&gt;&lt;code&gt;
-| Name   | Age | Date of Birth    | Income |
-|--------+-----+------------------+--------|
-| Anna   |  26 | &amp;lt;1988-02-29 Mon&amp;gt; | 160000 |
-| Joe    |  30 | &amp;lt;1984-02-20 Mon&amp;gt; |  84000 |
-| Mark   |  40 | &amp;lt;1974-04-15 Mon&amp;gt; | 120000 |
-| Sophie |  44 | &amp;lt;1970-08-28 Fri&amp;gt; | 150000 |
-#+TBLFM: $2=(now()-$3)/365;%d
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Simple enough! There&#39;s a function in org-mode called org-table-sort-lines that&#39;ll do it for me. And now I notice that when I made up the data for this table, as the names go up in the alphabet, so do the ages go up. Yet, even if I did not know about it, I could have just done the following:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Go to a row&lt;/li&gt;
-&lt;li&gt;Press Alt-Up or Alt-Down to move it up or down&lt;/li&gt;
-&lt;li&gt;Repeat until rows are organized as I wish&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And do you know how much work it was to transform all this plain text into the HTML you&#39;re reading? Barely any, in large part because the blogging engine I use is an emacs package.&lt;/p&gt;
-
-&lt;p&gt;The beautiful thing about this is: if I find that I need to reorganize my sections, I can equally simply use Alt-Up or Alt-Down to move them, along with all the text below it, up or down. And then I can re-generate the HTML.&lt;/p&gt;
-
-&lt;p&gt;I do the work I want to do in plain-text, because it can be made very easy to manipulate, and then we come up with a powerful visualization. The visualization is only for reading, not for manipulating. A visualization is generated, but otherwise generally static&lt;/p&gt;
-
-&lt;h2 id=&#34;other-examples-of-visualization-or-otherwise-human-readable-data-unsuited-for-manipulation&#34;&gt;Other examples of visualization or otherwise human-readable data, unsuited for manipulation&lt;/h2&gt;
-
-&lt;p&gt;My favorite other example is SQL versus key-value stores. The fairly famous D3.js library is also a good example.&lt;/p&gt;
-
-&lt;h1 id=&#34;back-to-spreadsheets&#34;&gt;Back to spreadsheets&lt;/h1&gt;
-
-&lt;p&gt;Use spreadsheets, but only to learn things about your data. Then find a visualization that makes sense, and generate it based on your data. You&#39;ll be much happier in the long run. I promise.&lt;/p&gt;
-</description>
+      <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
+Single Responsibility Principle Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
     </item>
     
   </channel>

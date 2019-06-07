@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/learn-a-new-prog/</loc>
+    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+  </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/maintainability-is-relative/</loc>
@@ -74,6 +80,18 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/language/</loc>
+    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/learning/</loc>
+    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/tags/maintainability/</loc>
     <lastmod>2016-10-23T00:00:00-05:00</lastmod>
     <priority>0</priority>
@@ -87,7 +105,13 @@
   
   <url>
     <loc>http://blog.trevoke.net/post/</loc>
-    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/programming/</loc>
+    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,7 +129,7 @@
   
   <url>
     <loc>http://blog.trevoke.net/</loc>
-    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
     <priority>0</priority>
   </url>
   
