@@ -7,15 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 17:43:39 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Choosing the right editor</title>
+      <link>http://blog.trevoke.net/post/import-choosing-the-right-editor/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-choosing-the-right-editor/</guid>
+      <description>Choosing the right editor
+Intro: My editor history
+Here are my &#34;credentials&#34;. You know, establishing why you should be reading this at all.
+When it comes to editors, I&#39;ve honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows. That looked really badass.</description>
+    </item>
+    
+    <item>
       <title>The first step in learning any new programming language</title>
       <link>http://blog.trevoke.net/post/learn-a-new-prog/</link>
-      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
       <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
@@ -24,7 +36,7 @@
     <item>
       <title>      Maintainability Is Relative</title>
       <link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
-      <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
       <description>I just found a great example of the variability of the need of creating maintainable code.
@@ -35,7 +47,7 @@ I temporarily wasn&#39;t sure of where that script was.</description>
     <item>
       <title>      Benefits of a rapid test suite</title>
       <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
       <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
@@ -45,7 +57,7 @@ Most of the time that a developer spends on any given codebase is spent on an ex
     <item>
       <title>      Why Elixir is the next Great Tech</title>
       <link>http://blog.trevoke.net/post/elixir/</link>
-      <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/elixir/</guid>
       <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
@@ -54,7 +66,7 @@ Most of the time that a developer spends on any given codebase is spent on an ex
     <item>
       <title>      The value of estimates for a team</title>
       <link>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</link>
-      <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</guid>
       <description>What this entry is and is not about This entry talks about estimates in a relatively perfect world. This entry does not talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.
@@ -62,13 +74,824 @@ Why talk about estimating at all Estimating work to be done before it is done. G
     </item>
     
     <item>
+      <title>The code showed that I understood a wall existed</title>
+      <link>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</guid>
+      <description>Someone I worked with once said, &#34;The code didn&#39;t demonstrate that I hit a wall, just that I understood a wall existed.&#34;
+This colleague had been using the technique of Test-Driven Design (TDD) to methodically get the codebase up to a point where it could be refactorable and, at the same time, to a point where a problem with the current design decisions could surface. He was happy because now that he was up to that point, the future decisions for the refactors were much more clear.</description>
+    </item>
+    
+    <item>
       <title>      Lesson from emacs: keep data easy to manipulate and easy to present</title>
       <link>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
       <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
 Single Responsibility Principle Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
+    </item>
+    
+    <item>
+      <title>Shu ha ri and evolution of a skill</title>
+      <link>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</guid>
+      <description>Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and Agile development. Roughly, &#34;shu ha ri&#34; means &#34;learn / detach / transcend&#34;. The link has some words about that meaning. I&#39;d like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot conversation with a martial arts teacher friend of mine:  Shu.</description>
+    </item>
+    
+    <item>
+      <title>Learning and fear</title>
+      <link>http://blog.trevoke.net/post/import-learning-and-fear-publish/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-learning-and-fear-publish/</guid>
+      <description>“Life is going to present to you a series of transformations. And the point of education should be to transform you. To teach you how to be transformed so you can ride the waves as they come. But today, the point of education is not education. It’s accreditation. The more accreditation you have, the more money you make. That’s the instrumental logic of neoliberalism. And this instrumental logic comes wrapped in an envelope of fear.</description>
+    </item>
+    
+    <item>
+      <title>The Litany Against Fear</title>
+      <link>http://blog.trevoke.net/post/import-the-litany-against-fear-publish/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-the-litany-against-fear-publish/</guid>
+      <description>So, the litany against fear goes like this:
+&amp;nbsp; I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain. &amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Ruby is alive and well</title>
+      <link>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</guid>
+      <description>I&#39;m back from Rubyconf.
+Some people say Ruby is dead. We can probably gloss over Zed Shaw&#39;s famous rant, since it&#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&#39;s Global Interpreter Lock.
+Given the talks at Rubyconf, Ruby is most likely not dead (and our internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
+    </item>
+    
+    <item>
+      <title>First Class</title>
+      <link>http://blog.trevoke.net/post/import-first-class-private/</link>
+      <pubDate>Tue, 11 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-first-class-private/</guid>
+      <description>The first class went really well.
+My teaching tempo is still pretty good, though I did underestimate how much information I was giving the new students. Next time, I need to make sure I don&#39;t overwhelm them, and keep them to a smaller set of basics.
+This feels right. I know it&#39;s what I&#39;m going to keep doing. Now I need to balance continued growth with proper teaching time. If I can do this twice a week, I&#39;ll have a good next step.</description>
+    </item>
+    
+    <item>
+      <title>Sparring</title>
+      <link>http://blog.trevoke.net/post/import-sparring-publish/</link>
+      <pubDate>Wed, 15 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-sparring-publish/</guid>
+      <description>What Sparring Is Sparring is a playful and explorative interaction.
+Sparring is an exercise, a drill. The Japanese use the word KUMITE - which basically means &#34;grouped hands&#34; or &#34;pair hands&#34;, &#34;joined hands&#34;, &#34;hands together&#34; (the Wikipedia article suggests &#34;grappling hands&#34;).
+Sparring is a two-person free-form exercise wherein you get to examine scenarios involving combinations, footwork, distancing, rhythm, controlled power, and focus to improve yourself and your partner.
+
+Combinations: you get to play first-hand with things you have learned and put them in an environment where there is no set response.</description>
+    </item>
+    
+    <item>
+      <title>School creed</title>
+      <link>http://blog.trevoke.net/post/import-school-creed-publish/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-school-creed-publish/</guid>
+      <description>In the dojo where I spent my formative years as a martial artist, there is a school creed. A quick search online has revealed that many schools have a similar creed. Every class says it as we begin, after bowing in, before calisthenics. I hear it and/or say it about three times per dojo night.
+It&#39;s a simple creed, and clearly not unique. Here&#39;s what it says: I intend to develop myself in a positive manner and avoid anything that would reduce my mental growth or physical health.</description>
+    </item>
+    
+    <item>
+      <title>Add a user to the wheel group in OSX</title>
+      <link>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</link>
+      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
+      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep. $ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+    </item>
+    
+    <item>
+      <title>Is Rails dying?</title>
+      <link>http://blog.trevoke.net/post/import-is-rails-dying-publish/</link>
+      <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-is-rails-dying-publish/</guid>
+      <description>More to the point, should Rails die?
+Rails brought a lot of great things - it made it dumb easy to package an entire app together. It abstracted the complexity of the storage layer. It created an entire market. Things like Heroku, Railsonfire/codeship and other companies turned a profit by extending the benefits of Rails. And things like Capistrano were born.
+Everything that can be automated should be automated.
+&amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>A few hard, black-and-white rules for getting started with Object-Oriente Programming</title>
+      <link>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</guid>
+      <description>No object should have more than three public methods Objects should not have getters or setters Everything else must be private If three private methods are doing something similar, then maybe those are the public methods of another class Never inherit Always compose Changeability is the most important thing A &#34;good&#34; variable name is a name that describes unambiguously what the variable contains, without describing the implementation If you don’t use good variable names, I will look for you.</description>
+    </item>
+    
+    <item>
+      <title>Ruby: gem ffi on OSX Mountain Lion 10.8</title>
+      <link>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</link>
+      <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</guid>
+      <description>EASY!
+sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2
+&amp;nbsp;
+That&#39;s it. You can now install ffi 1.5.</description>
+    </item>
+    
+    <item>
+      <title>Hear no evil. See no evil. Speak no evil.</title>
+      <link>http://blog.trevoke.net/post/import-hear-no-evil-see-no-evil-speak-no-evil-publish/</link>
+      <pubDate>Thu, 12 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-hear-no-evil-see-no-evil-speak-no-evil-publish/</guid>
+      <description>I had an epiphany tonight about something that just about everyone knows: the three monkeys. And I wanted to share it with you.
+The three monkeys are accompanied by the words: &#34;See no evil. Hear no evil. Speak no evil.&#34; The funny thing is that one monkey is covering his eyes, one monkey is covering his ears, and one monkey is covering his mouth! Let&#39;s examine that for a second.</description>
+    </item>
+    
+    <item>
+      <title>The schism in martial training paradigms</title>
+      <link>http://blog.trevoke.net/post/import-the-schism-in-martial-training-paradigms-publish/</link>
+      <pubDate>Tue, 19 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-the-schism-in-martial-training-paradigms-publish/</guid>
+      <description>You&#39;re training wrong! No, YOU&#39;re training wrong! A recent set of conversations have led me to examine the major difference in martial training. I&#39;m going to start by separating training in two categories, making an imperfect black-and-white model of the martial world:  Traditional eastern training Jeet Kune Do-like training  Now, let&#39;s start to talk about the PURPOSE of each, in a fairly roundabout way.
+Let&#39;s talk about the traditional drill which has become sort of a standard: &#34;</description>
+    </item>
+    
+    <item>
+      <title>Devise &#43; rspec error: undefined method &#39;name&#39;</title>
+      <link>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</guid>
+      <description>If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
+&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+@request.env[&amp;quot;devise.mapping&amp;quot;] = Devise.mappings[:admin]  Yeah... That took me way longer than expected.
+On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.</description>
+    </item>
+    
+    <item>
+      <title>The Tooth of Knowledge (Lyrics)</title>
+      <link>http://blog.trevoke.net/post/import-the-tooth-of-knowledge-lyrics-publish/</link>
+      <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-the-tooth-of-knowledge-lyrics-publish/</guid>
+      <description>This song is at least as old as 1973 and is originally from Italy (Giorgio Gaber - Dente della conoscenza). If you like finding patterns, making analogies and metaphors, and overall pondering, then examine the tooth of knowledge in the contexts of: science, religion, culture, society (etiquette, etc), and finally, the internet.
+&amp;nbsp;
+(note : &#39;SHHH&#39; is an inhaling sound)
+‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’.</description>
+    </item>
+    
+    <item>
+      <title>Ruby: What is at_exit and how to write tests for it.</title>
+      <link>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
+      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:  It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
+    </item>
+    
+    <item>
+      <title>Art of Agile Planning / Art of Agile Delivery, by James Shore and Diana Larsen</title>
+      <link>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</guid>
+      <description>The Art of Agile Planning (#aoap on Twitter, and AOAP from now on) is a 2-day course. The focus is on understanding the higher-level constructs of Agile and how they imbricate. In the course, one learns how the ideal Agile team is composed (hint: it&#39;s cross-functional and co-located) and what practices and techniques will be used to organize at all levels, from the developers&#39; standup to the customers&#39; research for the next best value-delivering feature, including how to properly create a feature that developers can work on and how to best break it down into stories (and then into tasks).</description>
+    </item>
+    
+    <item>
+      <title>Society&#39;s focus on knowledge</title>
+      <link>http://blog.trevoke.net/post/import-society-focus-on-knowledge-draft/</link>
+      <pubDate>Thu, 20 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-society-focus-on-knowledge-draft/</guid>
+      <description>Here is a thought with which I&#39;ve been wrestling for quite a while - the focus of society on knowledge and what it could be doing to us as people, human beings, and members of society, as well as to society itself. Knowledge is power - knowing more can only help you In the West (bounded to the east by Russia and to the west by the Americas), the focus has historically been on developing more knowledge, more science.</description>
+    </item>
+    
+    <item>
+      <title>Grepping a single file for &#39;dynamic&#39; content</title>
+      <link>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</link>
+      <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</guid>
+      <description>You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
+echo &#34;your fancy word finder stuff here&#34; | xargs -i bash -c &#39;grep -n &#34;{}&#34; your/file/here&#39;
+Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have.</description>
+    </item>
+    
+    <item>
+      <title>git usage conventions</title>
+      <link>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</link>
+      <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</guid>
+      <description>We&#39;ve been using git at work for a greenfield project and, so far, this has worked for us. It could be a useful template to get another team started. We have gotten rid of the name &#39;master&#39;, which is only a convention anyway, and instead are using a few permanent branches:  production (only stable code which gets deployed to production goes there. The only branch to be merged in, EVER, is &#39;stable&#39;) stable (only stable code which goes to the staging environment goes there.</description>
+    </item>
+    
+    <item>
+      <title>Matt Damon&#39;s Speech at the Save Our Schools Rally</title>
+      <link>http://blog.trevoke.net/post/import-matt-damons-speech-at-the-save-our-schools-rally-publish/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-matt-damons-speech-at-the-save-our-schools-rally-publish/</guid>
+      <description>I flew overnight from Vancouver to be with you today. I landed in New York a few hours ago and caught a flight down here because I needed to tell you all in person that I think you’re awesome. I was raised by a teacher. My mother is a professor of early childhood education. And from the time I went to kindergarten through my senior year in high school, I went to public schools.</description>
+    </item>
+    
+    <item>
+      <title>L&#39;inventaire - Jacques Prevert</title>
+      <link>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</link>
+      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</guid>
+      <description>Une pierre deux maisons trois ruines quatre fossoyeurs un jardin des fleurs
+et un raton laveur
+une douzaine d&#39;huitres un citron un pain un rayon de soleil une lame de fond six musiciens une porte avec son paillasson un monsieur décoré de la légion d&#39;honneur
+et un autre raton laveur
+un sculpteur qui sculpte des Napoléon la fleur qu&#39;on appelle souci deux amoureux sur un grand lit un receveur des contributions une chaise trois dindons un ecclésiastique un furoncle une guepe un rein flottant une écurie de courses un fils indigne deux frères dominicains trois sauterelles un strapontin deux filles de joie un oncle Cyprien une Mater dolorosa trois papas gateaux deux chèvres de Monsieur Seguin un talon Louis XV un fauteuil Louis XVI un buffet Henri II deux buffets Henri III trois buffets Henri IV un tiroir dépareillé une pelote de ficelle trois épingles de sureté un monsieur agé une Victoire de Samothrace un comptable deux aides- comptables un homme du monde deux chirurgiens trois végétariens un cannibale une expédition coloniale un cheval entier une demi-pinte de bon sang une mouche tsé-tsé un homard à l&#39;américaine un jardin à la francaise deux pommes à l&#39;anglaise un face-à-main un valet de pied un orphelin un poumon d&#39;acier un jour de gloire une semaine de bonté un mois de Marie une année terrible une minute de silence une seconde d&#39;inattention et.</description>
+    </item>
+    
+    <item>
+      <title>Get started with Ruby</title>
+      <link>http://blog.trevoke.net/post/import-ruby-publish/</link>
+      <pubDate>Thu, 27 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-publish/</guid>
+      <description>First, get Ruby. Install it as explained on the website. Once you&#39;re more comfortable with it, in a few weeks, you can check out RVM. Not now though - you&#39;d just confuse yourself.
+The two important command-line tools are going to be &#34;irb&#34; and &#34;ruby&#34;. For development, you will be able to use tools like emacs, vim, Jetbrains Rubymine, or Eclipse. Ruby support is quite widespread.
+Create a temporary directory and get cozy inside.</description>
+    </item>
+    
+    <item>
+      <title>A scene from a story: martial arts training</title>
+      <link>http://blog.trevoke.net/post/import-inspiration-publish/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-inspiration-publish/</guid>
+      <description>The Master had been clear on this point - the room was treated so the five physical senses would be useless. When Scott asked how, the Master laughed and told him it was magic. Scott had chuckled and shaken his head. Clearly, no point in arguing - not today&#39;s knowledge.
+Scott blinked and the test began. He relaxed and extended his consciousness into the ground below him and around him. He knew his limit well: no more than a five-foot radius around him.</description>
+    </item>
+    
+    <item>
+      <title>Poulsbo &#43; Xorg 1.7 = (Hope you like downgrading)</title>
+      <link>http://blog.trevoke.net/post/import-poulsbo-xorg-1-7-hope-you-like-downgrading-publish/</link>
+      <pubDate>Tue, 11 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-poulsbo-xorg-1-7-hope-you-like-downgrading-publish/</guid>
+      <description>If you happen to use Gentoo on a Notebook, you may already know this. If not..
+At the time of this writing, If you have a Poulsbo video card (another craptastic Intel invention) do not upgrade to xorg-server 1.7. Stay on 1.6.5-r1 or whatever you have. If you upgrade, xorg will just refuse to work for you, and downgrading is kind of a pain.
+If you have upgraded already, then here&#39;s what to do:</description>
+    </item>
+    
+    <item>
+      <title>Punches and the lower back</title>
+      <link>http://blog.trevoke.net/post/import-work-and-martial-arts-publish/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-work-and-martial-arts-publish/</guid>
+      <description>Sensei helped me figure out that my punches are all wrong, and the issue has been traced to lower back muscles. Thankfully, I&#39;ve got tons of subway time now, so I can practice standing. For those of you who don&#39;t study martial arts... That last sentence is not a joke.</description>
+    </item>
+    
+    <item>
+      <title>New position at Cyrus</title>
+      <link>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</guid>
+      <description>On Monday, April 26th, I am starting a new job at Cyrus Innovation. It may well be fair that I am starting a new career - it&#39;s a hop, skip and jump for me. I&#39;m switching from Systems Administration / Tech Support / Hell desk (not a typo, sadly) to Development / Programming.
+I am very much looking forward to it. It means a hobby/job switch: I will now do sysadmin stuff as a hobby, and programming as a full-time job.</description>
+    </item>
+    
+    <item>
+      <title>Ruby callbacks (hooks)</title>
+      <link>http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/</guid>
+      <description>Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
+This blog post explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information.</description>
+    </item>
+    
+    <item>
+      <title>Nidan test</title>
+      <link>http://blog.trevoke.net/post/import-nidan-test-publish/</link>
+      <pubDate>Fri, 19 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-nidan-test-publish/</guid>
+      <description>On February 28th, 2010, I took the test to become a second-degree black belt.
+Here is a summary of what I had to do, besides the calisthenics:  All my empty-hand forms, opposite side. There are eight of them. This meant that if the first step was with the left foot, I had to do it with the right foot. I suppose you could also call that &#39;mirror&#39;. The names are : seisan, seiuchin, naihanchi, wonsu, chinto, kusanku, sunsu, and sanchin.</description>
+    </item>
+    
+    <item>
+      <title>Github&#39;s customer service: bad review</title>
+      <link>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</guid>
+      <description>I will readily admit that I don&#39;t know all that much about Github or Git for that matter. I use them, they&#39;re handy, and that&#39;s where it stops. I read about a git feature called &#34;smart HTTP&#34;, which would allow to communicate both ways with git (push and pull) with HTTP or HTTPS. So, I asked Github about it - it would be nice for them to have this feature, because I currently can&#39;t push to Github from work.</description>
+    </item>
+    
+    <item>
+      <title>Teaching kusanku to sankyu</title>
+      <link>http://blog.trevoke.net/post/import-teaching-kusanku-to-sankyu-publish/</link>
+      <pubDate>Thu, 11 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-teaching-kusanku-to-sankyu-publish/</guid>
+      <description>Last night, after some kicking drills and sparring, sensei entrusted the adult class to me and told us to work on kusanku. The &#39;adult class&#39; yesterday consisted of three sankyu. I looked at the clock, rubbed my hands together and said &#34;Alright everyone, we have twenty-five minutes&#39; worth of kusanku. Let me know if you have questions or doubts.&#34; When we had finished walking through it, I looked at the clock.</description>
+    </item>
+    
+    <item>
+      <title>Gentoo on a Dell Inspiron Mini 10</title>
+      <link>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
+      <description>There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
+    </item>
+    
+    <item>
+      <title>Country alert levels</title>
+      <link>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</guid>
+      <description>Let&#39;s break the monotony with something funny:
+The English are feeling the pinch in relation to recent terrorist threats? and have raised their security level from &#34;Miffed&#34; to &#34;Peeved.&#34; Soon, ?though, security levels may be raised yet again to &#34;Irritated&#34; or even &#34;A? Bit Cross.&#34; The English have not been &#34;A Bit Cross&#34; since the blitz in 1940 ?when tea supplies all but ran out.
+Terrorists have been re-categorized from ?</description>
+    </item>
+    
+    <item>
+      <title>New gem: ListBrowser</title>
+      <link>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
+      <description>~~ ListBrowser README ~~
+I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) gem install ListBrowser</description>
+    </item>
+    
+    <item>
+      <title>Git : moving a remote branch</title>
+      <link>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</link>
+      <pubDate>Tue, 29 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
+      <description>One can&#39;t actually move a remote branch, but you can copy a branch and delete a branch, so...
+Copy oldbranch in repo to newbranch.
+git push {repo} {oldbranch}:heads/{newbranch}  Ex: git push origin foobranch:barbranch renames foobranch to barbranch
+Remove a remote branch: it’s all about the colon:
+git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;  [code][/code]
+Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
+    </item>
+    
+    <item>
+      <title>Inter-array permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</guid>
+      <description>I don&#39;t really have a better name for this. It&#39;s also not completely clean, but it works. I had, almost a year ago (362 days ago), written a blog post about lexicographic permutations. That was about permutations of elements within one array. Someone on ruby-forum asked about permutations between multiple arrays. I found something in C#, which I was happy to transcribe to Ruby and tweak a little.
+def array_permutations array, index=0 # index is 0 by default : start at the beginning, more elegant.</description>
+    </item>
+    
+    <item>
+      <title>Random constrained permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</guid>
+      <description>Look, Ma, these are my baby steps in algorithms!
+# list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.uniq! # Never trust the user. We want no repetitions. equalizer = {} list.each { |element| equalizer[element] = 0 } results = [] # Do this until we get as many results as desired while results.</description>
+    </item>
+    
+    <item>
+      <title>Calling Rake tasks within the Rails env</title>
+      <link>http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/</guid>
+      <description>Calling RAKE tasks within the Rails environment.
+Good to know.</description>
+    </item>
+    
+    <item>
+      <title>On re-reading old code</title>
+      <link>http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/</link>
+      <pubDate>Wed, 09 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/</guid>
+      <description>I came across this beauty in some old code of mine:
+def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end  This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
+Three seconds of thinking made me realize that just maybe, I could do this:</description>
+    </item>
+    
+    <item>
+      <title>Monday night training</title>
+      <link>http://blog.trevoke.net/post/import-monday-night-training-publish/</link>
+      <pubDate>Thu, 26 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-monday-night-training-publish/</guid>
+      <description>I received an email from sensei on Monday (sent to every student) - if you&#39;ll be here tonight, bring your fighting gear. Uh-oh. Her sensei was there and taught a few classes, including the adults. The entire class turned out to be pretty much a blur of drills. I&#39;ll be able to dredge them out of my body memory, I think. A drill about basics - chain two basics together, using shifting.</description>
+    </item>
+    
+    <item>
+      <title>Auto-vivifying hashes in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</link>
+      <pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</guid>
+      <description>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
+def cnh # silly name &amp;amp;quot;create nested hash&amp;amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;amp;gt; { 1 =&amp;amp;gt; { 2 =&amp;amp;gt; { 3 =&amp;amp;gt;4 } } }  This is useful because it reduces the amount of logic in the code. No more &#34;</description>
+    </item>
+    
+    <item>
+      <title>Closures in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</link>
+      <pubDate>Wed, 28 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</guid>
+      <description>I found a script that explains everything really well. Credit goes to:
+Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
+Now.. Why didn&#39;t I get that when I was looking at LISP?</description>
+    </item>
+    
+    <item>
+      <title>Extending Ruby for Fun and Profit</title>
+      <link>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</guid>
+      <description>Wow. I just watched Dave Thomas&#39; talk Ruby Metaprogramming: Extending Ruby for Fun and Profit and it explained so many things.
+It&#39;s quite worth watching if you like Ruby and don&#39;t know about metaprogramming and Ruby hooks and what &#39;self&#39; means, fully.</description>
+    </item>
+    
+    <item>
+      <title>Hologic R2 service password</title>
+      <link>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</link>
+      <pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</guid>
+      <description>I feel kinda bad plaintexting this.. You can contact me if you can&#39;t figure it out yourself.
+The service password for the R2 unit is in this sentence.</description>
+    </item>
+    
+    <item>
+      <title>Why do I study martial arts?</title>
+      <link>http://blog.trevoke.net/post/import-why-do-i-study-martial-arts-publish/</link>
+      <pubDate>Sat, 03 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-why-do-i-study-martial-arts-publish/</guid>
+      <description>I am watching Rocky III and IV (the only ones I really like), and the driving theme is the power of the human spirit. Rewatching it now, I see a lot of other ideas. They&#39;re not particularly hidden, but I never really noticed them before. This started to make me think about my choices.  My lasting decision to study martial arts was made in college, and I took a Physical Education class of self-defense taught by shifu Christopher Goedecke, who studies and teaches isshin kempo.</description>
+    </item>
+    
+    <item>
+      <title>Tonight&#39;s training (good AGAIN!)</title>
+      <link>http://blog.trevoke.net/post/import-tonights-training-good-again-publish/</link>
+      <pubDate>Wed, 23 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-tonights-training-good-again-publish/</guid>
+      <description>It was surprisingly good. I didn&#39;t feel very good tonight - slight headache, slight tingle in the throat. I wasn&#39;t going to stay for my class, just help teach and then go home, get tea, get sleep.. But only two other adults showed up and sensei was upstairs, so I started the class and took it easy on the calisthenics and the stretches. Those two adults are the two with the most issues of muscle contractions (as in, they have no idea what relaxing means).</description>
+    </item>
+    
+    <item>
+      <title>Another awesome training evening</title>
+      <link>http://blog.trevoke.net/post/import-another-awesome-training-evening-publish/</link>
+      <pubDate>Thu, 17 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-another-awesome-training-evening-publish/</guid>
+      <description>So tonight, I went to train 35 minutes away from home, at the dojo where my sensei&#39;s sensei teaches. Warmups / stretches, kicking drills, calisthenics, sparring, then fighting drills. Sensei&#39;s sensei has a son who is now 48. Now -- I am fast by normal people&#39;s standards. This guy is really fast by my standards. He also has a really positive energy - very friendly eyes, a great disposition.. And he can dislocate your jaw before you can blink or think &#34;</description>
+    </item>
+    
+    <item>
+      <title>Dojo tonight</title>
+      <link>http://blog.trevoke.net/post/import-dojo-tonight-publish/</link>
+      <pubDate>Wed, 16 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-dojo-tonight-publish/</guid>
+      <description>I had a good time in the dojo tonight. Managed to bring a kid back from the verge of tears to feeling good and performing kata with solid focus and intent.. And then good sparring. Kid&#39;s 6, by the way. My class wasn&#39;t that good, though I got a compliment on my push-ups from sensei. Went through my kicks.. Then sparred..
+I fleetingly get a grasp of efficient body movement, and then it disappears, and then I have to train a lot more to make it happen again, and then more again, etc etc, until I can make it happen effortlessly.</description>
+    </item>
+    
+    <item>
+      <title>Rails, HAML, alternatible CSS for tables</title>
+      <link>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</guid>
+      <description>If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
+&#34;
+This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that.
+But yeah - how do you do that in HAML?</description>
+    </item>
+    
+    <item>
+      <title>Spending energy uselessly</title>
+      <link>http://blog.trevoke.net/post/import-spending-energy-uselessly-publish/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-spending-energy-uselessly-publish/</guid>
+      <description>I live on an island. It only took me until last week (10 years and change) to take my dad&#39;s advice to go to the beach when I felt like it. So I did that, last week and today, and went swimming. Good for the muscles, good all-around body work. Great stretching. Different way of using the muscles.
+Besides the fact that I could really only swim for 10-15 minutes before I was tired and a part of my arms started to ache (indicating, clearly, that I&#39;d been ignoring it), I noticed on my way home that even just 30 minutes at the beach drained me of energy.</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails &#43; Sybase</title>
+      <link>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</guid>
+      <description>Caveat: This adapter may only work with the enterprise edition of Sybase (i.e. Sybase ASE) not with SQLAnywhere (Sybase ASA)
+gem install activerecord-sybase-adapter -s http://gems.rubyonrails.org
+ActiveRecord::Base.establish_connection( :adapter = &#34;sybase&#34;, :database = &#34;test&#34;, :host = &#34;www.yourdbserver.com&#34;, :username = &#34;kevin&#34;, :password = &#34;test&#34;)
+Play!</description>
+    </item>
+    
+    <item>
+      <title>Passwords, passwords</title>
+      <link>http://blog.trevoke.net/post/import-passwords-passwords-publish/</link>
+      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
+      <description>Default passwords for MSSQL, Sybase, and mySQL: , , , That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
+    </item>
+    
+    <item>
+      <title>Lisp on OSX</title>
+      <link>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</link>
+      <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</guid>
+      <description>Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&#39;t too tricky).
+http://www.david-steuber.com/Lisp/OSX/</description>
+    </item>
+    
+    <item>
+      <title>install the mysql gem on Ubuntu</title>
+      <link>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</link>
+      <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</guid>
+      <description>$ sudo apt-get install libmysqlclient15-dev $ sudo gem install mysql
+Easy! But .. gotta know it.</description>
+    </item>
+    
+    <item>
+      <title>Installing the mysql gem on OSX</title>
+      <link>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</link>
+      <pubDate>Fri, 17 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
+      <description>Taken straight from this blog
+in a terminal.. First do a &#39;locate mysql_config&#39; and then replace the path in the following command with where that file is.
+$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed</description>
+    </item>
+    
+    <item>
+      <title>The world is shrinking: two videos</title>
+      <link>http://blog.trevoke.net/post/import-two-videos-a-change-in-the-world-publish/</link>
+      <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-two-videos-a-change-in-the-world-publish/</guid>
+      <description>Those two videos have been brought to my attention within maybe two weeks of each other, and I hate thinking of random coincidences.. So here they are, together so I can find them again in several years. Playing for change: Stand by me Where the hell is Matt?
+The first one fills my heart with a warm feeling - the song was recorded by all these people around the world simultaneously (or so they say, but it sure is well edited in any case).</description>
+    </item>
+    
+    <item>
+      <title>Who follows who?</title>
+      <link>http://blog.trevoke.net/post/import-who-follows-who-publish/</link>
+      <pubDate>Thu, 26 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-who-follows-who-publish/</guid>
+      <description>In the past couple of weeks, I&#39;d gotten to spar progressively harder with a blue belt who is twice my age, but has been in dojos where sparring and self-defense were more important than kata. As a result, I consider him somewhat dangerous to spar with.. And, well, I let myself get caught up. I stopped being the watcher.. I hid behind the excuse that I was just sparring as hard as he wanted to spar, and so it just escalated.</description>
+    </item>
+    
+    <item>
+      <title>Relaxing the upper body.. aka &#34;drop your shoulders&#34;</title>
+      <link>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</link>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</guid>
+      <description>A friend of mine wrote about shoulder relaxation.. Apparently we both had the same mental block, but he solved it first - shoulder relaxation (and by extension, all relaxation) can be done up/down and ... forward/back!
+At first I didn&#39;t think I had that issue, my western mind automatically went &#34;Nah, I don&#39;t have that issue, my shoulders are nice and straight!&#34; .. And then training kicked in and the answer came : &#34;</description>
+    </item>
+    
+    <item>
+      <title>More stances and some testing</title>
+      <link>http://blog.trevoke.net/post/import-more-stances-and-some-testing-publish/</link>
+      <pubDate>Thu, 05 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-more-stances-and-some-testing-publish/</guid>
+      <description>So, I&#39;ve been trying to keep my stances down a lot more now - it&#39;s making me much more aware of when I get tense.. Because I rise, because my ankles, hips and knees just don&#39;t flex. It&#39;s an interesting experience. Two people are testing.. During sparring, that evening was the first time that I made a conscious point of &#34;the first thing I do is move - and then answer&#34;</description>
+    </item>
+    
+    <item>
+      <title>Grouping directories by name</title>
+      <link>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</guid>
+      <description>As is, this code will create an array of arrays - Directories with the same 6 first characters will be grouped in the same sub-array. I am using this for log directories, name format 20081125 for instance - you can just replace the logic to be whatever you need, of course.
+dirs = [] Dir[&#39;*&#39;].each do |item| if File.directory?(item) if dirs.empty? dirs &amp;lt;&amp;lt; [item] next end inserted = false dirs.each_with_index do |list_of_folders, index| if list_of_folders[0].</description>
+    </item>
+    
+    <item>
+      <title>stances</title>
+      <link>http://blog.trevoke.net/post/import-stances-publish/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-stances-publish/</guid>
+      <description>Tonight we had training on stances. It came about more or less accidentally - proper stances are -hard- !! But I am now flexible enough hip-wise to get there.. Now to train my leg muscles, mostly the quads, to follow suit...</description>
+    </item>
+    
+    <item>
+      <title>Making a ruby script into a stand-alone executable</title>
+      <link>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</link>
+      <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
+      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc. tar2rubyscript rubyscript2exe
+As I&#39;m a newb, it took me a while to figure out that I need .</description>
+    </item>
+    
+    <item>
+      <title>Nidan... ?</title>
+      <link>http://blog.trevoke.net/post/import-nidan-publish/</link>
+      <pubDate>Tue, 06 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-nidan-publish/</guid>
+      <description>Well, sensei hinted last month that maybe I should start gearing up for a nidan test. I&#39;ve been getting used to being shodan, which maybe is a bad thing, but I haven&#39;t stopped looking for things I could do better. I&#39;m becoming more sensitive to the muscles in my back, and I think my shoulders are finally beginning to open up...
+So, I have something like 5 months to prepare.. Or, you know, whenever it turns out sensei thinks I&#39;m ready.</description>
+    </item>
+    
+    <item>
+      <title>Recursively iterate through every file/subfolder  - VBScript</title>
+      <link>http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/</link>
+      <pubDate>Tue, 30 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/</guid>
+      <description>This is actually a lot simpler than I expected (gimme a break, this is my second foray into VBS!)
+[sourcecode language=&#39;vb&#39;]Set fs = WScript.CreateObject (&#34;Scripting.FileSystemObject&#34;)
+Sub ShowSubFolders(Folder) For Each Subfolder In Folder.SubFolders Set files = SubFolder.Files For Each file In files WScript.Echo file.Name, file.Size Next ShowSubFolders Subfolder Next End Sub
+ShowSubFolders fs.GetFolder(&#34;C:\your\path\here&#34;)[/sourcecode]</description>
+    </item>
+    
+    <item>
+      <title>(Lexicographic) Permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</link>
+      <pubDate>Sat, 20 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</guid>
+      <description>Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
+I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.</description>
+    </item>
+    
+    <item>
+      <title>More students testing</title>
+      <link>http://blog.trevoke.net/post/import-more-students-testing-publish/</link>
+      <pubDate>Fri, 19 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-more-students-testing-publish/</guid>
+      <description>This week two more students tested. We have a new green belt and a new blue belt. They did pretty well, but I am completely amazed at how many excuses adults have. Their heads are full of them. Can&#39;t they just listen and say &#39;yes&#39; like they were taught when they were kids? Talking back is a privilege, not a right. Ooh.. That&#39;s good.. I&#39;ll reuse that.</description>
+    </item>
+    
+    <item>
+      <title>Windows Vista : Corrupt user profile</title>
+      <link>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</guid>
+      <description>I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
+ Assume in this example that the username is &#39;atiensivu&#39;, the domain is &#39;staff&#39;, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance &#39;atiensivu&#39; with the username of the corrupt profile.  If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
+    </item>
+    
+    <item>
+      <title>Martial arts while sick</title>
+      <link>http://blog.trevoke.net/post/import-martial-arts-while-sick-publish/</link>
+      <pubDate>Wed, 12 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-martial-arts-while-sick-publish/</guid>
+      <description>On Monday I went to the dojo as usual, though I&#39;d had a cold over the week-end and wasn&#39;t quite over it (I&#39;m still not over it now..). During form practice, I was constantly correcting myself - I guess that goes to show I need to practice a lot more, if I dedicate this much mindpower to each form.. :)</description>
+    </item>
+    
+    <item>
+      <title>An old-school 6th dan</title>
+      <link>http://blog.trevoke.net/post/import-an-old-school-6th-dan-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-an-old-school-6th-dan-publish/</guid>
+      <description>Yesterday evening a man who trained about as long as sensei came to train with us. Black obi, rather frayed to white. He&#39;d trained a long time under his uncle, and then ~15 years under sensei&#39;s sensei. He&#39;d taken a break for a while, so he was a bit out of shape, but his mindset, his attitude, his devotion were 100% into everything he did - an important lesson which I forget all too often.</description>
+    </item>
+    
+    <item>
+      <title>First entry from Blackberry</title>
+      <link>http://blog.trevoke.net/post/import-first-entry-from-blackberry-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-first-entry-from-blackberry-publish/</guid>
+      <description>This blog may yet come alive! I&#39;ve figured out how to post to this from my Blackberry :) I use an app called bbmetablog (google for &#39;bbmetablog opencod&#39;), currently version 1.2.2 . I had a bit of an issue getting xmlrpc line set up propery, until I changed their default &#39;xml-rpc?openagent&#39; to &#39;xmlrpc.php&#39; .. And I&#39;m live!</description>
+    </item>
+    
+    <item>
+      <title>How to delete all files older than a day recursively in a directory and its subdirectories</title>
+      <link>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</guid>
+      <description>Whoo! I haven&#39;t done a post that long in a while!
+I put &#39;activerecord&#39; in there to take advantage of the &#39;24.hours.ago&#39; notation, which makes life much easier. The cost is a little less than 2 seconds to load the library, so I think it&#39;s worth it. It runs as a daily job before backup to tape, to clear old backups from the directory tree.
+require &#39;activerecord&#39; def delete_recursively(in_here) Dir.chdir(in_here) Dir.</description>
+    </item>
+    
+    <item>
+      <title>MIMVista and auto-deletion of archived studies</title>
+      <link>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</guid>
+      <description>The MIM keeps 60 days by default. That may be too much for you..
+By default, the folder C:\Program Files\MIM\config should make you really happy, it&#39;s got lots of plain text files with configuration for all kinds of settings.
+cleanup.txt has &#34;ARCHIVE LEFTOVER AGE (DAYS) := 60
+Change that to whatever you feel is appropriate for you needs.</description>
+    </item>
+    
+    <item>
+      <title>Kali sticks</title>
+      <link>http://blog.trevoke.net/post/import-kali-sticks-publish/</link>
+      <pubDate>Thu, 15 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-kali-sticks-publish/</guid>
+      <description>Yesterday we had a small class, so we were able to each work on what we needed. I, hopefully, now have the full chatan yara no sai form, so I just need to work it..
+We did some kali stick work. The yellow and blue belt had never seen those drills before so we started with a simple high-low-high, but we did try for a little bit the sinawali drills, specifically heaven, because that one&#39;s fun :) Kali sticks are very good to work follow-through, speed and flow, and god knows I need that.</description>
+    </item>
+    
+    <item>
+      <title>Testing for purple</title>
+      <link>http://blog.trevoke.net/post/import-testing-for-purple-publish/</link>
+      <pubDate>Thu, 01 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-testing-for-purple-publish/</guid>
+      <description>Monday and yesterday, two blue belts were to test for purple. They went through their calisthenics and basics; I did not see their forms on Monday, but I did see them on Wednesday. They were bad enough sensei wanted to see them again, that much I understood, but not sure how bad until I saw them both.
+Neither of them broke a sweat until fighting, not for the 100 jumping jacks, not for the 60 push-ups, not for the multiple kick combinations.</description>
+    </item>
+    
+    <item>
+      <title>Solved my left shoulder pain?</title>
+      <link>http://blog.trevoke.net/post/import-solved-my-left-shoulder-pain-publish/</link>
+      <pubDate>Tue, 15 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-solved-my-left-shoulder-pain-publish/</guid>
+      <description>Is it a worrying trend that I write mostly about pain in here? :)
+Every once in a while, usually while doing a high block with my left arm, I&#39;d feel a pain in my left shoulder. It felt like a part was rolling over another one.. Muscle over bone, or something like that. It&#39;s not pleasant and is the kind of pain that stops your movement quite short and quite abruptly.</description>
+    </item>
+    
+    <item>
+      <title>Hurt my mid-back...</title>
+      <link>http://blog.trevoke.net/post/import-hurt-my-mid-back-publish/</link>
+      <pubDate>Tue, 08 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-hurt-my-mid-back-publish/</guid>
+      <description>I don&#39;t know how I did it, but at some point during my empty hand class, I hurt my back. Think of a line going horizontally across the middle of the back (under the shoulderblades), and you have it. I didn&#39;t stay for weapons past my bo class and went home. I was OK during my sword class, which means either I wasn&#39;t paying attention, or I wasn&#39;t using those muscles.</description>
+    </item>
+    
+    <item>
+      <title>Found the solar plexus yet?</title>
+      <link>http://blog.trevoke.net/post/import-found-the-solar-plexus-yet-publish/</link>
+      <pubDate>Mon, 24 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-found-the-solar-plexus-yet-publish/</guid>
+      <description>We have a move in a form that requires holding a hand in front of the solar plexus. One of the kids was holding his hand a little low, so I mentioned it to him.. He start hitting his chest a few times with his hand, so I laugh. &#34;Think you got it?&#34; He does it a few more times and starts coughing. &#34;Ah, now you got it.&#34;</description>
+    </item>
+    
+    <item>
+      <title>So, you want to spar?</title>
+      <link>http://blog.trevoke.net/post/import-so-you-want-to-spar-publish/</link>
+      <pubDate>Fri, 21 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-so-you-want-to-spar-publish/</guid>
+      <description>Sparring can be one of the many reasons one wants to join a martial arts school, sometimes even their only interest. Unless you join a school based on street defense, you may not do as much as you&#39;d like. Besides, the insurances and legality issues being what they are, usually you are limited to sparring gear which lets you mostly throw punches and kicks.
+The teacher of a traditional school probably won&#39;t let you spar until after you get a belt or two, because you need to break in your body and the techniques you are learning -- besides, you don&#39;t have enough control to know when to stop your strikes, so if your opponent fails to block, you could hurt him quite a bit.</description>
+    </item>
+    
+    <item>
+      <title>Which martial arts school is right for you?</title>
+      <link>http://blog.trevoke.net/post/import-which-martial-arts-school-is-right-for-you-publish/</link>
+      <pubDate>Thu, 20 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-which-martial-arts-school-is-right-for-you-publish/</guid>
+      <description>So, you&#39;ve decided to start taking a martial arts class. Good for you!
+Why do you want to join? Is it to fight, to learn to defend yourself, to develop self-discipline, to learn kata (&#39;forms&#39;), for health reasons? All of the above?
+For the purpose of this article (if nothing else), I will make a differentiation between a fighting style and a martial art. In a fighting style, you are learning to fight, and that is it.</description>
     </item>
     
   </channel>

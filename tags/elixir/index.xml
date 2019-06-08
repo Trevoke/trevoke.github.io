@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Thu, 31 Mar 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 31 Mar 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>      Why Elixir is the next Great Tech</title>
       <link>http://blog.trevoke.net/post/elixir/</link>
-      <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/elixir/</guid>
       <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>

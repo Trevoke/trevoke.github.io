@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>git usage conventions | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">August 30, 2011</h2>
+    <h1 class="title">git usage conventions</h1>
+    <div class="content">
+      <p>We've been using git at work for a greenfield project and, so far, this has worked for us. It could be a useful template to get another team started.
+We have gotten rid of the name 'master', which is only a convention anyway, and instead are using a few permanent branches:
+<ul>
+        <li>production (only stable code which gets deployed to production goes there. The only branch to be merged in, EVER, is 'stable')</li>
+        <li>stable (only stable code which goes to the staging environment goes there. The only branch to be merged in, EVER, is 'integration'))</li>
+        <li>integration (code from other branches goes here - tests should, of course, pass before merging in.)</li>
+</ul>
+And then we have, of course, other branches for work in progress and other stuff. we've used these prefixes to help with the naming, and called this the 'buffers' convention (look at the first letters - BFRS):
+<ul>
+        <li>bug_</li>
+        <li>feature_</li>
+        <li>refactor_</li>
+        <li>spike_</li>
+</ul>
+<div>How have you organized your git repositories?</div></p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

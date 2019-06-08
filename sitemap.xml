@@ -3,44 +3,527 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.trevoke.net/post/import-choosing-the-right-editor/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/learn-a-new-prog/</loc>
-    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/maintainability-is-relative/</loc>
-    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</loc>
-    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/elixir/</loc>
-    <lastmod>2016-03-31T00:00:00-05:00</lastmod>
+    <lastmod>2016-03-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</loc>
-    <lastmod>2015-04-02T00:00:00-05:00</lastmod>
+    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</loc>
+    <lastmod>2015-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</loc>
-    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-learning-and-fear-publish/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-the-litany-against-fear-publish/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</loc>
+    <lastmod>2013-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-first-class-private/</loc>
+    <lastmod>2013-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-sparring-publish/</loc>
+    <lastmod>2013-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-school-creed-publish/</loc>
+    <lastmod>2013-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-is-rails-dying-publish/</loc>
+    <lastmod>2013-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</loc>
+    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-hear-no-evil-see-no-evil-speak-no-evil-publish/</loc>
+    <lastmod>2012-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-the-schism-in-martial-training-paradigms-publish/</loc>
+    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-the-tooth-of-knowledge-lyrics-publish/</loc>
+    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</loc>
+    <lastmod>2012-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-society-focus-on-knowledge-draft/</loc>
+    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</loc>
+    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</loc>
+    <lastmod>2011-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-matt-damons-speech-at-the-save-our-schools-rally-publish/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-ruby-publish/</loc>
+    <lastmod>2011-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-inspiration-publish/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-poulsbo-xorg-1-7-hope-you-like-downgrading-publish/</loc>
+    <lastmod>2010-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-work-and-martial-arts-publish/</loc>
+    <lastmod>2010-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</loc>
+    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/</loc>
+    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-nidan-test-publish/</loc>
+    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</loc>
+    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-teaching-kusanku-to-sankyu-publish/</loc>
+    <lastmod>2010-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</loc>
+    <lastmod>2010-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</loc>
+    <lastmod>2009-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/</loc>
+    <lastmod>2009-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/</loc>
+    <lastmod>2009-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-monday-night-training-publish/</loc>
+    <lastmod>2009-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</loc>
+    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</loc>
+    <lastmod>2009-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</loc>
+    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</loc>
+    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-why-do-i-study-martial-arts-publish/</loc>
+    <lastmod>2009-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-tonights-training-good-again-publish/</loc>
+    <lastmod>2009-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-another-awesome-training-evening-publish/</loc>
+    <lastmod>2009-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-dojo-tonight-publish/</loc>
+    <lastmod>2009-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-spending-energy-uselessly-publish/</loc>
+    <lastmod>2009-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</loc>
+    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-passwords-passwords-publish/</loc>
+    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</loc>
+    <lastmod>2009-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</loc>
+    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</loc>
+    <lastmod>2009-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-two-videos-a-change-in-the-world-publish/</loc>
+    <lastmod>2009-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-who-follows-who-publish/</loc>
+    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-more-stances-and-some-testing-publish/</loc>
+    <lastmod>2009-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</loc>
+    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-stances-publish/</loc>
+    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</loc>
+    <lastmod>2009-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-nidan-publish/</loc>
+    <lastmod>2009-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/</loc>
+    <lastmod>2008-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</loc>
+    <lastmod>2008-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-more-students-testing-publish/</loc>
+    <lastmod>2008-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-martial-arts-while-sick-publish/</loc>
+    <lastmod>2008-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-an-old-school-6th-dan-publish/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-first-entry-from-blackberry-publish/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-kali-sticks-publish/</loc>
+    <lastmod>2008-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-testing-for-purple-publish/</loc>
+    <lastmod>2008-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-solved-my-left-shoulder-pain-publish/</loc>
+    <lastmod>2008-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-hurt-my-mid-back-publish/</loc>
+    <lastmod>2008-04-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-found-the-solar-plexus-yet-publish/</loc>
+    <lastmod>2008-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-so-you-want-to-spar-publish/</loc>
+    <lastmod>2008-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/import-which-martial-arts-school-is-right-for-you-publish/</loc>
+    <lastmod>2008-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/</loc>
-    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/10/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/10.8/</loc>
+    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/activerecord/</loc>
+    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/against/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/agile/</loc>
-    <lastmod>2015-04-02T00:00:00-05:00</lastmod>
+    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/alternating/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/aoap/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/archive/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/art/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/arts/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/at_exit/</loc>
+    <lastmod>2012-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/auto-vivifying/</loc>
+    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/blackberry/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/callbacks/</loc>
+    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,116 +533,902 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/closures/</loc>
+    <lastmod>2009-10-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/code/</loc>
+    <lastmod>2015-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/tags/coding/</loc>
-    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/constrained/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/corrupt/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/css/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/customer/</loc>
+    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/cycle/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/cycles/</loc>
+    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/cyrus/</loc>
+    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/damon/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/dave/</loc>
+    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/delete/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/dell/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/development/</loc>
-    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/devise/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/dialogue/</loc>
+    <lastmod>2015-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/diana/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/diaz/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/directories/</loc>
+    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/drills/</loc>
+    <lastmod>2009-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/editors/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/elixir/</loc>
-    <lastmod>2016-03-31T00:00:00-05:00</lastmod>
+    <lastmod>2016-03-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/emacs/</loc>
-    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/escrima/</loc>
+    <lastmod>2008-05-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/estimation/</loc>
-    <lastmod>2015-04-02T00:00:00-05:00</lastmod>
+    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/executable/</loc>
+    <lastmod>2009-01-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/fear/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ffi/</loc>
+    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/fighting/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/files/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/french/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/funny/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/gem/</loc>
+    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/gentoo/</loc>
+    <lastmod>2010-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/git/</loc>
+    <lastmod>2011-08-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/github/</loc>
+    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/grep/</loc>
+    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/group/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/grouping/</loc>
+    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/growth/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ha/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/haml/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/hashes/</loc>
+    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/hologic/</loc>
+    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/hooks/</loc>
+    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/idea/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/innovation/</loc>
+    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/inspiron/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/intention/</loc>
+    <lastmod>2013-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/isshinryu/</loc>
+    <lastmod>2010-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/james/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/jim/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/junot/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/knowledge/</loc>
+    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/language/</loc>
-    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/larsen/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/leadership/</loc>
+    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/learning/</loc>
-    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/lesson/</loc>
+    <lastmod>2012-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/lisp/</loc>
+    <lastmod>2009-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/listbrowser/</loc>
+    <lastmod>2010-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/litany/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/lyrics/</loc>
+    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/maintainability/</loc>
-    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/martial/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/matt/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/meditation/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/metaprogramming/</loc>
+    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mim/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mimvista/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mini/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/monkeys/</loc>
+    <lastmod>2012-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mssql/</loc>
+    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mushin/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/musing/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mysql/</loc>
+    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/nidan/</loc>
+    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/object-oriented/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/of/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/old-school/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/osx/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/our/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/pain/</loc>
+    <lastmod>2009-09-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/passwords/</loc>
+    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/people/</loc>
+    <lastmod>2009-03-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/permutations/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/phoenix/</loc>
-    <lastmod>2016-03-31T00:00:00-05:00</lastmod>
+    <lastmod>2016-03-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/plexus/</loc>
+    <lastmod>2008-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/poetry/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/post/</loc>
-    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/poulsbo/</loc>
+    <lastmod>2010-05-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/prevert/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/profile/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/programming/</loc>
-    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/psychology/</loc>
-    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/punches/</loc>
+    <lastmod>2010-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rails/</loc>
+    <lastmod>2013-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rake/</loc>
+    <lastmod>2009-12-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/random/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/relaxation/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ri/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/row/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rspec/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ruby/</loc>
+    <lastmod>2013-11-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rubyconf/</loc>
+    <lastmod>2013-11-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rubymine/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rules/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/sanity/</loc>
-    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/save/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/schools/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/script/</loc>
+    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/senses/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/service/</loc>
+    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/setting/</loc>
+    <lastmod>2013-04-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/</loc>
-    <lastmod>2019-06-06T17:43:39-04:00</lastmod>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/shore/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/shoulders/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/shu/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/society/</loc>
+    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/solar/</loc>
+    <lastmod>2008-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sparring/</loc>
+    <lastmod>2013-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/speech/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/srp/</loc>
-    <lastmod>2015-01-27T00:00:00-05:00</lastmod>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/stances/</loc>
+    <lastmod>2009-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/story/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/stress/</loc>
-    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/styles/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sublime/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sybase/</loc>
+    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/</loc>
-    <lastmod>2016-10-23T00:00:00-05:00</lastmod>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/tdd/</loc>
-    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/teaching/</loc>
+    <lastmod>2013-06-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/test/</loc>
+    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.trevoke.net/tags/testing/</loc>
-    <lastmod>2016-04-18T00:00:00-05:00</lastmod>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/text/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/thomas/</loc>
+    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/three/</loc>
+    <lastmod>2012-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/training/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ubuntu/</loc>
+    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/user/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vbscript/</loc>
+    <lastmod>2008-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vicious/</loc>
+    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vim/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vista/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/wheel/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/windows/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/with/</loc>
+    <lastmod>2015-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/worldview/</loc>
+    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/xorg/</loc>
+    <lastmod>2010-05-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

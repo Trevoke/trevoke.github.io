@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,21 @@
     <item>
       <title>      Benefits of a rapid test suite</title>
       <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
       <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
 Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
+    </item>
+    
+    <item>
+      <title>The code showed that I understood a wall existed</title>
+      <link>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</guid>
+      <description>Someone I worked with once said, &#34;The code didn&#39;t demonstrate that I hit a wall, just that I understood a wall existed.&#34;
+This colleague had been using the technique of Test-Driven Design (TDD) to methodically get the codebase up to a point where it could be refactorable and, at the same time, to a point where a problem with the current design decisions could surface. He was happy because now that he was up to that point, the future decisions for the refactors were much more clear.</description>
     </item>
     
   </channel>

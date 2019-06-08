@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Git : moving a remote branch | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">December 29, 2009</h2>
+    <h1 class="title">Git : moving a remote branch</h1>
+    <div class="content">
+      <p>One can't actually move a remote branch, but you can copy a branch and delete a branch, so...</p>
+
+<p>Copy oldbranch in repo to newbranch.</p>
+
+<pre><code>git push {repo} {oldbranch}:heads/{newbranch}
+</code></pre>
+
+<p>Ex: git push origin foobranch:barbranch
+renames foobranch to barbranch</p>
+
+<p>Remove a remote branch: it’s all about the colon:</p>
+
+<pre><code>git push &lt;remote_repo&gt; :heads/&lt;branch&gt;
+</code></pre>
+
+<p>[code][/code]</p>
+
+<p>Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</p>
+
+<p>This works for removing a tag as well:</p>
+
+<pre><code>git push origin :sometag
+</code></pre>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

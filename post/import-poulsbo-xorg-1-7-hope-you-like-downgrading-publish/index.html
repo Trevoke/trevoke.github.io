@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poulsbo &#43; Xorg 1.7 = (Hope you like downgrading) | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">May 11, 2010</h2>
+    <h1 class="title">Poulsbo &#43; Xorg 1.7 = (Hope you like downgrading)</h1>
+    <div class="content">
+      <p>If you happen to use Gentoo on a Notebook, you may already know this. If not..</p>
+
+<p>At the time of this writing, If you have a Poulsbo video card (another craptastic Intel invention) do <span style="text-decoration: underline;">not</span> upgrade to xorg-server 1.7. Stay on 1.6.5-r1 or whatever you have. If you upgrade, xorg will just refuse to work for you, and downgrading is kind of a pain.</p>
+
+<p>If you have upgraded already, then here's what to do:</p>
+
+<p>http://bugs.gentoo.org/show_bug.cgi?id=290679#c4</p>
+
+<p>After doing this, you'll need to also mask &gt;xorg-server-1.6.5-r1, then re-install the old xorg-server, and finally re-emerge everything you have installed from the category x11-drivers.</p>
+
+<p>Have fun!</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

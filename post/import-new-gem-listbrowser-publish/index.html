@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New gem: ListBrowser | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">January 15, 2010</h2>
+    <h1 class="title">New gem: ListBrowser</h1>
+    <div class="content">
+      <p><code>~~</code> ListBrowser README <code>~~</code></p>
+
+<p>I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. "What??", I thought. "I have to use my brain?! God forbid!". So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.</p>
+
+<p>Install: (set up gemcutter)
+gem install ListBrowser</p>
+
+<p>It can be used in irb, and really should be used there - when you call it on a tree structure, you’ll get a menu with a list of choices on how you want to go through whatever structure you gave it.</p>
+
+<p>In my particular, special case, I would do something like this:</p>
+
+<pre><code class="language-ruby">require ‘sgf_parser’ # For my tree structure require ‘list_browser’ # For this.
+
+tree = SgfParser::Tree.new :filename =&gt; &quot;kogo.sgf&quot;
+
+ListBrowser.new tree.root, ‘parent’, ‘children’, ‘properties’
+# And follow the menu!
+</code></pre>
+
+<p>In my particular case, I would not need to enter those strings, as they
+ just happen to be the names I chose for my tree structure, but they should
+ serve as a good enough example!</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

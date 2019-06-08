@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <article>
+      <h2 class="subtitle is-6">January 6, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-nidan-publish/">Nidan... ?</a></h1>
+      <div class="content">
+        Well, sensei hinted last month that maybe I should start gearing up for a nidan test. I've been getting used to being shodan, which maybe is a bad thing, but I haven't stopped looking for things I could do better. I'm becoming more sensitive to the muscles in my back, and I think my shoulders are finally beginning to open up...
+So, I have something like 5 months to prepare.. Or, you know, whenever it turns out sensei thinks I'm ready.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-nidan-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 30, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/">Recursively iterate through every file/subfolder  - VBScript</a></h1>
+      <div class="content">
+        This is actually a lot simpler than I expected (gimme a break, this is my second foray into VBS!)
+[sourcecode language='vb']Set fs = WScript.CreateObject ("Scripting.FileSystemObject")
+Sub ShowSubFolders(Folder) For Each Subfolder In Folder.SubFolders Set files = SubFolder.Files For Each file In files WScript.Echo file.Name, file.Size Next ShowSubFolders Subfolder Next End Sub
+ShowSubFolders fs.GetFolder("C:\your\path\here")[/sourcecode]
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 20, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/">(Lexicographic) Permutations in Ruby</a></h1>
+      <div class="content">
+        Taking the code from this other blog ... It's pretty elegant Ruby!
+I won't waste your time repeating what the guy wrote in his blog - you're welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 19, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-more-students-testing-publish/">More students testing</a></h1>
+      <div class="content">
+        This week two more students tested. We have a new green belt and a new blue belt. They did pretty well, but I am completely amazed at how many excuses adults have. Their heads are full of them. Can't they just listen and say 'yes' like they were taught when they were kids? Talking back is a privilege, not a right. Ooh.. That's good.. I'll reuse that.
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 7, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/">Windows Vista : Corrupt user profile</a></h1>
+      <div class="content">
+        I'm taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
+ Assume in this example that the username is 'atiensivu', the domain is 'staff', and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance 'atiensivu' with the username of the corrupt profile.  If you can log into the profile, make note of the %USERPROFILE% environment variable value.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 12, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-martial-arts-while-sick-publish/">Martial arts while sick</a></h1>
+      <div class="content">
+        On Monday I went to the dojo as usual, though I'd had a cold over the week-end and wasn't quite over it (I'm still not over it now..). During form practice, I was constantly correcting myself - I guess that goes to show I need to practice a lot more, if I dedicate this much mindpower to each form.. :)
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 4, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-an-old-school-6th-dan-publish/">An old-school 6th dan</a></h1>
+      <div class="content">
+        Yesterday evening a man who trained about as long as sensei came to train with us. Black obi, rather frayed to white. He'd trained a long time under his uncle, and then ~15 years under sensei's sensei. He'd taken a break for a while, so he was a bit out of shape, but his mindset, his attitude, his devotion were 100% into everything he did - an important lesson which I forget all too often.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-an-old-school-6th-dan-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 4, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-first-entry-from-blackberry-publish/">First entry from Blackberry</a></h1>
+      <div class="content">
+        This blog may yet come alive! I've figured out how to post to this from my Blackberry :) I use an app called bbmetablog (google for 'bbmetablog opencod'), currently version 1.2.2 . I had a bit of an issue getting xmlrpc line set up propery, until I changed their default 'xml-rpc?openagent' to 'xmlrpc.php' .. And I'm live!
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 4, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/">How to delete all files older than a day recursively in a directory and its subdirectories</a></h1>
+      <div class="content">
+        Whoo! I haven't done a post that long in a while!
+I put 'activerecord' in there to take advantage of the '24.hours.ago' notation, which makes life much easier. The cost is a little less than 2 seconds to load the library, so I think it's worth it. It runs as a daily job before backup to tape, to clear old backups from the directory tree.
+require 'activerecord' def delete_recursively(in_here) Dir.chdir(in_here) Dir.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 4, 2008</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/">MIMVista and auto-deletion of archived studies</a></h1>
+      <div class="content">
+        The MIM keeps 60 days by default. That may be too much for you..
+By default, the folder C:\Program Files\MIM\config should make you really happy, it's got lots of plain text files with configuration for all kinds of settings.
+cleanup.txt has "ARCHIVE LEFTOVER AGE (DAYS) := 60
+Change that to whatever you feel is appropriate for you needs.
+        
+      </div>
+    </article>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button" href="/page/7/">
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button" href="/page/9/">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

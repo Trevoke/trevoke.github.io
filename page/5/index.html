@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <article>
+      <h2 class="subtitle is-6">January 20, 2010</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/">Country alert levels</a></h1>
+      <div class="content">
+        Let's break the monotony with something funny:
+The English are feeling the pinch in relation to recent terrorist threats? and have raised their security level from "Miffed" to "Peeved." Soon, ?though, security levels may be raised yet again to "Irritated" or even "A? Bit Cross." The English have not been "A Bit Cross" since the blitz in 1940 ?when tea supplies all but ran out.
+Terrorists have been re-categorized from ?
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">January 15, 2010</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/">New gem: ListBrowser</a></h1>
+      <div class="content">
+        ~~ ListBrowser README ~~
+I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. "What??", I thought. "I have to use my brain?! God forbid!". So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) gem install ListBrowser
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 29, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/">Git : moving a remote branch</a></h1>
+      <div class="content">
+        One can't actually move a remote branch, but you can copy a branch and delete a branch, so...
+Copy oldbranch in repo to newbranch.
+git push {repo} {oldbranch}:heads/{newbranch}  Ex: git push origin foobranch:barbranch renames foobranch to barbranch
+Remove a remote branch: it’s all about the colon:
+git push &lt;remote_repo&gt; :heads/&lt;branch&gt;  [code][/code]
+Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 17, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/">Inter-array permutations in Ruby</a></h1>
+      <div class="content">
+        I don't really have a better name for this. It's also not completely clean, but it works. I had, almost a year ago (362 days ago), written a blog post about lexicographic permutations. That was about permutations of elements within one array. Someone on ruby-forum asked about permutations between multiple arrays. I found something in C#, which I was happy to transcribe to Ruby and tweak a little.
+def array_permutations array, index=0 # index is 0 by default : start at the beginning, more elegant.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 17, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/">Random constrained permutations in Ruby</a></h1>
+      <div class="content">
+        Look, Ma, these are my baby steps in algorithms!
+# list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.uniq! # Never trust the user. We want no repetitions. equalizer = {} list.each { |element| equalizer[element] = 0 } results = [] # Do this until we get as many results as desired while results.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 15, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/">Calling Rake tasks within the Rails env</a></h1>
+      <div class="content">
+        Calling RAKE tasks within the Rails environment.
+Good to know.
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">December 9, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/">On re-reading old code</a></h1>
+      <div class="content">
+        I came across this beauty in some old code of mine:
+def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end  This was "necessary" because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
+Three seconds of thinking made me realize that just maybe, I could do this:
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 26, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-monday-night-training-publish/">Monday night training</a></h1>
+      <div class="content">
+        I received an email from sensei on Monday (sent to every student) - if you'll be here tonight, bring your fighting gear. Uh-oh. Her sensei was there and taught a few classes, including the adults. The entire class turned out to be pretty much a blur of drills. I'll be able to dredge them out of my body memory, I think. A drill about basics - chain two basics together, using shifting.
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-monday-night-training-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">November 6, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/">Auto-vivifying hashes in Ruby</a></h1>
+      <div class="content">
+        An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
+def cnh # silly name &amp;quot;create nested hash&amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;gt; { 1 =&amp;gt; { 2 =&amp;gt; { 3 =&amp;gt;4 } } }  This is useful because it reduces the amount of logic in the code. No more "
+        
+        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/" style="height:28px">
+          Read more
+          <span class="icon is-small">
+            <i class="fa fa-angle-double-right"></i>
+          </span>
+        </a>
+        
+      </div>
+    </article>
+    
+    <article>
+      <h2 class="subtitle is-6">October 28, 2009</h2>
+      <h1 class="title"><a href="http://blog.trevoke.net/post/import-closures-in-ruby-publish/">Closures in Ruby</a></h1>
+      <div class="content">
+        I found a script that explains everything really well. Credit goes to:
+Along with this blog entry, it's made the whole deal much easier to figure out.
+Now.. Why didn't I get that when I was looking at LISP?
+        
+      </div>
+    </article>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button" href="/page/4/">
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button" href="/page/6/">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

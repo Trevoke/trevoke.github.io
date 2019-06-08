@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>      Benefits of a rapid test suite</title>
       <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
       <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.

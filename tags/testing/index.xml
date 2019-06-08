@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,20 @@
     <item>
       <title>      Benefits of a rapid test suite</title>
       <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
       <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
 Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
+    </item>
+    
+    <item>
+      <title>Ruby: What is at_exit and how to write tests for it.</title>
+      <link>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
+      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:  It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
     </item>
     
   </channel>

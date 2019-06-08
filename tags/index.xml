@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,43 +15,340 @@
     <item>
       <title></title>
       <link>http://blog.trevoke.net/tags/</link>
-      <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>10</title>
+      <link>http://blog.trevoke.net/tags/10/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>10.8</title>
+      <link>http://blog.trevoke.net/tags/10.8/</link>
+      <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/10.8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Activerecord</title>
+      <link>http://blog.trevoke.net/tags/activerecord/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/activerecord/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Against</title>
+      <link>http://blog.trevoke.net/tags/against/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/against/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Agile</title>
       <link>http://blog.trevoke.net/tags/agile/</link>
-      <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Alternating</title>
+      <link>http://blog.trevoke.net/tags/alternating/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/alternating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aoap</title>
+      <link>http://blog.trevoke.net/tags/aoap/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/aoap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>http://blog.trevoke.net/tags/archive/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Art</title>
+      <link>http://blog.trevoke.net/tags/art/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arts</title>
+      <link>http://blog.trevoke.net/tags/arts/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/arts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>At_exit</title>
+      <link>http://blog.trevoke.net/tags/at_exit/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/at_exit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Auto Vivifying</title>
+      <link>http://blog.trevoke.net/tags/auto-vivifying/</link>
+      <pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/auto-vivifying/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blackberry</title>
+      <link>http://blog.trevoke.net/tags/blackberry/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/blackberry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Callbacks</title>
+      <link>http://blog.trevoke.net/tags/callbacks/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/callbacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Closures</title>
+      <link>http://blog.trevoke.net/tags/closures/</link>
+      <pubDate>Wed, 28 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/closures/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>http://blog.trevoke.net/tags/code/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Coding</title>
       <link>http://blog.trevoke.net/tags/coding/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/coding/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Constrained</title>
+      <link>http://blog.trevoke.net/tags/constrained/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/constrained/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Corrupt</title>
+      <link>http://blog.trevoke.net/tags/corrupt/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/corrupt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>http://blog.trevoke.net/tags/css/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customer</title>
+      <link>http://blog.trevoke.net/tags/customer/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/customer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cycle</title>
+      <link>http://blog.trevoke.net/tags/cycle/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/cycle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cycles</title>
+      <link>http://blog.trevoke.net/tags/cycles/</link>
+      <pubDate>Thu, 26 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/cycles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyrus</title>
+      <link>http://blog.trevoke.net/tags/cyrus/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/cyrus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Damon</title>
+      <link>http://blog.trevoke.net/tags/damon/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/damon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dave</title>
+      <link>http://blog.trevoke.net/tags/dave/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/dave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Delete</title>
+      <link>http://blog.trevoke.net/tags/delete/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/delete/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dell</title>
+      <link>http://blog.trevoke.net/tags/dell/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/dell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Development</title>
       <link>http://blog.trevoke.net/tags/development/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Devise</title>
+      <link>http://blog.trevoke.net/tags/devise/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/devise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dialogue</title>
+      <link>http://blog.trevoke.net/tags/dialogue/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/dialogue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diana</title>
+      <link>http://blog.trevoke.net/tags/diana/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/diana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diaz</title>
+      <link>http://blog.trevoke.net/tags/diaz/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/diaz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Directories</title>
+      <link>http://blog.trevoke.net/tags/directories/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/directories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drills</title>
+      <link>http://blog.trevoke.net/tags/drills/</link>
+      <pubDate>Thu, 26 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/drills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editors</title>
+      <link>http://blog.trevoke.net/tags/editors/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/editors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Elixir</title>
       <link>http://blog.trevoke.net/tags/elixir/</link>
-      <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/elixir/</guid>
       <description></description>
@@ -60,61 +357,637 @@
     <item>
       <title>Emacs</title>
       <link>http://blog.trevoke.net/tags/emacs/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Escrima</title>
+      <link>http://blog.trevoke.net/tags/escrima/</link>
+      <pubDate>Thu, 15 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/escrima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Estimation</title>
       <link>http://blog.trevoke.net/tags/estimation/</link>
-      <pubDate>Thu, 02 Apr 2015 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/estimation/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Executable</title>
+      <link>http://blog.trevoke.net/tags/executable/</link>
+      <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/executable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fear</title>
+      <link>http://blog.trevoke.net/tags/fear/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/fear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ffi</title>
+      <link>http://blog.trevoke.net/tags/ffi/</link>
+      <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/ffi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fighting</title>
+      <link>http://blog.trevoke.net/tags/fighting/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/fighting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Files</title>
+      <link>http://blog.trevoke.net/tags/files/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/files/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>French</title>
+      <link>http://blog.trevoke.net/tags/french/</link>
+      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/french/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Funny</title>
+      <link>http://blog.trevoke.net/tags/funny/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/funny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gem</title>
+      <link>http://blog.trevoke.net/tags/gem/</link>
+      <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/gem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gentoo</title>
+      <link>http://blog.trevoke.net/tags/gentoo/</link>
+      <pubDate>Tue, 11 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/gentoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://blog.trevoke.net/tags/git/</link>
+      <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>http://blog.trevoke.net/tags/github/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grep</title>
+      <link>http://blog.trevoke.net/tags/grep/</link>
+      <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/grep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Group</title>
+      <link>http://blog.trevoke.net/tags/group/</link>
+      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grouping</title>
+      <link>http://blog.trevoke.net/tags/grouping/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/grouping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Growth</title>
+      <link>http://blog.trevoke.net/tags/growth/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/growth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ha</title>
+      <link>http://blog.trevoke.net/tags/ha/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/ha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haml</title>
+      <link>http://blog.trevoke.net/tags/haml/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/haml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hashes</title>
+      <link>http://blog.trevoke.net/tags/hashes/</link>
+      <pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/hashes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hologic</title>
+      <link>http://blog.trevoke.net/tags/hologic/</link>
+      <pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/hologic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hooks</title>
+      <link>http://blog.trevoke.net/tags/hooks/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/hooks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Idea</title>
+      <link>http://blog.trevoke.net/tags/idea/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/idea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innovation</title>
+      <link>http://blog.trevoke.net/tags/innovation/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/innovation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inspiron</title>
+      <link>http://blog.trevoke.net/tags/inspiron/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/inspiron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intention</title>
+      <link>http://blog.trevoke.net/tags/intention/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/intention/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isshinryu</title>
+      <link>http://blog.trevoke.net/tags/isshinryu/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/isshinryu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>James</title>
+      <link>http://blog.trevoke.net/tags/james/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/james/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jim</title>
+      <link>http://blog.trevoke.net/tags/jim/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/jim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junot</title>
+      <link>http://blog.trevoke.net/tags/junot/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/junot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Knowledge</title>
+      <link>http://blog.trevoke.net/tags/knowledge/</link>
+      <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/knowledge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Language</title>
       <link>http://blog.trevoke.net/tags/language/</link>
-      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/language/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Larsen</title>
+      <link>http://blog.trevoke.net/tags/larsen/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/larsen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leadership</title>
+      <link>http://blog.trevoke.net/tags/leadership/</link>
+      <pubDate>Thu, 26 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Learning</title>
       <link>http://blog.trevoke.net/tags/learning/</link>
-      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/learning/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Lesson</title>
+      <link>http://blog.trevoke.net/tags/lesson/</link>
+      <pubDate>Thu, 12 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/lesson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lisp</title>
+      <link>http://blog.trevoke.net/tags/lisp/</link>
+      <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/lisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Listbrowser</title>
+      <link>http://blog.trevoke.net/tags/listbrowser/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/listbrowser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Litany</title>
+      <link>http://blog.trevoke.net/tags/litany/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/litany/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lyrics</title>
+      <link>http://blog.trevoke.net/tags/lyrics/</link>
+      <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/lyrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Maintainability</title>
       <link>http://blog.trevoke.net/tags/maintainability/</link>
-      <pubDate>Sun, 23 Oct 2016 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/maintainability/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Martial</title>
+      <link>http://blog.trevoke.net/tags/martial/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/martial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matt</title>
+      <link>http://blog.trevoke.net/tags/matt/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/matt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meditation</title>
+      <link>http://blog.trevoke.net/tags/meditation/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/meditation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metaprogramming</title>
+      <link>http://blog.trevoke.net/tags/metaprogramming/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/metaprogramming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mim</title>
+      <link>http://blog.trevoke.net/tags/mim/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/mim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mimvista</title>
+      <link>http://blog.trevoke.net/tags/mimvista/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/mimvista/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mini</title>
+      <link>http://blog.trevoke.net/tags/mini/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/mini/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monkeys</title>
+      <link>http://blog.trevoke.net/tags/monkeys/</link>
+      <pubDate>Thu, 12 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/monkeys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mssql</title>
+      <link>http://blog.trevoke.net/tags/mssql/</link>
+      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/mssql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mushin</title>
+      <link>http://blog.trevoke.net/tags/mushin/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/mushin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Musing</title>
+      <link>http://blog.trevoke.net/tags/musing/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/musing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>http://blog.trevoke.net/tags/mysql/</link>
+      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nidan</title>
+      <link>http://blog.trevoke.net/tags/nidan/</link>
+      <pubDate>Fri, 19 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/nidan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object Oriented</title>
+      <link>http://blog.trevoke.net/tags/object-oriented/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/object-oriented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Of</title>
+      <link>http://blog.trevoke.net/tags/of/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/of/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Old School</title>
+      <link>http://blog.trevoke.net/tags/old-school/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/old-school/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osx</title>
+      <link>http://blog.trevoke.net/tags/osx/</link>
+      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/osx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Our</title>
+      <link>http://blog.trevoke.net/tags/our/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/our/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pain</title>
+      <link>http://blog.trevoke.net/tags/pain/</link>
+      <pubDate>Thu, 17 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/pain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Passwords</title>
+      <link>http://blog.trevoke.net/tags/passwords/</link>
+      <pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/passwords/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>People</title>
+      <link>http://blog.trevoke.net/tags/people/</link>
+      <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/people/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Permutations</title>
+      <link>http://blog.trevoke.net/tags/permutations/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/permutations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Phoenix</title>
       <link>http://blog.trevoke.net/tags/phoenix/</link>
-      <pubDate>Thu, 31 Mar 2016 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/phoenix/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Plexus</title>
+      <link>http://blog.trevoke.net/tags/plexus/</link>
+      <pubDate>Mon, 24 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/plexus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>http://blog.trevoke.net/tags/poetry/</link>
+      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poulsbo</title>
+      <link>http://blog.trevoke.net/tags/poulsbo/</link>
+      <pubDate>Tue, 11 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/poulsbo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prevert</title>
+      <link>http://blog.trevoke.net/tags/prevert/</link>
+      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/prevert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Profile</title>
+      <link>http://blog.trevoke.net/tags/profile/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Programming</title>
       <link>http://blog.trevoke.net/tags/programming/</link>
-      <pubDate>Thu, 06 Jun 2019 17:43:39 -0400</pubDate>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/programming/</guid>
       <description></description>
@@ -123,54 +996,477 @@
     <item>
       <title>Psychology</title>
       <link>http://blog.trevoke.net/tags/psychology/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/psychology/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Punches</title>
+      <link>http://blog.trevoke.net/tags/punches/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/punches/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rails</title>
+      <link>http://blog.trevoke.net/tags/rails/</link>
+      <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/rails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rake</title>
+      <link>http://blog.trevoke.net/tags/rake/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/rake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random</title>
+      <link>http://blog.trevoke.net/tags/random/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relaxation</title>
+      <link>http://blog.trevoke.net/tags/relaxation/</link>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/relaxation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ri</title>
+      <link>http://blog.trevoke.net/tags/ri/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/ri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Row</title>
+      <link>http://blog.trevoke.net/tags/row/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/row/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rspec</title>
+      <link>http://blog.trevoke.net/tags/rspec/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/rspec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>http://blog.trevoke.net/tags/ruby/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rubyconf</title>
+      <link>http://blog.trevoke.net/tags/rubyconf/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/rubyconf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rubymine</title>
+      <link>http://blog.trevoke.net/tags/rubymine/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/rubymine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rules</title>
+      <link>http://blog.trevoke.net/tags/rules/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/rules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sanity</title>
       <link>http://blog.trevoke.net/tags/sanity/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/sanity/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Save</title>
+      <link>http://blog.trevoke.net/tags/save/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/save/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Schools</title>
+      <link>http://blog.trevoke.net/tags/schools/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/schools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Script</title>
+      <link>http://blog.trevoke.net/tags/script/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Senses</title>
+      <link>http://blog.trevoke.net/tags/senses/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/senses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>http://blog.trevoke.net/tags/service/</link>
+      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setting</title>
+      <link>http://blog.trevoke.net/tags/setting/</link>
+      <pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/setting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shore</title>
+      <link>http://blog.trevoke.net/tags/shore/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/shore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shoulders</title>
+      <link>http://blog.trevoke.net/tags/shoulders/</link>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/shoulders/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shu</title>
+      <link>http://blog.trevoke.net/tags/shu/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/shu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Society</title>
+      <link>http://blog.trevoke.net/tags/society/</link>
+      <pubDate>Thu, 20 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/society/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solar</title>
+      <link>http://blog.trevoke.net/tags/solar/</link>
+      <pubDate>Mon, 24 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/solar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sparring</title>
+      <link>http://blog.trevoke.net/tags/sparring/</link>
+      <pubDate>Wed, 15 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/sparring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speech</title>
+      <link>http://blog.trevoke.net/tags/speech/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/speech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Srp</title>
       <link>http://blog.trevoke.net/tags/srp/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/srp/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Stances</title>
+      <link>http://blog.trevoke.net/tags/stances/</link>
+      <pubDate>Thu, 05 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/stances/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Story</title>
+      <link>http://blog.trevoke.net/tags/story/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/story/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Stress</title>
       <link>http://blog.trevoke.net/tags/stress/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/stress/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Styles</title>
+      <link>http://blog.trevoke.net/tags/styles/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/styles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sublime</title>
+      <link>http://blog.trevoke.net/tags/sublime/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/sublime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sybase</title>
+      <link>http://blog.trevoke.net/tags/sybase/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/sybase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tdd</title>
       <link>http://blog.trevoke.net/tags/tdd/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/tdd/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Teaching</title>
+      <link>http://blog.trevoke.net/tags/teaching/</link>
+      <pubDate>Tue, 11 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://blog.trevoke.net/tags/test/</link>
+      <pubDate>Fri, 19 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Testing</title>
       <link>http://blog.trevoke.net/tags/testing/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text</title>
+      <link>http://blog.trevoke.net/tags/text/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thomas</title>
+      <link>http://blog.trevoke.net/tags/thomas/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/thomas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Three</title>
+      <link>http://blog.trevoke.net/tags/three/</link>
+      <pubDate>Thu, 12 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/three/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training</title>
+      <link>http://blog.trevoke.net/tags/training/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>http://blog.trevoke.net/tags/ubuntu/</link>
+      <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>User</title>
+      <link>http://blog.trevoke.net/tags/user/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/user/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vbscript</title>
+      <link>http://blog.trevoke.net/tags/vbscript/</link>
+      <pubDate>Tue, 30 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/vbscript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vicious</title>
+      <link>http://blog.trevoke.net/tags/vicious/</link>
+      <pubDate>Thu, 26 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/vicious/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>http://blog.trevoke.net/tags/vim/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vista</title>
+      <link>http://blog.trevoke.net/tags/vista/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/vista/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wheel</title>
+      <link>http://blog.trevoke.net/tags/wheel/</link>
+      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/wheel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>http://blog.trevoke.net/tags/windows/</link>
+      <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>With</title>
+      <link>http://blog.trevoke.net/tags/with/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/with/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Worldview</title>
+      <link>http://blog.trevoke.net/tags/worldview/</link>
+      <pubDate>Thu, 20 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/worldview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xorg</title>
+      <link>http://blog.trevoke.net/tags/xorg/</link>
+      <pubDate>Tue, 11 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/xorg/</guid>
       <description></description>
     </item>
     

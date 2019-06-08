@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto-vivifying hashes in Ruby | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">November 6, 2009</h2>
+    <h1 class="title">Auto-vivifying hashes in Ruby</h1>
+    <div class="content">
+      <p>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:</p>
+
+<pre><code class="language-ruby">def cnh # silly name &amp;quot;create nested hash&amp;quot;
+  Hash.new {|h,k| h[k] = Hash.new(&amp;amp;h.default_proc)}
+end
+my_hash = cnh
+my_hash[1][2][3] = 4
+my_hash # =&amp;gt; { 1 =&amp;gt; { 2 =&amp;gt; { 3 =&amp;gt;4 } } }
+</code></pre>
+
+<p>This is useful because it reduces the amount of logic in the code. No more "If sub-hash doesn't exist, create it!"</p>
+
+<p>Courtesy of Robert Klemme on www.ruby-forum.com</p>
+
+<p><span style="text-decoration: underline;"><span style="text-decoration: underline;">_</span></span></p>
+
+<p>Update:</p>
+
+<p>Facets has a way of doing an auto-vivifying hash, too! Thanks to <a href="http://stackoverflow.com/questions/1503671/ruby-hash-autovivification-facets">Stackoverflow</a>.
+<div>
+<div></p>
+
+<pre><code class="language-ruby"># Monkey patching Hash class:
+# File lib/core/facets/hash/autonew.rb, line 19
+  def self.autonew(*args)
+    leet = lambda { |hsh, key| hsh[key] = new( &amp;amp;leet ) }
+    new(*args,&amp;amp;leet)
+  end
+</code></pre>
+
+<p></div>
+</div>
+<div>
+<div>
+<div></p>
+
+<p>The standard <a rel="nofollow" href="http://ruby-doc.org/core/classes/Hash.html#M002840">new  method for Hash</a> accepts a block. This block is called in the event  of trying to access a key in the Hash which does not exist. The block is  passed the Hash itself and the key that was requested (the two  parameters) and should return the value that should be returned for the  requested key.</p>
+
+<p>You will notice that the <code>leet</code> lambda does 2 things. It  returns a new Hash with <code>leet</code> itself as the block for  handling defaults. This is the behaviour which allows <code>autonew</code> to work for Hashes of arbitrary depth. It also assigns this new Hash to  <code>hsh[key]</code> so that next time you request the same key you  will get the existing Hash rather than a new one being created.</p>
+
+<p>Sweet deal!</p>
+
+<p></div>
+</div>
+</div></p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

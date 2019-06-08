@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Tue, 27 Jan 2015 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/srp/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>      Lesson from emacs: keep data easy to manipulate and easy to present</title>
       <link>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</link>
-      <pubDate>Tue, 27 Jan 2015 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
       <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.

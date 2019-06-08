@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windows Vista : Corrupt user profile | Seven steps</title>
+<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/trevoke">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">December 7, 2008</h2>
+    <h1 class="title">Windows Vista : Corrupt user profile</h1>
+    <div class="content">
+      <p>I'm taking this from <a href="http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html" target="_blank">this page</a> but thought I should try to propagate it a little since it took me forever to find it.</p>
+
+<ol>
+Assume in this example that the username is 'atiensivu', the domain is 'staff', and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance 'atiensivu' with the username of the corrupt profile.
+<!--more-->
+<li>If you can log into the profile, make note of the %USERPROFILE% environment variable value. Most likely it will be 'C:\Users\atiensivu' or 'C:\Users\atiensivu.staff'. Logoff.</li>
+</ol>
+
+<ol>
+<li>If you have logged in with the profile at any point since your last reboot or you suspect there are files in use within the profile, reboot. The important part is to make sure there are no open files within the broken profile directory.</li>
+</ol>
+
+<ol>
+<li>Login as administrator or another account with local admin rights.</li>
+</ol>
+
+<ol>
+<li>Run 'takeown /r /a /d y /f %systemdrive%\users\atiensivu'.</li>
+(Note : before doing step 4, remove things like the IE cache if you can, save yourself some time).
+<li>From %systemdrive%\users, rename 'atiensivu' to 'atiensivu.old'.</li>
+</ol>
+
+<ol>
+<li>Within %systemdrive%\users, create a directory called 'atiensivu'.</li>
+</ol>
+
+<ol>
+<li>Run 'takeown /r /u staff\atiensivu /f %systemdrive%\users\atiensivu'.</li>
+</ol>
+
+<ol>
+<li>Run regedit and go to HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList and delete the SID key for the corrupt profile. Easiest way to find the correct SID is to search from the 'ProfileList' key for the directory mentioned in %USERPROFILE% in step #1.</li>
+</ol>
+
+<ol>
+<li>Logoff.</li>
+</ol>
+
+<ol>
+<li>Log into the 'atiensivu' account. A new profile should be created. Copy over any files you might want from the old profile directory.</li>
+</ol>
+
+<p>The 'takeown' commands might be overkill but I don't like getting permission errors.</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
+  </div>
+</section>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
