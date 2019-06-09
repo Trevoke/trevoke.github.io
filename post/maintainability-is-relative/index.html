@@ -1,46 +1,153 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>      Maintainability Is Relative | Seven steps</title>
-<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>      Maintainability Is Relative - Seven steps</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
-      </div>
-      <div class="nav-right">
-        <nav class="nav-item level is-mobile">
-          
-          <a class="level-item" href="https://github.com/trevoke">
-            <span class="icon">
-              <i class="fa fa-github"></i>
-            </span>
-          </a>
-          
-          <a class="level-item" href="https://twitter.com/trevoke">
-            <span class="icon">
-              <i class="fa fa-twitter"></i>
-            </span>
-          </a>
-          
-        </nav>
-      </div>
-    </nav>
+<meta name="author" content="     Aldric Giacomoni" /><meta name="description" content="I just found a great example of the variability of the need of creating maintainable code.
+Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+I temporarily wasn&#39;t sure of where that script was." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://blog.trevoke.net/post/maintainability-is-relative/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="      Maintainability Is Relative" />
+<meta property="og:description" content="I just found a great example of the variability of the need of creating maintainable code.
+Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+I temporarily wasn&#39;t sure of where that script was." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.trevoke.net/post/maintainability-is-relative/" /><meta property="article:published_time" content="2016-10-23T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-10-23T00:00:00&#43;00:00"/>
+
+<meta itemprop="name" content="      Maintainability Is Relative">
+<meta itemprop="description" content="I just found a great example of the variability of the need of creating maintainable code.
+Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+I temporarily wasn&#39;t sure of where that script was.">
+
+
+<meta itemprop="datePublished" content="2016-10-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2016-10-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="559">
+
+
+
+<meta itemprop="keywords" content="maintainability,code,testing," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="      Maintainability Is Relative"/>
+<meta name="twitter:description" content="I just found a great example of the variability of the need of creating maintainable code.
+Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+I temporarily wasn&#39;t sure of where that script was."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Seven Steps</a>
   </div>
-</section>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Seven Steps</a>
+</div>
 
-<section class="section">
-  <div class="container">
-    <h2 class="subtitle is-6">October 23, 2016</h2>
-    <h1 class="title">      Maintainability Is Relative</h1>
-    <div class="content">
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">      Maintainability Is Relative</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2016-10-23 </span>
+        <div class="post-category">
+            <a href="/categories/programming/"> programming </a>
+            </div>
+          <span class="more-meta"> 559 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+    <div class="post-content">
       <p>I just found a great example of the variability of the need of creating maintainable code.</p>
 
 <p>Somewhere around 2006, I created a script that posts to the Livejournal community <span style="text-decoration: underline;">daily_tao</span> a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.</p>
@@ -48,58 +155,107 @@
 <p>I temporarily wasn't sure of where that script was. I remembered it was running off of a cronjob, so… Some machine with a *nix-like OS. Then I remembered and found it. I'm going to offer two versions of the code to you: the one that is in the cronjob, and .. A rewrite that I never deleted (and now of course, I have no idea why I never did).</p>
 
 <p>The original:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">  <span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+  <span class="nb">cd</span> /home/user/www/tao
+  <span class="nv">TAO_COUNTER</span><span class="o">=</span><span class="sb">`</span>cat .taocounter<span class="sb">`</span>
 
-<pre><code class="language-sh">  #!/bin/bash
-
-  cd /home/user/www/tao
-  TAO_COUNTER=`cat .taocounter`
-
-  if (( $TAO_COUNTER &gt; 80 ))
-     then TAO_COUNTER=0
-  fi
+  <span class="k">if</span> <span class="o">((</span> <span class="nv">$TAO_COUNTER</span> &gt; <span class="m">80</span> <span class="o">))</span>
+     <span class="k">then</span> <span class="nv">TAO_COUNTER</span><span class="o">=</span><span class="m">0</span>
+  <span class="k">fi</span>
 
 
-  awk '/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}' sec=$TAO_COUNTER tao.txt &gt; .body
-  echo '-' &gt;&gt; .body
-  echo '-' &gt;&gt; .body
-  awk '/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}' sec=$TAO_COUNTER beatricetao.txt &gt;&gt; .body
+  awk <span class="s1">&#39;/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}&#39;</span> <span class="nv">sec</span><span class="o">=</span><span class="nv">$TAO_COUNTER</span> tao.txt &gt; .body
+  <span class="nb">echo</span> <span class="s1">&#39;-&#39;</span> &gt;&gt; .body
+  <span class="nb">echo</span> <span class="s1">&#39;-&#39;</span> &gt;&gt; .body
+  awk <span class="s1">&#39;/^%$/{nr++} nr==sec,/^%$/{if(!/^%$/)print}&#39;</span> <span class="nv">sec</span><span class="o">=</span><span class="nv">$TAO_COUNTER</span> beatricetao.txt &gt;&gt; .body
 
-  TAO_COUNTER=$(($TAO_COUNTER +1));
-  echo $TAO_COUNTER &gt; .taocounter
+  <span class="nv">TAO_COUNTER</span><span class="o">=</span><span class="k">$((</span><span class="nv">$TAO_COUNTER</span> <span class="o">+</span><span class="m">1</span><span class="k">))</span><span class="p">;</span>
+  <span class="nb">echo</span> <span class="nv">$TAO_COUNTER</span> &gt; .taocounter
 
-  echo '-' &gt;&gt; .body
-  echo ' ' &gt;&gt; .body
-  echo 'The first version is from the Fortune files. The second version is the Beatrice Tao.' &gt;&gt; .body
+  <span class="nb">echo</span> <span class="s1">&#39;-&#39;</span> &gt;&gt; .body
+  <span class="nb">echo</span> <span class="s1">&#39; &#39;</span> &gt;&gt; .body
+  <span class="nb">echo</span> <span class="s1">&#39;The first version is from the Fortune files. The second version is the Beatrice Tao.&#39;</span> &gt;&gt; .body
 
-  # jlj -bf .body -ec daily_tao -es `cat .taocounter` -ne -s
-  cat .body | ./clive -u username -w password -j daily_tao -s `cat .taocounter` --charset utf8
-</code></pre>
-
+  <span class="c1"># jlj -bf .body -ec daily_tao -es `cat .taocounter` -ne -s</span>
+  cat .body <span class="p">|</span> ./clive -u username -w password -j daily_tao -s <span class="sb">`</span>cat .taocounter<span class="sb">`</span> --charset utf8</code></pre></td></tr></table>
+</div>
+</div>
 <p>I saw this, and it didn't make a ton of sense. Thankfully it's a very short script so I was able to piece it together quickly. Today I probably wouldn't write it this way, but… It works, so why would I touch it?</p>
 
 <p>The new script is in Ruby. I say new because I learned Ruby after Bash, and once I knew Ruby, it was my preferred language. I'm guessing I wanted to rewrite the script so it would be more legible, and then… For some reason, I never replaced it.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-ruby" data-lang="ruby">  <span class="ch">#!/usr/bin/ruby</span>
 
-<pre><code class="language-ruby">  #!/usr/bin/ruby
+  <span class="no">Dir</span><span class="o">.</span><span class="n">chdir</span> <span class="s1">&#39;/home/user/www/tao&#39;</span>
 
-  Dir.chdir '/home/user/www/tao'
+  <span class="c1"># Arrays go from 0... infinity</span>
+  <span class="c1"># Tao goes from 1 to 81</span>
+  <span class="c1"># Counter therefore goes from 0 to 80 and loops.</span>
 
-  # Arrays go from 0... infinity
-  # Tao goes from 1 to 81
-  # Counter therefore goes from 0 to 80 and loops.
+  <span class="n">counter</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;.taocounter&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="o">.</span><span class="n">strip</span><span class="o">.</span><span class="n">to_i</span> <span class="p">}</span>
 
-  counter = File.open('.taocounter', 'r') { |f| f.readline.strip.to_i }
+  <span class="n">tao</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;tao.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">)</span> <span class="p">}</span>
+  <span class="n">beatrice</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;beatricetao.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">)</span> <span class="p">}</span>
+  <span class="no">Disclaimer</span><span class="o">=</span><span class="s2">&#34;The first version is from the Fortune files - a program for random quotes on GNU/Linux.</span><span class="se">\n</span><span class="s2"> The second version is the Beatrice Tao, available online, reproduced here with permission..&#34;</span>
 
-  tao = File.open('tao.txt', 'r') { |f| f.readlines('%') }
-  beatrice = File.open('beatricetao.txt', 'r') { |f| f.readlines('%') }
-  Disclaimer=&quot;The first version is from the Fortune files - a program for random quotes on GNU/Linux.\n The second version is the Beatrice Tao, available online, reproduced here with permission..&quot;
+  <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;.body&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span> <span class="o">&lt;&lt;</span> <span class="s2">&#34;</span><span class="si">#{</span><span class="n">tao</span><span class="o">[</span><span class="n">counter</span><span class="o">]</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">________________</span><span class="se">\n\n</span><span class="si">#{</span><span class="n">beatrice</span><span class="o">[</span><span class="n">counter</span><span class="o">]</span><span class="si">}</span><span class="se">\n\n</span><span class="si">#{</span><span class="no">Disclaimer</span><span class="si">}</span><span class="s2">&#34;</span> <span class="p">}</span>
 
-  File.open('.body', 'w') { |f| f &lt;&lt; &quot;#{tao[counter]}\n\n________________\n\n#{beatrice[counter]}\n\n#{Disclaimer}&quot; }
-
-  `cat .body | ./clive -u username -w password -j daily_tao -s &quot;Tao Te Ching: Chapter #{counter+1}&quot; --charset utf8`
-  counter = 0 if (counter +=1 ) &gt; 80
-  File.open('.taocounter', 'w') { |f| f &lt;&lt; counter }
-</code></pre>
-
+  <span class="sb">`cat .body | ./clive -u username -w password -j daily_tao -s &#34;Tao Te Ching: Chapter </span><span class="si">#{</span><span class="n">counter</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="sb">&#34; --charset utf8`</span>
+  <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="p">(</span><span class="n">counter</span> <span class="o">+=</span><span class="mi">1</span> <span class="p">)</span> <span class="o">&gt;</span> <span class="mi">80</span>
+  <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;.taocounter&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span> <span class="o">&lt;&lt;</span> <span class="n">counter</span> <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
 <p>My favorite thing here is probably the second-to-last line of the Ruby script.</p>
 
 <p>There are no tests for any of this, because I definitely wrote this before I knew you could test your code.</p>
@@ -109,25 +265,104 @@
 <p>And the answer remains: No. It works. There are no new features to add. Just leave it be.</p>
 
     </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">     Aldric Giacomoni</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2016-10-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/maintainability/">maintainability</a>
+          <a href="/tags/code/">code</a>
+          <a href="/tags/testing/">testing</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/learn-a-new-prog/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">The first step in learning any new programming language</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/benefits-of-a-rapid-test-suite/">
+            <span class="next-text nav-default">      Benefits of a rapid test suite</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:trevoke@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/234025/trevoke" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/trevoke" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/trevoke/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/trevoke/" class="iconfont icon-github" title="github"></a>
+      <a href="https://getpocket.com/@Trevoke" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="https://gitlab.com/trevoke" class="iconfont icon-gitlab" title="gitlab"></a>
+  <a href="http://blog.trevoke.net/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
   </div>
-</section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
 
 
-<section class="section">
-  <div class="container has-text-centered">
-    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
-  </div>
-</section>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
-
-<script>hljs.initHighlightingOnLoad();</script>
 
 
+
+
+
+
+</body>
+</html>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maintainability on Seven steps</title>
+    <title>maintainability on Seven steps</title>
     <link>http://blog.trevoke.net/tags/maintainability/</link>
-    <description>Recent content in Maintainability on Seven steps</description>
+    <description>Recent content in maintainability on Seven steps</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Sun, 23 Oct 2016 00:00:00 +0000</lastBuildDate>
     

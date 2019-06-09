@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Seven steps</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead" /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://blog.trevoke.net/" />
+  <link href="http://blog.trevoke.net/index.xml" rel="alternate" type="application/rss+xml" title="Seven steps" />
+  <link href="http://blog.trevoke.net/index.xml" rel="feed" type="application/rss+xml" title="Seven steps" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Seven steps" />
+<meta property="og:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://blog.trevoke.net/" />
+<meta property="og:updated_time" content="2009-09-02T00:00:00&#43;00:00"/>
+
+<meta itemprop="name" content="Seven steps">
+<meta itemprop="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Seven steps"/>
+<meta name="twitter:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Seven Steps</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Seven Steps</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-rails-haml-alternatible-css-for-tables-publish/">Rails, HAML, alternatible CSS for tables</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-09-02 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 98 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      If you've done any kind of table display in Rails, you've probably discovered the useful 'cycle' method:
+&lt;tr class=&quot;&lt;%= cycle(&quot;even&quot;, &quot;odd&quot;) %&gt;&quot;&gt;
+This works after you've set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be 'lightbg' and 'darkbg', or something similar. I'll fix that.
+    </div>
+    <div class="read-more">
+      <a href="/post/import-rails-haml-alternatible-css-for-tables-publish/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-spending-energy-uselessly-publish/">Spending energy uselessly</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-09-01 </span>
+      <div class="post-category">
+          <a href="/categories/martial-arts/"> martial-arts </a>
+          </div>
+        <span class="more-meta"> 168 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      I live on an island. It only took me until last week (10 years and change) to take my dad's advice to go to the beach when I felt like it. So I did that, last week and today, and went swimming. Good for the muscles, good all-around body work. Great stretching. Different way of using the muscles.
+Besides the fact that I could really only swim for 10-15 minutes before I was tired and a part of my arms started to ache (indicating, clearly, that I'd been ignoring it), I noticed on my way home that even just 30 minutes at the beach drained me of energy.
+    </div>
+    <div class="read-more">
+      <a href="/post/import-spending-energy-uselessly-publish/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-ruby-on-rails-sybase-publish/">Ruby on Rails &#43; Sybase</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-07-31 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 48 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Caveat: This adapter may only work with the enterprise edition of Sybase (i.e. Sybase ASE) not with SQLAnywhere (Sybase ASA)
+gem install activerecord-sybase-adapter -s http://gems.rubyonrails.org
+1 2 3 4 5 6  ActiveRecord::Base.establish_connection( :adapter =&gt; &#34;sybase&#34;, :database =&gt; &#34;test&#34;, :host =&gt; &#34;www.yourdbserver.com&#34;, :username =&gt; &#34;kevin&#34;, :password =&gt; &#34;test&#34;)   Play!
+    </div>
+    <div class="read-more">
+      <a href="/post/import-ruby-on-rails-sybase-publish/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-passwords-passwords-publish/">Passwords, passwords</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-06-09 </span>
+      <div class="post-category">
+          <a href="/categories/security/"> security </a>
+          </div>
+        <span class="more-meta"> 35 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Default passwords for MSSQL, Sybase, and mySQL: , , , That's right.. All three have blank root / sa passwords by default. Talk about secure! That's the kind of knowledge that can come in handy.
+    </div>
+    <div class="read-more">
+      <a href="/post/import-passwords-passwords-publish/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-lisp-on-osx-publish/">Lisp on OSX</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-05-15 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 38 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn't too tricky).
+http://www.david-steuber.com/Lisp/OSX/
+    </div>
+    <div class="read-more">
+      <a href="/post/import-lisp-on-osx-publish/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    </section>
+  
+  <nav class="pagination">
+    <a class="prev" href="/page/11/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text">Prev</span>
+      </a>
+    <a class="next" href="/page/13/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+  </nav>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:trevoke@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/234025/trevoke" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/trevoke" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/trevoke/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/trevoke/" class="iconfont icon-github" title="github"></a>
+      <a href="https://getpocket.com/@Trevoke" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="https://gitlab.com/trevoke" class="iconfont icon-gitlab" title="gitlab"></a>
+  <a href="http://blog.trevoke.net/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

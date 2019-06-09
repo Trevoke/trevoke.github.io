@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>process on Seven steps</title>
+    <link>http://blog.trevoke.net/categories/process/</link>
+    <description>Recent content in process on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Thu, 02 Apr 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/categories/process/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>      The value of estimates for a team</title>
+      <link>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</guid>
+      <description>What this entry is and is not about This entry talks about estimates in a relatively perfect world. This entry does not talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.
+Why talk about estimating at all Estimating work to be done before it is done. Great if you know what the work is.</description>
+    </item>
+    
+    <item>
+      <title>Shu ha ri and evolution of a skill</title>
+      <link>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</guid>
+      <description>Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and Agile development. Roughly, &#34;shu ha ri&#34; means &#34;learn / detach / transcend&#34;. The link has some words about that meaning. I&#39;d like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot conversation with a martial arts teacher friend of mine:</description>
+    </item>
+    
+    <item>
+      <title>Art of Agile Planning / Art of Agile Delivery, by James Shore and Diana Larsen</title>
+      <link>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</guid>
+      <description>The Art of Agile Planning (#aoap on Twitter, and AOAP from now on) is a 2-day course. The focus is on understanding the higher-level constructs of Agile and how they imbricate. In the course, one learns how the ideal Agile team is composed (hint: it&#39;s cross-functional and co-located) and what practices and techniques will be used to organize at all levels, from the developers&#39; standup to the customers&#39; research for the next best value-delivering feature, including how to properly create a feature that developers can work on and how to best break it down into stories (and then into tasks).</description>
+    </item>
+    
+  </channel>
+</rss>

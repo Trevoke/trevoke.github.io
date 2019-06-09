@@ -1,261 +1,305 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seven steps</title>
-<link rel="stylesheet" href="http://blog.trevoke.net/css/style.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Seven steps</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/arduino-light.min.css">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="http://blog.trevoke.net"><h1 class="title is-4">Seven steps</h1></a>
-      </div>
-      <div class="nav-right">
-        <nav class="nav-item level is-mobile">
-          
-          <a class="level-item" href="https://github.com/trevoke">
-            <span class="icon">
-              <i class="fa fa-github"></i>
-            </span>
-          </a>
-          
-          <a class="level-item" href="https://twitter.com/trevoke">
-            <span class="icon">
-              <i class="fa fa-twitter"></i>
-            </span>
-          </a>
-          
-        </nav>
-      </div>
-    </nav>
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead" /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://blog.trevoke.net/" />
+  <link href="http://blog.trevoke.net/index.xml" rel="alternate" type="application/rss+xml" title="Seven steps" />
+  <link href="http://blog.trevoke.net/index.xml" rel="feed" type="application/rss+xml" title="Seven steps" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Seven steps" />
+<meta property="og:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://blog.trevoke.net/" />
+<meta property="og:updated_time" content="2019-06-08T00:00:00&#43;00:00"/>
+
+<meta itemprop="name" content="Seven steps">
+<meta itemprop="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Seven steps"/>
+<meta name="twitter:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Seven Steps</a>
   </div>
-</section>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Seven Steps</a>
+</div>
 
-<section class="section">
-  <div class="container">
-    
-    <article>
-      <h2 class="subtitle is-6">June 8, 2019</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/import-choosing-the-right-editor/">Choosing the right editor</a></h1>
-      <div class="content">
-        Choosing the right editor
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-choosing-the-right-editor/">Choosing the right editor</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2019-06-08 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 1372 words </span>
+        <span class="more-meta"> 7 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Choosing the right editor
 Intro: My editor history
 Here are my "credentials". You know, establishing why you should be reading this at all.
 When it comes to editors, I've honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows. That looked really badass.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-choosing-the-right-editor/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">June 6, 2019</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/learn-a-new-prog/">The first step in learning any new programming language</a></h1>
-      <div class="content">
-        Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that's another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/learn-a-new-prog/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">October 23, 2016</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/maintainability-is-relative/">      Maintainability Is Relative</a></h1>
-      <div class="content">
-        I just found a great example of the variability of the need of creating maintainable code.
+    </div>
+    <div class="read-more">
+      <a href="/post/import-choosing-the-right-editor/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/learn-a-new-prog/">The first step in learning any new programming language</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2019-06-06 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 436 words </span>
+        <span class="more-meta"> 3 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that's another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!
+    </div>
+    <div class="read-more">
+      <a href="/post/learn-a-new-prog/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/maintainability-is-relative/">      Maintainability Is Relative</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-10-23 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 559 words </span>
+        <span class="more-meta"> 3 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      I just found a great example of the variability of the need of creating maintainable code.
 Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
 I temporarily wasn't sure of where that script was.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/maintainability-is-relative/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">April 18, 2016</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/">      Benefits of a rapid test suite</a></h1>
-      <div class="content">
-        The value of a rapid test suite Developers and codebases The bare minimum required of a developer is "make this change without breaking anything else in the code", and if you've been around software development for any period of time, you know that's harder than it seems.
+    </div>
+    <div class="read-more">
+      <a href="/post/maintainability-is-relative/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/benefits-of-a-rapid-test-suite/">      Benefits of a rapid test suite</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-04-18 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 682 words </span>
+        <span class="more-meta"> 4 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      The value of a rapid test suite Developers and codebases The bare minimum required of a developer is "make this change without breaking anything else in the code", and if you've been around software development for any period of time, you know that's harder than it seems.
 Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">March 31, 2016</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/elixir/">      Why Elixir is the next Great Tech</a></h1>
-      <div class="content">
-        Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/elixir/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">April 2, 2015</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/">      The value of estimates for a team</a></h1>
-      <div class="content">
-        What this entry is and is not about This entry talks about estimates in a relatively perfect world. This entry does not talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.
-Why talk about estimating at all Estimating work to be done before it is done. Great if you know what the work is.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">March 18, 2015</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/code-i-understood-a-wall-existed/">The code showed that I understood a wall existed</a></h1>
-      <div class="content">
-        Someone I worked with once said, "The code didn't demonstrate that I hit a wall, just that I understood a wall existed."
-This colleague had been using the technique of Test-Driven Design (TDD) to methodically get the codebase up to a point where it could be refactorable and, at the same time, to a point where a problem with the current design decisions could surface. He was happy because now that he was up to that point, the future decisions for the refactors were much more clear.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/code-i-understood-a-wall-existed/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">January 27, 2015</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/separate-manipulation-from-presentation/">      Lesson from emacs: keep data easy to manipulate and easy to present</a></h1>
-      <div class="content">
-        Spreadsheets Spreadsheets are evil. And do you know why? Because they're too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
-Single Responsibility Principle Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/separate-manipulation-from-presentation/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">February 18, 2014</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/">Shu ha ri and evolution of a skill</a></h1>
-      <div class="content">
-        Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and Agile development. Roughly, "shu ha ri" means "learn / detach / transcend". The link has some words about that meaning. I'd like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot conversation with a martial arts teacher friend of mine:  Shu.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
-    <article>
-      <h2 class="subtitle is-6">November 18, 2013</h2>
-      <h1 class="title"><a href="http://blog.trevoke.net/post/import-learning-and-fear-publish/">Learning and fear</a></h1>
-      <div class="content">
-        “Life is going to present to you a series of transformations. And the point of education should be to transform you. To teach you how to be transformed so you can ride the waves as they come. But today, the point of education is not education. It’s accreditation. The more accreditation you have, the more money you make. That’s the instrumental logic of neoliberalism. And this instrumental logic comes wrapped in an envelope of fear.
-        
-        ...<a class="button is-link" href="http://blog.trevoke.net/post/import-learning-and-fear-publish/" style="height:28px">
-          Read more
-          <span class="icon is-small">
-            <i class="fa fa-angle-double-right"></i>
-          </span>
-        </a>
-        
-      </div>
-    </article>
-    
+    </div>
+    <div class="read-more">
+      <a href="/post/benefits-of-a-rapid-test-suite/" class="read-more-link">Read more..</a>
+    </div>
   </div>
-</section>
-<section class="section">
-  <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-          <a class="button is-disabled">
-            <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-left"></i>
-            </span>
-            Newer
-          </a>
-          
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/elixir/">      Why Elixir is the next Great Tech</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2016-03-31 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 358 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.
+    </div>
+    <div class="read-more">
+      <a href="/post/elixir/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
+    </section>
+  
+  <nav class="pagination">
+    
+    <a class="next" href="/page/2/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+  </nav>
         </div>
+        
+
       </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-          <a class="button" href="/page/2/">
-            Older
-            <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-right"></i>
-            </span>
-          </a>
-          
-        </div>
-      </div>
-    </nav>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:trevoke@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/234025/trevoke" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/trevoke" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/trevoke/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/trevoke/" class="iconfont icon-github" title="github"></a>
+      <a href="https://getpocket.com/@Trevoke" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="https://gitlab.com/trevoke" class="iconfont icon-gitlab" title="gitlab"></a>
+  <a href="http://blog.trevoke.net/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
   </div>
-</section>
-
-<section class="section">
-  <div class="container has-text-centered">
-    <p>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</p>
-  </div>
-</section>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elixir.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/erlang.min.js"></script>
-
-<script>hljs.initHighlightingOnLoad();</script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
 
 
+
+
+
+
+
+
+</body>
+</html>

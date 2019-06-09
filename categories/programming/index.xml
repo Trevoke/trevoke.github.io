@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Seven steps</title>
+    <link>http://blog.trevoke.net/categories/programming/</link>
+    <description>Recent content in programming on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Choosing the right editor</title>
+      <link>http://blog.trevoke.net/post/import-choosing-the-right-editor/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-choosing-the-right-editor/</guid>
+      <description>Choosing the right editor
+Intro: My editor history
+Here are my &#34;credentials&#34;. You know, establishing why you should be reading this at all.
+When it comes to editors, I&#39;ve honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows. That looked really badass.</description>
+    </item>
+    
+    <item>
+      <title>The first step in learning any new programming language</title>
+      <link>http://blog.trevoke.net/post/learn-a-new-prog/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
+      <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
+    </item>
+    
+    <item>
+      <title>      Maintainability Is Relative</title>
+      <link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
+      <description>I just found a great example of the variability of the need of creating maintainable code.
+Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
+I temporarily wasn&#39;t sure of where that script was.</description>
+    </item>
+    
+    <item>
+      <title>      Benefits of a rapid test suite</title>
+      <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
+      <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
+Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
+    </item>
+    
+    <item>
+      <title>      Why Elixir is the next Great Tech</title>
+      <link>http://blog.trevoke.net/post/elixir/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/elixir/</guid>
+      <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
+    </item>
+    
+    <item>
+      <title>      Lesson from emacs: keep data easy to manipulate and easy to present</title>
+      <link>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
+      <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
+Single Responsibility Principle Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
+    </item>
+    
+    <item>
+      <title>Ruby is alive and well</title>
+      <link>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</guid>
+      <description>I&#39;m back from Rubyconf.
+Some people say Ruby is dead. We can probably gloss over Zed Shaw&#39;s famous rant, since it&#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&#39;s Global Interpreter Lock.
+Given the talks at Rubyconf, Ruby is most likely not dead (and our internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
+    </item>
+    
+    <item>
+      <title>Add a user to the wheel group in OSX</title>
+      <link>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</link>
+      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
+      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep. $ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+    </item>
+    
+    <item>
+      <title>Is Rails dying?</title>
+      <link>http://blog.trevoke.net/post/import-is-rails-dying-publish/</link>
+      <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-is-rails-dying-publish/</guid>
+      <description>More to the point, should Rails die?
+Rails brought a lot of great things - it made it dumb easy to package an entire app together. It abstracted the complexity of the storage layer. It created an entire market. Things like Heroku, Railsonfire/codeship and other companies turned a profit by extending the benefits of Rails. And things like Capistrano were born.
+Everything that can be automated should be automated.
+&amp;nbsp;</description>
+    </item>
+    
+    <item>
+      <title>Hard-and-fast, black-and-white rules for getting started with Object-Oriented Programming</title>
+      <link>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</guid>
+      <description>No object should have more than three public methods Objects should not have getters or setters Everything else must be private If three private methods are doing something similar, then maybe those are the public methods of another class Never inherit Always compose Changeability is the most important thing A &#34;good&#34; variable name is a name that describes unambiguously what the variable contains, without describing the implementation If you don’t use good variable names, I will look for you.</description>
+    </item>
+    
+    <item>
+      <title>Ruby: gem ffi on OSX Mountain Lion 10.8</title>
+      <link>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</link>
+      <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</guid>
+      <description>EASY!
+sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2
+&amp;nbsp;
+That&#39;s it. You can now install ffi 1.5.</description>
+    </item>
+    
+    <item>
+      <title>Devise &#43; rspec error: undefined method &#39;name&#39;</title>
+      <link>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</guid>
+      <description>If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
+&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  @request.env[&amp;#34;devise.mapping&amp;#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
+On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.</description>
+    </item>
+    
+    <item>
+      <title>Ruby: What is at_exit and how to write tests for it.</title>
+      <link>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</link>
+      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
+      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:  It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
+    </item>
+    
+    <item>
+      <title>Grepping a single file for &#39;dynamic&#39; content</title>
+      <link>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</link>
+      <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</guid>
+      <description>You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
+echo &amp;quot;your fancy word finder stuff here&amp;quot; | xargs -i bash -c &#39;grep -n &amp;quot;{}&amp;quot; your/file/here
+Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have.</description>
+    </item>
+    
+    <item>
+      <title>git usage conventions</title>
+      <link>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</link>
+      <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</guid>
+      <description>We&#39;ve been using git at work for a greenfield project and, so far, this has worked for us. It could be a useful template to get another team started. We have gotten rid of the name &#39;master&#39;, which is only a convention anyway, and instead are using a few permanent branches:  production (only stable code which gets deployed to production goes there. The only branch to be merged in, EVER, is &#39;stable&#39;) stable (only stable code which goes to the staging environment goes there.</description>
+    </item>
+    
+    <item>
+      <title>Get started with Ruby</title>
+      <link>http://blog.trevoke.net/post/import-ruby-publish/</link>
+      <pubDate>Thu, 27 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-publish/</guid>
+      <description>First, get Ruby. Install it as explained on the website. Once you&#39;re more comfortable with it, in a few weeks, you can check out RVM. Not now though - you&#39;d just confuse yourself.
+The two important command-line tools are going to be &#34;irb&#34; and &#34;ruby&#34;. For development, you will be able to use tools like emacs, vim, Jetbrains Rubymine, or Eclipse. Ruby support is quite widespread.
+Create a temporary directory and get cozy inside.</description>
+    </item>
+    
+    <item>
+      <title>New position at Cyrus</title>
+      <link>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</guid>
+      <description>On Monday, April 26th, I am starting a new job at Cyrus Innovation. It may well be fair that I am starting a new career - it&#39;s a hop, skip and jump for me. I&#39;m switching from Systems Administration / Tech Support / Hell desk (not a typo, sadly) to Development / Programming.
+I am very much looking forward to it. It means a hobby/job switch: I will now do sysadmin stuff as a hobby, and programming as a full-time job.</description>
+    </item>
+    
+    <item>
+      <title>Ruby callbacks (hooks)</title>
+      <link>http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/</guid>
+      <description>Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
+This blog post explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information.</description>
+    </item>
+    
+    <item>
+      <title>New gem: ListBrowser</title>
+      <link>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
+      <description>~~ ListBrowser README ~~
+I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) gem install ListBrowser</description>
+    </item>
+    
+    <item>
+      <title>Git : moving a remote branch</title>
+      <link>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</link>
+      <pubDate>Tue, 29 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
+      <description>One can&#39;t actually move a remote branch, but you can copy a branch and delete a branch, so...
+Copy oldbranch in repo to newbranch.
+1  git push {repo} {oldbranch}:heads/{newbranch}   Ex: git push origin foobranch:barbranch renames foobranch to barbranch
+Remove a remote branch: it’s all about the colon:
+1  git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;   [code][/code]
+Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
+    </item>
+    
+    <item>
+      <title>Inter-array permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</guid>
+      <description>I don&#39;t really have a better name for this. It&#39;s also not completely clean, but it works. I had, almost a year ago (362 days ago), written a blog post about lexicographic permutations. That was about permutations of elements within one array. Someone on ruby-forum asked about permutations between multiple arrays. I found something in C#, which I was happy to transcribe to Ruby and tweak a little.
+1 2 3 4 5 6 7 8 9 10 11  def array_permutations array, index=0 # index is 0 by default : start at the beginning, more elegant.</description>
+    </item>
+    
+    <item>
+      <title>Random constrained permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</guid>
+      <description>Look, Ma, these are my baby steps in algorithms!
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  # list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.</description>
+    </item>
+    
+    <item>
+      <title>Calling Rake tasks within the Rails env</title>
+      <link>http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/</link>
+      <pubDate>Tue, 15 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/</guid>
+      <description>Calling RAKE tasks within the Rails environment.
+Good to know.</description>
+    </item>
+    
+    <item>
+      <title>On re-reading old code</title>
+      <link>http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/</link>
+      <pubDate>Wed, 09 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/</guid>
+      <description>I came across this beauty in some old code of mine:
+1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
+Three seconds of thinking made me realize that just maybe, I could do this:</description>
+    </item>
+    
+    <item>
+      <title>Auto-vivifying hashes in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</link>
+      <pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</guid>
+      <description>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
+1 2 3 4 5 6  def cnh # silly name &amp;amp;quot;create nested hash&amp;amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;amp;gt; { 1 =&amp;amp;gt; { 2 =&amp;amp;gt; { 3 =&amp;amp;gt;4 } } }   This is useful because it reduces the amount of logic in the code.</description>
+    </item>
+    
+    <item>
+      <title>Closures in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</link>
+      <pubDate>Wed, 28 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</guid>
+      <description>I found a script that explains everything really well. Credit goes to:
+Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
+Now.. Why didn&#39;t I get that when I was looking at LISP?</description>
+    </item>
+    
+    <item>
+      <title>Extending Ruby for Fun and Profit</title>
+      <link>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</link>
+      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</guid>
+      <description>Wow. I just watched Dave Thomas&#39; talk Ruby Metaprogramming: Extending Ruby for Fun and Profit and it explained so many things.
+It&#39;s quite worth watching if you like Ruby and don&#39;t know about metaprogramming and Ruby hooks and what &#39;self&#39; means, fully.</description>
+    </item>
+    
+    <item>
+      <title>Rails, HAML, alternatible CSS for tables</title>
+      <link>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</guid>
+      <description>If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
+&amp;lt;tr class=&amp;quot;&amp;lt;%= cycle(&amp;quot;even&amp;quot;, &amp;quot;odd&amp;quot;) %&amp;gt;&amp;quot;&amp;gt;
+This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that.</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails &#43; Sybase</title>
+      <link>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</link>
+      <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</guid>
+      <description>Caveat: This adapter may only work with the enterprise edition of Sybase (i.e. Sybase ASE) not with SQLAnywhere (Sybase ASA)
+gem install activerecord-sybase-adapter -s http://gems.rubyonrails.org
+1 2 3 4 5 6  ActiveRecord::Base.establish_connection( :adapter =&amp;gt; &amp;#34;sybase&amp;#34;, :database =&amp;gt; &amp;#34;test&amp;#34;, :host =&amp;gt; &amp;#34;www.yourdbserver.com&amp;#34;, :username =&amp;gt; &amp;#34;kevin&amp;#34;, :password =&amp;gt; &amp;#34;test&amp;#34;)   Play!</description>
+    </item>
+    
+    <item>
+      <title>Lisp on OSX</title>
+      <link>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</link>
+      <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</guid>
+      <description>Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&#39;t too tricky).
+http://www.david-steuber.com/Lisp/OSX/</description>
+    </item>
+    
+    <item>
+      <title>install the mysql gem on Ubuntu</title>
+      <link>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</link>
+      <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</guid>
+      <description>$ sudo apt-get install libmysqlclient15-dev $ sudo gem install mysql
+Easy! But .. gotta know it.</description>
+    </item>
+    
+    <item>
+      <title>Installing the mysql gem on OSX</title>
+      <link>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</link>
+      <pubDate>Fri, 17 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
+      <description>Taken straight from this blog
+in a terminal.. First do a &#39;locate mysql_config&#39; and then replace the path in the following command with where that file is.
+$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed</description>
+    </item>
+    
+    <item>
+      <title>More stances and some testing</title>
+      <link>http://blog.trevoke.net/post/import-more-stances-and-some-testing-publish/</link>
+      <pubDate>Thu, 05 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-more-stances-and-some-testing-publish/</guid>
+      <description>So, I&#39;ve been trying to keep my stances down a lot more now - it&#39;s making me much more aware of when I get tense.. Because I rise, because my ankles, hips and knees just don&#39;t flex. It&#39;s an interesting experience. Two people are testing.. During sparring, that evening was the first time that I made a conscious point of &#34;the first thing I do is move - and then answer&#34;</description>
+    </item>
+    
+    <item>
+      <title>Grouping directories by name</title>
+      <link>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</guid>
+      <description>As is, this code will create an array of arrays - Directories with the same 6 first characters will be grouped in the same sub-array. I am using this for log directories, name format 20081125 for instance - you can just replace the logic to be whatever you need, of course.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  dirs = [] Dir[&amp;#39;*&amp;#39;].</description>
+    </item>
+    
+    <item>
+      <title>Making a ruby script into a stand-alone executable</title>
+      <link>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</link>
+      <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
+      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc. tar2rubyscript rubyscript2exe
+As I&#39;m a newb, it took me a while to figure out that I need .</description>
+    </item>
+    
+    <item>
+      <title>Recursively iterate through every file/subfolder  - VBScript</title>
+      <link>http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/</link>
+      <pubDate>Tue, 30 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/</guid>
+      <description>This is actually a lot simpler than I expected (gimme a break, this is my second foray into VBS!)
+1 2 3 4 5 6 7 8 9 10 11 12 13  Set fs = WScript.CreateObject (&amp;#34;Scripting.FileSystemObject&amp;#34;) Sub ShowSubFolders(Folder) For Each Subfolder In Folder.SubFolders Set files = SubFolder.Files For Each file In files WScript.Echo file.Name, file.Size Next ShowSubFolders Subfolder Next End Sub ShowSubFolders fs.GetFolder(&amp;#34;C:\your\path\here&amp;#34;)  </description>
+    </item>
+    
+    <item>
+      <title>(Lexicographic) Permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</link>
+      <pubDate>Sat, 20 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</guid>
+      <description>Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
+I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.</description>
+    </item>
+    
+    <item>
+      <title>How to delete all files older than a day recursively in a directory and its subdirectories</title>
+      <link>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</guid>
+      <description>Whoo! I haven&#39;t done a post that long in a while!
+I put &#39;activerecord&#39; in there to take advantage of the &#39;24.hours.ago&#39; notation, which makes life much easier. The cost is a little less than 2 seconds to load the library, so I think it&#39;s worth it. It runs as a daily job before backup to tape, to clear old backups from the directory tree.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  require &amp;#39;activerecord&amp;#39; def delete_recursively(in_here) Dir.</description>
+    </item>
+    
+  </channel>
+</rss>
