@@ -7,19 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Mon, 18 Apr 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>http://blog.trevoke.net/tags/</link>
-      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/tags/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>activerecord</title>
@@ -141,16 +131,7 @@
     <item>
       <title>code</title>
       <link>http://blog.trevoke.net/tags/code/</link>
-      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code,</title>
-      <link>http://blog.trevoke.net/tags/code/</link>
-      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/code/</guid>
       <description></description>
@@ -175,11 +156,11 @@
     </item>
     
     <item>
-      <title>customer</title>
-      <link>http://blog.trevoke.net/tags/customer/</link>
+      <title>customer-service</title>
+      <link>http://blog.trevoke.net/tags/customer-service/</link>
       <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.trevoke.net/tags/customer/</guid>
+      <guid>http://blog.trevoke.net/tags/customer-service/</guid>
       <description></description>
     </item>
     
@@ -247,15 +228,6 @@
     </item>
     
     <item>
-      <title>dialogue</title>
-      <link>http://blog.trevoke.net/tags/dialogue/</link>
-      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/tags/dialogue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>diana-larsen</title>
       <link>http://blog.trevoke.net/tags/diana-larsen/</link>
       <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
@@ -276,7 +248,7 @@
     <item>
       <title>elixir</title>
       <link>http://blog.trevoke.net/tags/elixir/</link>
-      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/elixir/</guid>
       <description></description>
@@ -364,6 +336,15 @@
     </item>
     
     <item>
+      <title>genstage</title>
+      <link>http://blog.trevoke.net/tags/genstage/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/tags/genstage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>gentoo</title>
       <link>http://blog.trevoke.net/tags/gentoo/</link>
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
@@ -382,7 +363,7 @@
     </item>
     
     <item>
-      <title>github,</title>
+      <title>github</title>
       <link>http://blog.trevoke.net/tags/github/</link>
       <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
       
@@ -526,7 +507,7 @@
     </item>
     
     <item>
-      <title>leadership,</title>
+      <title>leadership</title>
       <link>http://blog.trevoke.net/tags/leadership/</link>
       <pubDate>Thu, 26 Mar 2009 00:00:00 +0000</pubDate>
       
@@ -571,7 +552,7 @@
     </item>
     
     <item>
-      <title>lyrics,</title>
+      <title>lyrics</title>
       <link>http://blog.trevoke.net/tags/lyrics/</link>
       <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
       
@@ -913,15 +894,6 @@
     </item>
     
     <item>
-      <title>service</title>
-      <link>http://blog.trevoke.net/tags/service/</link>
-      <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/tags/service/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>shell</title>
       <link>http://blog.trevoke.net/tags/shell/</link>
       <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
@@ -1174,27 +1146,9 @@
     </item>
     
     <item>
-      <title>with</title>
-      <link>http://blog.trevoke.net/tags/with/</link>
-      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/tags/with/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>worldview</title>
       <link>http://blog.trevoke.net/tags/worldview/</link>
-      <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/tags/worldview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>worldview,</title>
-      <link>http://blog.trevoke.net/tags/worldview/</link>
-      <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/tags/worldview/</guid>
       <description></description>

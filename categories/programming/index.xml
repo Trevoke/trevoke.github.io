@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GenStage demystified</title>
+      <link>http://blog.trevoke.net/post/genstage_demystified/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/genstage_demystified/</guid>
+      <description>GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
+    </item>
     
     <item>
       <title>Choosing the right editor</title>
@@ -61,6 +70,16 @@ Most of the time that a developer spends on any given codebase is spent on an ex
       
       <guid>http://blog.trevoke.net/post/elixir/</guid>
       <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
+    </item>
+    
+    <item>
+      <title>The code showed that I understood a wall existed</title>
+      <link>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</link>
+      <pubDate>Wed, 18 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/code-i-understood-a-wall-existed/</guid>
+      <description>Someone I worked with once said, &#34;The code didn&#39;t demonstrate that I hit a wall, just that I understood a wall existed.&#34;
+This colleague had been using the technique of Test-Driven Design (TDD) to methodically get the codebase up to a point where it could be refactorable and, at the same time, to a point where a problem with the current design decisions could surface. He was happy because now that he was up to that point, the future decisions for the refactors were much more clear.</description>
     </item>
     
     <item>

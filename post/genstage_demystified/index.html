@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>GenStage demystified - Seven steps</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://blog.trevoke.net/post/genstage_demystified/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="GenStage demystified" />
+<meta property="og:description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.trevoke.net/post/genstage_demystified/" /><meta property="article:published_time" content="2019-06-23T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-06-23T00:00:00&#43;00:00"/>
+
+<meta itemprop="name" content="GenStage demystified">
+<meta itemprop="description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.">
+
+
+<meta itemprop="datePublished" content="2019-06-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-06-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1364">
+
+
+
+<meta itemprop="keywords" content="elixir,genstage," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GenStage demystified"/>
+<meta name="twitter:description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Seven Steps</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Seven Steps</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">GenStage demystified</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-06-23 </span>
+        <div class="post-category">
+            <a href="/categories/programming/"> programming </a>
+            </div>
+          <span class="more-meta"> 1364 words </span>
+          <span class="more-meta"> 7 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="genstage-demystified">GenStage demystified</h1>
+
+<h2 id="why-would-you-use-genstage">Why would you use GenStage?</h2>
+
+<h2 id="how-to-think-about-genstage">How to think about GenStage</h2>
+
+<p>GenStage is a miracle of UX for developers. There's only one catch: because of its purpose, it's built for the machine, not for the developer. Let's go over what GenStage is for, and see just how simple it is to start using it.
+GenStage is what you would use if you had "some work" (<code>events</code>) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.
+In the world of GenStage, the <code>producer</code> is what will hold the <code>events</code> that the <code>consumers</code> will then work on.
+GenStage is based on two fundamental principles:</p>
+
+<ol>
+<li>Consumers request events from producers. The producers' only job is to feed the consumer when it is hungry. Consumer not hungry? No feeding.</li>
+<li>GenStage "stages" exist to be split in a way that benefits the computer's constraints, not the programmer's constraints</li>
+</ol>
+
+<p>In other words:</p>
+
+<ol>
+<li>GenStage has a built-in a backpressure mechanism: work is not pushed to the workers, the workers pull when they are ready for more work. The only complexity is that <em>every callback should check the demand</em> and make sure we produce enough to match that demand. Thankfully, this is always the same work, so it can be extracted to a function.</li>
+<li>Use producers, producer-consumers, and consumers to use computing resources (e.g. CPU, I/O, RAM) effectively. Do not use them to organize your domain model.</li>
+</ol>
+
+<h2 id="let-s-start-using-genstage">Let's start using GenStage</h2>
+
+<h3 id="first-a-test-project">First, a test project</h3>
+
+<p><code>mix new genstage_test=
+=cd genstage_test=
+Edit your mix.exs file and make sure your =deps</code> look like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir">  <span class="n">defp</span> <span class="n">deps</span> <span class="n">do</span>
+    <span class="p">[</span>
+      <span class="p">{</span><span class="ss">:gen_stage</span><span class="p">,</span> <span class="s2">&#34;~&gt; 0.12.1&#34;</span><span class="p">}</span>
+    <span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="now-genstage">Now, GenStage</h3>
+
+<p>=mix deps.get=
+I'm not going to cover everything about GenStage here - once you've read this blog entry, you'll be able to read the documentation ( https://hexdocs.pm/gen_stage/GenStage.html ) and know which bits go where, without the shadow of a doubt.</p>
+
+<p>GenStage is basically broken down into three kinds of processes: <code>producer</code>, <code>producer-consumer</code>, and <code>consumer</code>. A producer will hold the events that will be requested by consumers, and a producer-consumer will request events from a producer and then be able to produce events, which means you can create a chain of transformations very easily.</p>
+
+<p>For our example, let us say the "events" will be incoming geolocations in the form of latitude/longitude pairs, that we will need to transform them into the name of the closest city, and then count the number of times a city was found. Let's say each "event" will be of the form <code>{latitude, longitude}</code> (e.g. <code>{42, -72}</code>)</p>
+
+<p>This seems like it could be represented by a producer, a producer-consumer, and then a consumer! How wonderfully coincidental.</p>
+
+<p>The first thing that we need to consider is the source of the events. It could be anything, such as a <code>Stream</code>, or a directory on the filesystem, or a database table. As long as the producer can query it to figure out what to produce, we're fine. To make the example perfectly clear and self-contained, we're going to use a simple list that we'll put in the producer's state.</p>
+
+<p>First, let's write a mock geolocation service:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="n">defmodule</span> <span class="nc">Geolocation</span> <span class="n">do</span>
+  <span class="na">@cities</span> <span class="p">[</span><span class="s2">&#34;New York&#34;</span><span class="p">,</span> <span class="s2">&#34;Constantinople&#34;</span><span class="p">,</span> <span class="s2">&#34;Istanbul&#34;</span><span class="p">,</span> <span class="s2">&#34;Paris&#34;</span><span class="p">,</span> <span class="s2">&#34;London&#34;</span><span class="p">]</span>
+  <span class="n">def</span> <span class="n">call</span><span class="p">({</span><span class="n">_lat</span><span class="p">,</span> <span class="n">_long</span><span class="p">})</span> <span class="n">do</span>
+    <span class="ss">:timer</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span> <span class="c1"># This operation takes a while</span>
+    <span class="nc">Enum</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="na">@cities</span><span class="p">)</span>
+  <span class="n">end</span>
+<span class="n">end</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Here's the code for the producer. Remember that this is only responsible for fulfilling demand. You'll see what I mentioned earlier: in every single callback, whether a cast, a call, or the demand callback, we have to "return events to be produced", so at least for us here it's easier to have a single function that creates our new state as well as the events to return.</p>
+
+<p>This might not be the implementation you want in your code. The GenStage documentation has a slightly more streamlined version of this that always returns <code>:noreply</code>, at the cost of a slightly more complex <code>handle_call</code> behavior.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="n">defmodule</span> <span class="nc">Producer</span> <span class="n">do</span>
+  <span class="n">use</span> <span class="nc">GenStage</span>
+
+  <span class="n">def</span> <span class="n">start_link</span><span class="p">()</span> <span class="n">do</span>
+    <span class="nc">GenStage</span><span class="o">.</span><span class="n">start_link</span><span class="p">(</span><span class="n">__MODULE__</span><span class="p">,</span> <span class="p">%{})</span>
+  <span class="n">end</span>
+
+  <span class="n">def</span> <span class="n">init</span><span class="p">(</span><span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+    <span class="n">new_state</span> <span class="o">=</span>
+      <span class="n">state</span>
+      <span class="o">|&gt;</span> <span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="ss">:geolocations</span><span class="p">,</span> <span class="p">[])</span>
+      <span class="o">|&gt;</span> <span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="ss">:demand</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="p">{</span><span class="ss">:producer</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span>
+  <span class="n">end</span>
+
+  <span class="n">def</span> <span class="n">handle_cast</span><span class="p">({</span><span class="ss">:add_geolocations</span><span class="p">,</span> <span class="n">geolocations</span><span class="p">},</span> <span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+    <span class="n">new_geolocations</span> <span class="o">=</span> <span class="n">state</span><span class="o">.</span><span class="n">geolocations</span> <span class="o">++</span> <span class="n">geolocations</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="ss">:geolocations</span><span class="p">,</span> <span class="n">new_geolocations</span><span class="p">)</span>
+    <span class="p">{</span><span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span> <span class="o">=</span> <span class="n">prepare_return_values</span><span class="p">(</span><span class="n">state</span><span class="o">.</span><span class="n">demand</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="p">{</span><span class="ss">:noreply</span><span class="p">,</span> <span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span>
+  <span class="n">end</span>
+
+  <span class="n">def</span> <span class="n">handle_call</span><span class="p">(</span><span class="ss">:queue_size</span><span class="p">,</span> <span class="n">_from</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+    <span class="p">{</span><span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span> <span class="o">=</span> <span class="n">prepare_return_values</span><span class="p">(</span><span class="n">state</span><span class="o">.</span><span class="n">demand</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="p">{</span><span class="ss">:reply</span><span class="p">,</span> <span class="n">length</span><span class="p">(</span><span class="n">new_state</span><span class="o">.</span><span class="n">geolocations</span><span class="p">),</span> <span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span>
+  <span class="n">end</span>
+
+  <span class="n">def</span> <span class="n">handle_demand</span><span class="p">(</span><span class="n">demand</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="n">when</span> <span class="n">demand</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="n">do</span>
+    <span class="n">total_demand</span> <span class="o">=</span> <span class="n">demand</span> <span class="o">+</span> <span class="n">state</span><span class="o">.</span><span class="n">demand</span>
+    <span class="p">{</span><span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span> <span class="o">=</span> <span class="n">prepare_return_values</span><span class="p">(</span><span class="n">total_demand</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+    <span class="p">{</span><span class="ss">:noreply</span><span class="p">,</span> <span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span>
+  <span class="n">end</span>
+
+  <span class="n">defp</span> <span class="n">prepare_return_values</span><span class="p">(</span><span class="n">demand</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+    <span class="p">{</span><span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">geolocations_left</span><span class="p">}</span> <span class="o">=</span> <span class="nc">Enum</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">state</span><span class="o">.</span><span class="n">geolocations</span><span class="p">,</span> <span class="n">demand</span><span class="p">)</span>
+    <span class="n">remaining_demand</span> <span class="o">=</span> <span class="n">demand</span> <span class="o">-</span> <span class="n">length</span><span class="p">(</span><span class="n">geolocations_to_produce</span><span class="p">)</span>
+    <span class="n">new_state</span> <span class="o">=</span>
+      <span class="n">state</span>
+      <span class="o">|&gt;</span> <span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="ss">:geolocations</span><span class="p">,</span> <span class="n">geolocations_left</span><span class="p">)</span>
+      <span class="o">|&gt;</span> <span class="nc">Map</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="ss">:demand</span><span class="p">,</span> <span class="n">remaining_demand</span><span class="p">)</span>
+    <span class="p">{</span><span class="n">geolocations_to_produce</span><span class="p">,</span> <span class="n">new_state</span><span class="p">}</span>
+  <span class="n">end</span>
+<span class="n">end</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>The state needs to keep track of the unfulfilled demand, because when we receive events, we have to be able to produce them and backfill demand - not just wait for the next time we get a request for events. That's what the <code>:demand</code> key is for.</p>
+
+<p>For painfully didactic reasons, I have a <code>handle_cast</code> and a <code>handle_call</code>, to show you that their return tuple behaves the same was as the <code>handle_demand='s return tuple. We =cast</code> to add to the queue because we don't care about the reply (maybe we should, but I'm a bad person), but we do care about knowing the size of the queue, maybe so we can add more consumers, so we use a <code>call</code> for that.</p>
+
+<p>Now let's take a look at the next step in the chain: taking the geolocations and converting them to cities.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir">  <span class="n">defmodule</span> <span class="nc">ProducerConsumer</span> <span class="n">do</span>
+    <span class="n">use</span> <span class="nc">GenStage</span>
+
+    <span class="n">def</span> <span class="n">start_link</span><span class="p">,</span> <span class="ss">do</span><span class="p">:</span> <span class="nc">GenStage</span><span class="o">.</span><span class="n">start_link</span><span class="p">(</span><span class="n">__MODULE__</span><span class="p">,</span> <span class="p">%{})</span>
+
+    <span class="n">def</span> <span class="n">init</span><span class="p">(</span><span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+      <span class="p">{</span><span class="ss">:producer_consumer</span><span class="p">,</span> <span class="n">state</span><span class="p">}</span>
+    <span class="n">end</span>
+
+    <span class="n">def</span> <span class="n">handle_events</span><span class="p">(</span><span class="n">geolocations</span><span class="p">,</span> <span class="n">_from</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+      <span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span> <span class="n">geolocations</span>
+      <span class="n">cities</span> <span class="o">=</span> <span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">geolocations</span><span class="p">,</span> <span class="o">&amp;</span><span class="nc">Geolocation</span><span class="o">.</span><span class="n">call</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+      <span class="p">{</span><span class="ss">:noreply</span><span class="p">,</span> <span class="n">cities</span><span class="p">,</span> <span class="n">state</span><span class="p">}</span>
+    <span class="n">end</span>
+  <span class="n">end</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>And now let's take a look at the code for the final stage, counting the cities:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir">  <span class="n">defmodule</span> <span class="nc">Consumer</span> <span class="n">do</span>
+    <span class="n">use</span> <span class="nc">GenStage</span>
+
+    <span class="n">def</span> <span class="n">start_link</span><span class="p">()</span> <span class="n">do</span>
+      <span class="nc">GenStage</span><span class="o">.</span><span class="n">start_link</span><span class="p">(</span><span class="n">__MODULE__</span><span class="p">,</span> <span class="ss">:ok</span><span class="p">)</span>
+    <span class="n">end</span>
+
+    <span class="n">def</span> <span class="n">init</span><span class="p">(</span><span class="ss">:ok</span><span class="p">)</span> <span class="n">do</span>
+      <span class="c1"># A slight abstraction leak here requires us to return something as the state</span>
+      <span class="p">{</span><span class="ss">:consumer</span><span class="p">,</span> <span class="ss">:ok</span><span class="p">}</span>
+    <span class="n">end</span>
+
+    <span class="n">def</span> <span class="n">handle_events</span><span class="p">(</span><span class="n">cities</span><span class="p">,</span> <span class="n">_from</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="n">do</span>
+      <span class="n">aggregated_cities</span> <span class="o">=</span> <span class="nc">Enum</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span>
+        <span class="n">cities</span><span class="p">,</span>
+        <span class="p">%{},</span>
+        <span class="n">fn</span><span class="p">(</span><span class="n">city</span><span class="p">,</span> <span class="n">acc</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nc">Map</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">acc</span><span class="p">,</span> <span class="n">city</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="ni">&amp;1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="n">end</span>
+      <span class="p">)</span>
+      <span class="nc">IO</span><span class="o">.</span><span class="n">inspect</span> <span class="n">aggregated_cities</span>
+      <span class="c1"># A slight abstraction leak here requires us to return an empty list</span>
+      <span class="p">{</span><span class="ss">:noreply</span><span class="p">,</span> <span class="p">[],</span> <span class="n">state</span><span class="p">}</span>
+    <span class="n">end</span>
+  <span class="n">end</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>The consumer is quite simple, isn't it. In the <code>handle_events</code> callback, we do the work. Here we artifially sleep to slow it down, and we print out the events we received to get a sense of what each consumer is doing.</p>
+
+<p>So... Wait. Are we done? Let's try it. <code>iex -S mix</code> ...</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">p_pid</span><span class="p">}</span> <span class="o">=</span> <span class="nc">Producer</span><span class="o">.</span><span class="n">start_link</span><span class="p">()</span>
+<span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">pc_pid</span><span class="p">}</span> <span class="o">=</span> <span class="nc">ProducerConsumer</span><span class="o">.</span><span class="n">start_link</span><span class="p">()</span>
+<span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">c_pid</span><span class="p">}</span> <span class="o">=</span> <span class="nc">Consumer</span><span class="o">.</span><span class="n">start_link</span><span class="p">()</span>
+<span class="nc">GenStage</span><span class="o">.</span><span class="n">sync_subscribe</span><span class="p">(</span><span class="n">c_pid</span><span class="p">,</span> <span class="ss">to</span><span class="p">:</span> <span class="n">pc_pid</span><span class="p">,</span> <span class="ss">max_demand</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nc">GenStage</span><span class="o">.</span><span class="n">sync_subscribe</span><span class="p">(</span><span class="n">pc_pid</span><span class="p">,</span> <span class="ss">to</span><span class="p">:</span> <span class="n">p_pid</span><span class="p">,</span> <span class="ss">max_demand</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Well, we're clearly in a state where the consumers have asked for events and we couldn't fulfill. Let's give the producer some things to produce. They won't be real locations, but then again, our location service is fake anyway.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="n">locations</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">1000</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="nc">Enum</span><span class="o">.</span><span class="n">to_list</span> <span class="o">|&gt;</span> <span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">fn</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">{</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">}</span> <span class="n">end</span><span class="p">)</span>
+<span class="nc">GenStage</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">p_pid</span><span class="p">,</span> <span class="p">{</span><span class="ss">:add_geolocations</span><span class="p">,</span> <span class="n">locations</span><span class="p">})</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Well would you look at that. Yes, I'd say we're done. Isn't it beautiful? ... And maybe a little surprising? Explaining the rest is beyond the scope of this introduction, unfortunately, but you should now be ready for the gen_stage documentation.</p>
+
+<p>What you've just read is the fundamentals of GenStage - it's what I wish I'd read when I started. Summary:</p>
+
+<ul>
+<li>The consumer asks for events</li>
+<li>The producer keeps track of the amount of requested events</li>
+<li>The producer pulls events from the source until demand hits zero or until there's no more events to pull, then waits.</li>
+<li>The consumer gets whatever the producer is able to send back, and then does hopefully meaningful work.</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Aldric Giacomoni</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-06-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/elixir/">elixir</a>
+          <a href="/tags/genstage/">genstage</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/import-choosing-the-right-editor/">
+            <span class="next-text nav-default">Choosing the right editor</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:trevoke@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/234025/trevoke" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/trevoke" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/trevoke/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/trevoke/" class="iconfont icon-github" title="github"></a>
+      <a href="https://getpocket.com/@Trevoke" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="https://gitlab.com/trevoke" class="iconfont icon-gitlab" title="gitlab"></a>
+  <a href="http://blog.trevoke.net/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

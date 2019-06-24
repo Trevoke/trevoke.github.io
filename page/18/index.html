@@ -44,7 +44,7 @@
 <meta property="og:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://blog.trevoke.net/" />
-<meta property="og:updated_time" content="2009-12-15T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2008-03-20T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Seven steps">
 <meta itemprop="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead">
@@ -114,121 +114,25 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-open-source-is-wide-open-calling-rake-tasks-publish/">Calling Rake tasks within the Rails env</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/import-which-martial-arts-school-is-right-for-you-publish/">Which martial arts school is right for you?</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2009-12-15 </span>
-      <div class="post-category">
-          <a href="/categories/programming/"> programming </a>
-          </div>
-        <span class="more-meta"> 10 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Calling RAKE tasks within the Rails environment.
-Good to know.
-    </div>
-    <div class="read-more">
-      <a href="/post/import-open-source-is-wide-open-calling-rake-tasks-publish/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-on-re-reading-old-code-publish/">On re-reading old code</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2009-12-09 </span>
-      <div class="post-category">
-          <a href="/categories/programming/"> programming </a>
-          </div>
-        <span class="more-meta"> 87 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I came across this beauty in some old code of mine:
-1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was "necessary" because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
-Three seconds of thinking made me realize that just maybe, I could do this:
-    </div>
-    <div class="read-more">
-      <a href="/post/import-on-re-reading-old-code-publish/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-monday-night-training-publish/">Monday night training</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2009-11-26 </span>
+      <span class="post-time"> 2008-03-20 </span>
       <div class="post-category">
           <a href="/categories/martial-arts/"> martial-arts </a>
           </div>
-        <span class="more-meta"> 225 words </span>
-        <span class="more-meta"> 2 mins read </span>
+        <span class="more-meta"> 622 words </span>
+        <span class="more-meta"> 3 mins read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      I received an email from sensei on Monday (sent to every student) - if you'll be here tonight, bring your fighting gear. Uh-oh. Her sensei was there and taught a few classes, including the adults. The entire class turned out to be pretty much a blur of drills. I'll be able to dredge them out of my body memory, I think. A drill about basics - chain two basics together, using shifting.
+      So, you've decided to start taking a martial arts class. Good for you!
+Why do you want to join? Is it to fight, to learn to defend yourself, to develop self-discipline, to learn kata ('forms'), for health reasons? All of the above?
+For the purpose of this article (if nothing else), I will make a differentiation between a fighting style and a martial art. In a fighting style, you are learning to fight, and that is it.
     </div>
     <div class="read-more">
-      <a href="/post/import-monday-night-training-publish/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-auto-vivifying-hashes-in-ruby-publish/">Auto-vivifying hashes in Ruby</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2009-11-06 </span>
-      <div class="post-category">
-          <a href="/categories/programming/"> programming </a>
-          </div>
-        <span class="more-meta"> 263 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
-1 2 3 4 5 6  def cnh # silly name &amp;quot;create nested hash&amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;gt; { 1 =&amp;gt; { 2 =&amp;gt; { 3 =&amp;gt;4 } } }   This is useful because it reduces the amount of logic in the code.
-    </div>
-    <div class="read-more">
-      <a href="/post/import-auto-vivifying-hashes-in-ruby-publish/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-closures-in-ruby-publish/">Closures in Ruby</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2009-10-28 </span>
-      <div class="post-category">
-          <a href="/categories/programming/"> programming </a>
-          </div>
-        <span class="more-meta"> 39 words </span>
-        <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      I found a script that explains everything really well. Credit goes to:
-Along with this blog entry, it's made the whole deal much easier to figure out.
-Now.. Why didn't I get that when I was looking at LISP?
-    </div>
-    <div class="read-more">
-      <a href="/post/import-closures-in-ruby-publish/" class="read-more-link">Read more..</a>
+      <a href="/post/import-which-martial-arts-school-is-right-for-you-publish/" class="read-more-link">Read more..</a>
     </div>
   </div>
 </article>
@@ -236,14 +140,11 @@ Now.. Why didn't I get that when I was looking at LISP?
     </section>
   
   <nav class="pagination">
-    <a class="prev" href="/page/9/">
+    <a class="prev" href="/page/17/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text">Prev</span>
       </a>
-    <a class="next" href="/page/11/">
-        <span class="next-text">Next</span>
-        <i class="iconfont icon-right"></i>
-      </a>
+    
   </nav>
         </div>
         
