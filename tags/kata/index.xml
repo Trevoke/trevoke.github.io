@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kata on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/kata/</link>
+    <description>Recent content in kata on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Wed, 12 Nov 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/kata/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Martial arts while sick</title>
+      <link>http://blog.trevoke.net/post/import-martial-arts-while-sick-publish/</link>
+      <pubDate>Wed, 12 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-martial-arts-while-sick-publish/</guid>
+      <description>On Monday I went to the dojo as usual, though I&#39;d had a cold over the week-end and wasn&#39;t quite over it (I&#39;m still not over it now..). During form practice, I was constantly correcting myself - I guess that goes to show I need to practice a lot more, if I dedicate this much mindpower to each form.. :)</description>
+    </item>
+    
+  </channel>
+</rss>

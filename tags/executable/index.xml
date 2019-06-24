@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>executable on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/executable/</link>
+    <description>Recent content in executable on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Fri, 23 Jan 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/executable/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Making a ruby script into a stand-alone executable</title>
+      <link>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</link>
+      <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
+      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc. tar2rubyscript rubyscript2exe
+As I&#39;m a newb, it took me a while to figure out that I need .</description>
+    </item>
+    
+  </channel>
+</rss>

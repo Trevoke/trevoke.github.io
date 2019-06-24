@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genstage on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/genstage/</link>
+    <description>Recent content in genstage on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/genstage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GenStage demystified</title>
+      <link>http://blog.trevoke.net/post/genstage_demystified/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/genstage_demystified/</guid>
+      <description>GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
+    </item>
+    
+  </channel>
+</rss>

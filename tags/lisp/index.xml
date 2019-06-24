@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lisp on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/lisp/</link>
+    <description>Recent content in lisp on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Fri, 15 May 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/lisp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lisp on OSX</title>
+      <link>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</link>
+      <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</guid>
+      <description>Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&#39;t too tricky).
+http://www.david-steuber.com/Lisp/OSX/</description>
+    </item>
+    
+  </channel>
+</rss>

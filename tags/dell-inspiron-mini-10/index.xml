@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dell-inspiron-mini-10 on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/dell-inspiron-mini-10/</link>
+    <description>Recent content in dell-inspiron-mini-10 on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Mon, 01 Mar 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/dell-inspiron-mini-10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gentoo on a Dell Inspiron Mini 10</title>
+      <link>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</link>
+      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
+      <description>There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
+    </item>
+    
+  </channel>
+</rss>

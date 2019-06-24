@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hashes on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/hashes/</link>
+    <description>Recent content in hashes on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Fri, 06 Nov 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/hashes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Auto-vivifying hashes in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</link>
+      <pubDate>Fri, 06 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</guid>
+      <description>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
+1 2 3 4 5 6  def cnh # silly name &amp;amp;quot;create nested hash&amp;amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;amp;gt; { 1 =&amp;amp;gt; { 2 =&amp;amp;gt; { 3 =&amp;amp;gt;4 } } }   This is useful because it reduces the amount of logic in the code.</description>
+    </item>
+    
+  </channel>
+</rss>

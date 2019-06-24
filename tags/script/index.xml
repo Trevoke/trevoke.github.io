@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>script on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/script/</link>
+    <description>Recent content in script on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Tue, 27 Jan 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/script/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Grouping directories by name</title>
+      <link>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</link>
+      <pubDate>Tue, 27 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</guid>
+      <description>As is, this code will create an array of arrays - Directories with the same 6 first characters will be grouped in the same sub-array. I am using this for log directories, name format 20081125 for instance - you can just replace the logic to be whatever you need, of course.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  dirs = [] Dir[&amp;#39;*&amp;#39;].</description>
+    </item>
+    
+    <item>
+      <title>Making a ruby script into a stand-alone executable</title>
+      <link>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</link>
+      <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
+      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc. tar2rubyscript rubyscript2exe
+As I&#39;m a newb, it took me a while to figure out that I need .</description>
+    </item>
+    
+    <item>
+      <title>How to delete all files older than a day recursively in a directory and its subdirectories</title>
+      <link>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</guid>
+      <description>Whoo! I haven&#39;t done a post that long in a while!
+I put &#39;activerecord&#39; in there to take advantage of the &#39;24.hours.ago&#39; notation, which makes life much easier. The cost is a little less than 2 seconds to load the library, so I think it&#39;s worth it. It runs as a daily job before backup to tape, to clear old backups from the directory tree.
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  require &amp;#39;activerecord&amp;#39; def delete_recursively(in_here) Dir.</description>
+    </item>
+    
+  </channel>
+</rss>

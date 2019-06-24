@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grep on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/grep/</link>
+    <description>Recent content in grep on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Wed, 31 Aug 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/grep/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Grepping a single file for &#39;dynamic&#39; content</title>
+      <link>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</link>
+      <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</guid>
+      <description>You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
+echo &amp;quot;your fancy word finder stuff here&amp;quot; | xargs -i bash -c &#39;grep -n &amp;quot;{}&amp;quot; your/file/here
+Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have.</description>
+    </item>
+    
+  </channel>
+</rss>

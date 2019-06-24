@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>permutations on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/permutations/</link>
+    <description>Recent content in permutations on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Thu, 17 Dec 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/permutations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inter-array permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</guid>
+      <description>I don&#39;t really have a better name for this. It&#39;s also not completely clean, but it works. I had, almost a year ago (362 days ago), written a blog post about lexicographic permutations. That was about permutations of elements within one array. Someone on ruby-forum asked about permutations between multiple arrays. I found something in C#, which I was happy to transcribe to Ruby and tweak a little.
+1 2 3 4 5 6 7 8 9 10 11  def array_permutations array, index=0 # index is 0 by default : start at the beginning, more elegant.</description>
+    </item>
+    
+    <item>
+      <title>Random constrained permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</link>
+      <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</guid>
+      <description>Look, Ma, these are my baby steps in algorithms!
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  # list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.</description>
+    </item>
+    
+    <item>
+      <title>(Lexicographic) Permutations in Ruby</title>
+      <link>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</link>
+      <pubDate>Sat, 20 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</guid>
+      <description>Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
+I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.</description>
+    </item>
+    
+  </channel>
+</rss>

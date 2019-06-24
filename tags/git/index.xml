@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/git/</link>
+    <description>Recent content in git on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Tue, 30 Aug 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git usage conventions</title>
+      <link>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</link>
+      <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</guid>
+      <description>We&#39;ve been using git at work for a greenfield project and, so far, this has worked for us. It could be a useful template to get another team started. We have gotten rid of the name &#39;master&#39;, which is only a convention anyway, and instead are using a few permanent branches:  production (only stable code which gets deployed to production goes there. The only branch to be merged in, EVER, is &#39;stable&#39;) stable (only stable code which goes to the staging environment goes there.</description>
+    </item>
+    
+    <item>
+      <title>Git : moving a remote branch</title>
+      <link>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</link>
+      <pubDate>Tue, 29 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
+      <description>One can&#39;t actually move a remote branch, but you can copy a branch and delete a branch, so...
+Copy oldbranch in repo to newbranch.
+1  git push {repo} {oldbranch}:heads/{newbranch}   Ex: git push origin foobranch:barbranch renames foobranch to barbranch
+Remove a remote branch: it’s all about the colon:
+1  git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;   [code][/code]
+Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
+    </item>
+    
+  </channel>
+</rss>

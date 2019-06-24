@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rspec on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/rspec/</link>
+    <description>Recent content in rspec on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Mon, 11 Jun 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/rspec/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Devise &#43; rspec error: undefined method &#39;name&#39;</title>
+      <link>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</guid>
+      <description>If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
+&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  @request.env[&amp;#34;devise.mapping&amp;#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
+On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.</description>
+    </item>
+    
+  </channel>
+</rss>

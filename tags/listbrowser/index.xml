@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>listbrowser on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/listbrowser/</link>
+    <description>Recent content in listbrowser on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Fri, 15 Jan 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/listbrowser/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New gem: ListBrowser</title>
+      <link>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</link>
+      <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
+      <description>~~ ListBrowser README ~~
+I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) gem install ListBrowser</description>
+    </item>
+    
+  </channel>
+</rss>

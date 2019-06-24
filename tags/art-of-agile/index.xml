@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>art-of-agile on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/art-of-agile/</link>
+    <description>Recent content in art-of-agile on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Wed, 02 Nov 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/art-of-agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art of Agile Planning / Art of Agile Delivery, by James Shore and Diana Larsen</title>
+      <link>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</link>
+      <pubDate>Wed, 02 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</guid>
+      <description>The Art of Agile Planning (#aoap on Twitter, and AOAP from now on) is a 2-day course. The focus is on understanding the higher-level constructs of Agile and how they imbricate. In the course, one learns how the ideal Agile team is composed (hint: it&#39;s cross-functional and co-located) and what practices and techniques will be used to organize at all levels, from the developers&#39; standup to the customers&#39; research for the next best value-delivering feature, including how to properly create a feature that developers can work on and how to best break it down into stories (and then into tasks).</description>
+    </item>
+    
+  </channel>
+</rss>

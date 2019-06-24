@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/css/</link>
+    <description>Recent content in css on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Wed, 02 Sep 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rails, HAML, alternatible CSS for tables</title>
+      <link>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</link>
+      <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</guid>
+      <description>If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
+&amp;lt;tr class=&amp;quot;&amp;lt;%= cycle(&amp;quot;even&amp;quot;, &amp;quot;odd&amp;quot;) %&amp;gt;&amp;quot;&amp;gt;
+This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that.</description>
+    </item>
+    
+  </channel>
+</rss>

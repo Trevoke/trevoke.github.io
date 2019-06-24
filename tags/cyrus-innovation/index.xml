@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cyrus-innovation on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/cyrus-innovation/</link>
+    <description>Recent content in cyrus-innovation on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Thu, 22 Apr 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/cyrus-innovation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New position at Cyrus</title>
+      <link>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</guid>
+      <description>On Monday, April 26th, I am starting a new job at Cyrus Innovation. It may well be fair that I am starting a new career - it&#39;s a hop, skip and jump for me. I&#39;m switching from Systems Administration / Tech Support / Hell desk (not a typo, sadly) to Development / Programming.
+I am very much looking forward to it. It means a hobby/job switch: I will now do sysadmin stuff as a hobby, and programming as a full-time job.</description>
+    </item>
+    
+  </channel>
+</rss>

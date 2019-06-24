@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mimvista on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/mimvista/</link>
+    <description>Recent content in mimvista on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Tue, 04 Nov 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/mimvista/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MIMVista and auto-deletion of archived studies</title>
+      <link>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</link>
+      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</guid>
+      <description>The MIM keeps 60 days by default. That may be too much for you..
+By default, the folder C:\Program Files\MIM\config should make you really happy, it&#39;s got lots of plain text files with configuration for all kinds of settings.
+cleanup.txt has &#34;ARCHIVE LEFTOVER AGE (DAYS) := 60
+Change that to whatever you feel is appropriate for you needs.</description>
+    </item>
+    
+  </channel>
+</rss>
