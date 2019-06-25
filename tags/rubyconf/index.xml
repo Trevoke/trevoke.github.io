@@ -20,7 +20,7 @@
       <guid>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</guid>
       <description>I&#39;m back from Rubyconf.
 Some people say Ruby is dead. We can probably gloss over Zed Shaw&#39;s famous rant, since it&#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&#39;s Global Interpreter Lock.
-Given the talks at Rubyconf, Ruby is most likely not dead (and our internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
+Given the talks at Rubyconf, Ruby is most likely not dead (and my company&#39;s internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
     </item>
     
   </channel>

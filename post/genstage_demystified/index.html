@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
@@ -39,25 +40,28 @@
 
 
 <meta property="og:title" content="GenStage demystified" />
-<meta property="og:description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps." />
+<meta property="og:description" content="GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://blog.trevoke.net/post/genstage_demystified/" /><meta property="article:published_time" content="2019-06-23T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2019-06-23T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="GenStage demystified">
-<meta itemprop="description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.">
+<meta itemprop="description" content="GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.">
 
 
 <meta itemprop="datePublished" content="2019-06-23T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-06-23T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1364">
+<meta itemprop="wordCount" content="1362">
 
 
 
 <meta itemprop="keywords" content="elixir,genstage," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GenStage demystified"/>
-<meta name="twitter:description" content="GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps."/>
+<meta name="twitter:description" content="GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -127,7 +131,7 @@
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 1364 words </span>
+          <span class="more-meta"> 1362 words </span>
           <span class="more-meta"> 7 mins read </span>
         
       </div>
@@ -140,16 +144,16 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="genstage-demystified">GenStage demystified</h1>
+      <p>GenStage is a miracle of UX for developers. There's only one catch: because of its purpose, it's built for the machine, not for the developer. Let's go over what GenStage is for, and see just how simple it is to start using it.</p>
 
-<h2 id="why-would-you-use-genstage">Why would you use GenStage?</h2>
+<h1 id="why-would-you-use-genstage">Why would you use GenStage?</h1>
 
-<h2 id="how-to-think-about-genstage">How to think about GenStage</h2>
+<p>GenStage is what you would use if you had "some work" (<code>events</code>) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.
+In the world of GenStage, the <code>producer</code> is what will hold the <code>events</code> that the <code>consumers</code> will then work on.</p>
 
-<p>GenStage is a miracle of UX for developers. There's only one catch: because of its purpose, it's built for the machine, not for the developer. Let's go over what GenStage is for, and see just how simple it is to start using it.
-GenStage is what you would use if you had "some work" (<code>events</code>) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.
-In the world of GenStage, the <code>producer</code> is what will hold the <code>events</code> that the <code>consumers</code> will then work on.
-GenStage is based on two fundamental principles:</p>
+<h1 id="how-to-think-about-genstage">How to think about GenStage</h1>
+
+<p>GenStage is based on two fundamental principles:</p>
 
 <ol>
 <li>Consumers request events from producers. The producers' only job is to feed the consumer when it is hungry. Consumer not hungry? No feeding.</li>
@@ -167,9 +171,11 @@ GenStage is based on two fundamental principles:</p>
 
 <h3 id="first-a-test-project">First, a test project</h3>
 
-<p><code>mix new genstage_test=
-=cd genstage_test=
-Edit your mix.exs file and make sure your =deps</code> look like this:</p>
+<p><code>mix new genstage_test</code></p>
+
+<p><code>cd genstage_test</code></p>
+
+<p>Edit your mix.exs file and make sure your <code>deps</code> look like this:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-elixir" data-lang="elixir"><span class="lnt">1
@@ -184,10 +190,11 @@ Edit your mix.exs file and make sure your =deps</code> look like this:</p>
     <span class="p">]</span></code></pre></td></tr></table>
 </div>
 </div>
+<p><code>mix deps.get</code></p>
+
 <h3 id="now-genstage">Now, GenStage</h3>
 
-<p>=mix deps.get=
-I'm not going to cover everything about GenStage here - once you've read this blog entry, you'll be able to read the documentation ( https://hexdocs.pm/gen_stage/GenStage.html ) and know which bits go where, without the shadow of a doubt.</p>
+<p>I'm not going to cover everything about GenStage here - once you've read this blog entry, you'll be able to read the documentation ( https://hexdocs.pm/gen_stage/GenStage.html ) and know which bits go where, without the shadow of a doubt.</p>
 
 <p>GenStage is basically broken down into three kinds of processes: <code>producer</code>, <code>producer-consumer</code>, and <code>consumer</code>. A producer will hold the events that will be requested by consumers, and a producer-consumer will request events from a producer and then be able to produce events, which means you can create a chain of transformations very easily.</p>
 

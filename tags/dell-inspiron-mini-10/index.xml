@@ -18,7 +18,8 @@
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
-      <description>There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
+      <description>There are a few gotchas:
+1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
     </item>
     
   </channel>

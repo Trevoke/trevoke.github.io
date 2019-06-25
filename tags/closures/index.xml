@@ -19,7 +19,7 @@
       
       <guid>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</guid>
       <description>I found a script that explains everything really well. Credit goes to:
-Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
+  # CLOSURES IN RUBY Paul Cantrell http://innig.net  # Email: username &#34;cantrell&#34;, domain name &#34;pobox.com&#34;  Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
 Now.. Why didn&#39;t I get that when I was looking at LISP?</description>
     </item>
     

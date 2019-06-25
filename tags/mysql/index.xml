@@ -18,7 +18,9 @@
       <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
-      <description>Default passwords for MSSQL, Sybase, and mySQL: , , , That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
+      <description>Default passwords for MSSQL, Sybase, and mySQL:
+, , ,
+That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
     </item>
     
     <item>
@@ -27,8 +29,7 @@
       <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</guid>
-      <description>$ sudo apt-get install libmysqlclient15-dev $ sudo gem install mysql
-Easy! But .. gotta know it.</description>
+      <description>1 2  sudo apt-get install libmysqlclient15-dev sudo gem install mysql   Easy! But .. gotta know it.</description>
     </item>
     
     <item>
@@ -38,8 +39,9 @@ Easy! But .. gotta know it.</description>
       
       <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
       <description>Taken straight from this blog
-in a terminal.. First do a &#39;locate mysql_config&#39; and then replace the path in the following command with where that file is.
-$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed</description>
+in a terminal.. First do a locate mysql_config and then replace the path in the following command with where that file is.
+$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config
+1 2 3  Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed  </description>
     </item>
     
   </channel>

@@ -19,7 +19,8 @@
       
       <guid>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</guid>
       <description>I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
- Assume in this example that the username is &#39;atiensivu&#39;, the domain is &#39;staff&#39;, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance &#39;atiensivu&#39; with the username of the corrupt profile.  If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
+Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
+ If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
     </item>
     
   </channel>

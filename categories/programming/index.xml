@@ -18,7 +18,8 @@
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/genstage_demystified/</guid>
-      <description>GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
+      <description>GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
     </item>
     
     <item>
@@ -89,7 +90,7 @@ This colleague had been using the technique of Test-Driven Design (TDD) to metho
       
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
       <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
-Single Responsibility Principle Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
+Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
     </item>
     
     <item>
@@ -100,7 +101,7 @@ Single Responsibility Principle Spreadsheet software is so powerful nowadays tha
       <guid>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</guid>
       <description>I&#39;m back from Rubyconf.
 Some people say Ruby is dead. We can probably gloss over Zed Shaw&#39;s famous rant, since it&#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&#39;s Global Interpreter Lock.
-Given the talks at Rubyconf, Ruby is most likely not dead (and our internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
+Given the talks at Rubyconf, Ruby is most likely not dead (and my company&#39;s internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
     </item>
     
     <item>
@@ -109,7 +110,9 @@ Given the talks at Rubyconf, Ruby is most likely not dead (and our internal ruby
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep. $ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep.
+$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username 
+This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
     </item>
     
     <item>
@@ -152,7 +155,7 @@ That&#39;s it. You can now install ffi 1.5.</description>
       
       <guid>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</guid>
       <description>If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &amp;#39;name&amp;#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&amp;#34;devise.mapping&amp;#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.</description>
     </item>
@@ -163,7 +166,8 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
       <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
-      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:  It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
+      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:
+ It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
     </item>
     
     <item>
@@ -223,9 +227,8 @@ This blog post explains them very well; and for more information, get &#34;Metap
       <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
-      <description>~~ ListBrowser README ~~
-I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
-Install: (set up gemcutter) gem install ListBrowser</description>
+      <description>I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) ~gem install ListBrowser~</description>
     </item>
     
     <item>
@@ -236,10 +239,9 @@ Install: (set up gemcutter) gem install ListBrowser</description>
       <guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
       <description>One can&#39;t actually move a remote branch, but you can copy a branch and delete a branch, so...
 Copy oldbranch in repo to newbranch.
-1  git push {repo} {oldbranch}:heads/{newbranch}   Ex: git push origin foobranch:barbranch renames foobranch to barbranch
-Remove a remote branch: it’s all about the colon:
-1  git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;   [code][/code]
-Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
+1  git push {repo} {oldbranch}:heads/{newbranch}   Ex: git push origin foobranch:barbranch~ renames ~foobranch to barbranch
+Remove a remote branch: it’s all about the colon!
+1  git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;   Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
     </item>
     
     <item>
@@ -290,7 +292,7 @@ Three seconds of thinking made me realize that just maybe, I could do this:</des
       
       <guid>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</guid>
       <description>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
-1 2 3 4 5 6  def cnh # silly name &amp;amp;quot;create nested hash&amp;amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;amp;gt; { 1 =&amp;amp;gt; { 2 =&amp;amp;gt; { 3 =&amp;amp;gt;4 } } }   This is useful because it reduces the amount of logic in the code.</description>
+1 2 3 4 5 6  def cnh # silly name &amp;#34;create nested hash&amp;#34; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;gt; { 1 =&amp;gt; { 2 =&amp;gt; { 3 =&amp;gt; 4 } } }   This is useful because it reduces the amount of logic in the code.</description>
     </item>
     
     <item>
@@ -300,7 +302,7 @@ Three seconds of thinking made me realize that just maybe, I could do this:</des
       
       <guid>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</guid>
       <description>I found a script that explains everything really well. Credit goes to:
-Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
+  # CLOSURES IN RUBY Paul Cantrell http://innig.net  # Email: username &#34;cantrell&#34;, domain name &#34;pobox.com&#34;  Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
 Now.. Why didn&#39;t I get that when I was looking at LISP?</description>
     </item>
     
@@ -352,8 +354,7 @@ http://www.david-steuber.com/Lisp/OSX/</description>
       <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</guid>
-      <description>$ sudo apt-get install libmysqlclient15-dev $ sudo gem install mysql
-Easy! But .. gotta know it.</description>
+      <description>1 2  sudo apt-get install libmysqlclient15-dev sudo gem install mysql   Easy! But .. gotta know it.</description>
     </item>
     
     <item>
@@ -363,8 +364,9 @@ Easy! But .. gotta know it.</description>
       
       <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
       <description>Taken straight from this blog
-in a terminal.. First do a &#39;locate mysql_config&#39; and then replace the path in the following command with where that file is.
-$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed</description>
+in a terminal.. First do a locate mysql_config and then replace the path in the following command with where that file is.
+$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config
+1 2 3  Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed  </description>
     </item>
     
     <item>
@@ -392,7 +394,9 @@ $ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_confi
       <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
-      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc. tar2rubyscript rubyscript2exe
+      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc.
+tar2rubyscript
+rubyscript2exe
 As I&#39;m a newb, it took me a while to figure out that I need .</description>
     </item>
     

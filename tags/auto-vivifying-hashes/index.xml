@@ -19,7 +19,7 @@
       
       <guid>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</guid>
       <description>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
-1 2 3 4 5 6  def cnh # silly name &amp;amp;quot;create nested hash&amp;amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;amp;gt; { 1 =&amp;amp;gt; { 2 =&amp;amp;gt; { 3 =&amp;amp;gt;4 } } }   This is useful because it reduces the amount of logic in the code.</description>
+1 2 3 4 5 6  def cnh # silly name &amp;#34;create nested hash&amp;#34; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;gt; { 1 =&amp;gt; { 2 =&amp;gt; { 3 =&amp;gt; 4 } } }   This is useful because it reduces the amount of logic in the code.</description>
     </item>
     
   </channel>

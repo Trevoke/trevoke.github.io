@@ -18,7 +18,8 @@
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/genstage_demystified/</guid>
-      <description>GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
+      <description>GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
     </item>
     
   </channel>

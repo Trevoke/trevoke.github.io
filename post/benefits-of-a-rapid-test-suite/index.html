@@ -157,10 +157,11 @@ The understanding of the core domain and/or the early code remains mostly intell
 
 <p>The cost to understanding is high because the tools one can use to gain the understanding tend to be onerous. The code is rarely as readable as it could be, and choices made in organizing code means there are levels of indirection to juggle in one's head.</p>
 
+<p>A developer will dive into that code when needed, which usually means "when a bug is found", or sometimes "when something is missing".</p>
+
 <h2 id="learning-as-a-fundamental-skill">Learning as a fundamental skill</h2>
 
-<p>A developer will dive into that code when needed, which usually means "when a bug is found", or sometimes "when something is missing".
-A developer's work is really thought work. The code is just a means to an end. And code needs to be changeable, otherwise it gets in the way of the thought work.</p>
+<p>A developer's work is really thought work. The code is just a means to an end. And code needs to be changeable, otherwise it gets in the way of the thought work.</p>
 
 <blockquote>
 <p>
@@ -170,23 +171,27 @@ A developer's work is really thought work. The code is just a means to an end. A
 
 <p><strong>When you have built a test suite that runs quickly, and you trust that it is representative of the intended behavior of your system, you can go in, make any change, run the test suite, and see what breaks.</strong></p>
 
+<p>As developers, we learn for a living. We explore. We modify our neural pathways. This is intensive work. When we learn a new language, a new library, or a new tool, there is a very simple pattern that we follow: "Change one thing and see what happens". We can rely on this because we have computers, and computers are really good at doing this very quickly.</p>
+
 <h3 id="tdd">TDD</h3>
+
+<p>Test-Driven Design is a tool that is meant to enable that practice. Over time, you are building up hundreds of "Change one thing and see what happens". With strict, careful TDD, you build hundreds or thousands of these test cases, letting you build confidence that your system is working as intended. There are many, many principles, guidelines and rules of thumbs to help write effective tests, just like there are many tools and techniques. Books have been written and holy wars have been fought, so I will not dive into this particular topic.</p>
 
 <h3 id="caring-for-the-test-suite">Caring for the test suite</h3>
 
+<p>With careful pruning and nurturing of the test suite, and making sure that only the elements under test are being used, one can build a test suite that runs very quickly.
+How often do you <strong>actually</strong> have to test that logging in works? Most teams I've seen test that logging in works with every single browser-level test they have.
+How often do you <strong>actually</strong> have to save something to the database? If you have an abstraction on top of your storage layer, the answer might be "never".</p>
+
 <h2 id="playing">Playing</h2>
 
-<p>As developers, we learn for a living. We explore. We modify our neural pathways. This is intensive work. When we learn a new language, a new library, or a new tool, there is a very simple pattern that we follow: "Change one thing and see what happens". We can rely on this because we have computers, and computers are really good at doing this very quickly.
-Test-Driven Design is a tool that is meant to enable that practice. Over time, you are building up hundreds of "Change one thing and see what happens". With strict, careful TDD, you build hundreds or thousands of these test cases, letting you build confidence that your system is working as intended. There are many, many principles, guidelines and rules of thumbs to help write effective tests, just like there are many tools and techniques. Books have been written and holy wars have been fought, so I will not dive into this particular topic.
-With careful pruning and nurturing of the test suite, and making sure that only the elements under test are being used, one can build a test suite that runs very quickly.
-How often do you <strong>actually</strong> have to test that logging in works? Most teams I've seen test that logging in works with every single browser-level test they have.
-How often do you <strong>actually</strong> have to save something to the database? If you have an abstraction on top of your storage layer, the answer might be "never".
-A rapid test suite makes changing the codebase accessible. It can transform exploration into play. It encourages "What ifs", and "I wonder". It enables "Eureka!" moments.</p>
+<p>A rapid test suite makes changing the codebase accessible. It can transform exploration into play. It encourages "What ifs", and "I wonder". It enables "Eureka!" moments.</p>
+
+<p>It transforms painstaking exploration into play. Playing is a very effective way to learn. <em>This behavioral change is critical</em>. Doing a Google search for "learning play study adults" yields <a href="http://www.helpguide.org/articles/emotional-health/benefits-of-play-for-adults.htm" title="many">many</a> <a href="http://www.npr.org/sections/ed/2014/08/06/336360521/play-doesnt-end-with-childhood-why-adults-need-recess-too" title="results">results</a>.</p>
 
 <h2 id="stress">Stress</h2>
 
-<p>It transforms painstaking exploration into play. Playing is a very effective way to learn. <em>This behavioral change is critical</em>. Doing a Google search for "learning play study adults" yields <a href="http://www.helpguide.org/articles/emotional-health/benefits-of-play-for-adults.htm" title="many">many</a> <a href="http://www.npr.org/sections/ed/2014/08/06/336360521/play-doesnt-end-with-childhood-why-adults-need-recess-too" title="results">results</a>.
-It turns out stress <a href="http://the-programmers-stone.com/about/neuroscience/" title="lowers cognitive flexibility">lowers cognitive flexibility</a>. Given the <a href="http://the-programmers-stone.com/about/implications-for-software-engineers/" title="&quot;puzzle nature&quot;">"puzzle nature"</a> of programming, one may conclude that keeping the stress level low around the engineers is simply a sound business decision. That developers play is a known trope.</p>
+<p>It turns out stress <a href="http://the-programmers-stone.com/about/neuroscience/" title="lowers cognitive flexibility">lowers cognitive flexibility</a>. Given the <a href="http://the-programmers-stone.com/about/implications-for-software-engineers/" title="&quot;puzzle nature&quot;">"puzzle nature"</a> of programming, one may conclude that keeping the stress level low around the engineers is simply a sound business decision. That developers play is a known trope.</p>
 
 <p><img src="/images/xkcd-compiling.png" alt="/images/xkcd-compiling.png" title="/images/xkcd-compiling.png" /></p>
 

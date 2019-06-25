@@ -18,8 +18,7 @@
       <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</guid>
-      <description>$ sudo apt-get install libmysqlclient15-dev $ sudo gem install mysql
-Easy! But .. gotta know it.</description>
+      <description>1 2  sudo apt-get install libmysqlclient15-dev sudo gem install mysql   Easy! But .. gotta know it.</description>
     </item>
     
   </channel>

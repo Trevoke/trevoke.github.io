@@ -56,7 +56,7 @@ Create a temporary directory and get cozy inside.">
 
 <meta itemprop="datePublished" content="2011-01-27T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2011-01-27T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="413">
+<meta itemprop="wordCount" content="427">
 
 
 
@@ -135,8 +135,8 @@ Create a temporary directory and get cozy inside."/>
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 413 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 427 words </span>
+          <span class="more-meta"> 3 mins read </span>
         
       </div>
     </header>
@@ -156,48 +156,73 @@ Create a temporary directory and get cozy inside."/>
 
 <p>Right off the bat, how would you write a test?
 You would create a file called "my_test.rb" (It is a good naming convention, 'something_test.rb').</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;test/unit&#39;</span>
+<span class="k">class</span> <span class="nc">MyTest</span> <span class="o">&lt;</span> <span class="no">Test</span><span class="o">::</span><span class="no">Unit</span><span class="o">::</span><span class="no">TestCase</span>
+  <span class="k">def</span> <span class="nf">test_addition_is_not_broken</span>
+    <span class="n">assert_equal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span>
+  <span class="k">end</span>
 
-<p>[ruby]require 'test/unit'
-class MyTest &lt; Test::Unit::TestCase
-def test_addition_is_not_broken
-assert_equal(10, 5+5)
-end
-  def test_addition_is_not_broken_but_i_am
-    assert_equal(10, 5)
-  end
-end
-[/ruby]</p>
-
+  <span class="k">def</span> <span class="nf">test_addition_is_not_broken_but_i_am</span>
+    <span class="n">assert_equal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></td></tr></table>
+</div>
+</div>
 <p>A couple of things of note:
 <ul>
-        <li>"require" is how you load external libraries.</li>
-        <li>The test class name ("SomethingTest") is a convention. Follow it and avoid pain.</li>
-        <li>The test method name also follows a convention : "test_" . Again, follow it and avoid pain.</li>
+        <li><code>require</code> is how you load external libraries.</li>
+        <li>The test class name (<code>SomethingTest</code>) is a convention. Follow it and avoid pain.</li>
+        <li>The test method name also follows a convention : <code>test_*</code> . Again, follow it and avoid pain.</li>
         <li>Indentation is two spaces by convention. Follow, Avoid.</li>
         <li>Parentheses for method calls are optional, but it's good form to put parentheses if there are two or more arguments to a method. Also, parentheses will save you if the parser has issues parsing. Remember that.</li>
 </ul>
-To run that, you would simply call "ruby my_test.rb" and see one test succeed and one test fail.</p>
+To run that, you would simply call <code>ruby my_test.rb</code> and see one test succeed and one test fail.</p>
 
 <p>How would you write a simple program?
-Create a file called "myprog.rb" and put the following inside:</p>
+Create a file called <code>myprog.rb</code> and put the following inside:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">palindromize</span> <span class="n">input</span>
+  <span class="n">input</span><span class="o">.</span><span class="n">reverse</span>
+<span class="k">end</span>
 
-<p>[ruby]
-def palindromize input
-  input.reverse
-end</p>
+<span class="nb">puts</span> <span class="s2">&#34;Give me something and we&#39;ll see if it&#39;s a palindrome!&#34;</span>
+<span class="n">input</span> <span class="o">=</span> <span class="nb">gets</span><span class="o">.</span><span class="n">chomp</span>
+<span class="nb">puts</span> <span class="n">palindromize</span><span class="p">(</span><span class="n">input</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>This would be run, like the test, with ~ruby myprog.rb~
+Some things to note:</p>
 
-<p>puts &quot;Give me something and we'll see if it's a palindrome!&quot;
-input = gets.chomp
-puts palindromize(input)
-[/ruby]</p>
+<p><ul>
+        <li><code>gets.chomp</code> -- Ruby, by default, captures the return key being pressed. Chomp is necessary to remove that special character.</li>
+        <li>Did you notice how I put parentheses around <code>palindromize(input)</code> ? It's so that both the Ruby parser and human readers stay sane when reading the code.</li>
+</ul></p>
 
-<p>This would be run, like the test, with "ruby myprog.rb"
-Some things to note:
-<ul>
-        <li>"gets.chomp" -- Ruby, by default, captures the return key being pressed. Chomp is necessary to remove that special character.</li>
-        <li>Did you notice how I put parentheses around "palindromize(input)" ? It's so that both the Ruby parser and human readers stay sane when reading the code.</li>
-</ul>
-Things of note:</p>
+<p>Things of note:</p>
 
 <p>Ruby documentation: <a href="http://ruby-doc.org/" target="_blank">http://ruby-doc.org/</a>, <a href="http://ruby-doc.org/core" target="_blank">http://ruby-doc.org/core</a> -- that will get you started. The documentation is excellent until you get to some arcane features -- so not to worry, for now.</p>
 

@@ -31,7 +31,7 @@ Everything that can be automated should be automated.
       
       <guid>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</guid>
       <description>If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &amp;#39;name&amp;#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&amp;#34;devise.mapping&amp;#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.</description>
     </item>

@@ -16,7 +16,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="There are a few gotchas:
+1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
@@ -39,25 +40,28 @@
 
 
 <meta property="og:title" content="Gentoo on a Dell Inspiron Mini 10" />
-<meta property="og:description" content="There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." />
+<meta property="og:description" content="There are a few gotchas:
+1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/" /><meta property="article:published_time" content="2010-03-01T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2010-03-01T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Gentoo on a Dell Inspiron Mini 10">
-<meta itemprop="description" content="There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).">
+<meta itemprop="description" content="There are a few gotchas:
+1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).">
 
 
 <meta itemprop="datePublished" content="2010-03-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2010-03-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="293">
+<meta itemprop="wordCount" content="302">
 
 
 
 <meta itemprop="keywords" content="gentoo,dell-inspiron-mini-10," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gentoo on a Dell Inspiron Mini 10"/>
-<meta name="twitter:description" content="There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)."/>
+<meta name="twitter:description" content="There are a few gotchas:
+1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -127,7 +131,7 @@
         <div class="post-category">
             <a href="/categories/sysadmin/"> sysadmin </a>
             </div>
-          <span class="more-meta"> 293 words </span>
+          <span class="more-meta"> 302 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -140,8 +144,9 @@
   </div>
 </div>
     <div class="post-content">
-      <p>There are a few gotchas:
-1) If you have a SSD drive, you need to <em>modprobe pata_sch</em> to see it.
+      <p>There are a few gotchas:</p>
+
+<p>1) If you have a SSD drive, you need to <em>modprobe pata_sch</em> to see it.
 2) when using GRUB, install it on whatever drive the hard drive is, even if it's /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.
 3) In the kernel, in the I2C options, don't let it pick automatically - instead, select the algorithm options in the menu that appears (I don't know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).</p>
 
@@ -151,22 +156,39 @@
 I needed to use gentoo-sources-2.6.33, which at the time of this writing was masked as ~x86. A big advantage though is that it has support for the Atom processor (and the proper driver for the broadcom card!).
 Enable the "B43" driver in the kernel.
 Then, follow the instructions given <a href="http://linuxwireless.org/en/users/Drivers/b43#fw-b43-lp">here</a>:</p>
-
-<p><blockquote>git clone http://git.bu3sch.de/git/b43-tools.git
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git clone http://git.bu3sch.de/git/b43-tools.git
 cd b43-tools/fwcutter
 make
-cd ..
-</blockquote>
-Use version 4.174.64.19 of Broadcom's proprietary driver. (The tarball is mislabeled as "4.178.10.4", but it is actually 4.174.64.19.)
-Download and extract the firmware from this driver tarball (Gentoo's installation directory for this is /lib/firmware):</p>
+cd ..</pre></td></tr></table>
+</div>
+</div>
+<p>Use version 4.174.64.19 of Broadcom's proprietary driver. (The tarball is mislabeled as "4.178.10.4", but it is actually 4.174.64.19.)</p>
 
-<p><blockquote>export FIRMWARE_INSTALL_DIR="/lib/firmware"
+<p>Download and extract the firmware from this driver tarball (Gentoo's installation directory for this is /lib/firmware):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">export FIRMWARE_INSTALL_DIR=&#34;/lib/firmware&#34;
 wget http://downloads.openwrt.org/sources/broadcom-wl-4.178.10.4.tar.bz2
 tar xjf broadcom-wl-4.178.10.4.tar.bz2
 cd broadcom-wl-4.178.10.4/linux
-sudo ../../fwcutter/b43-fwcutter -w "$FIRMWARE_INSTALL_DIR" wl_apsta.o
-</blockquote></p>
-
+sudo ../../fwcutter/b43-fwcutter -w &#34;$FIRMWARE_INSTALL_DIR&#34; wl_apsta.o</pre></td></tr></table>
+</div>
+</div>
 <p>At the time of this writing, although the b43-firmware is available and promises to give us what we need, the b43-fwcutter tool is only at version 12, and not 13, so it can't be used. This is why we need to use <em>git</em> to download the latest version and correctly build the firmware by hand.</p>
 
     </div>

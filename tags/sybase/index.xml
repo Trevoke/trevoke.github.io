@@ -29,7 +29,9 @@ gem install activerecord-sybase-adapter -s http://gems.rubyonrails.org
       <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
-      <description>Default passwords for MSSQL, Sybase, and mySQL: , , , That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
+      <description>Default passwords for MSSQL, Sybase, and mySQL:
+, , ,
+That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
     </item>
     
   </channel>

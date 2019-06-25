@@ -144,52 +144,47 @@
 
 <p>Spreadsheets are evil. And do you know why? Because they're too powerful. Here is the sweet spot of spreadsheets: <strong>tables of related data on which calculations need to be made</strong>. Here is not the sweet spot of spreadsheets: <strong>everything else</strong>.</p>
 
+<p>Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I've also learned that there was such a thing as the Single Responsibility Principle.</p>
+
 <h1 id="single-responsibility-principle">Single Responsibility Principle</h1>
 
-<p>Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I've also learned that there was such a thing as the Single Responsibility Principle.
-The Single Responsibility Principle, in code, states that a class (or a function, or really any logical set of code) must have one and only one reason to change. This is very strong.</p>
+<p>The Single Responsibility Principle, in code, states that a class (or a function, or really any logical set of code) must have one and only one reason to change. This is very strong.</p>
+
+<p>Let's take a spreadsheet which is a visualization of a schedule. This spreadsheet can change if we're going to change the color a particular scheduled item, or the dates of the scheduled item, or who's doing the scheduled thing, or the granularity or the schedule, or something around a scheduled item. Not that I'm counting, but I think that's more than one.</p>
 
 <h2 id="separation-of-concerns">Separation of concerns</h2>
 
+<p>Separating your concerns helps with that. Among other things, a single concern is, well, a single thing, so it helps make sure there's just one reason for a set of code to change. When I'm looking at data, I've basically got three concerns:</p>
+
 <ol>
-Let's take a spreadsheet which is a visualization of a schedule. This spreadsheet can change if we're going to change the color a particular scheduled item, or the dates of the scheduled item, or who's doing the scheduled thing, or the granularity or the schedule, or something around a scheduled item. Not that I'm counting, but I think that's more than one.
-Separating your concerns helps with that. Among other things, a single concern is, well, a single thing, so it helps make sure there's just one reason for a set of code to change. When I'm looking at data, I've basically got three concerns:
 <li>Storing the data</li>
 <li>Manipulating the data</li>
 <li>Visualizing the data</li>
 </ol>
 
-<h1 id="emacs">emacs</h1>
+<p>If I can find a way of storing the data in such  a way that manipulating it is about as painless as it gets, then I am much more likely to want to play with the data, and therefore I am much more likely to come to new realizations about it.</p>
+
+<h1 id="emacs">Emacs</h1>
+
+<p>Emacs is a beast with many uses, but it is <strong>definitely</strong> organized. And it is, of course, mostly about modifying plain-text, though it has a large support for richer formats. Many of the plain-text modes support exporting and converting to other formats, which is also a driving force behind many of the powerful use cases for emacs.</p>
 
 <h2 id="org-mode">org-mode</h2>
+
+<p>Enter org-mode.
+Org-mode is about organizing things. It's basically an outline mode with Getting Things Done features on crack. My favorite org-mode feature to date is how it handles tables, precisely because it is such a wonderful example of the separation of concerns that I'm talking about here. Here's a small example.</p>
 
 <h3 id="tables">Tables</h3>
 
 <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Date of Birth</th>
+<th>Income</th>
+</tr>
+</thead>
 <tbody>
-<tr>
-<td>f I can find a way of storing the data in such  a way that manipulating it is about as painless as it gets, then I am much more likely to want to play with the data, and therefore I am much more likely to come to new realizations about it</td>
-</tr>
-
-<tr>
-<td>macs is a beast with many uses, but it is <strong>definitely</strong> organized. And it is, of course, mostly about modifying plain-text, though it has a large support for richer formats. Many of the plain-text modes support exporting and converting to other formats, which is also a driving force behind many of the powerful use cases for emacs</td>
-</tr>
-
-<tr>
-<td>nter org-mode</td>
-</tr>
-
-<tr>
-<td>rg-mode is about organizing things. It's basically an outline mode with Getting Things Done features on crack. My favorite org-mode feature to date is how it handles tables, precisely because it is such a wonderful example of the separation of concerns that I'm talking about here. Here's a small example</td>
-</tr>
-
-<tr>
-<td>Name</td>
-<td>Age</td>
-<td>Date of Birth</td>
-<td>Income</td>
-</tr>
-
 <tr>
 <td>Joe</td>
 <td>30</td>
@@ -395,13 +390,15 @@ Separating your concerns helps with that. Among other things, a single concern i
 
 <p>The beautiful thing about this is: if I find that I need to reorganize my sections, I can equally simply use Alt-Up or Alt-Down to move them, along with all the text below it, up or down. And then I can re-generate the HTML.</p>
 
+<p>I do the work I want to do in plain-text, because it can be made very easy to manipulate, and then we come up with a powerful visualization. The visualization is only for reading, not for manipulating. A visualization is generated, but otherwise generally static</p>
+
 <h2 id="other-examples-of-visualization-or-otherwise-human-readable-data-unsuited-for-manipulation">Other examples of visualization or otherwise human-readable data, unsuited for manipulation</h2>
+
+<p>My favorite other example is SQL versus key-value stores. The fairly famous D3.js library is also a good example.</p>
 
 <h1 id="back-to-spreadsheets">Back to spreadsheets</h1>
 
-<p>I do the work I want to do in plain-text, because it can be made very easy to manipulate, and then we come up with a powerful visualization. The visualization is only for reading, not for manipulating. A visualization is generated, but otherwise generally static
-My favorite other example is SQL versus key-value stores. The fairly famous D3.js library is also a good example.
-Use spreadsheets, but only to learn things about your data. Then find a visualization that makes sense, and generate it based on your data. You'll be much happier in the long run. I promise.</p>
+<p>Use spreadsheets, but only to learn things about your data. Then find a visualization that makes sense, and generate it based on your data. You'll be much happier in the long run. I promise.</p>
 
     </div>
 

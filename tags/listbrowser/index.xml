@@ -18,9 +18,8 @@
       <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
-      <description>~~ ListBrowser README ~~
-I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
-Install: (set up gemcutter) gem install ListBrowser</description>
+      <description>I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) ~gem install ListBrowser~</description>
     </item>
     
   </channel>

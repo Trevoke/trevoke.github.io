@@ -18,7 +18,8 @@
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/genstage_demystified/</guid>
-      <description>GenStage demystified Why would you use GenStage? How to think about GenStage GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it. GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
+      <description>GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
+Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
     </item>
     
     <item>
@@ -99,7 +100,7 @@ This colleague had been using the technique of Test-Driven Design (TDD) to metho
       
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
       <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
-Single Responsibility Principle Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
+Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
     </item>
     
     <item>
@@ -138,7 +139,7 @@ Single Responsibility Principle Spreadsheet software is so powerful nowadays tha
       <guid>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</guid>
       <description>I&#39;m back from Rubyconf.
 Some people say Ruby is dead. We can probably gloss over Zed Shaw&#39;s famous rant, since it&#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&#39;s Global Interpreter Lock.
-Given the talks at Rubyconf, Ruby is most likely not dead (and our internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
+Given the talks at Rubyconf, Ruby is most likely not dead (and my company&#39;s internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
     </item>
     
     <item>
@@ -182,7 +183,9 @@ I intend to develop myself in a positive manner and avoid anything that would re
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep. $ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep.
+$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username 
+This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
     </item>
     
     <item>
@@ -234,7 +237,10 @@ The three monkeys are accompanied by the words: &#34;See no evil. Hear no evil. 
       <pubDate>Tue, 19 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-the-schism-in-martial-training-paradigms-publish/</guid>
-      <description>You&#39;re training wrong! No, YOU&#39;re training wrong! A recent set of conversations have led me to examine the major difference in martial training. I&#39;m going to start by separating training in two categories, making an imperfect black-and-white model of the martial world:  Traditional eastern training Jeet Kune Do-like training  Now, let&#39;s start to talk about the PURPOSE of each, in a fairly roundabout way.
+      <description>You&#39;re training wrong! No, YOU&#39;re training wrong!
+A recent set of conversations have led me to examine the major difference in martial training. I&#39;m going to start by separating training in two categories, making an imperfect black-and-white model of the martial world:
+ Traditional eastern training Jeet Kune Do-like training 
+Now, let&#39;s start to talk about the PURPOSE of each, in a fairly roundabout way.
 Let&#39;s talk about the traditional drill which has become sort of a standard: &#34;</description>
     </item>
     
@@ -245,7 +251,7 @@ Let&#39;s talk about the traditional drill which has become sort of a standard: 
       
       <guid>http://blog.trevoke.net/post/import-devise-rspec-error-undefined-method-name-publish/</guid>
       <description>If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &amp;#39;name&amp;#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&amp;#34;devise.mapping&amp;#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.</description>
     </item>
@@ -268,7 +274,8 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
       <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
-      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:  It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
+      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:
+ It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
     </item>
     
     <item>
@@ -286,7 +293,8 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
       <pubDate>Thu, 20 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-society-focus-on-knowledge-draft/</guid>
-      <description>Here is a thought with which I&#39;ve been wrestling for quite a while - the focus of society on knowledge and what it could be doing to us as people, human beings, and members of society, as well as to society itself. Knowledge is power - knowing more can only help you In the West (bounded to the east by Russia and to the west by the Americas), the focus has historically been on developing more knowledge, more science.</description>
+      <description>Here is a thought with which I&#39;ve been wrestling for quite a while - the focus of society on knowledge and what it could be doing to us as people, human beings, and members of society, as well as to society itself.
+Knowledge is power - knowing more can only help you In the West (bounded to the east by Russia and to the west by the Americas), the focus has historically been on developing more knowledge, more science.</description>
     </item>
     
     <item>
@@ -324,11 +332,24 @@ Not something that&#39;s useful every day, but when you want it, hot damn is it 
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</guid>
-      <description>Une pierre deux maisons trois ruines quatre fossoyeurs un jardin des fleurs
+      <description>Une pierre
+deux maisons
+trois ruines
+quatre fossoyeurs
+un jardin
+des fleurs
 et un raton laveur
-une douzaine d&#39;huitres un citron un pain un rayon de soleil une lame de fond six musiciens une porte avec son paillasson un monsieur décoré de la légion d&#39;honneur
+une douzaine d&#39;huitres un citron un pain
+un rayon de soleil
+une lame de fond
+six musiciens
+une porte avec son paillasson
+un monsieur décoré de la légion d&#39;honneur
 et un autre raton laveur
-un sculpteur qui sculpte des Napoléon la fleur qu&#39;on appelle souci deux amoureux sur un grand lit un receveur des contributions une chaise trois dindons un ecclésiastique un furoncle une guepe un rein flottant une écurie de courses un fils indigne deux frères dominicains trois sauterelles un strapontin deux filles de joie un oncle Cyprien une Mater dolorosa trois papas gateaux deux chèvres de Monsieur Seguin un talon Louis XV un fauteuil Louis XVI un buffet Henri II deux buffets Henri III trois buffets Henri IV un tiroir dépareillé une pelote de ficelle trois épingles de sureté un monsieur agé une Victoire de Samothrace un comptable deux aides- comptables un homme du monde deux chirurgiens trois végétariens un cannibale une expédition coloniale un cheval entier une demi-pinte de bon sang une mouche tsé-tsé un homard à l&#39;américaine un jardin à la francaise deux pommes à l&#39;anglaise un face-à-main un valet de pied un orphelin un poumon d&#39;acier un jour de gloire une semaine de bonté un mois de Marie une année terrible une minute de silence une seconde d&#39;inattention et.</description>
+un sculpteur qui sculpte des Napoléon
+la fleur qu&#39;on appelle souci
+deux amoureux sur un grand lit
+un receveur des contributions</description>
     </item>
     
     <item>
@@ -388,7 +409,8 @@ This blog post explains them very well; and for more information, get &#34;Metap
       
       <guid>http://blog.trevoke.net/post/import-nidan-test-publish/</guid>
       <description>On February 28th, 2010, I took the test to become a second-degree black belt.
-Here is a summary of what I had to do, besides the calisthenics:  All my empty-hand forms, opposite side. There are eight of them. This meant that if the first step was with the left foot, I had to do it with the right foot. I suppose you could also call that &#39;mirror&#39;. The names are : seisan, seiuchin, naihanchi, wonsu, chinto, kusanku, sunsu, and sanchin.</description>
+Here is a summary of what I had to do, besides the calisthenics:
+ All my empty-hand forms, opposite side. There are eight of them. This meant that if the first step was with the left foot, I had to do it with the right foot. I suppose you could also call that &#39;mirror&#39;. The names are : seisan, seiuchin, naihanchi, wonsu, chinto, kusanku, sunsu, and sanchin.</description>
     </item>
     
     <item>
@@ -406,7 +428,8 @@ Here is a summary of what I had to do, besides the calisthenics:  All my empty-h
       <pubDate>Thu, 11 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-teaching-kusanku-to-sankyu-publish/</guid>
-      <description>Last night, after some kicking drills and sparring, sensei entrusted the adult class to me and told us to work on kusanku. The &#39;adult class&#39; yesterday consisted of three sankyu. I looked at the clock, rubbed my hands together and said &#34;Alright everyone, we have twenty-five minutes&#39; worth of kusanku. Let me know if you have questions or doubts.&#34; When we had finished walking through it, I looked at the clock.</description>
+      <description>Last night, after some kicking drills and sparring, sensei entrusted the adult class to me and told us to work on kusanku. The &#39;adult class&#39; yesterday consisted of three sankyu. I looked at the clock, rubbed my hands together and said &#34;Alright everyone, we have twenty-five minutes&#39; worth of kusanku. Let me know if you have questions or doubts.&#34;
+When we had finished walking through it, I looked at the clock.</description>
     </item>
     
     <item>
@@ -415,7 +438,8 @@ Here is a summary of what I had to do, besides the calisthenics:  All my empty-h
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
-      <description>There are a few gotchas: 1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
+      <description>There are a few gotchas:
+1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
     </item>
     
     <item>
@@ -425,8 +449,8 @@ Here is a summary of what I had to do, besides the calisthenics:  All my empty-h
       
       <guid>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</guid>
       <description>Let&#39;s break the monotony with something funny:
-The English are feeling the pinch in relation to recent terrorist threats? and have raised their security level from &#34;Miffed&#34; to &#34;Peeved.&#34; Soon, ?though, security levels may be raised yet again to &#34;Irritated&#34; or even &#34;A? Bit Cross.&#34; The English have not been &#34;A Bit Cross&#34; since the blitz in 1940 ?when tea supplies all but ran out.
-Terrorists have been re-categorized from ?</description>
+The English are feeling the pinch in relation to recent terrorist threats and have raised their security level from Miffed to Peeved/&#34; Soon, though, security levels may be raised yet again to /Irritated or even A Bit Cross. The English have not been A Bit Cross since the blitz in 1940 when tea supplies all but ran out.
+Terrorists have been re-categorized from Tiresome to a Bloody Nuisance/&#34;</description>
     </item>
     
     <item>
@@ -435,9 +459,8 @@ Terrorists have been re-categorized from ?</description>
       <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
-      <description>~~ ListBrowser README ~~
-I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
-Install: (set up gemcutter) gem install ListBrowser</description>
+      <description>I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
+Install: (set up gemcutter) ~gem install ListBrowser~</description>
     </item>
     
     <item>
@@ -448,10 +471,9 @@ Install: (set up gemcutter) gem install ListBrowser</description>
       <guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
       <description>One can&#39;t actually move a remote branch, but you can copy a branch and delete a branch, so...
 Copy oldbranch in repo to newbranch.
-1  git push {repo} {oldbranch}:heads/{newbranch}   Ex: git push origin foobranch:barbranch renames foobranch to barbranch
-Remove a remote branch: it’s all about the colon:
-1  git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;   [code][/code]
-Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
+1  git push {repo} {oldbranch}:heads/{newbranch}   Ex: git push origin foobranch:barbranch~ renames ~foobranch to barbranch
+Remove a remote branch: it’s all about the colon!
+1  git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;   Example: git push origin :heads/some-branch removes some-branch from the remote repo (apparently git push origin :some-branch works as well).</description>
     </item>
     
     <item>
@@ -511,7 +533,7 @@ Three seconds of thinking made me realize that just maybe, I could do this:</des
       
       <guid>http://blog.trevoke.net/post/import-auto-vivifying-hashes-in-ruby-publish/</guid>
       <description>An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible:
-1 2 3 4 5 6  def cnh # silly name &amp;amp;quot;create nested hash&amp;amp;quot; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;amp;gt; { 1 =&amp;amp;gt; { 2 =&amp;amp;gt; { 3 =&amp;amp;gt;4 } } }   This is useful because it reduces the amount of logic in the code.</description>
+1 2 3 4 5 6  def cnh # silly name &amp;#34;create nested hash&amp;#34; Hash.new {|h,k| h[k] = Hash.new(&amp;amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&amp;gt; { 1 =&amp;gt; { 2 =&amp;gt; { 3 =&amp;gt; 4 } } }   This is useful because it reduces the amount of logic in the code.</description>
     </item>
     
     <item>
@@ -521,7 +543,7 @@ Three seconds of thinking made me realize that just maybe, I could do this:</des
       
       <guid>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</guid>
       <description>I found a script that explains everything really well. Credit goes to:
-Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
+  # CLOSURES IN RUBY Paul Cantrell http://innig.net  # Email: username &#34;cantrell&#34;, domain name &#34;pobox.com&#34;  Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
 Now.. Why didn&#39;t I get that when I was looking at LISP?</description>
     </item>
     
@@ -551,7 +573,8 @@ The service password for the R2 unit is in this sentence.</description>
       <pubDate>Sat, 03 Oct 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-why-do-i-study-martial-arts-publish/</guid>
-      <description>I am watching Rocky III and IV (the only ones I really like), and the driving theme is the power of the human spirit. Rewatching it now, I see a lot of other ideas. They&#39;re not particularly hidden, but I never really noticed them before. This started to make me think about my choices.  My lasting decision to study martial arts was made in college, and I took a Physical Education class of self-defense taught by shifu Christopher Goedecke, who studies and teaches isshin kempo.</description>
+      <description>I am watching Rocky III and IV (the only ones I really like), and the driving theme is the power of the human spirit. Rewatching it now, I see a lot of other ideas. They&#39;re not particularly hidden, but I never really noticed them before. This started to make me think about my choices.
+My lasting decision to study martial arts was made in college, and I took a Physical Education class of self-defense taught by shifu Christopher Goedecke, who studies and teaches isshin kempo.</description>
     </item>
     
     <item>
@@ -620,7 +643,9 @@ gem install activerecord-sybase-adapter -s http://gems.rubyonrails.org
       <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
-      <description>Default passwords for MSSQL, Sybase, and mySQL: , , , That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
+      <description>Default passwords for MSSQL, Sybase, and mySQL:
+, , ,
+That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
     </item>
     
     <item>
@@ -639,8 +664,7 @@ http://www.david-steuber.com/Lisp/OSX/</description>
       <pubDate>Sun, 19 Apr 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</guid>
-      <description>$ sudo apt-get install libmysqlclient15-dev $ sudo gem install mysql
-Easy! But .. gotta know it.</description>
+      <description>1 2  sudo apt-get install libmysqlclient15-dev sudo gem install mysql   Easy! But .. gotta know it.</description>
     </item>
     
     <item>
@@ -650,8 +674,9 @@ Easy! But .. gotta know it.</description>
       
       <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
       <description>Taken straight from this blog
-in a terminal.. First do a &#39;locate mysql_config&#39; and then replace the path in the following command with where that file is.
-$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed</description>
+in a terminal.. First do a locate mysql_config and then replace the path in the following command with where that file is.
+$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config
+1 2 3  Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed  </description>
     </item>
     
     <item>
@@ -660,7 +685,8 @@ $ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_confi
       <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-two-videos-a-change-in-the-world-publish/</guid>
-      <description>Those two videos have been brought to my attention within maybe two weeks of each other, and I hate thinking of random coincidences.. So here they are, together so I can find them again in several years. Playing for change: Stand by me Where the hell is Matt?
+      <description>Those two videos have been brought to my attention within maybe two weeks of each other, and I hate thinking of random coincidences.. So here they are, together so I can find them again in several years.
+Playing for change: Stand by me Where the hell is Matt?
 The first one fills my heart with a warm feeling - the song was recorded by all these people around the world simultaneously (or so they say, but it sure is well edited in any case).</description>
     </item>
     
@@ -670,7 +696,8 @@ The first one fills my heart with a warm feeling - the song was recorded by all 
       <pubDate>Thu, 26 Mar 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-who-follows-who-publish/</guid>
-      <description>In the past couple of weeks, I&#39;d gotten to spar progressively harder with a blue belt who is twice my age, but has been in dojos where sparring and self-defense were more important than kata. As a result, I consider him somewhat dangerous to spar with.. And, well, I let myself get caught up. I stopped being the watcher.. I hid behind the excuse that I was just sparring as hard as he wanted to spar, and so it just escalated.</description>
+      <description>In the past couple of weeks, I&#39;d gotten to spar progressively harder with a blue belt who is twice my age, but has been in dojos where sparring and self-defense were more important than kata. As a result, I consider him somewhat dangerous to spar with.. And, well, I let myself get caught up. I stopped being the watcher..
+I hid behind the excuse that I was just sparring as hard as he wanted to spar, and so it just escalated.</description>
     </item>
     
     <item>
@@ -717,7 +744,9 @@ At first I didn&#39;t think I had that issue, my western mind automatically went
       <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
-      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc. tar2rubyscript rubyscript2exe
+      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS -- so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc.
+tar2rubyscript
+rubyscript2exe
 As I&#39;m a newb, it took me a while to figure out that I need .</description>
     </item>
     
@@ -767,7 +796,8 @@ I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;r
       
       <guid>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</guid>
       <description>I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
- Assume in this example that the username is &#39;atiensivu&#39;, the domain is &#39;staff&#39;, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance &#39;atiensivu&#39; with the username of the corrupt profile.  If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
+Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
+ If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
     </item>
     
     <item>

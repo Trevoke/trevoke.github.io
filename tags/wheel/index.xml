@@ -18,7 +18,9 @@
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep. $ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep.
+$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username 
+This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
     </item>
     
   </channel>

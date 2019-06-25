@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="Aldric Giacomoni" /><meta name="description" content="If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &amp;#39;name&amp;#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&amp;#34;devise.mapping&amp;#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
@@ -43,7 +43,7 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
 
 <meta property="og:title" content="Devise &#43; rspec error: undefined method &#39;name&#39;" />
 <meta property="og:description" content="If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &#39;name&#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&#34;devise.mapping&#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code." />
 <meta property="og:type" content="article" />
@@ -52,14 +52,14 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
 
 <meta itemprop="name" content="Devise &#43; rspec error: undefined method &#39;name&#39;">
 <meta itemprop="description" content="If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &#39;name&#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&#34;devise.mapping&#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code.">
 
 
 <meta itemprop="datePublished" content="2012-06-11T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2012-06-11T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="77">
+<meta itemprop="wordCount" content="78">
 
 
 
@@ -67,7 +67,7 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Devise &#43; rspec error: undefined method &#39;name&#39;"/>
 <meta name="twitter:description" content="If you&#39;re using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:
-&#34;Undefined method &#39;name&#39; for nil:NilClass&#34;, well then, you probably want to add the following line to your tests:
+1  Undefined method &#39;name&#39; for nil:NilClass   well then, you probably want to add the following line to your tests:
 1  @request.env[&#34;devise.mapping&#34;] = Devise.mappings[:admin]   Yeah... That took me way longer than expected.
 On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having to step through code."/>
 
@@ -139,7 +139,7 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 77 words </span>
+          <span class="more-meta"> 78 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -153,8 +153,15 @@ On a COMPLETELY UNRELATED SIDE NOTE, pry is pretty cool when you end up having t
 </div>
     <div class="post-content">
       <p>If you're using Devise and rspec on Rails 3, and you want to override a controller, and you end up with an error that makes no sense whatsoever:</p>
-
-<p>"Undefined method 'name' for nil:NilClass", well then, you probably want to add the following line to your tests:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">Undefined method &#39;name&#39; for nil:NilClass</pre></td></tr></table>
+</div>
+</div>
+<p>well then, you probably want to add the following line to your tests:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt">1
