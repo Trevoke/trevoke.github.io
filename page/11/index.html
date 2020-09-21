@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/" />
@@ -36,7 +36,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+
+<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -44,12 +45,9 @@
 <meta property="og:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://blog.trevoke.net/" />
-<meta property="og:updated_time" content="2009-10-27T00:00:00&#43;00:00"/>
-
+<meta property="og:updated_time" content="2020-09-05T10:26:00-04:00" />
 <meta itemprop="name" content="Seven steps">
-<meta itemprop="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead">
-
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Seven steps"/>
 <meta name="twitter:description" content="Words, words, they&#39;re all we have to go on! — Rosencrantz and Guildenstern are Dead"/>
 
@@ -114,24 +112,69 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-extending-ruby-for-fun-and-profit-publish/">Extending Ruby for Fun and Profit</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/import-auto-vivifying-hashes-in-ruby-publish/">Auto-vivifying hashes in Ruby</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2009-10-27 </span>
+      <span class="post-time"> 2009-11-06 </span>
       <div class="post-category">
           <a href="/categories/programming/"> programming </a>
           </div>
-        <span class="more-meta"> 42 words </span>
+        <span class="more-meta"> 278 words </span>
+        <span class="more-meta"> 2 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      An auto-vivifying hash is a hash that lets you create sub-hashes automatically. This means that the following code becomes possible: 1 2 3 4 5 6  def cnh # silly name &#34;create nested hash&#34; Hash.new {|h,k| h[k] = Hash.new(&amp;h.default_proc)} end my_hash = cnh my_hash[1][2][3] = 4 my_hash # =&gt; { 1 =&gt; { 2 =&gt; { 3 =&gt; 4 } } }     This is useful because it reduces the amount of logic in the code.
+    </div>
+    <div class="read-more">
+      <a href="/post/import-auto-vivifying-hashes-in-ruby-publish/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-closures-in-ruby-publish/">Closures in Ruby</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-10-28 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 41 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      Wow. I just watched Dave Thomas' talk Ruby Metaprogramming: Extending Ruby for Fun and Profit and it explained so many things.
-It's quite worth watching if you like Ruby and don't know about metaprogramming and Ruby hooks and what 'self' means, fully.
+       I found a &lt;a href=&#34;http://innig.net/software/ruby/closures-in-ruby.rb&#34;&gt;script&lt;/a&gt; that explains everything really well. Credit goes to:    Along with &lt;a href=&#34;http://eli.thegreenplace.net/2006/04/18/understanding-ruby-blocks-procs-and-methods/&#34;&gt;this blog entry&lt;/a&gt;, it&#39;s made the whole deal much easier to figure out.  Now.. Why didn&#39;t I get that when I was looking at LISP? 
     </div>
     <div class="read-more">
-      <a href="/post/import-extending-ruby-for-fun-and-profit-publish/" class="read-more-link">Read more..</a>
+      <a href="/post/import-closures-in-ruby-publish/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/import-extending-ruby-for-fun-and-profit-publish/">Extending Ruby for Fun and Profit</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2009-10-27 </span>
+      <div class="post-category">
+          <a href="/categories/programming/"> programming </a>
+          </div>
+        <span class="more-meta"> 43 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+       Wow. I just watched Dave Thomas&#39; talk &lt;a href=&#34;http://www.infoq.com/presentations/metaprogramming-ruby&#34;&gt;Ruby Metaprogramming: Extending Ruby for Fun and Profit&lt;/a&gt; and it explained so many things.  It&#39;s quite worth watching if you like Ruby and don&#39;t know about metaprogramming and Ruby hooks and what &#39;self&#39; means, fully. 
+    </div>
+    <div class="read-more">
+      <a href="/post/import-extending-ruby-for-fun-and-profit-publish/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -151,11 +194,10 @@ It's quite worth watching if you like Ruby and don't know about metaprogramming 
   
   <div class="post-content">
     <div class="post-summary">
-      I feel kinda bad plaintexting this.. You can contact me if you can't figure it out yourself.
-The service password for the R2 unit is in this sentence.
+       I feel kinda bad plaintexting this.. You can contact me if you can&#39;t figure it out yourself.  The service password for the R2 unit is in this sentence. 
     </div>
     <div class="read-more">
-      <a href="/post/import-hologic-r2-service-password-publish/" class="read-more-link">Read more..</a>
+      <a href="/post/import-hologic-r2-service-password-publish/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -175,57 +217,10 @@ The service password for the R2 unit is in this sentence.
   
   <div class="post-content">
     <div class="post-summary">
-      I am watching Rocky III and IV (the only ones I really like), and the driving theme is the power of the human spirit. Rewatching it now, I see a lot of other ideas. They're not particularly hidden, but I never really noticed them before. This started to make me think about my choices.
-My lasting decision to study martial arts was made in college, and I took a Physical Education class of self-defense taught by shifu Christopher Goedecke, who studies and teaches isshin kempo.
+      I am watching Rocky III and IV (the only ones I really like), and the driving theme is the power of the human spirit. Rewatching it now, I see a lot of other ideas. They&#39;re not particularly hidden, but I never really noticed them before. This started to make me think about my choices.  My lasting decision to study martial arts was made in college, and I took a Physical Education class of self-defense taught by shifu Christopher Goedecke, who studies and teaches isshin kempo.
     </div>
     <div class="read-more">
-      <a href="/post/import-why-do-i-study-martial-arts-publish/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-tonights-training-good-again-publish/">Tonight&#39;s training (good AGAIN!)</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2009-09-23 </span>
-      <div class="post-category">
-          <a href="/categories/martial-arts/"> martial-arts </a>
-          </div>
-        <span class="more-meta"> 288 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      It was surprisingly good. I didn't feel very good tonight - slight headache, slight tingle in the throat. I wasn't going to stay for my class, just help teach and then go home, get tea, get sleep.. But only two other adults showed up and sensei was upstairs, so I started the class and took it easy on the calisthenics and the stretches. Those two adults are the two with the most issues of muscle contractions (as in, they have no idea what relaxing means).
-    </div>
-    <div class="read-more">
-      <a href="/post/import-tonights-training-good-again-publish/" class="read-more-link">Read more..</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/import-another-awesome-training-evening-publish/">Another awesome training evening</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2009-09-17 </span>
-      <div class="post-category">
-          <a href="/categories/martial-arts/"> martial-arts </a>
-          </div>
-        <span class="more-meta"> 253 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      So tonight, I went to train 35 minutes away from home, at the dojo where my sensei's sensei teaches. Warmups / stretches, kicking drills, calisthenics, sparring, then fighting drills. Sensei's sensei has a son who is now 48. Now -- I am fast by normal people's standards. This guy is really fast by my standards. He also has a really positive energy - very friendly eyes, a great disposition.. And he can dislocate your jaw before you can blink or think "
-    </div>
-    <div class="read-more">
-      <a href="/post/import-another-awesome-training-evening-publish/" class="read-more-link">Read more..</a>
+      <a href="/post/import-why-do-i-study-martial-arts-publish/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
@@ -275,13 +270,10 @@ My lasting decision to study martial arts was made in college, and I took a Phys
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
+    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -292,7 +284,10 @@ My lasting decision to study martial arts was made in college, and I took a Phys
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
 
 
 
