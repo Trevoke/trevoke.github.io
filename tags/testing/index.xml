@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>testing on Seven steps</title>
@@ -13,24 +13,21 @@
     
     
     <item>
-      <title>      Maintainability Is Relative</title>
+      <title>Maintainability Is Relative</title>
       <link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
       <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
-      <description>I just found a great example of the variability of the need of creating maintainable code.
-Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
-I temporarily wasn&#39;t sure of where that script was.</description>
+      <description>I just found a great example of the variability of the need of creating maintainable code.  Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.  I temporarily wasn&amp;#39;t sure of where that script was.</description>
     </item>
     
     <item>
-      <title>      Benefits of a rapid test suite</title>
+      <title>Benefits of a rapid test suite</title>
       <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
       <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
-      <description>The value of a rapid test suite Developers and codebases The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
-Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
+      <description>The value of a rapid test suite  Developers and codebases   The bare minimum required of a developer is &amp;#34;make this change without breaking anything else in the code&amp;#34;, and if you&amp;#39;ve been around software development for any period of time, you know that&amp;#39;s harder than it seems.  Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
     </item>
     
     <item>
@@ -39,8 +36,7 @@ Most of the time that a developer spends on any given codebase is spent on an ex
       <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
-      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:
- It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
+      <description>Ruby has a neat feature called at_exit which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:  &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;It takes a block and converts it into a Proc object at the time of parsing. This means that the data has to be available in the binding, or you&amp;#39;ll run into errors. Example: instance variables need to be set before you can use them in that block.</description>
     </item>
     
   </channel>

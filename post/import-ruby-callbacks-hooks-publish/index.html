@@ -16,15 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
-This blog post explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content=" Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.  &amp;lt;a href=&amp;#34;https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/&amp;#34;&amp;gt;This blog post&amp;lt;/a&amp;gt; explains them very well; and for more information, get &amp;#34;Metaprogramming Ruby&amp;#34;, which is a great book - not only about the callbacks, but about a host of information. " /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/" />
@@ -40,28 +39,22 @@ This blog post explains them very well; and for more information, get &#34;Metap
 
 
 <meta property="og:title" content="Ruby callbacks (hooks)" />
-<meta property="og:description" content="Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
-This blog post explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information." />
+<meta property="og:description" content=" Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.  &lt;a href=&#34;https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/&#34;&gt;This blog post&lt;/a&gt; explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information. " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/" /><meta property="article:published_time" content="2010-03-31T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2010-03-31T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/" />
+<meta property="article:published_time" content="2010-03-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2010-03-31T00:00:00+00:00" />
 <meta itemprop="name" content="Ruby callbacks (hooks)">
-<meta itemprop="description" content="Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
-This blog post explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information.">
-
-
+<meta itemprop="description" content=" Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.  &lt;a href=&#34;https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/&#34;&gt;This blog post&lt;/a&gt; explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information. ">
 <meta itemprop="datePublished" content="2010-03-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2010-03-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="59">
+<meta itemprop="wordCount" content="60">
 
 
 
-<meta itemprop="keywords" content="ruby,hooks,callbacks," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ruby,hooks,callbacks," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ruby callbacks (hooks)"/>
-<meta name="twitter:description" content="Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
-This blog post explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information."/>
+<meta name="twitter:description" content=" Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.  &lt;a href=&#34;https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/&#34;&gt;This blog post&lt;/a&gt; explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information. "/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -131,7 +124,7 @@ This blog post explains them very well; and for more information, get &#34;Metap
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 59 words </span>
+          <span class="more-meta"> 60 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -144,9 +137,12 @@ This blog post explains them very well; and for more information, get &#34;Metap
   </div>
 </div>
     <div class="post-content">
-      <p>Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.</p>
-
-<p><a href="https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/">This blog post</a> explains them very well; and for more information, get "Metaprogramming Ruby", which is a great book - not only about the callbacks, but about a host of information.</p>
+      <p>
+Hooks are a fascinating bit of Ruby magic. They are methods you can define with actions to run when something happens. You can put triggers in your code.
+</p>
+<p>
+&lt;a href=&#34;<a href="https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/">https://web.archive.org/web/20130210090846/http://www.khelll.com/blog/ruby/ruby-callbacks/</a>&#34;&gt;This blog post&lt;/a&gt; explains them very well; and for more information, get &#34;Metaprogramming Ruby&#34;, which is a great book - not only about the callbacks, but about a host of information.
+</p>
 
     </div>
 
@@ -222,7 +218,7 @@ This blog post explains them very well; and for more information, get &#34;Metap
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

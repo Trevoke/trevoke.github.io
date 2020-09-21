@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>refactor on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/refactor/</link>
+    <description>Recent content in refactor on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Mon, 18 Nov 2019 18:10:10 -0500</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/refactor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slack time explained</title>
+      <link>http://blog.trevoke.net/post/slack-time-explained/</link>
+      <pubDate>Mon, 18 Nov 2019 18:10:10 -0500</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/slack-time-explained/</guid>
+      <description>What problem are we trying to solve?   You&amp;#39;re a software product team. Your job is to steadily deliver working product. Generally this means there&amp;#39;s two types of work you&amp;#39;re going to do:    Work that directly correlates to delivering value to the customer    Work that directly correlates to the ability to keep on delivering value at the same pace    In &amp;#34;agile&amp;#34; terminology, those categories are labeled, respectively, &amp;#34;stories&amp;#34; and &amp;#34;tech debt&amp;#34;.</description>
+    </item>
+    
+  </channel>
+</rss>

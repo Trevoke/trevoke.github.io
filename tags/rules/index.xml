@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rules on Seven steps</title>
@@ -18,7 +18,7 @@
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</guid>
-      <description>No object should have more than three public methods Objects should not have getters or setters Everything else must be private If three private methods are doing something similar, then maybe those are the public methods of another class Never inherit Always compose Changeability is the most important thing A &#34;good&#34; variable name is a name that describes unambiguously what the variable contains, without describing the implementation If you don’t use good variable names, I will look for you.</description>
+      <description>No object should have more than three public methods    Objects should not have getters or setters    Everything else must be private    If three private methods are doing something similar, then maybe those are the public methods of another class    Never inherit    Always compose    Changeability is the most important thing    A &amp;#34;good&amp;#34; variable name is a name that describes unambiguously what the variable contains, without describing the implementation    If you don’t use good variable names, I will look for you.</description>
     </item>
     
   </channel>

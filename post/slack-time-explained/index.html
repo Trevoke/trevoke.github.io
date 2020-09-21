@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Slack time explained - Seven steps</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="An answer to the question &#34;how do you plan ALL the work when you use velocity?&#34;" /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://blog.trevoke.net/post/slack-time-explained/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Slack time explained" />
+<meta property="og:description" content="An answer to the question &#34;how do you plan ALL the work when you use velocity?&#34;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.trevoke.net/post/slack-time-explained/" />
+<meta property="article:published_time" content="2019-11-18T18:10:10-05:00" />
+<meta property="article:modified_time" content="2019-11-18T18:10:10-05:00" />
+<meta itemprop="name" content="Slack time explained">
+<meta itemprop="description" content="An answer to the question &#34;how do you plan ALL the work when you use velocity?&#34;">
+<meta itemprop="datePublished" content="2019-11-18T18:10:10-05:00" />
+<meta itemprop="dateModified" content="2019-11-18T18:10:10-05:00" />
+<meta itemprop="wordCount" content="924">
+
+
+
+<meta itemprop="keywords" content="agile,velocity,tech-debt,refactor,slack,slack-time," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Slack time explained"/>
+<meta name="twitter:description" content="An answer to the question &#34;how do you plan ALL the work when you use velocity?&#34;"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Seven Steps</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Seven Steps</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Slack time explained</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-11-18 </span>
+        
+          <span class="more-meta"> 924 words </span>
+          <span class="more-meta"> 5 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">What problem are we trying to solve?</a>
+<ul>
+<li><a href="#headline-2">Let&#39;s define a tool that we&#39;ll call &#34;velocity&#34;</a>
+</li>
+<li><a href="#headline-3">Let&#39;s explore some of the consequences of doing this</a>
+</li>
+<li><a href="#headline-4">Let&#39;s round this out a bit</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-5">Footnotes</a>
+</li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+<h2 id="headline-1">
+What problem are we trying to solve?
+</h2>
+<p>
+You&#39;re a software product team. Your job is to steadily deliver working product. Generally this means there&#39;s two types of work you&#39;re going to do:
+</p>
+<ol>
+<li>
+<p>
+Work that directly correlates to delivering value to the customer
+</p>
+</li>
+<li>
+<p>
+Work that directly correlates to the ability to keep on delivering value at the same pace
+</p>
+</li>
+</ol>
+<p>
+In &#34;agile&#34; terminology, those categories are labeled, respectively, &#34;stories&#34; and &#34;tech debt&#34;.
+</p>
+<p>
+There is tension between these two. We want to deliver as much value as possible ALL THE TIME. In a perfect world, with perfect knowledge and perfect skill, we would never need to do any of the second category of work. However, as James Shore<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> once said, &#34;as soon as our fingers touch the keyboard, we add tech debt.&#34;
+</p>
+<blockquote>
+<p>
+As soon as our fingers touch the keyboard, we add tech debt.
+</p>
+<p>
+— James Shore
+</p>
+</blockquote>
+<p>
+This means that, unerringly, unfailingly, the team will need to do some of the second category of work.
+</p>
+<p>
+Given this, the problem statement is as follows:
+</p>
+<p>
+What is the simplest way to manage both types of work that the team needs to do which allows the team to maintain a focus on the delivery of work that is valuable to the customer?
+</p>
+<h3 id="headline-2">
+Let&#39;s define a tool that we&#39;ll call &#34;velocity&#34;
+</h3>
+<p>
+We&#39;ll define &#34;velocity&#34; as &#34;the amount of work, deliverable by the team in a given unit of time, which directly correlates to value to the customer.&#34; In other words, <code>velocity = work / time</code> <sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>.
+</p>
+<p>
+This provides a baseline, a point of calibration, for the team&#39;s ability to deliver work that correlates to value. We can now say &#34;The team is able to deliver X work in Y time.&#34;
+</p>
+<p>
+The easy next question is, how do we define the time? Well, often we just use one- or two-week timespans. We don&#39;t have to search too hard for this.
+</p>
+<p>
+The harder next question is, how do we define &#34;amount of work?&#34;. I&#39;ve written <a href="./post/the-value-of-estimates-for-a-team.org">a blog entry</a> on the answer to that question, so I&#39;ll say it in one sentence here: we choose an internally self-consistent method of evaluating the complexity of given units of work, relative to other units of work, and we call this &#34;estimates.&#34;
+</p>
+<p>
+What this allows us to do is add these estimates together and obtain something self-consistent that can be used to understand how the team&#39;s delivery of work is evolving.
+</p>
+<p>
+Our new formula is: <code>velocity = estimates / time</code> .
+</p>
+<h3 id="headline-3">
+Let&#39;s explore some of the consequences of doing this
+</h3>
+<p>
+Using the estimates to measure velocity, as explained above, can yield the following graph when we look at how much work a squad can deliver.
+</p>
+<p>
+<img src="/images/velocity-per-iteration.png" alt="/images/velocity-per-iteration.png" title="/images/velocity-per-iteration.png" />
+</p>
+<p>
+To note, this does not say anything about how much people work, it just says how much estimated complexity of work was delivered.
+</p>
+<p>
+Without knowing anything about your team, I feel confident in stating that the next graph is probably a conservative estimate of how many hours every single person on your team worked per iteration (assuming a one-week iteration):
+</p>
+<p>
+<img src="/images/hours-worked-per-iteration.png" alt="/images/hours-worked-per-iteration.png" title="/images/hours-worked-per-iteration.png" />
+</p>
+<p>
+What is more interesting to look at is how many hours it took to deliver the estimated work:
+</p>
+<p>
+<img src="/images/map-hours-velocity.png" alt="/images/map-hours-velocity.png" title="/images/map-hours-velocity.png" />
+</p>
+<p>
+I&#39;m mapping it to a table below as well:
+</p>
+<table>
+<thead>
+<tr>
+<th class="align-right">iteration</th>
+<th class="align-right">velocity</th>
+<th class="align-right">hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="align-right">0</td>
+<td class="align-right">0</td>
+<td class="align-right">39</td>
+</tr>
+<tr>
+<td class="align-right">1</td>
+<td class="align-right">5</td>
+<td class="align-right">39</td>
+</tr>
+<tr>
+<td class="align-right">2</td>
+<td class="align-right">2</td>
+<td class="align-right">40</td>
+</tr>
+<tr>
+<td class="align-right">3</td>
+<td class="align-right">10</td>
+<td class="align-right">40</td>
+</tr>
+<tr>
+<td class="align-right">4</td>
+<td class="align-right">7</td>
+<td class="align-right">38</td>
+</tr>
+<tr>
+<td class="align-right">5</td>
+<td class="align-right">5</td>
+<td class="align-right">37</td>
+</tr>
+<tr>
+<td class="align-right">6</td>
+<td class="align-right">7</td>
+<td class="align-right">39</td>
+</tr>
+<tr>
+<td class="align-right">7</td>
+<td class="align-right">8</td>
+<td class="align-right">35</td>
+</tr>
+<tr>
+<td class="align-right">8</td>
+<td class="align-right">9</td>
+<td class="align-right">39</td>
+</tr>
+</tbody>
+</table>
+<p>
+What we see here is that the team always delivered on its commitment without working overtime. Go, team! We also see that sometimes, the commitments were reached before all the time was spent. This left the team with time that wasn&#39;t committed to story work. This is PERFECT time to do tech debt! Guess what we call this time? We call it <strong>slack time</strong>.
+</p>
+<h3 id="headline-4">
+Let&#39;s round this out a bit
+</h3>
+<blockquote>
+<p>
+A fully utilized highway is a parking lot.
+</p>
+</blockquote>
+<p>
+A fully utilized highway is a parking lot. It&#39;s the space between the cars which allows the cars to safely move forward, change lanes, join and leave the highway, etc.
+</p>
+<p>
+We don&#39;t want to try maximize time spent, because time spent does not directly correlate to value delivered.
+</p>
+<p>
+We don&#39;t want to estimate tech debt and add it to the velocity because the velocity is only for story work – by creating this restriction, we maintain a correlation between velocity (story work done) and value delivered, to get a sense of how valuable overall the decisions that have led to the work have been.
+</p>
+<p>
+We want to foster a culture and a practice of continuous improvements and continuous small refactors.
+</p>
+<p>
+We want to take as little time away from story work (the time used, iteration in and interation out, by the velocity) as possible. Time taken away from story work must be followed by a retrospective in which the team finds a way (or ways) to keep this from happening again.
+</p>
+<p>
+If time must be taken away from story work, the decision must be the result of a conversation with the product owner/product manager, in which the positive result of the corrective action must be crystal clear (e.g. more trustworthy tests, a specific operation will be easier to code/implement/change, etc.)
+</p>
+<h2 id="headline-5">
+Footnotes
+</h2>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>
+Author of &#34;Art of Agile Development&#34;
+</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p>
+This, of course, is related to the physics term, where &#34;velocity&#34; is defined to be a change of position in a given direction over time. We could just say that it&#39;s &#34;speed&#34;, but speed is just distance over time, irrespective of direction, and we very much care that we&#39;re going in a direction where we deliver more value.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Aldric Giacomoni</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2019-11-18
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/agile/">agile</a>
+          <a href="/tags/velocity/">velocity</a>
+          <a href="/tags/tech-debt/">tech-debt</a>
+          <a href="/tags/refactor/">refactor</a>
+          <a href="/tags/slack/">slack</a>
+          <a href="/tags/slack-time/">slack-time</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/agile-and-lean-art-delivery/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Agile and lean art delivery</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/genstage_demystified/">
+            <span class="next-text nav-default">GenStage demystified</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:trevoke@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/234025/trevoke" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/trevoke" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/trevoke/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/trevoke/" class="iconfont icon-github" title="github"></a>
+      <a href="https://getpocket.com/@Trevoke" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="https://gitlab.com/trevoke" class="iconfont icon-gitlab" title="gitlab"></a>
+  <a href="http://blog.trevoke.net/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

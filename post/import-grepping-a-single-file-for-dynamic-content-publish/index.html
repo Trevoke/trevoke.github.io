@@ -16,16 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
-echo &amp;quot;your fancy word finder stuff here&amp;quot; | xargs -i bash -c &#39;grep -n &amp;quot;{}&amp;quot; your/file/here
-Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content=" You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:  echo &amp;#34;your fancy word finder stuff here&amp;#34; | xargs -i bash -c &amp;#39;grep -n &amp;#34;{}&amp;#34; your/file/here  Not something that&amp;#39;s useful every day, but when you want it, hot damn is it nice to have. " /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/" />
@@ -41,31 +39,22 @@ Not something that&#39;s useful every day, but when you want it, hot damn is it 
 
 
 <meta property="og:title" content="Grepping a single file for &#39;dynamic&#39; content" />
-<meta property="og:description" content="You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
-echo &quot;your fancy word finder stuff here&quot; | xargs -i bash -c &#39;grep -n &quot;{}&quot; your/file/here
-Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have." />
+<meta property="og:description" content=" You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:  echo &#34;your fancy word finder stuff here&#34; | xargs -i bash -c &#39;grep -n &#34;{}&#34; your/file/here  Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have. " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/" /><meta property="article:published_time" content="2011-08-31T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2011-08-31T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/" />
+<meta property="article:published_time" content="2011-08-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2011-08-31T00:00:00+00:00" />
 <meta itemprop="name" content="Grepping a single file for &#39;dynamic&#39; content">
-<meta itemprop="description" content="You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
-echo &quot;your fancy word finder stuff here&quot; | xargs -i bash -c &#39;grep -n &quot;{}&quot; your/file/here
-Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have.">
-
-
+<meta itemprop="description" content=" You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:  echo &#34;your fancy word finder stuff here&#34; | xargs -i bash -c &#39;grep -n &#34;{}&#34; your/file/here  Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have. ">
 <meta itemprop="datePublished" content="2011-08-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2011-08-31T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="62">
 
 
 
-<meta itemprop="keywords" content="grep,shell,bash," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="grep,shell,bash," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Grepping a single file for &#39;dynamic&#39; content"/>
-<meta name="twitter:description" content="You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
-echo &quot;your fancy word finder stuff here&quot; | xargs -i bash -c &#39;grep -n &quot;{}&quot; your/file/here
-Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have."/>
+<meta name="twitter:description" content=" You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:  echo &#34;your fancy word finder stuff here&#34; | xargs -i bash -c &#39;grep -n &#34;{}&#34; your/file/here  Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have. "/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -149,12 +138,16 @@ Not something that&#39;s useful every day, but when you want it, hot damn is it 
   </div>
 </div>
     <div class="post-content">
-      <p>You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file?
-Like this:</p>
-
-<p><code>echo &quot;your fancy word finder stuff here&quot; | xargs -i bash -c 'grep -n &quot;{}&quot; your/file/here</code></p>
-
-<p>Not something that's useful every day, but when you want it, hot damn is it nice to have.</p>
+      <p>
+You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file?
+Like this:
+</p>
+<p>
+<code class="verbatim">echo &#34;your fancy word finder stuff here&#34; | xargs -i bash -c &#39;grep -n &#34;{}&#34; your/file/here</code>
+</p>
+<p>
+Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have.
+</p>
 
     </div>
 
@@ -230,7 +223,7 @@ Like this:</p>
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

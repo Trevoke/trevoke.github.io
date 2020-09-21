@@ -16,15 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="There are a few gotchas:
-1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="There are a few gotchas:    If you have a SSD drive, you need to &amp;lt;em&amp;gt;modprobe pata_sch&amp;lt;/em&amp;gt; to see it.    when using GRUB, install it on whatever drive the hard drive is, even if it&amp;#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.    In the kernel, in the I2C options, don&amp;#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&amp;#39;t know it off-hand, will edit this post later to add the important information)." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/" />
@@ -40,28 +39,22 @@
 
 
 <meta property="og:title" content="Gentoo on a Dell Inspiron Mini 10" />
-<meta property="og:description" content="There are a few gotchas:
-1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." />
+<meta property="og:description" content="There are a few gotchas:    If you have a SSD drive, you need to &lt;em&gt;modprobe pata_sch&lt;/em&gt; to see it.    when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.    In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/" /><meta property="article:published_time" content="2010-03-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2010-03-01T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/" />
+<meta property="article:published_time" content="2010-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2010-03-01T00:00:00+00:00" />
 <meta itemprop="name" content="Gentoo on a Dell Inspiron Mini 10">
-<meta itemprop="description" content="There are a few gotchas:
-1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).">
-
-
+<meta itemprop="description" content="There are a few gotchas:    If you have a SSD drive, you need to &lt;em&gt;modprobe pata_sch&lt;/em&gt; to see it.    when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.    In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).">
 <meta itemprop="datePublished" content="2010-03-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2010-03-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="302">
+<meta itemprop="wordCount" content="300">
 
 
 
-<meta itemprop="keywords" content="gentoo,dell-inspiron-mini-10," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="gentoo,dell-inspiron-mini-10," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Gentoo on a Dell Inspiron Mini 10"/>
-<meta name="twitter:description" content="There are a few gotchas:
-1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)."/>
+<meta name="twitter:description" content="There are a few gotchas:    If you have a SSD drive, you need to &lt;em&gt;modprobe pata_sch&lt;/em&gt; to see it.    when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.    In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information)."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -131,7 +124,7 @@
         <div class="post-category">
             <a href="/categories/sysadmin/"> sysadmin </a>
             </div>
-          <span class="more-meta"> 302 words </span>
+          <span class="more-meta"> 300 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -144,52 +137,78 @@
   </div>
 </div>
     <div class="post-content">
-      <p>There are a few gotchas:</p>
-
-<p>1) If you have a SSD drive, you need to <em>modprobe pata_sch</em> to see it.
-2) when using GRUB, install it on whatever drive the hard drive is, even if it's /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.
-3) In the kernel, in the I2C options, don't let it pick automatically - instead, select the algorithm options in the menu that appears (I don't know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).</p>
-
-<p>For the rest, so far, it seems that the howto on the Gentoo wiki is good. I installed e17 very painlessly.</p>
-
-<p>Wireless was a bit trickier.
+      <p>
+There are a few gotchas:
+</p>
+<ol>
+<li>
+<p>
+If you have a SSD drive, you need to &lt;em&gt;modprobe pata_sch&lt;/em&gt; to see it.
+</p>
+</li>
+<li>
+<p>
+when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.
+</p>
+</li>
+<li>
+<p>
+In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).
+</p>
+</li>
+</ol>
+<p>
+For the rest, so far, it seems that the howto on the Gentoo wiki is good. I installed e17 very painlessly.
+</p>
+<p>
+Wireless was a bit trickier.
 I needed to use gentoo-sources-2.6.33, which at the time of this writing was masked as ~x86. A big advantage though is that it has support for the Atom processor (and the proper driver for the broadcom card!).
-Enable the "B43" driver in the kernel.
-Then, follow the instructions given <a href="http://linuxwireless.org/en/users/Drivers/b43#fw-b43-lp">here</a>:</p>
+Enable the &#34;B43&#34; driver in the kernel.
+Then, follow the instructions given &lt;a href=&#34;<a href="http://linuxwireless.org/en/users/Drivers/b43#fw-b43-lp">http://linuxwireless.org/en/users/Drivers/b43#fw-b43-lp</a>&#34;&gt;here&lt;/a&gt;:
+</p>
+<div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git clone http://git.bu3sch.de/git/b43-tools.git
+<pre class="chroma"><code class="language-text" data-lang="text">git clone http://git.bu3sch.de/git/b43-tools.git
 cd b43-tools/fwcutter
 make
-cd ..</pre></td></tr></table>
+cd ..</code></pre></td></tr></table>
 </div>
 </div>
-<p>Use version 4.174.64.19 of Broadcom's proprietary driver. (The tarball is mislabeled as "4.178.10.4", but it is actually 4.174.64.19.)</p>
-
-<p>Download and extract the firmware from this driver tarball (Gentoo's installation directory for this is /lib/firmware):</p>
+</div>
+<p>
+Use version 4.174.64.19 of Broadcom&#39;s proprietary driver. (The tarball is mislabeled as &#34;4.178.10.4&#34;, but it is actually 4.174.64.19.)
+</p>
+<p>
+Download and extract the firmware from this driver tarball (Gentoo&#39;s installation directory for this is /lib/firmware):
+</p>
+<div class="src src-text">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">export FIRMWARE_INSTALL_DIR=&#34;/lib/firmware&#34;
+<pre class="chroma"><code class="language-text" data-lang="text">export FIRMWARE_INSTALL_DIR=&#34;/lib/firmware&#34;
 wget http://downloads.openwrt.org/sources/broadcom-wl-4.178.10.4.tar.bz2
 tar xjf broadcom-wl-4.178.10.4.tar.bz2
 cd broadcom-wl-4.178.10.4/linux
-sudo ../../fwcutter/b43-fwcutter -w &#34;$FIRMWARE_INSTALL_DIR&#34; wl_apsta.o</pre></td></tr></table>
+sudo ../../fwcutter/b43-fwcutter -w &#34;$FIRMWARE_INSTALL_DIR&#34; wl_apsta.o</code></pre></td></tr></table>
 </div>
 </div>
-<p>At the time of this writing, although the b43-firmware is available and promises to give us what we need, the b43-fwcutter tool is only at version 12, and not 13, so it can't be used. This is why we need to use <em>git</em> to download the latest version and correctly build the firmware by hand.</p>
+</div>
+<p>
+At the time of this writing, although the b43-firmware is available and promises to give us what we need, the b43-fwcutter tool is only at version 12, and not 13, so it can&#39;t be used. This is why we need to use &lt;em&gt;git&lt;/em&gt; to download the latest version and correctly build the firmware by hand.
+</p>
 
     </div>
 
@@ -264,7 +283,7 @@ sudo ../../fwcutter/b43-fwcutter -w &#34;$FIRMWARE_INSTALL_DIR&#34; wl_apsta.o</
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

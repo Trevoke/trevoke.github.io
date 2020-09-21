@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sanity on Seven steps</title>
@@ -13,13 +13,12 @@
     
     
     <item>
-      <title>      Lesson from emacs: keep data easy to manipulate and easy to present</title>
+      <title>Lesson from emacs: keep data easy to manipulate and easy to present</title>
       <link>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
-      <description>Spreadsheets Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.
-Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
+      <description>Spreadsheets   Spreadsheets are evil. And do you know why? Because they&amp;#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.  Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
     </item>
     
   </channel>

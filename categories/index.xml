@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Seven steps</title>
@@ -7,25 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://blog.trevoke.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>funny</title>
-      <link>http://blog.trevoke.net/categories/funny/</link>
-      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      <title>programming</title>
+      <link>http://blog.trevoke.net/categories/programming/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.trevoke.net/categories/funny/</guid>
+      <guid>http://blog.trevoke.net/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>life-event</title>
-      <link>http://blog.trevoke.net/categories/life-event/</link>
-      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      <title>process</title>
+      <link>http://blog.trevoke.net/categories/process/</link>
+      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.trevoke.net/categories/life-event/</guid>
+      <guid>http://blog.trevoke.net/categories/process/</guid>
       <description></description>
     </item>
     
@@ -48,42 +49,6 @@
     </item>
     
     <item>
-      <title>poetry</title>
-      <link>http://blog.trevoke.net/categories/poetry/</link>
-      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/categories/poetry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>process</title>
-      <link>http://blog.trevoke.net/categories/process/</link>
-      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/categories/process/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>http://blog.trevoke.net/categories/programming/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>security</title>
-      <link>http://blog.trevoke.net/categories/security/</link>
-      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.trevoke.net/categories/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>sysadmin</title>
       <link>http://blog.trevoke.net/categories/sysadmin/</link>
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
@@ -93,11 +58,47 @@
     </item>
     
     <item>
+      <title>poetry</title>
+      <link>http://blog.trevoke.net/categories/poetry/</link>
+      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/categories/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>writing</title>
       <link>http://blog.trevoke.net/categories/writing/</link>
       <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/categories/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life-event</title>
+      <link>http://blog.trevoke.net/categories/life-event/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/categories/life-event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>funny</title>
+      <link>http://blog.trevoke.net/categories/funny/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/categories/funny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>http://blog.trevoke.net/categories/security/</link>
+      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.trevoke.net/categories/security/</guid>
       <description></description>
     </item>
     

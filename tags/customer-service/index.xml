@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>customer-service on Seven steps</title>
@@ -18,7 +18,7 @@
       <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</guid>
-      <description>I will readily admit that I don&#39;t know all that much about Github or Git for that matter. I use them, they&#39;re handy, and that&#39;s where it stops. I read about a git feature called &#34;smart HTTP&#34;, which would allow to communicate both ways with git (push and pull) with HTTP or HTTPS. So, I asked Github about it - it would be nice for them to have this feature, because I currently can&#39;t push to Github from work.</description>
+      <description>I will readily admit that I don&amp;#39;t know all that much about Github or Git for that matter. I use them, they&amp;#39;re handy, and that&amp;#39;s where it stops. I read about a git feature called &amp;#34;smart HTTP&amp;#34;, which would allow to communicate both ways with git (push and pull) with HTTP or HTTPS. So, I asked Github about it - it would be nice for them to have this feature, because I currently can&amp;#39;t push to Github from work.</description>
     </item>
     
   </channel>

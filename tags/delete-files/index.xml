@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>delete-files on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</guid>
-      <description>Whoo! I haven&#39;t done a post that long in a while!
-I put &#39;activerecord&#39; in there to take advantage of the &#39;24.hours.ago&#39; notation, which makes life much easier. The cost is a little less than 2 seconds to load the library, so I think it&#39;s worth it. It runs as a daily job before backup to tape, to clear old backups from the directory tree.
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  require &amp;#39;activerecord&amp;#39; def delete_recursively(in_here) Dir.</description>
+      <description>Whoo! I haven&amp;#39;t done a post that long in a while!  I put &amp;#39;activerecord&amp;#39; in there to take advantage of the &amp;#39;24.hours.ago&amp;#39; notation, which makes life much easier. The cost is a little less than 2 seconds to load the library, so I think it&amp;#39;s worth it. It runs as a daily job before backup to tape, to clear old backups from the directory tree. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  require &amp;#39;activerecord&amp;#39; def delete_recursively(in_here) Dir.</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>closures on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Wed, 28 Oct 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</guid>
-      <description>I found a script that explains everything really well. Credit goes to:
-  # CLOSURES IN RUBY Paul Cantrell http://innig.net  # Email: username &#34;cantrell&#34;, domain name &#34;pobox.com&#34;  Along with this blog entry, it&#39;s made the whole deal much easier to figure out.
-Now.. Why didn&#39;t I get that when I was looking at LISP?</description>
+      <description> I found a &amp;lt;a href=&amp;#34;http://innig.net/software/ruby/closures-in-ruby.rb&amp;#34;&amp;gt;script&amp;lt;/a&amp;gt; that explains everything really well. Credit goes to:    Along with &amp;lt;a href=&amp;#34;http://eli.thegreenplace.net/2006/04/18/understanding-ruby-blocks-procs-and-methods/&amp;#34;&amp;gt;this blog entry&amp;lt;/a&amp;gt;, it&amp;#39;s made the whole deal much easier to figure out.  Now.. Why didn&amp;#39;t I get that when I was looking at LISP? </description>
     </item>
     
   </channel>

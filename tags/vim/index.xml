@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vim on Seven steps</title>
@@ -18,10 +18,7 @@
       <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-choosing-the-right-editor/</guid>
-      <description>Choosing the right editor
-Intro: My editor history
-Here are my &#34;credentials&#34;. You know, establishing why you should be reading this at all.
-When it comes to editors, I&#39;ve honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows. That looked really badass.</description>
+      <description>&amp;lt;h1&amp;gt;Choosing the right editor&amp;lt;/h1&amp;gt;  &amp;lt;h2&amp;gt;Intro: My editor history&amp;lt;/h2&amp;gt;  Here are my &amp;#34;credentials&amp;#34;. You know, establishing why you should be reading this at all.  When it comes to editors, I&amp;#39;ve honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows.</description>
     </item>
     
   </channel>

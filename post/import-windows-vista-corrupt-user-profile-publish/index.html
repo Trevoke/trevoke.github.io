@@ -16,16 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
-Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
- If you can log into the profile, make note of the %USERPROFILE% environment variable value." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="I&amp;#39;m taking this from &amp;lt;a href=&amp;#34;http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;this page&amp;lt;/a&amp;gt; but thought I should try to propagate it a little since it took me forever to find it.  Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.    If you can log into the profile, make note of the %USERPROFILE% environment variable value." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/" />
@@ -41,31 +39,22 @@ Assume in this example that the username is atiensivu, the domain is staff, and 
 
 
 <meta property="og:title" content="Windows Vista : Corrupt user profile" />
-<meta property="og:description" content="I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
-Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
- If you can log into the profile, make note of the %USERPROFILE% environment variable value." />
+<meta property="og:description" content="I&#39;m taking this from &lt;a href=&#34;http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html&#34; target=&#34;_blank&#34;&gt;this page&lt;/a&gt; but thought I should try to propagate it a little since it took me forever to find it.  Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.    If you can log into the profile, make note of the %USERPROFILE% environment variable value." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/" /><meta property="article:published_time" content="2008-12-07T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2008-12-07T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/" />
+<meta property="article:published_time" content="2008-12-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2008-12-07T00:00:00+00:00" />
 <meta itemprop="name" content="Windows Vista : Corrupt user profile">
-<meta itemprop="description" content="I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
-Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
- If you can log into the profile, make note of the %USERPROFILE% environment variable value.">
-
-
+<meta itemprop="description" content="I&#39;m taking this from &lt;a href=&#34;http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html&#34; target=&#34;_blank&#34;&gt;this page&lt;/a&gt; but thought I should try to propagate it a little since it took me forever to find it.  Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.    If you can log into the profile, make note of the %USERPROFILE% environment variable value.">
 <meta itemprop="datePublished" content="2008-12-07T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2008-12-07T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="266">
+<meta itemprop="wordCount" content="268">
 
 
 
-<meta itemprop="keywords" content="windows,vista,user-profile,corrupt," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="windows,vista,user-profile,corrupt," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Windows Vista : Corrupt user profile"/>
-<meta name="twitter:description" content="I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
-Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
- If you can log into the profile, make note of the %USERPROFILE% environment variable value."/>
+<meta name="twitter:description" content="I&#39;m taking this from &lt;a href=&#34;http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html&#34; target=&#34;_blank&#34;&gt;this page&lt;/a&gt; but thought I should try to propagate it a little since it took me forever to find it.  Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.    If you can log into the profile, make note of the %USERPROFILE% environment variable value."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -133,7 +122,7 @@ Assume in this example that the username is atiensivu, the domain is staff, and 
       <div class="post-meta">
         <span class="post-time"> 2008-12-07 </span>
         
-          <span class="more-meta"> 266 words </span>
+          <span class="more-meta"> 268 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -146,24 +135,67 @@ Assume in this example that the username is atiensivu, the domain is staff, and 
   </div>
 </div>
     <div class="post-content">
-      <p>I'm taking this from <a href="http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html" target="_blank">this page</a> but thought I should try to propagate it a little since it took me forever to find it.</p>
-
-<p>Assume in this example that the username is <code>atiensivu</code>, the domain is <code>staff</code>, and the user profile is located in <code>%systemdrive%\users\atiensivu</code>. <code>%systemdrive%</code> is typically <code>C:</code> on standard Vista installs. Replace every instance of <code>atiensivu</code> with the username of the corrupt profile.</p>
-
+      <p>
+I&#39;m taking this from &lt;a href=&#34;<a href="http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html">http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html</a>&#34; target=&#34;_blank&#34;&gt;this page&lt;/a&gt; but thought I should try to propagate it a little since it took me forever to find it.
+</p>
+<p>
+Assume in this example that the username is <code>atiensivu</code>, the domain is <code>staff</code>, and the user profile is located in <code>%systemdrive%\users\atiensivu</code>. <code>%systemdrive%</code> is typically <code>C:</code> on standard Vista installs. Replace every instance of <code>atiensivu</code> with the username of the corrupt profile.
+</p>
 <ol>
-<li>If you can log into the profile, make note of the <code>%USERPROFILE%</code> environment variable value. Most likely it will be <code>C:\Users\atiensivu</code> or <code>C:\Users\atiensivu.staff</code>. Logoff.</li>
-<li>If you have logged in with the profile at any point since your last reboot or you suspect there are files in use within the profile, reboot. The important part is to make sure there are no open files within the broken profile directory.</li>
-<li>Login as administrator or another account with local admin rights.</li>
-<li>Run <code>takeown /r /a /d y /f %systemdrive%\users\atiensivu</code>. (Note : before doing step 4, remove things like the IE cache if you can, save yourself some time).</li>
-<li>From <code>%systemdrive%\users</code>, rename <code>atiensivu</code> to <code>atiensivu.old</code>.</li>
-<li>Within !%systemdrive%\users~, create a directory called <code>atiensivu</code>.</li>
-<li>Run <code>takeown /r /u staff\atiensivu /f %systemdrive%\users\atiensivu</code>.</li>
-<li>Run <code>regedit</code> and go to <code>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</code> and delete the SID key for the corrupt profile. Easiest way to find the correct SID is to search from the 'ProfileList' key for the directory mentioned in %USERPROFILE% in step #1.</li>
-<li>Logoff.</li>
-<li>Log into the <code>atiensivu</code> account. A new profile should be created. Copy over any files you might want from the old profile directory.</li>
+<li>
+<p>
+If you can log into the profile, make note of the <code>%USERPROFILE%</code> environment variable value. Most likely it will be <code>C:\Users\atiensivu</code> or <code>C:\Users\atiensivu.staff</code>. Logoff.
+</p>
+</li>
+<li>
+<p>
+If you have logged in with the profile at any point since your last reboot or you suspect there are files in use within the profile, reboot. The important part is to make sure there are no open files within the broken profile directory.
+</p>
+</li>
+<li>
+<p>
+Login as administrator or another account with local admin rights.
+</p>
+</li>
+<li>
+<p>
+Run <code>takeown /r /a /d y /f %systemdrive%\users\atiensivu</code>. (Note : before doing step 4, remove things like the IE cache if you can, save yourself some time).
+</p>
+</li>
+<li>
+<p>
+From <code>%systemdrive%\users</code>, rename <code>atiensivu</code> to <code>atiensivu.old</code>.
+</p>
+</li>
+<li>
+<p>
+Within !%systemdrive%\users~, create a directory called <code>atiensivu</code>.
+</p>
+</li>
+<li>
+<p>
+Run <code>takeown /r /u staff\atiensivu /f %systemdrive%\users\atiensivu</code>.
+</p>
+</li>
+<li>
+<p>
+Run <code>regedit</code> and go to <code>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</code> and delete the SID key for the corrupt profile. Easiest way to find the correct SID is to search from the &#39;ProfileList&#39; key for the directory mentioned in %USERPROFILE% in step #1.
+</p>
+</li>
+<li>
+<p>
+Logoff.
+</p>
+</li>
+<li>
+<p>
+Log into the <code>atiensivu</code> account. A new profile should be created. Copy over any files you might want from the old profile directory.
+</p>
+</li>
 </ol>
-
-<p>The 'takeown' commands might be overkill but I don't like getting permission errors.</p>
+<p>
+The &#39;takeown&#39; commands might be overkill but I don&#39;t like getting permission errors.
+</p>
 
     </div>
 
@@ -240,7 +272,7 @@ Assume in this example that the username is atiensivu, the domain is staff, and 
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

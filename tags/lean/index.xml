@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lean on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/lean/</link>
+    <description>Recent content in lean on Seven steps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
+    <lastBuildDate>Sat, 05 Sep 2020 10:26:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://blog.trevoke.net/tags/lean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile and lean art delivery</title>
+      <link>http://blog.trevoke.net/post/agile-and-lean-art-delivery/</link>
+      <pubDate>Sat, 05 Sep 2020 10:26:00 -0400</pubDate>
+      
+      <guid>http://blog.trevoke.net/post/agile-and-lean-art-delivery/</guid>
+      <description>I&amp;#39;ve been helping teams and organizations improve their approach to agile and lean delivery for a decade now, and by far one of the most difficult things to wrap one&amp;#39;s head around is the idea of iterative delivery of value. I don&amp;#39;t know about you, but I&amp;#39;m tired of these various hypothetical images depicting what agile delivery is supposed to look like. Is it a skateboard that becomes a car?</description>
+    </item>
+    
+  </channel>
+</rss>

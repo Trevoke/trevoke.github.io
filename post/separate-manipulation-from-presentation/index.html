@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>      Lesson from emacs: keep data easy to manipulate and easy to present - Seven steps</title>
+  <title>Lesson from emacs: keep data easy to manipulate and easy to present - Seven steps</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,14 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="     Aldric Giacomoni" /><meta name="description" content="A lesson from emacs about the dangers of trying to do everything at once" /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="A lesson from emacs about the dangers of trying to do everything at once" /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/separate-manipulation-from-presentation/" />
@@ -38,25 +38,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="      Lesson from emacs: keep data easy to manipulate and easy to present" />
+<meta property="og:title" content="Lesson from emacs: keep data easy to manipulate and easy to present" />
 <meta property="og:description" content="A lesson from emacs about the dangers of trying to do everything at once" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/separate-manipulation-from-presentation/" /><meta property="article:published_time" content="2015-01-27T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2015-01-27T00:00:00&#43;00:00"/>
-
-<meta itemprop="name" content="      Lesson from emacs: keep data easy to manipulate and easy to present">
+<meta property="og:url" content="http://blog.trevoke.net/post/separate-manipulation-from-presentation/" />
+<meta property="article:published_time" content="2015-01-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-01-27T00:00:00+00:00" />
+<meta itemprop="name" content="Lesson from emacs: keep data easy to manipulate and easy to present">
 <meta itemprop="description" content="A lesson from emacs about the dangers of trying to do everything at once">
-
-
 <meta itemprop="datePublished" content="2015-01-27T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2015-01-27T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1110">
+<meta itemprop="wordCount" content="1092">
 
 
 
-<meta itemprop="keywords" content="emacs,single-responsibility-principle,programming,sanity," />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="      Lesson from emacs: keep data easy to manipulate and easy to present"/>
+<meta itemprop="keywords" content="emacs,single-responsibility-principle,programming,sanity," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lesson from emacs: keep data easy to manipulate and easy to present"/>
 <meta name="twitter:description" content="A lesson from emacs about the dangers of trying to do everything at once"/>
 
 <!--[if lte IE 9]>
@@ -120,14 +117,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">      Lesson from emacs: keep data easy to manipulate and easy to present</h1>
+      <h1 class="post-title">Lesson from emacs: keep data easy to manipulate and easy to present</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2015-01-27 </span>
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 1110 words </span>
+          <span class="more-meta"> 1092 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -136,276 +133,341 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#headline-1">Spreadsheets</a>
+</li>
+<li><a href="#headline-2">Single Responsibility Principle</a>
+<ul>
+<li><a href="#headline-3">Separation of concerns</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-4">Emacs</a>
+<ul>
+<li><a href="#headline-5">org-mode</a>
+<ul>
+<li><a href="#headline-6">Tables</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-7">Other examples of visualization or otherwise human-readable data, unsuited for manipulation</a>
+</li>
+</ul>
+</li>
+<li><a href="#headline-8">Back to spreadsheets</a>
+</li>
+</ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
-      <h1 id="spreadsheets">Spreadsheets</h1>
-
-<p>Spreadsheets are evil. And do you know why? Because they're too powerful. Here is the sweet spot of spreadsheets: <strong>tables of related data on which calculations need to be made</strong>. Here is not the sweet spot of spreadsheets: <strong>everything else</strong>.</p>
-
-<p>Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I've also learned that there was such a thing as the Single Responsibility Principle.</p>
-
-<h1 id="single-responsibility-principle">Single Responsibility Principle</h1>
-
-<p>The Single Responsibility Principle, in code, states that a class (or a function, or really any logical set of code) must have one and only one reason to change. This is very strong.</p>
-
-<p>Let's take a spreadsheet which is a visualization of a schedule. This spreadsheet can change if we're going to change the color a particular scheduled item, or the dates of the scheduled item, or who's doing the scheduled thing, or the granularity or the schedule, or something around a scheduled item. Not that I'm counting, but I think that's more than one.</p>
-
-<h2 id="separation-of-concerns">Separation of concerns</h2>
-
-<p>Separating your concerns helps with that. Among other things, a single concern is, well, a single thing, so it helps make sure there's just one reason for a set of code to change. When I'm looking at data, I've basically got three concerns:</p>
-
+      
+<h2 id="headline-1">
+Spreadsheets
+</h2>
+<p>
+Spreadsheets are evil. And do you know why? Because they&#39;re too powerful. Here is the sweet spot of spreadsheets: <strong>tables of related data on which calculations need to be made</strong>. Here is not the sweet spot of spreadsheets: <strong>everything else</strong>.
+</p>
+<p>
+Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I&#39;ve also learned that there was such a thing as the Single Responsibility Principle.
+</p>
+<h2 id="headline-2">
+Single Responsibility Principle
+</h2>
+<p>
+The Single Responsibility Principle, in code, states that a class (or a function, or really any logical set of code) must have one and only one reason to change. This is very strong.
+</p>
+<p>
+Let&#39;s take a spreadsheet which is a visualization of a schedule. This spreadsheet can change if we&#39;re going to change the color a particular scheduled item, or the dates of the scheduled item, or who&#39;s doing the scheduled thing, or the granularity or the schedule, or something around a scheduled item. Not that I&#39;m counting, but I think that&#39;s more than one.
+</p>
+<h3 id="headline-3">
+Separation of concerns
+</h3>
+<p>
+Separating your concerns helps with that. Among other things, a single concern is, well, a single thing, so it helps make sure there&#39;s just one reason for a set of code to change. When I&#39;m looking at data, I&#39;ve basically got three concerns:
+</p>
 <ol>
-<li>Storing the data</li>
-<li>Manipulating the data</li>
-<li>Visualizing the data</li>
+<li>
+<p>
+Storing the data
+</p>
+</li>
+<li>
+<p>
+Manipulating the data
+</p>
+</li>
+<li>
+<p>
+Visualizing the data
+</p>
+</li>
 </ol>
-
-<p>If I can find a way of storing the data in such  a way that manipulating it is about as painless as it gets, then I am much more likely to want to play with the data, and therefore I am much more likely to come to new realizations about it.</p>
-
-<h1 id="emacs">Emacs</h1>
-
-<p>Emacs is a beast with many uses, but it is <strong>definitely</strong> organized. And it is, of course, mostly about modifying plain-text, though it has a large support for richer formats. Many of the plain-text modes support exporting and converting to other formats, which is also a driving force behind many of the powerful use cases for emacs.</p>
-
-<h2 id="org-mode">org-mode</h2>
-
-<p>Enter org-mode.
-Org-mode is about organizing things. It's basically an outline mode with Getting Things Done features on crack. My favorite org-mode feature to date is how it handles tables, precisely because it is such a wonderful example of the separation of concerns that I'm talking about here. Here's a small example.</p>
-
-<h3 id="tables">Tables</h3>
-
+<p>
+If I can find a way of storing the data in such  a way that manipulating it is about as painless as it gets, then I am much more likely to want to play with the data, and therefore I am much more likely to come to new realizations about it.
+</p>
+<h2 id="headline-4">
+Emacs
+</h2>
+<p>
+Emacs is a beast with many uses, but it is <strong>definitely</strong> organized. And it is, of course, mostly about modifying plain-text, though it has a large support for richer formats. Many of the plain-text modes support exporting and converting to other formats, which is also a driving force behind many of the powerful use cases for emacs.
+</p>
+<h3 id="headline-5">
+org-mode
+</h3>
+<p>
+Enter org-mode.
+Org-mode is about organizing things. It&#39;s basically an outline mode with Getting Things Done features on crack. My favorite org-mode feature to date is how it handles tables, precisely because it is such a wonderful example of the separation of concerns that I&#39;m talking about here. Here&#39;s a small example.
+</p>
+<h4 id="headline-6">
+Tables
+</h4>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Age</th>
+<th class="align-right">Age</th>
 <th>Date of Birth</th>
-<th>Income</th>
+<th class="align-right">Income</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Joe</td>
-<td>30</td>
-<td><1984-02-20 Mon></td>
-<td>84000</td>
+<td class="align-right">30</td>
+<td><span class="timestamp">&lt;1984-02-20 Mon&gt;</span></td>
+<td class="align-right">84000</td>
 </tr>
-
 <tr>
 <td>Mark</td>
-<td>40</td>
-<td><1974-04-15 Mon></td>
-<td>120000</td>
+<td class="align-right">40</td>
+<td><span class="timestamp">&lt;1974-04-15 Mon&gt;</span></td>
+<td class="align-right">120000</td>
 </tr>
-
 <tr>
 <td>Sophie</td>
-<td>44</td>
-<td><1970-08-28 Fri></td>
-<td>150000</td>
+<td class="align-right">44</td>
+<td><span class="timestamp">&lt;1970-08-28 Fri&gt;</span></td>
+<td class="align-right">150000</td>
 </tr>
-
 <tr>
 <td>Anna</td>
-<td>26</td>
-<td><1988-02-29 Mon></td>
-<td>160000</td>
+<td class="align-right">26</td>
+<td><span class="timestamp">&lt;1988-02-29 Mon&gt;</span></td>
+<td class="align-right">160000</td>
 </tr>
 </tbody>
 </table>
-
-<p>Here is how I wrote this table:</p>
-
+<p>
+Here is how I wrote this table:
+</p>
 <ol>
-<li>I typed |Name|Age|Date of Birth|Income| and then I pressed <TAB></li>
-<li>I typed Joe, <TAB>, <TAB>, C-c . (Ctrl+C then the period character), which dropped me in emacs' calendar, I wrote a date and pressed enter, then <TAB></li>
-<li>I typed 84000 then I pressed <TAB></li>
-<li>I repeated for the next lines</li>
-<li>I wrote the last line, a formula line, to calculate how old they are today, and pressed C-u C-c C-c, which is "recalculate everything"</li>
+<li>
+<p>
+I typed |Name|Age|Date of Birth|Income| and then I pressed &lt;TAB&gt;
+</p>
+</li>
+<li>
+<p>
+I typed Joe, &lt;TAB&gt;, &lt;TAB&gt;, C-c . (Ctrl+C then the period character), which dropped me in emacs&#39; calendar, I wrote a date and pressed enter, then &lt;TAB&gt;
+</p>
+</li>
+<li>
+<p>
+I typed 84000 then I pressed &lt;TAB&gt;
+</p>
+</li>
+<li>
+<p>
+I repeated for the next lines
+</p>
+</li>
+<li>
+<p>
+I wrote the last line, a formula line, to calculate how old they are today, and pressed C-u C-c C-c, which is &#34;recalculate everything&#34;
+</p>
+</li>
 </ol>
-
-<p>And this is how it looked to me in plain text:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">| Name   | Age | Date of Birth    | Income |
+<p>
+And this is how it looked to me in plain text:
+</p>
+<pre class="example">
+| Name   | Age | Date of Birth    | Income |
 |--------+-----+------------------+--------|
-| Joe    |  30 | &lt;1984-02-20 Mon&gt; |  84000 |
-| Mark   |  40 | &lt;1974-04-15 Mon&gt; | 120000 |
-| Sophie |  44 | &lt;1970-08-28 Fri&gt; | 150000 |
-| Anna   |  26 | &lt;1988-02-29 Mon&gt; | 160000 |
-#+TBLFM: $2=(now()-$3)/365;%d</pre></td></tr></table>
-</div>
-</div>
-<p>It is important to note that emacs' org-mode did all the row alignment for me. Honesty dictates that I mention I actually had to ask how to do the calculation <a href="https://emacs.stackexchange.com/questions/7750/org-mode-in-a-table-calculate-a-persons-age-based-on-their-birthday" title="here">here</a>, because I didn't know about the `now()` function.</p>
-
-<p>But let's say I realize that the date of birth is better before the age:</p>
-
+| Joe    |  30 | <1984-02-20 Mon> |  84000 |
+| Mark   |  40 | <1974-04-15 Mon> | 120000 |
+| Sophie |  44 | <1970-08-28 Fri> | 150000 |
+| Anna   |  26 | <1988-02-29 Mon> | 160000 |
+#+TBLFM: $2=(now()-$3)/365;%d
+</pre>
+<p>
+It is important to note that emacs&#39; org-mode did all the row alignment for me. Honesty dictates that I mention I actually had to ask how to do the calculation <a href="https://emacs.stackexchange.com/questions/7750/org-mode-in-a-table-calculate-a-persons-age-based-on-their-birthday">here</a>, because I didn&#39;t know about the `now()` function.
+</p>
+<p>
+But let&#39;s say I realize that the date of birth is better before the age:
+</p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Date of Birth</th>
-<th>Age</th>
-<th>Income</th>
+<th class="align-right">Age</th>
+<th class="align-right">Income</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Joe</td>
-<td><1984-02-20 Mon></td>
-<td>30</td>
-<td>84000</td>
+<td><span class="timestamp">&lt;1984-02-20 Mon&gt;</span></td>
+<td class="align-right">30</td>
+<td class="align-right">84000</td>
 </tr>
-
 <tr>
 <td>Mark</td>
-<td><1974-04-15 Mon></td>
-<td>40</td>
-<td>120000</td>
+<td><span class="timestamp">&lt;1974-04-15 Mon&gt;</span></td>
+<td class="align-right">40</td>
+<td class="align-right">120000</td>
 </tr>
-
 <tr>
 <td>Sophie</td>
-<td><1970-08-28 Fri></td>
-<td>44</td>
-<td>150000</td>
+<td><span class="timestamp">&lt;1970-08-28 Fri&gt;</span></td>
+<td class="align-right">44</td>
+<td class="align-right">150000</td>
 </tr>
-
 <tr>
 <td>Anna</td>
-<td><1988-02-29 Mon></td>
-<td>26</td>
-<td>160000</td>
+<td><span class="timestamp">&lt;1988-02-29 Mon&gt;</span></td>
+<td class="align-right">26</td>
+<td class="align-right">160000</td>
 </tr>
 </tbody>
 </table>
-
-<p>Here's how much work this was:</p>
-
+<p>
+Here&#39;s how much work this was:
+</p>
 <ol>
-<li>Go to the Age column</li>
-<li>Press Alt+Right</li>
-<li>Watch as the column moves and the formula is updated, all for me. (note in the example below how the formula changed!)</li>
+<li>
+<p>
+Go to the Age column
+</p>
+</li>
+<li>
+<p>
+Press Alt+Right
+</p>
+</li>
+<li>
+<p>
+Watch as the column moves and the formula is updated, all for me. (note in the example below how the formula changed!)
+</p>
+</li>
 </ol>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">| Name   | Date of Birth    | Age | Income |
+<pre class="example">
+| Name   | Date of Birth    | Age | Income |
 |--------+------------------+-----+--------|
-| Joe    | &lt;1984-02-20 Mon&gt; |  30 |  84000 |
-| Mark   | &lt;1974-04-15 Mon&gt; |  40 | 120000 |
-| Sophie | &lt;1970-08-28 Fri&gt; |  44 | 150000 |
-| Anna   | &lt;1988-02-29 Mon&gt; |  26 | 160000 |
-#+TBLFM: $3=(now()-$2)/365;%d</pre></td></tr></table>
-</div>
-</div>
-<p>And now what if I want the names to be ordered alphabetically, like so?</p>
-
+| Joe    | <1984-02-20 Mon> |  30 |  84000 |
+| Mark   | <1974-04-15 Mon> |  40 | 120000 |
+| Sophie | <1970-08-28 Fri> |  44 | 150000 |
+| Anna   | <1988-02-29 Mon> |  26 | 160000 |
+#+TBLFM: $3=(now()-$2)/365;%d
+</pre>
+<p>
+And now what if I want the names to be ordered alphabetically, like so?
+</p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
-<th>Age</th>
+<th class="align-right">Age</th>
 <th>Date of Birth</th>
-<th>Income</th>
+<th class="align-right">Income</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Anna</td>
-<td>26</td>
-<td><1988-02-29 Mon></td>
-<td>160000</td>
+<td class="align-right">26</td>
+<td><span class="timestamp">&lt;1988-02-29 Mon&gt;</span></td>
+<td class="align-right">160000</td>
 </tr>
-
 <tr>
 <td>Joe</td>
-<td>30</td>
-<td><1984-02-20 Mon></td>
-<td>84000</td>
+<td class="align-right">30</td>
+<td><span class="timestamp">&lt;1984-02-20 Mon&gt;</span></td>
+<td class="align-right">84000</td>
 </tr>
-
 <tr>
 <td>Mark</td>
-<td>40</td>
-<td><1974-04-15 Mon></td>
-<td>120000</td>
+<td class="align-right">40</td>
+<td><span class="timestamp">&lt;1974-04-15 Mon&gt;</span></td>
+<td class="align-right">120000</td>
 </tr>
-
 <tr>
 <td>Sophie</td>
-<td>44</td>
-<td><1970-08-28 Fri></td>
-<td>150000</td>
+<td class="align-right">44</td>
+<td><span class="timestamp">&lt;1970-08-28 Fri&gt;</span></td>
+<td class="align-right">150000</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">| Name   | Age | Date of Birth    | Income |
+<pre class="example">
+| Name   | Age | Date of Birth    | Income |
 |--------+-----+------------------+--------|
-| Anna   |  26 | &lt;1988-02-29 Mon&gt; | 160000 |
-| Joe    |  30 | &lt;1984-02-20 Mon&gt; |  84000 |
-| Mark   |  40 | &lt;1974-04-15 Mon&gt; | 120000 |
-| Sophie |  44 | &lt;1970-08-28 Fri&gt; | 150000 |
-#+TBLFM: $2=(now()-$3)/365;%d</pre></td></tr></table>
-</div>
-</div>
-<p>Simple enough! There's a function in org-mode called org-table-sort-lines that'll do it for me. And now I notice that when I made up the data for this table, as the names go up in the alphabet, so do the ages go up. Yet, even if I did not know about it, I could have just done the following:</p>
-
+| Anna   |  26 | <1988-02-29 Mon> | 160000 |
+| Joe    |  30 | <1984-02-20 Mon> |  84000 |
+| Mark   |  40 | <1974-04-15 Mon> | 120000 |
+| Sophie |  44 | <1970-08-28 Fri> | 150000 |
+#+TBLFM: $2=(now()-$3)/365;%d
+</pre>
+<p>
+Simple enough! There&#39;s a function in org-mode called org-table-sort-lines that&#39;ll do it for me. And now I notice that when I made up the data for this table, as the names go up in the alphabet, so do the ages go up. Yet, even if I did not know about it, I could have just done the following:
+</p>
 <ol>
-<li>Go to a row</li>
-<li>Press Alt-Up or Alt-Down to move it up or down</li>
-<li>Repeat until rows are organized as I wish</li>
+<li>
+<p>
+Go to a row
+</p>
+</li>
+<li>
+<p>
+Press Alt-Up or Alt-Down to move it up or down
+</p>
+</li>
+<li>
+<p>
+Repeat until rows are organized as I wish
+</p>
+</li>
 </ol>
-
-<p>And do you know how much work it was to transform all this plain text into the HTML you're reading? Barely any, in large part because the blogging engine I use is an emacs package.</p>
-
-<p>The beautiful thing about this is: if I find that I need to reorganize my sections, I can equally simply use Alt-Up or Alt-Down to move them, along with all the text below it, up or down. And then I can re-generate the HTML.</p>
-
-<p>I do the work I want to do in plain-text, because it can be made very easy to manipulate, and then we come up with a powerful visualization. The visualization is only for reading, not for manipulating. A visualization is generated, but otherwise generally static</p>
-
-<h2 id="other-examples-of-visualization-or-otherwise-human-readable-data-unsuited-for-manipulation">Other examples of visualization or otherwise human-readable data, unsuited for manipulation</h2>
-
-<p>My favorite other example is SQL versus key-value stores. The fairly famous D3.js library is also a good example.</p>
-
-<h1 id="back-to-spreadsheets">Back to spreadsheets</h1>
-
-<p>Use spreadsheets, but only to learn things about your data. Then find a visualization that makes sense, and generate it based on your data. You'll be much happier in the long run. I promise.</p>
+<p>
+And do you know how much work it was to transform all this plain text into the HTML you&#39;re reading? Barely any, in large part because the blogging engine I use is an emacs package.
+</p>
+<p>
+The beautiful thing about this is: if I find that I need to reorganize my sections, I can equally simply use Alt-Up or Alt-Down to move them, along with all the text below it, up or down. And then I can re-generate the HTML.
+</p>
+<p>
+I do the work I want to do in plain-text, because it can be made very easy to manipulate, and then we come up with a powerful visualization. The visualization is only for reading, not for manipulating. A visualization is generated, but otherwise generally static
+</p>
+<h3 id="headline-7">
+Other examples of visualization or otherwise human-readable data, unsuited for manipulation
+</h3>
+<p>
+My favorite other example is SQL versus key-value stores. The fairly famous D3.js library is also a good example.
+</p>
+<h2 id="headline-8">
+Back to spreadsheets
+</h2>
+<p>
+Use spreadsheets, but only to learn things about your data. Then find a visualization that makes sense, and generate it based on your data. You&#39;ll be much happier in the long run. I promise.
+</p>
 
     </div>
 
     <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Author</span>
-    <span class="item-content">     Aldric Giacomoni</span>
+    <span class="item-content">Aldric Giacomoni</span>
   </p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
@@ -475,7 +537,7 @@ Org-mode is about organizing things. It's basically an outline mode with Getting
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

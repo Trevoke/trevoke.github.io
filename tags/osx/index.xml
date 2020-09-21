@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>osx on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep.
-$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username 
-This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+      <description> Why are these things always so weird? Someday I&amp;#39;ll understand why OSX is set up that way. And on that day, I&amp;#39;ll probably weep.  &amp;lt;blockquote&amp;gt;$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt; &amp;lt;p style=&amp;#34;padding-left: 30px;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt;  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0 </description>
     </item>
     
     <item>
@@ -29,8 +27,7 @@ This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;
       <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</guid>
-      <description>Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&#39;t too tricky).
-http://www.david-steuber.com/Lisp/OSX/</description>
+      <description> Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&amp;#39;t too tricky).  http://www.david-steuber.com/Lisp/OSX/ </description>
     </item>
     
     <item>
@@ -39,10 +36,7 @@ http://www.david-steuber.com/Lisp/OSX/</description>
       <pubDate>Fri, 17 Apr 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
-      <description>Taken straight from this blog
-in a terminal.. First do a locate mysql_config and then replace the path in the following command with where that file is.
-$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config
-1 2 3  Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed  </description>
+      <description> Taken straight from &amp;lt;a href=&amp;#34;http://www.eclips3media.com/workshop/2008/10/installing-the-mysql-gem-on-os-x/&amp;#34;&amp;gt;this blog&amp;lt;/a&amp;gt;  in a terminal.. First do a locate mysql_config and then replace the path in the following command with where that file is.  $ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config 1 2 3  Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed    </description>
     </item>
     
   </channel>

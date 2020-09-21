@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>css on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</guid>
-      <description>If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
-&amp;lt;tr class=&amp;quot;&amp;lt;%= cycle(&amp;quot;even&amp;quot;, &amp;quot;odd&amp;quot;) %&amp;gt;&amp;quot;&amp;gt;
-This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that.</description>
+      <description>If you&amp;#39;ve done any kind of table display in Rails, you&amp;#39;ve probably discovered the useful &amp;#39;cycle&amp;#39; method:  &amp;lt;tr class=&amp;#34;&amp;lt;%= cycle(&amp;#34;even&amp;#34;, &amp;#34;odd&amp;#34;) %&amp;gt;&amp;#34;&amp;gt;  This works after you&amp;#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &amp;#39;lightbg&amp;#39; and &amp;#39;darkbg&amp;#39;, or something similar.</description>
     </item>
     
   </channel>

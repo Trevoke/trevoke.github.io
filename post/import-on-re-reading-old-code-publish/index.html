@@ -16,16 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="I came across this beauty in some old code of mine:
-1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
-Three seconds of thinking made me realize that just maybe, I could do this:" /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="I came across this beauty in some old code of mine: 1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end     This was &amp;#34;necessary&amp;#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/" />
@@ -41,31 +39,22 @@ Three seconds of thinking made me realize that just maybe, I could do this:" /><
 
 
 <meta property="og:title" content="On re-reading old code" />
-<meta property="og:description" content="I came across this beauty in some old code of mine:
-1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
-Three seconds of thinking made me realize that just maybe, I could do this:" />
+<meta property="og:description" content="I came across this beauty in some old code of mine: 1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end     This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/" /><meta property="article:published_time" content="2009-12-09T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-12-09T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/" />
+<meta property="article:published_time" content="2009-12-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2009-12-09T00:00:00+00:00" />
 <meta itemprop="name" content="On re-reading old code">
-<meta itemprop="description" content="I came across this beauty in some old code of mine:
-1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
-Three seconds of thinking made me realize that just maybe, I could do this:">
-
-
+<meta itemprop="description" content="I came across this beauty in some old code of mine: 1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end     This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.">
 <meta itemprop="datePublished" content="2009-12-09T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2009-12-09T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="87">
 
 
 
-<meta itemprop="keywords" content="learning,ruby," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="learning,ruby," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="On re-reading old code"/>
-<meta name="twitter:description" content="I came across this beauty in some old code of mine:
-1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
-Three seconds of thinking made me realize that just maybe, I could do this:"/>
+<meta name="twitter:description" content="I came across this beauty in some old code of mine: 1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end     This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -148,10 +137,13 @@ Three seconds of thinking made me realize that just maybe, I could do this:"/>
   </div>
 </div>
     <div class="post-content">
-      <p>I came across this beauty in some old code of mine:</p>
+      <p>
+I came across this beauty in some old code of mine:
+</p>
+<div class="src src-ruby">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -169,18 +161,26 @@ Three seconds of thinking made me realize that just maybe, I could do this:"/>
 <span class="k">end</span></code></pre></td></tr></table>
 </div>
 </div>
-<p>This was "necessary" because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.</p>
-
-<p>Three seconds of thinking made me realize that just maybe, I could do this:</p>
+</div>
+<p>
+This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
+</p>
+<p>
+Three seconds of thinking made me realize that just maybe, I could do this:
+</p>
+<div class="src src-ruby">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="n">list</span><span class="o">.</span><span class="n">uniq</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">1</span></code></pre></td></tr></table>
 </div>
 </div>
-<p>I <span style="text-decoration: underline;">like</span> Ruby.</p>
+</div>
+<p>
+I <span style="text-decoration: underline;">like</span> Ruby.
+</p>
 
     </div>
 
@@ -255,7 +255,7 @@ Three seconds of thinking made me realize that just maybe, I could do this:"/>
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

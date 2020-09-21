@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>osx-10.8 on Seven steps</title>
@@ -18,10 +18,7 @@
       <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</guid>
-      <description>EASY!
-sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2
-&amp;nbsp;
-That&#39;s it. You can now install ffi 1.5.</description>
+      <description> EASY!  sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2  &amp;amp;nbsp;  That&amp;#39;s it. You can now install ffi 1.5. </description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>learning on Seven steps</title>
@@ -18,7 +18,7 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
-      <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
+      <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&amp;#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</guid>
-      <description>Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and Agile development. Roughly, &#34;shu ha ri&#34; means &#34;learn / detach / transcend&#34;. The link has some words about that meaning. I&#39;d like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot conversation with a martial arts teacher friend of mine:</description>
+      <description>Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and &amp;lt;a title=&amp;#34;Alistair Cockburn&amp;#39;s words on Shu Ha Ri&amp;#34; href=&amp;#34;http://alistair.cockburn.us/Shu+Ha+Ri&amp;#34;&amp;gt;Agile development&amp;lt;/a&amp;gt;. Roughly, &amp;#34;shu ha ri&amp;#34; means &amp;#34;learn / detach / transcend&amp;#34;. The link has some words about that meaning. I&amp;#39;d like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot conversation with a martial arts teacher friend of mine:  &amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;Shu.</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-learning-and-fear-publish/</guid>
-      <description>“Life is going to present to you a series of transformations. And the point of education should be to transform you. To teach you how to be transformed so you can ride the waves as they come. But today, the point of education is not education. It’s accreditation. The more accreditation you have, the more money you make. That’s the instrumental logic of neoliberalism. And this instrumental logic comes wrapped in an envelope of fear.</description>
+      <description>&amp;lt;blockquote&amp;gt; &amp;lt;div&amp;gt;“Life is going to present to you a series of transformations. And the point of education should be to transform you. To teach you how to be transformed so you can ride the waves as they come. But today, the point of education is not education. It’s accreditation. The more accreditation you have, the more money you make. That’s the instrumental logic of neoliberalism. And this instrumental logic comes wrapped in an envelope of fear.</description>
     </item>
     
     <item>
@@ -45,9 +45,7 @@
       <pubDate>Thu, 27 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-ruby-publish/</guid>
-      <description>First, get Ruby. Install it as explained on the website. Once you&#39;re more comfortable with it, in a few weeks, you can check out RVM. Not now though - you&#39;d just confuse yourself.
-The two important command-line tools are going to be &#34;irb&#34; and &#34;ruby&#34;. For development, you will be able to use tools like emacs, vim, Jetbrains Rubymine, or Eclipse. Ruby support is quite widespread.
-Create a temporary directory and get cozy inside.</description>
+      <description>First, &amp;lt;a title=&amp;#34;official Ruby site&amp;#34; href=&amp;#34;http://www.ruby-lang.org/en/&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;get Ruby&amp;lt;/a&amp;gt;. Install it as explained on the website. Once you&amp;#39;re more comfortable with it, in a few weeks, you can check out &amp;lt;a href=&amp;#34;http://rvm.beginrescueend.com/&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;RVM&amp;lt;/a&amp;gt;. Not now though - you&amp;#39;d just confuse yourself.  The two important command-line tools are going to be &amp;#34;irb&amp;#34; and &amp;#34;ruby&amp;#34;. For development, you will be able to use tools like emacs, vim, Jetbrains Rubymine, or Eclipse. Ruby support is quite widespread.</description>
     </item>
     
     <item>
@@ -56,9 +54,7 @@ Create a temporary directory and get cozy inside.</description>
       <pubDate>Wed, 09 Dec 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-on-re-reading-old-code-publish/</guid>
-      <description>I came across this beauty in some old code of mine:
-1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end   This was &#34;necessary&#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.
-Three seconds of thinking made me realize that just maybe, I could do this:</description>
+      <description>I came across this beauty in some old code of mine: 1 2 3 4 5 6 7  def same_modality? list check = list[0][0] list.each do |i| return false if check != i[0] end return true end     This was &amp;#34;necessary&amp;#34; because I got an array of one-element arrays back, and I wanted to check whether or not that one element was the same across the array.</description>
     </item>
     
   </channel>

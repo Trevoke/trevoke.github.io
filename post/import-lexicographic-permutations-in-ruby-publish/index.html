@@ -16,15 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
-I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="Taking the code from &amp;lt;a title=&amp;#34;Permutations in Ruby and Python&amp;#34; href=&amp;#34;http://abachman.disqus.com/simple_permutations_in_python_and_ruby/&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;this other blog&amp;lt;/a&amp;gt; … It&amp;#39;s pretty elegant Ruby!  I won&amp;#39;t waste your time repeating what the guy wrote in his blog - you&amp;#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/" />
@@ -40,28 +39,22 @@ I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;r
 
 
 <meta property="og:title" content="(Lexicographic) Permutations in Ruby" />
-<meta property="og:description" content="Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
-I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it." />
+<meta property="og:description" content="Taking the code from &lt;a title=&#34;Permutations in Ruby and Python&#34; href=&#34;http://abachman.disqus.com/simple_permutations_in_python_and_ruby/&#34; target=&#34;_blank&#34;&gt;this other blog&lt;/a&gt; … It&#39;s pretty elegant Ruby!  I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/" /><meta property="article:published_time" content="2008-12-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2008-12-20T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/" />
+<meta property="article:published_time" content="2008-12-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2008-12-20T00:00:00+00:00" />
 <meta itemprop="name" content="(Lexicographic) Permutations in Ruby">
-<meta itemprop="description" content="Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
-I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.">
-
-
+<meta itemprop="description" content="Taking the code from &lt;a title=&#34;Permutations in Ruby and Python&#34; href=&#34;http://abachman.disqus.com/simple_permutations_in_python_and_ruby/&#34; target=&#34;_blank&#34;&gt;this other blog&lt;/a&gt; … It&#39;s pretty elegant Ruby!  I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.">
 <meta itemprop="datePublished" content="2008-12-20T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2008-12-20T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="132">
+<meta itemprop="wordCount" content="139">
 
 
 
-<meta itemprop="keywords" content="ruby,permutations," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ruby,permutations," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="(Lexicographic) Permutations in Ruby"/>
-<meta name="twitter:description" content="Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
-I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it."/>
+<meta name="twitter:description" content="Taking the code from &lt;a title=&#34;Permutations in Ruby and Python&#34; href=&#34;http://abachman.disqus.com/simple_permutations_in_python_and_ruby/&#34; target=&#34;_blank&#34;&gt;this other blog&lt;/a&gt; … It&#39;s pretty elegant Ruby!  I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -131,7 +124,7 @@ I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;r
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 132 words </span>
+          <span class="more-meta"> 139 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -144,12 +137,16 @@ I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;r
   </div>
 </div>
     <div class="post-content">
-      <p>Taking the code from <a title="Permutations in Ruby and Python" href="http://abachman.disqus.com/simple_permutations_in_python_and_ruby/" target="_blank">this other blog</a> ... It's pretty elegant Ruby!</p>
-
-<p>I won't waste your time repeating what the guy wrote in his blog - you're welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it. It runs the block of code on each permutation it finds.</p>
+      <p>
+Taking the code from &lt;a title=&#34;Permutations in Ruby and Python&#34; href=&#34;<a href="http://abachman.disqus.com/simple_permutations_in_python_and_ruby/">http://abachman.disqus.com/simple_permutations_in_python_and_ruby/</a>&#34; target=&#34;_blank&#34;&gt;this other blog&lt;/a&gt; … It&#39;s pretty elegant Ruby!
+</p>
+<p>
+I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it. It runs the block of code on each permutation it finds.
+</p>
+<div class="src src-ruby">
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-ruby" data-lang="ruby"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -173,6 +170,8 @@ I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;r
 <span class="k">end</span></code></pre></td></tr></table>
 </div>
 </div>
+</div>
+
     </div>
 
     <div class="post-copyright">
@@ -246,7 +245,7 @@ I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;r
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

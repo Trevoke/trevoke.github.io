@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vista on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Sun, 07 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</guid>
-      <description>I&#39;m taking this from this page but thought I should try to propagate it a little since it took me forever to find it.
-Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.
- If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
+      <description>I&amp;#39;m taking this from &amp;lt;a href=&amp;#34;http://blog.tiensivu.com/aaron/archives/932-Dealing-with-corrupt-user-profiles-in-Vista-and-saving-the-contents.html&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;this page&amp;lt;/a&amp;gt; but thought I should try to propagate it a little since it took me forever to find it.  Assume in this example that the username is atiensivu, the domain is staff, and the user profile is located in %systemdrive%\users\atiensivu. %systemdrive% is typically C: on standard Vista installs. Replace every instance of atiensivu with the username of the corrupt profile.    If you can log into the profile, make note of the %USERPROFILE% environment variable value.</description>
     </item>
     
   </channel>

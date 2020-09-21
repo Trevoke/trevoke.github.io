@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>elixir on Seven steps</title>
@@ -18,17 +18,16 @@
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/genstage_demystified/</guid>
-      <description>GenStage is a miracle of UX for developers. There&#39;s only one catch: because of its purpose, it&#39;s built for the machine, not for the developer. Let&#39;s go over what GenStage is for, and see just how simple it is to start using it.
-Why would you use GenStage? GenStage is what you would use if you had &#34;some work&#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
+      <description>GenStage is a miracle of UX for developers. There&amp;#39;s only one catch: because of its purpose, it&amp;#39;s built for the machine, not for the developer. Let&amp;#39;s go over what GenStage is for, and see just how simple it is to start using it. Why would you use GenStage?   GenStage is what you would use if you had &amp;#34;some work&amp;#34; (events) that needed to go through one or more transformations, which you could easily split into multiple parallelizable steps.</description>
     </item>
     
     <item>
-      <title>      Why Elixir is the next Great Tech</title>
+      <title>Why Elixir is the next Great Tech</title>
       <link>http://blog.trevoke.net/post/elixir/</link>
       <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/elixir/</guid>
-      <description>Elixir, because:  I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas. Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially. TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
+      <description>Elixir, because:   I think of Elixir as an idea whose time has come; or rather, a great gathering of ideas.    Erlang has solved the problem of distributed computing (and therefore, of concurrency) decades ago, and now concurrency is a very desirable tool, as the amount of data we crunch regularly has increased exponentially.    TDD has brought a more functional approach to a lot code, and that is the paradigm Elixir espouses.</description>
     </item>
     
   </channel>

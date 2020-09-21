@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vbscript on Seven steps</title>
@@ -18,8 +18,7 @@
       <pubDate>Tue, 30 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-recursively-iterate-through-every-filesubfolder-vbscript-publish/</guid>
-      <description>This is actually a lot simpler than I expected (gimme a break, this is my second foray into VBS!)
-1 2 3 4 5 6 7 8 9 10 11 12 13  Set fs = WScript.CreateObject (&amp;#34;Scripting.FileSystemObject&amp;#34;) Sub ShowSubFolders(Folder) For Each Subfolder In Folder.SubFolders Set files = SubFolder.Files For Each file In files WScript.Echo file.Name, file.Size Next ShowSubFolders Subfolder Next End Sub ShowSubFolders fs.GetFolder(&amp;#34;C:\your\path\here&amp;#34;)  </description>
+      <description> This is actually a lot simpler than I expected (gimme a break, this is my second foray into VBS!) 1 2 3 4 5 6 7 8 9 10 11 12 13  Set fs = WScript.CreateObject (&amp;#34;Scripting.FileSystemObject&amp;#34;) Sub ShowSubFolders(Folder) For Each Subfolder In Folder.SubFolders Set files = SubFolder.Files For Each file In files WScript.Echo file.Name, file.Size Next ShowSubFolders Subfolder Next End Sub ShowSubFolders fs.GetFolder(&amp;#34;C:\your\path\here&amp;#34;)    </description>
     </item>
     
   </channel>

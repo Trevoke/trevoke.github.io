@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sysadmin on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description>Why are these things always so weird? Someday I&#39;ll understand why OSX is set up that way. And on that day, I&#39;ll probably weep.
-$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership username 
-This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;tstart=0</description>
+      <description> Why are these things always so weird? Someday I&amp;#39;ll understand why OSX is set up that way. And on that day, I&amp;#39;ll probably weep.  &amp;lt;blockquote&amp;gt;$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt; &amp;lt;p style=&amp;#34;padding-left: 30px;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt;  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0 </description>
     </item>
     
     <item>
@@ -29,9 +27,7 @@ This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;
       <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</guid>
-      <description>You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:
-echo &amp;quot;your fancy word finder stuff here&amp;quot; | xargs -i bash -c &#39;grep -n &amp;quot;{}&amp;quot; your/file/here
-Not something that&#39;s useful every day, but when you want it, hot damn is it nice to have.</description>
+      <description> You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file? Like this:  echo &amp;#34;your fancy word finder stuff here&amp;#34; | xargs -i bash -c &amp;#39;grep -n &amp;#34;{}&amp;#34; your/file/here  Not something that&amp;#39;s useful every day, but when you want it, hot damn is it nice to have. </description>
     </item>
     
     <item>
@@ -40,8 +36,7 @@ Not something that&#39;s useful every day, but when you want it, hot damn is it 
       <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
-      <description>There are a few gotchas:
-1) If you have a SSD drive, you need to modprobe pata_sch to see it. 2) when using GRUB, install it on whatever drive the hard drive is, even if it&#39;s /dev/sdc -- and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB. 3) In the kernel, in the I2C options, don&#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&#39;t know it off-hand, will edit this post later to add the important information).</description>
+      <description>There are a few gotchas:    If you have a SSD drive, you need to &amp;lt;em&amp;gt;modprobe pata_sch&amp;lt;/em&amp;gt; to see it.    when using GRUB, install it on whatever drive the hard drive is, even if it&amp;#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.    In the kernel, in the I2C options, don&amp;#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&amp;#39;t know it off-hand, will edit this post later to add the important information).</description>
     </item>
     
     <item>
@@ -50,8 +45,7 @@ Not something that&#39;s useful every day, but when you want it, hot damn is it 
       <pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</guid>
-      <description>I feel kinda bad plaintexting this.. You can contact me if you can&#39;t figure it out yourself.
-The service password for the R2 unit is in this sentence.</description>
+      <description> I feel kinda bad plaintexting this.. You can contact me if you can&amp;#39;t figure it out yourself.  The service password for the R2 unit is in this sentence. </description>
     </item>
     
     <item>
@@ -60,10 +54,7 @@ The service password for the R2 unit is in this sentence.</description>
       <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</guid>
-      <description>The MIM keeps 60 days by default. That may be too much for you..
-By default, the folder C:\Program Files\MIM\config should make you really happy, it&#39;s got lots of plain text files with configuration for all kinds of settings.
-cleanup.txt has &#34;ARCHIVE LEFTOVER AGE (DAYS) := 60
-Change that to whatever you feel is appropriate for you needs.</description>
+      <description> The MIM keeps 60 days by default. That may be too much for you..  By default, the folder C:Program Files\MIM\config should make you really happy, it&amp;#39;s got lots of plain text files with configuration for all kinds of settings.  cleanup.txt has &amp;#34;ARCHIVE LEFTOVER AGE (DAYS) := 60  Change that to whatever you feel is appropriate for you needs. </description>
     </item>
     
   </channel>

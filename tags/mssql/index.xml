@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mssql on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
-      <description>Default passwords for MSSQL, Sybase, and mySQL:
-, , ,
-That&#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&#39;s the kind of knowledge that can come in handy.</description>
+      <description> Default passwords for MSSQL, Sybase, and mySQL:  , , ,  That&amp;#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&amp;#39;s the kind of knowledge that can come in handy. </description>
     </item>
     
   </channel>

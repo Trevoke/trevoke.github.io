@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>listbrowser on Seven steps</title>
@@ -18,8 +18,7 @@
       <pubDate>Fri, 15 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-new-gem-listbrowser-publish/</guid>
-      <description>I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &#34;What??&#34;, I thought. &#34;I have to use my brain?! God forbid!&#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.
-Install: (set up gemcutter) ~gem install ListBrowser~</description>
+      <description>I was working on a parser for a very specific tree structure, and was frustrated that there wasn’t a simple way to parse it in irb. &amp;#34;What??&amp;#34;, I thought. &amp;#34;I have to use my brain?! God forbid!&amp;#34;. So I set to using my brain a little more to create this tool. It’s not much, but maybe it’ll make someone’s life a little easier.  Install: (set up gemcutter) gem install ListBrowser  It can be used in irb, and really should be used there - when you call it on a tree structure, you’ll get a menu with a list of choices on how you want to go through whatever structure you gave it.</description>
     </item>
     
   </channel>

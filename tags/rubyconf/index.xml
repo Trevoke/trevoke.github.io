@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rubyconf on Seven steps</title>
@@ -18,9 +18,7 @@
       <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-ruby-is-alive-and-well-publish/</guid>
-      <description>I&#39;m back from Rubyconf.
-Some people say Ruby is dead. We can probably gloss over Zed Shaw&#39;s famous rant, since it&#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&#39;s Global Interpreter Lock.
-Given the talks at Rubyconf, Ruby is most likely not dead (and my company&#39;s internal rubylist has an ongoing recent conversation about this if you&#39;re curious).</description>
+      <description>I&amp;#39;m back from Rubyconf.  Some people say Ruby is dead. We can probably gloss over Zed Shaw&amp;#39;s famous &amp;lt;a title=&amp;#34;Zed Shaw&amp;#39;s famous rant on the Rails community&amp;#34; href=&amp;#34;http://web.archive.org/web/20080103072111/http://www.zedshaw.com/rants/rails_is_a_ghetto.html&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;rant&amp;lt;/a&amp;gt;, since it&amp;#39;s from roundabout 2007. My understanding is that the thought came about because of the many new trends in programming languages: first node, then Erlang&amp;#39;s comeback and the birth of Elixir. Evented programming, non-blocking IO, all the fancy buzzwords, and everyone craps on Ruby&amp;#39;s Global Interpreter Lock.</description>
     </item>
     
   </channel>

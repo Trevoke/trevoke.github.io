@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>permutations on Seven steps</title>
@@ -18,8 +18,7 @@
       <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-inter-array-permutations-in-ruby-publish/</guid>
-      <description>I don&#39;t really have a better name for this. It&#39;s also not completely clean, but it works. I had, almost a year ago (362 days ago), written a blog post about lexicographic permutations. That was about permutations of elements within one array. Someone on ruby-forum asked about permutations between multiple arrays. I found something in C#, which I was happy to transcribe to Ruby and tweak a little.
-1 2 3 4 5 6 7 8 9 10 11  def array_permutations array, index=0 # index is 0 by default : start at the beginning, more elegant.</description>
+      <description>I don&amp;#39;t really have a better name for this. It&amp;#39;s also not completely clean, but it works. I had, almost a year ago (362 days ago), written a blog post about &amp;lt;a href=&amp;#34;http://trevoke.net/blog/2008/12/20/lexicographic-permutations-in-ruby&amp;#34;&amp;gt;lexicographic permutations&amp;lt;/a&amp;gt;. That was about permutations of elements within one array. Someone on ruby-forum asked about permutations between multiple arrays. I &amp;lt;a href=&amp;#34;http://stackoverflow.com/questions/710670/c-permutation-of-an-array-of-arraylists&amp;#34;&amp;gt;found something in C#&amp;lt;/a&amp;gt;, which I was happy to transcribe to Ruby and tweak a little.</description>
     </item>
     
     <item>
@@ -28,8 +27,7 @@
       <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</guid>
-      <description>Look, Ma, these are my baby steps in algorithms!
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  # list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.</description>
+      <description>Look, Ma, these are my baby steps in algorithms! 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  # list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.</description>
     </item>
     
     <item>
@@ -38,8 +36,7 @@
       <pubDate>Sat, 20 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</guid>
-      <description>Taking the code from this other blog ... It&#39;s pretty elegant Ruby!
-I won&#39;t waste your time repeating what the guy wrote in his blog - you&#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.</description>
+      <description>Taking the code from &amp;lt;a title=&amp;#34;Permutations in Ruby and Python&amp;#34; href=&amp;#34;http://abachman.disqus.com/simple_permutations_in_python_and_ruby/&amp;#34; target=&amp;#34;_blank&amp;#34;&amp;gt;this other blog&amp;lt;/a&amp;gt; … It&amp;#39;s pretty elegant Ruby!  I won&amp;#39;t waste your time repeating what the guy wrote in his blog - you&amp;#39;re welcome to go read it. I just felt that I should help spread a little this elegant implementation of the standard permutation algorithm, fixing a small bug within it in the process. If, like me, you have issues understanding how to use this, well - you have to use this function and call a block of code on it.</description>
     </item>
     
   </channel>

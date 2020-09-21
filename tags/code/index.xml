@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>code on Seven steps</title>
@@ -13,14 +13,12 @@
     
     
     <item>
-      <title>      Maintainability Is Relative</title>
+      <title>Maintainability Is Relative</title>
       <link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
       <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
-      <description>I just found a great example of the variability of the need of creating maintainable code.
-Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.
-I temporarily wasn&#39;t sure of where that script was.</description>
+      <description>I just found a great example of the variability of the need of creating maintainable code.  Somewhere around 2006, I created a script that posts to the Livejournal community daily_tao a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.  I temporarily wasn&amp;#39;t sure of where that script was.</description>
     </item>
     
   </channel>

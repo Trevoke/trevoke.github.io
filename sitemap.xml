@@ -1,9 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <?xml-stylesheet type="text/xsl" href="http://blog.trevoke.net/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.trevoke.net/tags/agile/</loc>
+    <lastmod>2020-09-05T10:26:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/agile-and-lean-art-delivery/</loc>
+    <lastmod>2020-09-05T10:26:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/lean/</loc>
+    <lastmod>2020-09-05T10:26:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/</loc>
+    <lastmod>2020-09-05T10:26:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/</loc>
+    <lastmod>2020-09-05T10:26:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/</loc>
+    <lastmod>2020-09-05T10:26:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/refactor/</loc>
+    <lastmod>2019-11-18T18:10:10-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/slack/</loc>
+    <lastmod>2019-11-18T18:10:10-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/post/slack-time-explained/</loc>
+    <lastmod>2019-11-18T18:10:10-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/slack-time/</loc>
+    <lastmod>2019-11-18T18:10:10-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/tech-debt/</loc>
+    <lastmod>2019-11-18T18:10:10-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/velocity/</loc>
+    <lastmod>2019-11-18T18:10:10-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/elixir/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/genstage/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/genstage_demystified/</loc>
+    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/programming/</loc>
     <lastmod>2019-06-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -17,6 +128,76 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/emacs/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ruby/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rubymine/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sublime/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/text-editors/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vim/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vscode/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/learning/</loc>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/programming/</loc>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/programming-language/</loc>
+    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/learn-a-new-prog/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,7 +205,28 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/code/</loc>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/maintainability/</loc>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/maintainability-is-relative/</loc>
+    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/testing/</loc>
     <lastmod>2016-10-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -38,8 +240,64 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/development/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/psychology/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/stress/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/tdd/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/test-suite/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/phoenix/</loc>
+    <lastmod>2016-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/elixir/</loc>
     <lastmod>2016-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/estimation/</loc>
+    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/process/</loc>
+    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -66,6 +324,34 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/sanity/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/single-responsibility-principle/</loc>
+    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/growth/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/martial-arts/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</loc>
     <lastmod>2014-02-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,7 +359,49 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/shu-ha-ri/</loc>
+    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/fear/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/junot-diaz/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-learning-and-fear-publish/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/litany-against-fear/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/meditation/</loc>
+    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/philosophy/</loc>
     <lastmod>2013-11-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -94,7 +422,21 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/rubyconf/</loc>
+    <lastmod>2013-11-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-first-class-private/</loc>
+    <lastmod>2013-06-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/teaching/</loc>
     <lastmod>2013-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -103,6 +445,20 @@
   <url>
     <loc>http://blog.trevoke.net/post/import-sparring-publish/</loc>
     <lastmod>2013-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sparring/</loc>
+    <lastmod>2013-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/intention/</loc>
+    <lastmod>2013-04-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -122,7 +478,35 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/osx/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/sysadmin/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/wheel/</loc>
+    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-is-rails-dying-publish/</loc>
+    <lastmod>2013-02-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rails/</loc>
     <lastmod>2013-02-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -131,6 +515,34 @@
   <url>
     <loc>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</loc>
     <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/object-oriented-programming/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rules/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ffi/</loc>
+    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/osx-10.8/</loc>
+    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -150,8 +562,50 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/three-monkeys/</loc>
+    <lastmod>2012-07-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/boxing/</loc>
+    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/drills/</loc>
+    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/punches/</loc>
+    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-the-schism-in-martial-training-paradigms-publish/</loc>
     <lastmod>2012-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/wrist-grab/</loc>
+    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/devise/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -164,8 +618,36 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/rspec/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/knowledge/</loc>
+    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/lyrics/</loc>
+    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-the-tooth-of-knowledge-lyrics-publish/</loc>
     <lastmod>2012-04-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/at_exit/</loc>
+    <lastmod>2012-01-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -178,8 +660,50 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/aoap/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-art-of-agile-planning-art-of-agile-delivery-by-james-shore-and-diana-larsen-publish/</loc>
     <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/art-of-agile/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/diana-larsen/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/james-shore/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/jim-shore/</loc>
+    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/society/</loc>
+    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -192,8 +716,43 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/worldview/</loc>
+    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/bash/</loc>
+    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/grep/</loc>
+    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</loc>
     <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/shell/</loc>
+    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/git/</loc>
+    <lastmod>2011-08-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -213,7 +772,49 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/matt-damon/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/save-our-schools/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/speech/</loc>
+    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/french/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/poetry/</loc>
+    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/prevert/</loc>
     <lastmod>2011-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -234,8 +835,64 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/fighting/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mushin/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/senses/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/training/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/writing/</loc>
+    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/isshinryu/</loc>
+    <lastmod>2010-05-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-punches-and-lower-back/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/cyrus-innovation/</loc>
+    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/life-event/</loc>
+    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -248,8 +905,29 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/callbacks/</loc>
+    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/hooks/</loc>
+    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-ruby-callbacks-hooks-publish/</loc>
     <lastmod>2010-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/belt-test/</loc>
+    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -262,6 +940,27 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/nidan-test/</loc>
+    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/customer-service/</loc>
+    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/github/</loc>
+    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</loc>
     <lastmod>2010-03-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -269,8 +968,29 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/kusanku/</loc>
+    <lastmod>2010-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-teaching-kusanku-to-sankyu-publish/</loc>
     <lastmod>2010-03-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/dell-inspiron-mini-10/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/gentoo/</loc>
+    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -285,6 +1005,20 @@
   <url>
     <loc>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</loc>
     <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/categories/funny/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/listbrowser/</loc>
+    <lastmod>2010-01-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -311,6 +1045,20 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/permutations/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/random/</loc>
+    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</loc>
     <lastmod>2009-12-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -319,6 +1067,13 @@
   
   <url>
     <loc>http://blog.trevoke.net/post/import-open-source-is-wide-open-calling-rake-tasks-publish/</loc>
+    <lastmod>2009-12-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/rake/</loc>
     <lastmod>2009-12-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -346,8 +1101,36 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/auto-vivifying-hashes/</loc>
+    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/hashes/</loc>
+    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/closures/</loc>
+    <lastmod>2009-10-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-closures-in-ruby-publish/</loc>
     <lastmod>2009-10-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/dave-thomas/</loc>
+    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -360,7 +1143,28 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/metaprogramming/</loc>
+    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/hologic/</loc>
+    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</loc>
+    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/passwords/</loc>
     <lastmod>2009-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -388,8 +1192,36 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/pain/</loc>
+    <lastmod>2009-09-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-dojo-tonight-publish/</loc>
     <lastmod>2009-09-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/css/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/cycle/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/haml/</loc>
+    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -409,8 +1241,36 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/activerecord/</loc>
+    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</loc>
     <lastmod>2009-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/sybase/</loc>
+    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mssql/</loc>
+    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mysql/</loc>
+    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -423,6 +1283,20 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/categories/security/</loc>
+    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/lisp/</loc>
+    <lastmod>2009-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</loc>
     <lastmod>2009-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -430,7 +1304,21 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/gem/</loc>
+    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-install-the-mysql-gem-on-ubuntu-publish/</loc>
+    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/ubuntu/</loc>
     <lastmod>2009-04-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -444,8 +1332,29 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/people/</loc>
+    <lastmod>2009-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-two-videos-a-change-in-the-world-publish/</loc>
     <lastmod>2009-03-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/leadership/</loc>
+    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vicious-cycles/</loc>
+    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -458,7 +1367,21 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/relaxation/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/shoulders/</loc>
     <lastmod>2009-02-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -472,7 +1395,21 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/stances/</loc>
+    <lastmod>2009-02-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-grouping-directories-by-name-publish/</loc>
+    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/script/</loc>
     <lastmod>2009-01-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -481,6 +1418,13 @@
   <url>
     <loc>http://blog.trevoke.net/post/import-stances-publish/</loc>
     <lastmod>2009-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/executable/</loc>
+    <lastmod>2009-01-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -507,6 +1451,13 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/vbscript/</loc>
+    <lastmod>2008-12-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-lexicographic-permutations-in-ruby-publish/</loc>
     <lastmod>2008-12-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -521,8 +1472,43 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/corrupt/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/user-profile/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/vista/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/windows/</loc>
+    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-windows-vista-corrupt-user-profile-publish/</loc>
     <lastmod>2008-12-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/kata/</loc>
+    <lastmod>2008-11-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -542,7 +1528,35 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/archive/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/delete-files/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-how-to-delete-all-files-older-than-a-day-recursively-in-a-directory-and-its-subdirectories-publish/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mim/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/mimvista/</loc>
     <lastmod>2008-11-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -551,6 +1565,27 @@
   <url>
     <loc>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</loc>
     <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/old-school/</loc>
+    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/escrima/</loc>
+    <lastmod>2008-05-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/kali/</loc>
+    <lastmod>2008-05-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -565,6 +1600,13 @@
   <url>
     <loc>http://blog.trevoke.net/post/import-testing-for-purple-publish/</loc>
     <lastmod>2008-05-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.trevoke.net/tags/alignment/</loc>
+    <lastmod>2008-04-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -591,6 +1633,13 @@
   </url>
   
   <url>
+    <loc>http://blog.trevoke.net/tags/solar-plexus/</loc>
+    <lastmod>2008-03-24T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.trevoke.net/post/import-so-you-want-to-spar-publish/</loc>
     <lastmod>2008-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -605,995 +1654,9 @@
   </url>
   
   <url>
-    <loc>http://blog.trevoke.net/categories/</loc>
+    <loc>http://blog.trevoke.net/post/xp-and-dewey/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/post/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/activerecord/</loc>
-    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/agile/</loc>
-    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/alignment/</loc>
-    <lastmod>2008-04-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/aoap/</loc>
-    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/archive/</loc>
-    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/art-of-agile/</loc>
-    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/at_exit/</loc>
-    <lastmod>2012-01-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/auto-vivifying-hashes/</loc>
-    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/bash/</loc>
-    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/belt-test/</loc>
-    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/boxing/</loc>
-    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/callbacks/</loc>
-    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/closures/</loc>
-    <lastmod>2009-10-28T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/code/</loc>
-    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/corrupt/</loc>
-    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/css/</loc>
-    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/customer-service/</loc>
-    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/cycle/</loc>
-    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/cyrus-innovation/</loc>
-    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/dave-thomas/</loc>
-    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/delete-files/</loc>
-    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/dell-inspiron-mini-10/</loc>
-    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/development/</loc>
-    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/devise/</loc>
-    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/diana-larsen/</loc>
-    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/drills/</loc>
-    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/elixir/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/emacs/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/escrima/</loc>
-    <lastmod>2008-05-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/estimation/</loc>
-    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/executable/</loc>
-    <lastmod>2009-01-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/fear/</loc>
-    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/ffi/</loc>
-    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/fighting/</loc>
-    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/french/</loc>
-    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/funny/</loc>
-    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/gem/</loc>
-    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/genstage/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/gentoo/</loc>
-    <lastmod>2010-03-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/git/</loc>
-    <lastmod>2011-08-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/github/</loc>
-    <lastmod>2010-03-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/grep/</loc>
-    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/growth/</loc>
-    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/haml/</loc>
-    <lastmod>2009-09-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/hashes/</loc>
-    <lastmod>2009-11-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/hologic/</loc>
-    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/hooks/</loc>
-    <lastmod>2010-03-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/intention/</loc>
-    <lastmod>2013-04-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/isshinryu/</loc>
-    <lastmod>2010-05-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/james-shore/</loc>
-    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/jim-shore/</loc>
-    <lastmod>2011-11-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/junot-diaz/</loc>
-    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/kali/</loc>
-    <lastmod>2008-05-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/kata/</loc>
-    <lastmod>2008-11-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/knowledge/</loc>
-    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/kusanku/</loc>
-    <lastmod>2010-03-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/leadership/</loc>
-    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/learning/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/life-event/</loc>
-    <lastmod>2010-04-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/lisp/</loc>
-    <lastmod>2009-05-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/listbrowser/</loc>
-    <lastmod>2010-01-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/litany-against-fear/</loc>
-    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/lyrics/</loc>
-    <lastmod>2012-04-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/maintainability/</loc>
-    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/martial-arts/</loc>
-    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/matt-damon/</loc>
-    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/meditation/</loc>
-    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/metaprogramming/</loc>
-    <lastmod>2009-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/mim/</loc>
-    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/mimvista/</loc>
-    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/mssql/</loc>
-    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/mushin/</loc>
-    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/mysql/</loc>
-    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/nidan-test/</loc>
-    <lastmod>2010-03-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/object-oriented-programming/</loc>
-    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/old-school/</loc>
-    <lastmod>2008-11-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/osx/</loc>
-    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/osx-10.8/</loc>
-    <lastmod>2012-08-21T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/pain/</loc>
-    <lastmod>2009-09-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/passwords/</loc>
-    <lastmod>2009-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/people/</loc>
-    <lastmod>2009-03-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/permutations/</loc>
-    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/philosophy/</loc>
-    <lastmod>2013-11-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/phoenix/</loc>
-    <lastmod>2016-03-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/poetry/</loc>
-    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/prevert/</loc>
-    <lastmod>2011-07-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/process/</loc>
-    <lastmod>2015-04-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/programming/</loc>
-    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/programming/</loc>
-    <lastmod>2019-06-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/programming-language/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/psychology/</loc>
-    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/punches/</loc>
-    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/rails/</loc>
-    <lastmod>2013-02-02T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/rake/</loc>
-    <lastmod>2009-12-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/random/</loc>
-    <lastmod>2009-12-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/relaxation/</loc>
-    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/rspec/</loc>
-    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/ruby/</loc>
-    <lastmod>2013-11-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/rubyconf/</loc>
-    <lastmod>2013-11-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/rubymine/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/rules/</loc>
-    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/sanity/</loc>
-    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/save-our-schools/</loc>
-    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/script/</loc>
-    <lastmod>2009-01-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/security/</loc>
-    <lastmod>2009-06-09T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/senses/</loc>
-    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/shell/</loc>
-    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/shoulders/</loc>
-    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/shu-ha-ri/</loc>
-    <lastmod>2014-02-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/single-responsibility-principle/</loc>
-    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/society/</loc>
-    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/solar-plexus/</loc>
-    <lastmod>2008-03-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/sparring/</loc>
-    <lastmod>2013-05-15T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/speech/</loc>
-    <lastmod>2011-08-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/stances/</loc>
-    <lastmod>2009-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/stress/</loc>
-    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/sublime/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/sybase/</loc>
-    <lastmod>2009-07-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/sysadmin/</loc>
-    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/tdd/</loc>
-    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/teaching/</loc>
-    <lastmod>2013-06-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/test-suite/</loc>
-    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/testing/</loc>
-    <lastmod>2016-10-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/text-editors/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/three-monkeys/</loc>
-    <lastmod>2012-07-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/training/</loc>
-    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/ubuntu/</loc>
-    <lastmod>2009-04-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/user-profile/</loc>
-    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/vbscript/</loc>
-    <lastmod>2008-12-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/vicious-cycles/</loc>
-    <lastmod>2009-03-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/vim/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/vista/</loc>
-    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/vscode/</loc>
-    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/wheel/</loc>
-    <lastmod>2013-02-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/windows/</loc>
-    <lastmod>2008-12-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/worldview/</loc>
-    <lastmod>2011-10-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/tags/wrist-grab/</loc>
-    <lastmod>2012-06-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.trevoke.net/categories/writing/</loc>
-    <lastmod>2010-10-18T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

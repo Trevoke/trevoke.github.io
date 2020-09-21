@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>programming-language on Seven steps</title>
@@ -18,7 +18,7 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
-      <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
+      <description>Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&amp;#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT!</description>
     </item>
     
   </channel>

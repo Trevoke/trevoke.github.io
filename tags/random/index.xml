@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>random on Seven steps</title>
@@ -18,8 +18,7 @@
       <pubDate>Thu, 17 Dec 2009 00:00:00 +0000</pubDate>
       
       <guid>http://blog.trevoke.net/post/import-random-constrained-permutations-in-ruby-publish/</guid>
-      <description>Look, Ma, these are my baby steps in algorithms!
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  # list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.</description>
+      <description>Look, Ma, these are my baby steps in algorithms! 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40  # list is the elements to be permuted # y is the number of results desired # z is the number of elements per result # equalizer keeps track of who got used how many times def constrained_permutations list, y, z list.</description>
     </item>
     
   </channel>

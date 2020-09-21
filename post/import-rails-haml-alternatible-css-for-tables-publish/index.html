@@ -16,16 +16,14 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
-&amp;lt;tr class=&amp;quot;&amp;lt;%= cycle(&amp;quot;even&amp;quot;, &amp;quot;odd&amp;quot;) %&amp;gt;&amp;quot;&amp;gt;
-This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="If you&amp;#39;ve done any kind of table display in Rails, you&amp;#39;ve probably discovered the useful &amp;#39;cycle&amp;#39; method:  &amp;lt;tr class=&amp;#34;&amp;lt;%= cycle(&amp;#34;even&amp;#34;, &amp;#34;odd&amp;#34;) %&amp;gt;&amp;#34;&amp;gt;  This works after you&amp;#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &amp;#39;lightbg&amp;#39; and &amp;#39;darkbg&amp;#39;, or something similar." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.52 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.68.3 with even 4.0.0" />
 
 
 <link rel="canonical" href="http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/" />
@@ -41,31 +39,22 @@ This works after you&#39;ve set two CSS classes between which you want to altern
 
 
 <meta property="og:title" content="Rails, HAML, alternatible CSS for tables" />
-<meta property="og:description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
-&lt;tr class=&quot;&lt;%= cycle(&quot;even&quot;, &quot;odd&quot;) %&gt;&quot;&gt;
-This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that." />
+<meta property="og:description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:  &lt;tr class=&#34;&lt;%= cycle(&#34;even&#34;, &#34;odd&#34;) %&gt;&#34;&gt;  This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/" /><meta property="article:published_time" content="2009-09-02T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-09-02T00:00:00&#43;00:00"/>
-
+<meta property="og:url" content="http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/" />
+<meta property="article:published_time" content="2009-09-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2009-09-02T00:00:00+00:00" />
 <meta itemprop="name" content="Rails, HAML, alternatible CSS for tables">
-<meta itemprop="description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
-&lt;tr class=&quot;&lt;%= cycle(&quot;even&quot;, &quot;odd&quot;) %&gt;&quot;&gt;
-This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that.">
-
-
+<meta itemprop="description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:  &lt;tr class=&#34;&lt;%= cycle(&#34;even&#34;, &#34;odd&#34;) %&gt;&#34;&gt;  This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar.">
 <meta itemprop="datePublished" content="2009-09-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2009-09-02T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="98">
 
 
 
-<meta itemprop="keywords" content="ruby,rails,haml,css,cycle," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ruby,rails,haml,css,cycle," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Rails, HAML, alternatible CSS for tables"/>
-<meta name="twitter:description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
-&lt;tr class=&quot;&lt;%= cycle(&quot;even&quot;, &quot;odd&quot;) %&gt;&quot;&gt;
-This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that."/>
+<meta name="twitter:description" content="If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:  &lt;tr class=&#34;&lt;%= cycle(&#34;even&#34;, &#34;odd&#34;) %&gt;&#34;&gt;  This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -148,16 +137,22 @@ This works after you&#39;ve set two CSS classes between which you want to altern
   </div>
 </div>
     <div class="post-content">
-      <p>If you've done any kind of table display in Rails, you've probably discovered the useful 'cycle' method:</p>
-
-<p><code>&lt;tr class=&quot;&lt;%= cycle(&quot;even&quot;, &quot;odd&quot;) %&gt;&quot;&gt;</code></p>
-
-<p>This works after you've set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be 'lightbg' and 'darkbg', or something similar. I'll fix that.</p>
-
-<p>But yeah - how do you do that in HAML?
-Piece of CAKE (in this case, it is not a lie).</p>
-
-<p><code>%tr{:class =&gt; cycle('even', 'odd') }&lt;/tr&gt;</code></p>
+      <p>
+If you&#39;ve done any kind of table display in Rails, you&#39;ve probably discovered the useful &#39;cycle&#39; method:
+</p>
+<p>
+<code>&lt;tr class=&#34;&lt;%= cycle(&#34;even&#34;, &#34;odd&#34;) %&gt;&#34;&gt;</code>
+</p>
+<p>
+This works after you&#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &#39;lightbg&#39; and &#39;darkbg&#39;, or something similar. I&#39;ll fix that.
+</p>
+<p>
+But yeah - how do you do that in HAML?
+Piece of CAKE (in this case, it is not a lie).
+</p>
+<p>
+<code>%tr{:class =&gt; cycle(&#39;even&#39;, &#39;odd&#39;) }&lt;/tr&gt;</code>
+</p>
 
     </div>
 
@@ -235,7 +230,7 @@ Piece of CAKE (in this case, it is not a lie).</p>
   <span class="copyright-year">
     &copy; 
     2017 - 
-    2019
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
