@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sybase on Seven steps</title>
+    <title>Sybase on Seven steps</title>
     <link>http://blog.trevoke.net/tags/sybase/</link>
-    <description>Recent content in sybase on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Sybase on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Fri, 31 Jul 2009 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/sybase/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/sybase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruby on Rails &#43; Sybase</title>
       <link>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</link>
       <pubDate>Fri, 31 Jul 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-ruby-on-rails-sybase-publish/</guid>
-      <description> Caveat: This adapter may only work with the enterprise edition of Sybase (i.e. Sybase ASE) not with SQLAnywhere (Sybase ASA)  =gem install activerecord-sybase-adapter -s http://gems.rubyonrails.org= 1 2 3 4 5 6  ActiveRecord::Base.establish_connection( :adapter =&amp;gt; &amp;#34;sybase&amp;#34;, :database =&amp;gt; &amp;#34;test&amp;#34;, :host =&amp;gt; &amp;#34;www.yourdbserver.com&amp;#34;, :username =&amp;gt; &amp;#34;kevin&amp;#34;, :password =&amp;gt; &amp;#34;test&amp;#34;)     Play! </description>
+      <description>&lt;p&gt;&#xA;Caveat: This adapter may only work with the enterprise edition of Sybase (i.e. Sybase ASE) not with SQLAnywhere (Sybase ASA)&lt;/p&gt;&#xA;&lt;p&gt;&#xA;=gem install activerecord-sybase-adapter -s &lt;a href=&#34;http://gems.rubyonrails.org&#34;&gt;http://gems.rubyonrails.org&lt;/a&gt;&#xD;=&lt;/p&gt;&#xA;&lt;div class=&#34;src src-ruby&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;no&#34;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;no&#34;&gt;Base&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;establish_connection&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:adapter&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;sybase&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:database&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:host&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;www.yourdbserver.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;kevin&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ss&#34;&gt;:password&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;Play!&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Passwords, passwords</title>
       <link>http://blog.trevoke.net/post/import-passwords-passwords-publish/</link>
       <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
-      <description> Default passwords for MSSQL, Sybase, and mySQL:  , , ,  That&amp;#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&amp;#39;s the kind of knowledge that can come in handy. </description>
+      <description>&lt;p&gt;&#xA;Default passwords for MSSQL, Sybase, and mySQL:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;, , ,&lt;/p&gt;&#xA;&lt;p&gt;&#xA;That&amp;#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&amp;#39;s the kind of knowledge that can come in handy.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

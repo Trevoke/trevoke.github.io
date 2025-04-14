@@ -1,43 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>osx on Seven steps</title>
+    <title>Osx on Seven steps</title>
     <link>http://blog.trevoke.net/tags/osx/</link>
-    <description>Recent content in osx on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Osx on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Thu, 07 Feb 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/osx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/osx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add a user to the wheel group in OSX</title>
       <link>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</link>
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description> Why are these things always so weird? Someday I&amp;#39;ll understand why OSX is set up that way. And on that day, I&amp;#39;ll probably weep.  &amp;lt;blockquote&amp;gt;$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt; &amp;lt;p style=&amp;#34;padding-left: 30px;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/blockquote&amp;gt;  This was found here : https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0 </description>
+      <description>&lt;p&gt;&#xA;Why are these things always so weird? Someday I&amp;#39;ll understand why OSX is set up that way. And on that day, I&amp;#39;ll probably weep.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;blockquote&amp;gt;$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt;&#xA;&amp;lt;p style=&amp;#34;padding-left: 30px;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;&#xA;&amp;lt;/blockquote&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;This was found here : &lt;a href=&#34;https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0&#34;&gt;https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lisp on OSX</title>
       <link>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</link>
       <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-lisp-on-osx-publish/</guid>
-      <description> Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&amp;#39;t too tricky).  http://www.david-steuber.com/Lisp/OSX/ </description>
+      <description>&lt;p&gt;&#xA;Just a link to a page.. Got me started with barely any trouble (just make sure you know how to read a .emacs file - I learned on the fly on his page, it wasn&amp;#39;t too tricky).&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;http://www.david-steuber.com/Lisp/OSX/&#34;&gt;http://www.david-steuber.com/Lisp/OSX/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installing the mysql gem on OSX</title>
       <link>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</link>
       <pubDate>Fri, 17 Apr 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-installing-the-mysql-gem-on-osx-publish/</guid>
-      <description> Taken straight from &amp;lt;a href=&amp;#34;http://www.eclips3media.com/workshop/2008/10/installing-the-mysql-gem-on-os-x/&amp;#34;&amp;gt;this blog&amp;lt;/a&amp;gt;  in a terminal.. First do a locate mysql_config and then replace the path in the following command with where that file is.  $ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config 1 2 3  Building native extensions. This could take a while... Successfully installed mysql-2.7 1 gem installed    </description>
+      <description>&lt;p&gt;&#xA;Taken straight from &amp;lt;a href=&amp;#34;&lt;a href=&#34;http://www.eclips3media.com/workshop/2008/10/installing-the-mysql-gem-on-os-x/&#34;&gt;http://www.eclips3media.com/workshop/2008/10/installing-the-mysql-gem-on-os-x/&lt;/a&gt;&amp;#34;&amp;gt;this blog&amp;lt;/a&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;in a terminal.. First do a &lt;code&gt;locate mysql_config&lt;/code&gt; and then replace the path in the following command with where that file is.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;$ sudo gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config&lt;/code&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;src src-text&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&#xA;&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Building native extensions.  This could take a while...&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Successfully installed mysql-2.7&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1 gem installed&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
-    
   </channel>
 </rss>

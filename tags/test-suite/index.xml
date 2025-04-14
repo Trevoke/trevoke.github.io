@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>test-suite on Seven steps</title>
+    <title>Test-Suite on Seven steps</title>
     <link>http://blog.trevoke.net/tags/test-suite/</link>
-    <description>Recent content in test-suite on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Test-Suite on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Mon, 18 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/test-suite/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/test-suite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Benefits of a rapid test suite</title>
       <link>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</link>
       <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/</guid>
-      <description>The value of a rapid test suite  Developers and codebases   The bare minimum required of a developer is &amp;#34;make this change without breaking anything else in the code&amp;#34;, and if you&amp;#39;ve been around software development for any period of time, you know that&amp;#39;s harder than it seems.  Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.</description>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;The value of a rapid test suite&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-2&#34;&gt;&#xA;Developers and codebases&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;&#xA;The bare minimum required of a developer is &amp;#34;make this change without breaking anything else in the code&amp;#34;, and if you&amp;#39;ve been around software development for any period of time, you know that&amp;#39;s harder than it seems.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.&#xA;The understanding of the core domain and/or the early code remains mostly intellectual and abstract, not based on really reading and understanding the code.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

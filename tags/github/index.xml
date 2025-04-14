@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>github on Seven steps</title>
+    <title>Github on Seven steps</title>
     <link>http://blog.trevoke.net/tags/github/</link>
-    <description>Recent content in github on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Github on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Fri, 12 Mar 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/github/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Github&#39;s customer service: bad review</title>
       <link>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</link>
       <pubDate>Fri, 12 Mar 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-githubs-customer-service-bad-review-publish/</guid>
-      <description>I will readily admit that I don&amp;#39;t know all that much about Github or Git for that matter. I use them, they&amp;#39;re handy, and that&amp;#39;s where it stops. I read about a git feature called &amp;#34;smart HTTP&amp;#34;, which would allow to communicate both ways with git (push and pull) with HTTP or HTTPS. So, I asked Github about it - it would be nice for them to have this feature, because I currently can&amp;#39;t push to Github from work.</description>
+      <description>&lt;p&gt;&#xA;I will readily admit that I don&amp;#39;t know all that much about Github or Git for that matter. I use them, they&amp;#39;re handy, and that&amp;#39;s where it stops. I read about a git feature called &amp;#34;smart HTTP&amp;#34;, which would allow to communicate both ways with git (push and pull) with HTTP or HTTPS. So, I asked Github about it - it would be nice for them to have this feature, because I currently can&amp;#39;t push to Github from work. Here&amp;#39;s how the exchange went.&#xA;(this first message is from memory, as I used the web interface, so I don&amp;#39;t have a copy of it)&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,103 +4,93 @@
     <title>Categories on Seven steps</title>
     <link>http://blog.trevoke.net/categories/</link>
     <description>Recent content in Categories on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
-    <lastBuildDate>Sun, 23 Jun 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Apr 2025 21:12:27 -0400</lastBuildDate>
+    <atom:link href="http://blog.trevoke.net/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>programming</title>
+      <title>Critical-Thinking</title>
+      <link>http://blog.trevoke.net/categories/critical-thinking/</link>
+      <pubDate>Sun, 13 Apr 2025 21:12:27 -0400</pubDate>
+      <guid>http://blog.trevoke.net/categories/critical-thinking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Genai</title>
+      <link>http://blog.trevoke.net/categories/genai/</link>
+      <pubDate>Sun, 13 Apr 2025 21:12:27 -0400</pubDate>
+      <guid>http://blog.trevoke.net/categories/genai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
       <link>http://blog.trevoke.net/categories/programming/</link>
       <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/programming/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>process</title>
+      <title>Process</title>
       <link>http://blog.trevoke.net/categories/process/</link>
       <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/process/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>martial-arts</title>
+      <title>Martial-Arts</title>
       <link>http://blog.trevoke.net/categories/martial-arts/</link>
       <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/martial-arts/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>philosophy</title>
+      <title>Philosophy</title>
       <link>http://blog.trevoke.net/categories/philosophy/</link>
       <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/philosophy/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>sysadmin</title>
+      <title>Sysadmin</title>
       <link>http://blog.trevoke.net/categories/sysadmin/</link>
       <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/sysadmin/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>poetry</title>
+      <title>Poetry</title>
       <link>http://blog.trevoke.net/categories/poetry/</link>
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/poetry/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>writing</title>
+      <title>Writing</title>
       <link>http://blog.trevoke.net/categories/writing/</link>
       <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/writing/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>life-event</title>
+      <title>Life-Event</title>
       <link>http://blog.trevoke.net/categories/life-event/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/life-event/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>funny</title>
+      <title>Funny</title>
       <link>http://blog.trevoke.net/categories/funny/</link>
       <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/funny/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>security</title>
+      <title>Security</title>
       <link>http://blog.trevoke.net/categories/security/</link>
       <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/categories/security/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

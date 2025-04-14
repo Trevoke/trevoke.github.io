@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>text-editors on Seven steps</title>
+    <title>Text-Editors on Seven steps</title>
     <link>http://blog.trevoke.net/tags/text-editors/</link>
-    <description>Recent content in text-editors on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Text-Editors on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/text-editors/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/text-editors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choosing the right editor</title>
       <link>http://blog.trevoke.net/post/import-choosing-the-right-editor/</link>
       <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-choosing-the-right-editor/</guid>
-      <description>Choosing the right editor  Intro: My editor history   Here are my &amp;#34;credentials&amp;#34;. You know, establishing why you should be reading this at all.  When it comes to editors, I&amp;#39;ve honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows.</description>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Choosing the right editor&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;&#xA;&lt;h3 id=&#34;headline-2&#34;&gt;&#xA;Intro: My editor history&#xA;&lt;/h3&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;&#xA;&lt;p&gt;&#xA;Here are my &amp;#34;credentials&amp;#34;. You know, establishing why you should be reading this at all.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;When it comes to editors, I&amp;#39;ve honestly fumbled around quite a bit in the past fifteen years or so. I had not encountered an editor until some dude taught my Comp Sci 6/9 class and straight-up went to the GNU webpage and downloaded emacs for Windows. That looked really badass. Unfortunately I had no idea how to use it, so I stuck to whatever C++ IDE I was using for my homework.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>executable on Seven steps</title>
+    <title>Executable on Seven steps</title>
     <link>http://blog.trevoke.net/tags/executable/</link>
-    <description>Recent content in executable on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Executable on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Fri, 23 Jan 2009 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/executable/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/executable/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a ruby script into a stand-alone executable</title>
       <link>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</link>
       <pubDate>Fri, 23 Jan 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-making-a-ruby-script-into-a-stand-alone-executable-publish/</guid>
-      <description>Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS – so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc.  &amp;lt;a href=&amp;#34;http://www.erikveen.dds.nl/tar2rubyscript/index.html&amp;#34;&amp;gt;tar2rubyscript&amp;lt;/a&amp;gt;  &amp;lt;a href=&amp;#34;http://www.erikveen.dds.nl/rubyscript2exe/&amp;#34;&amp;gt;rubyscript2exe&amp;lt;/a&amp;gt;  As I&amp;#39;m a newb, it took me a while to figure out that I need .</description>
+      <description>&lt;p&gt;&#xA;Erik Veenstra created two scripts, tar2rubyscript and rubyscript2exe, which essentially grab what you wrote, wrap it up with some other code, bundle it with the ruby executable, and spit out a finished, executable package - which will run on that same OS – so compile it on Windows, get a Windows executable, compile on Linux, get Linux executable, etc.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;a href=&amp;#34;&lt;a href=&#34;http://www.erikveen.dds.nl/tar2rubyscript/index.html&#34;&gt;http://www.erikveen.dds.nl/tar2rubyscript/index.html&lt;/a&gt;&amp;#34;&amp;gt;tar2rubyscript&amp;lt;/a&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;a href=&amp;#34;&lt;a href=&#34;http://www.erikveen.dds.nl/rubyscript2exe/&#34;&gt;http://www.erikveen.dds.nl/rubyscript2exe/&lt;/a&gt;&amp;#34;&amp;gt;rubyscript2exe&amp;lt;/a&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;As I&amp;#39;m a newb, it took me a while to figure out that I need .. &amp;#39;stuff&amp;#39; in the init.rb file. Since I&amp;#39;m writing scripts, I just stuffed the whole simple script in init.rb.. This also means I don&amp;#39;t really understand how to do bigger programs, but I think that with more knowledge than mine, these pages are worth their weight in pixels. Made of gold.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

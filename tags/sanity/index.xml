@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sanity on Seven steps</title>
+    <title>Sanity on Seven steps</title>
     <link>http://blog.trevoke.net/tags/sanity/</link>
-    <description>Recent content in sanity on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Sanity on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Tue, 27 Jan 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/sanity/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/sanity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lesson from emacs: keep data easy to manipulate and easy to present</title>
       <link>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/separate-manipulation-from-presentation/</guid>
-      <description>Spreadsheets   Spreadsheets are evil. And do you know why? Because they&amp;#39;re too powerful. Here is the sweet spot of spreadsheets: tables of related data on which calculations need to be made. Here is not the sweet spot of spreadsheets: everything else.  Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are.</description>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;Spreadsheets&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;&#xA;Spreadsheets are evil. And do you know why? Because they&amp;#39;re too powerful. Here is the sweet spot of spreadsheets: &lt;strong&gt;tables of related data on which calculations need to be made&lt;/strong&gt;. Here is not the sweet spot of spreadsheets: &lt;strong&gt;everything else&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Spreadsheet software is so powerful nowadays that you can make visualizations for almost anything. And some people are happy to spend a really long time creating and maintaing those, but I am WAY, WAY lazier than those people are. I&amp;#39;ve also learned that there was such a thing as the Single Responsibility Principle.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

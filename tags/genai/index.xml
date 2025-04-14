@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genai on Seven steps</title>
+    <link>http://blog.trevoke.net/tags/genai/</link>
+    <description>Recent content in Genai on Seven steps</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Apr 2025 21:12:27 -0400</lastBuildDate>
+    <atom:link href="http://blog.trevoke.net/tags/genai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GenAI Is a Power Tool — Don’t Use It Like a Crutch</title>
+      <link>http://blog.trevoke.net/post/using-genai-without-losing-your-critical-thinking-skills/</link>
+      <pubDate>Sun, 13 Apr 2025 21:12:27 -0400</pubDate>
+      <guid>http://blog.trevoke.net/post/using-genai-without-losing-your-critical-thinking-skills/</guid>
+      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;You&amp;#39;re knee-deep in a sprint.&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;A teammate is out sick. Product wants the filtering module updated by EOD. You’re juggling two different refactors and a Slack thread that just won’t die. You think:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“I’ll just ask ChatGPT for the price filtering logic — it’ll save me an hour.”&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;Fast forward: the code runs, the tests pass. Ship it.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;A week later, someone opens a defect. Turns out the AI-generated logic doesn&amp;#39;t account for tiered discounts already applied upstream in the pricing engine. Nobody caught it in review — you assumed it “looked right.” The system is now fragile in a new place, and no one owns the debt.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>GenAI Is a Power Tool — Don’t Use It Like a Crutch - Seven steps</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Studies show that repeated use of GenAI makes you worse at using your brain. Here&#39;s how to counter it. ">
+<link rel="canonical" href="http://blog.trevoke.net/post/using-genai-without-losing-your-critical-thinking-skills/" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+
+<div id="layout">
+<article>
+
+<section>
+<h1 class="content-title">GenAI Is a Power Tool — Don’t Use It Like a Crutch</h1></section>
+
+
+
+<section>
+
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+You&#39;re knee-deep in a sprint.
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>A teammate is out sick. Product wants the filtering module updated by EOD. You’re juggling two different refactors and a Slack thread that just won’t die. You think:</p>
+<blockquote>
+<p>“I’ll just ask ChatGPT for the price filtering logic — it’ll save me an hour.”</p>
+</blockquote>
+<p>
+Fast forward: the code runs, the tests pass. Ship it.</p>
+<p>
+A week later, someone opens a defect. Turns out the AI-generated logic doesn&#39;t account for tiered discounts already applied upstream in the pricing engine. Nobody caught it in review — you assumed it “looked right.” The system is now fragile in a new place, and no one owns the debt.</p>
+<p>
+That’s not science fiction. That’s today, happening quietly, across dev teams, editorial rooms, and strategy meetings.</p>
+<p>
+The problem isn&#39;t the power of GenAI. The problem is our passive use of it.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+The slow drift
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>It doesn’t happen all at once. It creeps in.</p>
+<ul>
+<li>You start with a bash one-liner.</li>
+<li>Then it’s a helper function.</li>
+<li>Then a whole module.</li>
+<li>Eventually, you’re skipping the part where you think through the shape of the solution at all.</li>
+</ul>
+<p>And the worst part? It <strong>feels</strong> productive.</p>
+<p>
+You&#39;re “moving fast,” but you&#39;re dulling the part of you that <strong>knows how to evaluate solutions</strong>.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-2">
+<h2 id="headline-3">
+Let&#39;s be specific. Here&#39;s what to watch for:
+</h2>
+<div id="outline-text-headline-3" class="outline-text-2">
+<ul>
+<li>You use GenAI to write code that technically works, but no one validated how it fits with the domain boundaries you’ve been using. The system silently becomes harder to reason about.</li>
+<li>You generate copy that reads well, but subtly shifts the tone away from the voice your users trust.</li>
+<li>You get a good-enough summary of an article — but you skip the intro and conclusion yourself, so you don’t notice the critical nuance that was lost.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-2">
+<h2 id="headline-4">
+GenAI doesn’t understand you. It can’t.
+</h2>
+<div id="outline-text-headline-4" class="outline-text-2">
+<p>It doesn’t know your codebase, your product strategy, your market, your learning objective, your context. It is not aware. It is not aligned.</p>
+<p>
+It generates high-probability guesses, not informed judgments.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+So how do you stay sharp while using GenAI?
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<p>
+Stay in the loop. Stay in the lead.</p>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Use it as a mirror, not a source of truth.
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>Before you ask GenAI to generate anything, write down your own draft first. Then compare.</p>
+<pre class="example">
+You&#39;re writing a project proposal. Draft your version first. Then ask GenAI to critique it or offer alternatives. Don’t just take its version as better because it’s cleaner.
+</pre>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Force context into the interaction.
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>The more context you provide, the more relevant the output.</p>
+<pre class="example">
+You&#39;re building a quiz generator. Instead of “generate 5 questions on photosynthesis,” try “generate 5 questions for high schoolers focusing on energy transfer and light absorption in chloroplasts.”
+</pre>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
+Use it to stress-test your framing.
+</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<p>Ask questions like:</p>
+<ul>
+<li>“What assumptions am I making?”</li>
+<li>“What edge cases would break this?”</li>
+</ul>
+<pre class="example">
+You’re designing a permissions system. Ask GenAI: “What roles or flows might I be overlooking?” It might surface things like audit-only users or dormant accounts.
+</pre>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Make it explain itself.
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<p>After getting a result, ask why. Make it argue for the shape of its solution.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-2">
+<h2 id="headline-10">
+A case study you can feel in your bones
+</h2>
+<div id="outline-text-headline-10" class="outline-text-2">
+<p>I wrote this blog entry with a LLM&#39;s help. How did I do it? Here were the key prompts:</p>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+Setting it up as an interviewer
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<p>Very simple. I told it what I want to do, and I told it how to help me do it.</p>
+<blockquote>
+<p>I need to write a blog entry about how to use GenAI (large language models) without degradation of critical thinking skills.</p>
+<p>
+Think about this topic for a while then come up with a list of 5-10 initial questions for me to answer, after which I want you to interview me until I&#39;m content that I have what I need for the blog entry</p>
+</blockquote>
+<p>
+After that, it then asked me the questions one at a time, going a bit deeper on each topic.</p>
+<p>
+<strong><strong>CRITICAL THINKING</strong></strong>: A few times, it asked me questions because it was its job to do so, not realizing I had answered it as part of the previous question. Read its output, think about it, correct it, tell it to move on.</p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Asking it to come up with examples
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>I&#39;m pretty bad at coming up with examples. My mind functions really well on patterns and systems but I struggle to make it tangible for folks who need it. The LLM, however, has no such difficulty.</p>
+<blockquote>
+<p>Would you mind stepping out of your job as interviewer for a second, and try to come up with an example, based on what I said? I can refine it or correct it if required</p>
+</blockquote>
+<p>
+<strong><strong>CRITICAL THINKING</strong></strong>: I then took the examples and then refined them until they fit what I needed for the blog entry, which didn&#39;t take too long.</p>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+Putting it back on track
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>It asked me a question that was too detailed for this blog entry, and I told it so.</p>
+<blockquote>
+<p>I think this is off-topic, isn&#39;t it? Why do you think this is required for the blog entry I want to write? I mean, I appreciate that this is a second-order effect of skills that may degrade, so maybe this is worth putting in a footnote or something like that</p>
+</blockquote>
+<p>
+<strong><strong>CRITICAL THINKING</strong></strong>: I wouldn&#39;t have asked that if I hadn&#39;t kept track of my end goal, and I may have ended up with a very different blog entry!</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-2">
+<h2 id="headline-14">
+Keep those critical thinking skills sharp.
+</h2>
+<div id="outline-text-headline-14" class="outline-text-2">
+<p>Because you won&#39;t know they&#39;re gone until you can&#39;t use them anymore.</p>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+The work is still yours.
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>At its best, GenAI can help you think better — but only if you stay active. It’s not a replacement for thought. It’s not a substitute for judgment. It’s a tool.</p>
+<p>
+Treat it like:</p>
+<ul>
+<li>a whiteboard</li>
+<li>a junior dev</li>
+<li>a powerful, contextless autocomplete</li>
+</ul>
+<p>Don’t confuse:</p>
+<ul>
+<li>Speed with understanding</li>
+<li>Fluency with truth</li>
+<li>Outputs with outcomes</li>
+</ul>
+<p>Use GenAI. But don’t let it use you.</p>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
+You’re still the one building the system.
+</h2>
+</div>
+
+</section>
+
+
+<section class="list-page">
+<ul>
+
+</ul>
+</section>
+
+<footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="http://blog.trevoke.net/post/agile-and-lean-art-delivery/?ref=footer">« Agile and lean art delivery</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+</ul>
+
+
+
+
+<div class="copyright">
+<p>
+  
+  &copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2025
+  
+</p>
+</div>
+
+
+</footer>
+
+<nav class="menu">
+    <ul>
+    
+        <li><a href="/">Home</a></li>
+    
+        <li><a href="/post/">Archives</a></li>
+    
+        <li><a href="/tags/">Tags</a></li>
+    
+        <li><a href="/categories/">Categories</a></li>
+    
+    </ul>
+</nav>
+
+
+</article>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

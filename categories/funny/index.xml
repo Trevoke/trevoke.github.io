@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>funny on Seven steps</title>
+    <title>Funny on Seven steps</title>
     <link>http://blog.trevoke.net/categories/funny/</link>
-    <description>Recent content in funny on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Funny on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Wed, 20 Jan 2010 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/categories/funny/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/categories/funny/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Country alert levels</title>
       <link>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</link>
       <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-country-alert-levels-funny-publish/</guid>
-      <description>Let&amp;#39;s break the monotony with something funny:  The English are feeling the pinch in relation to recent terrorist threats and have raised their security level from Miffed to Peeved&amp;#34; Soon, though, security levels may be raised yet again to Irritated or even A Bit Cross. The English have not been A Bit Cross since the blitz in 1940 when tea supplies all but ran out.  Terrorists have been re-categorized from Tiresome to a Bloody Nuisance&amp;#34; The last time the British issued a Bloody Nuisance warning level was in 1588 when threatened by the Spanish Armada.</description>
+      <description>&lt;p&gt;&#xA;Let&amp;#39;s break the monotony with something funny:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The English are feeling the pinch in relation to recent terrorist threats and have raised their security level from &lt;em&gt;Miffed&lt;/em&gt; to &lt;em&gt;Peeved&lt;/em&gt;&amp;#34; Soon, though, security levels may be raised yet again to &lt;em&gt;Irritated&lt;/em&gt; or even &lt;em&gt;A Bit Cross.&lt;/em&gt; The English have not been &lt;em&gt;A Bit Cross&lt;/em&gt; since the blitz in 1940 when tea supplies all but ran out.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Terrorists have been re-categorized from &lt;em&gt;Tiresome&lt;/em&gt; to a &lt;em&gt;Bloody Nuisance&lt;/em&gt;&amp;#34; The last time the British issued a &lt;em&gt;Bloody Nuisance&lt;/em&gt; warning level was in 1588 when threatened by the Spanish Armada.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

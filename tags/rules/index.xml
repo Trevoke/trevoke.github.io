@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rules on Seven steps</title>
+    <title>Rules on Seven steps</title>
     <link>http://blog.trevoke.net/tags/rules/</link>
-    <description>Recent content in rules on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Rules on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Thu, 18 Oct 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/rules/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/rules/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hard-and-fast, black-and-white rules for getting started with Object-Oriented Programming</title>
       <link>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/object-oriented-programming-for-beginners/</guid>
-      <description>No object should have more than three public methods    Objects should not have getters or setters    Everything else must be private    If three private methods are doing something similar, then maybe those are the public methods of another class    Never inherit    Always compose    Changeability is the most important thing    A &amp;#34;good&amp;#34; variable name is a name that describes unambiguously what the variable contains, without describing the implementation    If you don’t use good variable names, I will look for you.</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;No object should have more than three public methods&lt;/li&gt;&#xA;&lt;li&gt;Objects should not have getters or setters&lt;/li&gt;&#xA;&lt;li&gt;Everything else must be private&lt;/li&gt;&#xA;&lt;li&gt;If three private methods are doing something similar, then maybe those are the public methods of another class&lt;/li&gt;&#xA;&lt;li&gt;Never inherit&lt;/li&gt;&#xA;&lt;li&gt;Always compose&lt;/li&gt;&#xA;&lt;li&gt;Changeability is the most important thing&lt;/li&gt;&#xA;&lt;li&gt;A &amp;#34;good&amp;#34; variable name is a name that describes unambiguously what the variable contains, without describing the implementation&lt;/li&gt;&#xA;&lt;li&gt;If you don’t use good variable names, I will look for you. I will find you. And I will kill you.&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;footnotes&#34;&gt;&#xA;&lt;hr class=&#34;footnotes-separatator&#34;&gt;&#xA;&lt;div class=&#34;footnote-definitions&#34;&gt;&#xA;&lt;div class=&#34;footnote-definition&#34;&gt;&#xA;&lt;sup id=&#34;footnote-1&#34;&gt;&lt;a href=&#34;#footnote-reference-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&#xA;&lt;div class=&#34;footnote-body&#34;&gt;&#xA;&lt;p&gt;This is a reference to the movie &amp;#34;Taken&amp;#34;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

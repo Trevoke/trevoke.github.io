@@ -1,2 +1,3 @@
 User-agent: *
+Allow: /
 Sitemap: http://blog.trevoke.net/sitemap.xml

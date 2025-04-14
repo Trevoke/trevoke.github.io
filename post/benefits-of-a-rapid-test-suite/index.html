@@ -1,347 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Benefits of a rapid test suite - Seven steps</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<html lang="en"><head>
+<title>Benefits of a rapid test suite - Seven steps</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="Aldric Giacomoni" /><meta name="description" content="The value of a rapid test suite  Developers and codebases   The bare minimum required of a developer is &amp;#34;make this change without breaking anything else in the code&amp;#34;, and if you&amp;#39;ve been around software development for any period of time, you know that&amp;#39;s harder than it seems.  Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code." /><meta name="keywords" content="programming, martial arts, phlosophy, elixir, ruby, tdd, test-driven design, agile, xp, extreme programming, process" />
+The value of a rapid test suite
 
 
 
 
+Developers and codebases
 
 
-<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
+The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
 
+Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.
+The understanding of the core domain and/or the early code remains mostly intellectual and abstract, not based on really reading and understanding the code. ">
 <link rel="canonical" href="http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
-<link href="/sass/main.min.c7bc1becf36bcf6a9ebd25d2947e43a2eb745ddb0c9a32b43126fd7fa460c351.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
-
-<meta property="og:title" content="Benefits of a rapid test suite" />
-<meta property="og:description" content="The value of a rapid test suite  Developers and codebases   The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.  Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.trevoke.net/post/benefits-of-a-rapid-test-suite/" />
-<meta property="article:published_time" content="2016-04-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2016-04-18T00:00:00+00:00" />
-<meta itemprop="name" content="Benefits of a rapid test suite">
-<meta itemprop="description" content="The value of a rapid test suite  Developers and codebases   The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.  Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.">
-<meta itemprop="datePublished" content="2016-04-18T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2016-04-18T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="682">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
-<meta itemprop="keywords" content="stress,development,tdd,psychology,testing,test-suite," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Benefits of a rapid test suite"/>
-<meta name="twitter:description" content="The value of a rapid test suite  Developers and codebases   The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.  Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code."/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
 
 </head>
 <body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Seven Steps</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a>
-  </ul>
-</nav>
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Seven Steps</a>
-</div>
 
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li>
-  </ul>
-</nav>
-    </header>
 
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">Benefits of a rapid test suite</h1>
+<article id="main">
+  <section>
+<h1 class="content-title">Benefits of a rapid test suite</h1></section>
 
-      <div class="post-meta">
-        <span class="post-time"> 2016-04-18 </span>
-        <div class="post-category">
-            <a href="/categories/programming/"> programming </a>
-            </div>
-          <span class="more-meta"> 682 words </span>
-          <span class="more-meta"> 4 mins read </span>
-        
-      </div>
-    </header>
+  
 
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#headline-1">The value of a rapid test suite</a>
-<ul>
-<li><a href="#headline-2">Developers and codebases</a>
-</li>
-<li><a href="#headline-3">Learning as a fundamental skill</a>
-<ul>
-<li><a href="#headline-4">TDD</a>
-</li>
-<li><a href="#headline-5">Caring for the test suite</a>
-</li>
-</ul>
-</li>
-<li><a href="#headline-6">Playing</a>
-</li>
-<li><a href="#headline-7">Stress</a>
-</li>
-<li><a href="#headline-8">It all starts with play</a>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content">
-      
+  <section>
+<div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 The value of a rapid test suite
 </h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
 Developers and codebases
 </h3>
+<div id="outline-text-headline-2" class="outline-text-3">
 <p>
-The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.
-</p>
+The bare minimum required of a developer is &#34;make this change without breaking anything else in the code&#34;, and if you&#39;ve been around software development for any period of time, you know that&#39;s harder than it seems.</p>
 <p>
 Most of the time that a developer spends on any given codebase is spent on an existing codebase, adding new features on top of existing code.
-The understanding of the core domain and/or the early code remains mostly intellectual and abstract, not based on really reading and understanding the code.
-</p>
+The understanding of the core domain and/or the early code remains mostly intellectual and abstract, not based on really reading and understanding the code.</p>
 <p>
-This happens mainly for one important reason: <strong>the cost in time and energy to understanding that code is usually high, and the return on investment is usually nebulous</strong>.
-</p>
+This happens mainly for one important reason: <strong>the cost in time and energy to understanding that code is usually high, and the return on investment is usually nebulous</strong>.</p>
 <p>
-The cost to understanding is high because the tools one can use to gain the understanding tend to be onerous. The code is rarely as readable as it could be, and choices made in organizing code means there are levels of indirection to juggle in one&#39;s head.
-</p>
+The cost to understanding is high because the tools one can use to gain the understanding tend to be onerous. The code is rarely as readable as it could be, and choices made in organizing code means there are levels of indirection to juggle in one&#39;s head.</p>
 <p>
-A developer will dive into that code when needed, which usually means &#34;when a bug is found&#34;, or sometimes &#34;when something is missing&#34;.
-</p>
+A developer will dive into that code when needed, which usually means &#34;when a bug is found&#34;, or sometimes &#34;when something is missing&#34;.</p>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
 <h3 id="headline-3">
 Learning as a fundamental skill
 </h3>
+<div id="outline-text-headline-3" class="outline-text-3">
 <p>
-A developer&#39;s work is really thought work. The code is just a means to an end. And code needs to be changeable, otherwise it gets in the way of the thought work.
-</p>
+A developer&#39;s work is really thought work. The code is just a means to an end. And code needs to be changeable, otherwise it gets in the way of the thought work.</p>
 <blockquote>
-<p>
-“What no wife of a writer can ever understand is that a writer is working when he&#39;s staring out the window” – Burton Rascoe
-</p>
+<p>“What no wife of a writer can ever understand is that a writer is working when he&#39;s staring out the window” – Burton Rascoe</p>
 </blockquote>
 <p>
-<strong>When you have built a test suite that runs quickly, and you trust that it is representative of the intended behavior of your system, you can go in, make any change, run the test suite, and see what breaks.</strong>
-</p>
+<strong>When you have built a test suite that runs quickly, and you trust that it is representative of the intended behavior of your system, you can go in, make any change, run the test suite, and see what breaks.</strong></p>
 <p>
-As developers, we learn for a living. We explore. We modify our neural pathways. This is intensive work. When we learn a new language, a new library, or a new tool, there is a very simple pattern that we follow: &#34;Change one thing and see what happens&#34;. We can rely on this because we have computers, and computers are really good at doing this very quickly.
-</p>
+As developers, we learn for a living. We explore. We modify our neural pathways. This is intensive work. When we learn a new language, a new library, or a new tool, there is a very simple pattern that we follow: &#34;Change one thing and see what happens&#34;. We can rely on this because we have computers, and computers are really good at doing this very quickly.</p>
+<div id="outline-container-headline-4" class="outline-4">
 <h4 id="headline-4">
 TDD
 </h4>
+<div id="outline-text-headline-4" class="outline-text-4">
 <p>
-Test-Driven Design is a tool that is meant to enable that practice. Over time, you are building up hundreds of &#34;Change one thing and see what happens&#34;. With strict, careful TDD, you build hundreds or thousands of these test cases, letting you build confidence that your system is working as intended. There are many, many principles, guidelines and rules of thumbs to help write effective tests, just like there are many tools and techniques. Books have been written and holy wars have been fought, so I will not dive into this particular topic.
-</p>
+Test-Driven Design is a tool that is meant to enable that practice. Over time, you are building up hundreds of &#34;Change one thing and see what happens&#34;. With strict, careful TDD, you build hundreds or thousands of these test cases, letting you build confidence that your system is working as intended. There are many, many principles, guidelines and rules of thumbs to help write effective tests, just like there are many tools and techniques. Books have been written and holy wars have been fought, so I will not dive into this particular topic.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-4">
 <h4 id="headline-5">
 Caring for the test suite
 </h4>
+<div id="outline-text-headline-5" class="outline-text-4">
 <p>
 With careful pruning and nurturing of the test suite, and making sure that only the elements under test are being used, one can build a test suite that runs very quickly.
 How often do you <strong>actually</strong> have to test that logging in works? Most teams I&#39;ve seen test that logging in works with every single browser-level test they have.
-How often do you <strong>actually</strong> have to save something to the database? If you have an abstraction on top of your storage layer, the answer might be &#34;never&#34;.
-</p>
+How often do you <strong>actually</strong> have to save something to the database? If you have an abstraction on top of your storage layer, the answer might be &#34;never&#34;.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
 <h3 id="headline-6">
 Playing
 </h3>
+<div id="outline-text-headline-6" class="outline-text-3">
 <p>
-A rapid test suite makes changing the codebase accessible. It can transform exploration into play. It encourages &#34;What ifs&#34;, and &#34;I wonder&#34;. It enables &#34;Eureka!&#34; moments.
-</p>
+A rapid test suite makes changing the codebase accessible. It can transform exploration into play. It encourages &#34;What ifs&#34;, and &#34;I wonder&#34;. It enables &#34;Eureka!&#34; moments.</p>
 <p>
-It transforms painstaking exploration into play. Playing is a very effective way to learn. <em>This behavioral change is critical</em>. Doing a Google search for &#34;learning play study adults&#34; yields <a href="http://www.helpguide.org/articles/emotional-health/benefits-of-play-for-adults.htm">many</a> <a href="http://www.npr.org/sections/ed/2014/08/06/336360521/play-doesnt-end-with-childhood-why-adults-need-recess-too">results</a>.
-</p>
+It transforms painstaking exploration into play. Playing is a very effective way to learn. <em>This behavioral change is critical</em>. Doing a Google search for &#34;learning play study adults&#34; yields <a href="http://www.helpguide.org/articles/emotional-health/benefits-of-play-for-adults.htm">many</a> <a href="http://www.npr.org/sections/ed/2014/08/06/336360521/play-doesnt-end-with-childhood-why-adults-need-recess-too">results</a>.</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
 <h3 id="headline-7">
 Stress
 </h3>
+<div id="outline-text-headline-7" class="outline-text-3">
 <p>
-It turns out stress <a href="http://the-programmers-stone.com/about/neuroscience/">lowers cognitive flexibility</a>. Given the <a href="http://the-programmers-stone.com/about/implications-for-software-engineers/">&#34;puzzle nature&#34;</a> of programming, one may conclude that keeping the stress level low around the engineers is simply a sound business decision. That developers play is a known trope.
-</p>
+It turns out stress <a href="http://the-programmers-stone.com/about/neuroscience/">lowers cognitive flexibility</a>. Given the <a href="http://the-programmers-stone.com/about/implications-for-software-engineers/">&#34;puzzle nature&#34;</a> of programming, one may conclude that keeping the stress level low around the engineers is simply a sound business decision. That developers play is a known trope.</p>
 <p>
-<img src="/images/xkcd-compiling.png" alt="/images/xkcd-compiling.png" title="/images/xkcd-compiling.png" />
-</p>
+#+caption:When it comes to known tropes, who better than XKCD?
+<img src="/images/xkcd-compiling.png" alt="/images/xkcd-compiling.png" title="/images/xkcd-compiling.png" /></p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
 <h3 id="headline-8">
 It all starts with play
 </h3>
+<div id="outline-text-headline-8" class="outline-text-3">
 <p>
-When your team can literally play with the codebase, you might be surprised at what other behavioral changes will take place. Learning something new? Spiking new behavior? Making sweeping changes? Nothing is impossible.
-</p>
+When your team can literally play with the codebase, you might be surprised at what other behavioral changes will take place. Learning something new? Spiking new behavior? Making sweeping changes? Nothing is impossible.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <section><footer class="page-footer">
+<hr />
 
-    </div>
-
-    <div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">Author</span>
-    <span class="item-content">Aldric Giacomoni</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">LastMod</span>
-    <span class="item-content">
-        2016-04-18
-        
-    </span>
-  </p>
+<div class="previous-post" style="display:inline-block;">
   
+  <a class="link-reverse" href="http://blog.trevoke.net/post/elixir/?ref=footer">« Why Elixir is the next Great Tech</a>
   
 </div>
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/stress/">stress</a>
-          <a href="/tags/development/">development</a>
-          <a href="/tags/tdd/">tdd</a>
-          <a href="/tags/psychology/">psychology</a>
-          <a href="/tags/testing/">testing</a>
-          <a href="/tags/test-suite/">test-suite</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/post/maintainability-is-relative/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Maintainability Is Relative</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/elixir/">
-            <span class="next-text nav-default">Why Elixir is the next Great Tech</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-        </div>
-        
 
+<div class="next-post", style="display:inline-block;float:right;">
   
-
+  <a class="link-reverse" href="http://blog.trevoke.net/post/maintainability-is-relative/?ref=footer">Maintainability Is Relative »</a>
   
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:trevoke@gmail.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://stackoverflow.com/users/234025/trevoke" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
-      <a href="https://twitter.com/trevoke" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="https://www.linkedin.com/in/trevoke/" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="https://github.com/trevoke/" class="iconfont icon-github" title="github"></a>
-      <a href="https://getpocket.com/@Trevoke" class="iconfont icon-pocket" title="pocket"></a>
-      <a href="https://gitlab.com/trevoke" class="iconfont icon-gitlab" title="gitlab"></a>
-  <a href="http://blog.trevoke.net/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
+
+<ul class="page-footer-menu">
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+</ul>
+
+
+
 
 <div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
+<p>
   
-
-  <span class="copyright-year">
-    &copy; 
-    2017 - 
-    2020<span class="heart"><i class="iconfont icon-heart"></i></span><span>&copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2019</span>
-  </span>
+  &copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2025
+  
+</p>
 </div>
 
-    </footer>
 
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-
-
-
-<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
-
-
-
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="/">Home</a></li>
+    
+        <li><a href="/post/">Archives</a></li>
+    
+        <li><a href="/tags/">Tags</a></li>
+    
+        <li><a href="/categories/">Categories</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
 
 
 
 
 
 </body>
+
 </html>

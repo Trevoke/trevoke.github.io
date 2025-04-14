@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>french on Seven steps</title>
+    <title>French on Seven steps</title>
     <link>http://blog.trevoke.net/tags/french/</link>
-    <description>Recent content in french on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in French on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Sun, 10 Jul 2011 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/french/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/french/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>L&#39;inventaire - Jacques Prevert</title>
       <link>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</link>
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</guid>
-      <description> Une pierre  deux maisons  trois ruines  quatre fossoyeurs  un jardin  des fleurs  et un raton laveur  une douzaine d&amp;#39;huitres un citron un pain  un rayon de soleil  une lame de fond  six musiciens  une porte avec son paillasson  un monsieur décoré de la légion d&amp;#39;honneur  et un autre raton laveur  un sculpteur qui sculpte des Napoléon  la fleur qu&amp;#39;on appelle souci  deux amoureux sur un grand lit  un receveur des contributions  une chaise trois dindons  un ecclésiastique un furoncle  une guepe  un rein flottant  une écurie de courses  un fils indigne deux frères dominicains trois sauterelles un strapontin  deux filles de joie un oncle Cyprien  une Mater dolorosa trois papas gateaux deux chèvres de Monsieur Seguin  un talon Louis XV  un fauteuil Louis XVI  un buffet Henri II deux buffets Henri III trois buffets Henri IV  un tiroir dépareillé  une pelote de ficelle trois épingles de sureté un monsieur agé  une Victoire de Samothrace un comptable deux aides- comptables un homme du monde deux chirurgiens trois végétariens  un cannibale  une expédition coloniale un cheval entier une demi-pinte de bon sang une mouche tsé-tsé  un homard à l&amp;#39;américaine un jardin à la francaise  deux pommes à l&amp;#39;anglaise  un face-à-main un valet de pied un orphelin un poumon d&amp;#39;acier  un jour de gloire  une semaine de bonté  un mois de Marie  une année terrible  une minute de silence  une seconde d&amp;#39;inattention  et…  cinq ou six ratons laveurs </description>
+      <description>&lt;p&gt;&#xA;Une pierre&lt;/p&gt;&#xA;&lt;p&gt;&#xA;deux maisons&lt;/p&gt;&#xA;&lt;p&gt;&#xA;trois ruines&lt;/p&gt;&#xA;&lt;p&gt;&#xA;quatre fossoyeurs&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un jardin&lt;/p&gt;&#xA;&lt;p&gt;&#xA;des fleurs&lt;/p&gt;&#xA;&lt;p&gt;&#xA;et un raton laveur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une douzaine d&amp;#39;huitres un citron un pain&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un rayon de soleil&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une lame de fond&lt;/p&gt;&#xA;&lt;p&gt;&#xA;six musiciens&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une porte avec son paillasson&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un monsieur décoré de la légion d&amp;#39;honneur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;et un autre raton laveur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un sculpteur qui sculpte des Napoléon&lt;/p&gt;&#xA;&lt;p&gt;&#xA;la fleur qu&amp;#39;on appelle souci&lt;/p&gt;&#xA;&lt;p&gt;&#xA;deux amoureux sur un grand lit&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un receveur des contributions &lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

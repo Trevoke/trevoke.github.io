@@ -1,34 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>knowledge on Seven steps</title>
+    <title>Knowledge on Seven steps</title>
     <link>http://blog.trevoke.net/tags/knowledge/</link>
-    <description>Recent content in knowledge on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Knowledge on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Thu, 26 Apr 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/knowledge/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/knowledge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Tooth of Knowledge (Lyrics)</title>
       <link>http://blog.trevoke.net/post/import-the-tooth-of-knowledge-lyrics-publish/</link>
       <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-the-tooth-of-knowledge-lyrics-publish/</guid>
-      <description>This song is at least as old as 1973 and is originally from Italy (Giorgio Gaber - Dente della conoscenza). If you like finding patterns, making analogies and metaphors, and overall pondering, then examine the tooth of knowledge in the contexts of: science, religion, culture, society (etiquette, etc), and finally, the internet.  &amp;amp;nbsp;  (note : &amp;#39;SHHH&amp;#39; is an inhaling sound)  ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’, ‘TICK’ and then ‘SHHH’.</description>
+      <description>&lt;p&gt;&#xA;This song is at least as old as 1973 and is originally from Italy (Giorgio Gaber - Dente della conoscenza). If you like finding patterns, making analogies and metaphors, and overall pondering, then examine the tooth of knowledge in the contexts of: science, religion, culture, society (etiquette, etc), and finally, the internet.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;(note : &amp;#39;SHHH&amp;#39; is an inhaling sound)&lt;/p&gt;&#xA;&lt;p&gt;&#xA;‘TICK’ and then ‘SHHH’,&#xA;‘TICK’ and then ‘SHHH’,&#xA;‘TICK’ and then ‘SHHH’,&#xA;‘TICK’ and then ‘SHHH’,&#xA;‘TICK’ and then ‘SHHH’.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Society&#39;s focus on knowledge</title>
       <link>http://blog.trevoke.net/post/import-society-focus-on-knowledge-draft/</link>
       <pubDate>Thu, 20 Oct 2011 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-society-focus-on-knowledge-draft/</guid>
-      <description>Here is a thought with which I&amp;#39;ve been wrestling for quite a while - the focus of society on knowledge and what it could be doing to us as people, human beings, and members of society, as well as to society itself.  &amp;lt;h4&amp;gt;&amp;lt;strong&amp;gt;Knowledge is power&amp;lt;/strong&amp;gt;&amp;lt;em&amp;gt; - knowing more can only help you&amp;lt;/em&amp;gt;&amp;lt;/h4&amp;gt; In the West (bounded to the east by Russia and to the west by the Americas), the focus has historically been on developing more knowledge, more science.</description>
+      <description>&lt;p&gt;&#xA;Here is a thought with which I&amp;#39;ve been wrestling for quite a while - the focus of society on knowledge and what it could be doing to us as people, human beings, and members of society, as well as to society itself.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;h4&amp;gt;&amp;lt;strong&amp;gt;Knowledge is power&amp;lt;/strong&amp;gt;&amp;lt;em&amp;gt; - knowing more can only help you&amp;lt;/em&amp;gt;&amp;lt;/h4&amp;gt;&#xA;In the West (bounded to the east by Russia and to the west by the Americas), the focus has historically been on developing more knowledge, more science. Two interesting examples could be the game Civilization, where you need to develop science to be able to stay afloat with the other competitions, or the Cold War, where both the US and the USSR were struggling to stay ahead of each other in an arms race, because the better weapon would force the opponent to abdicate.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

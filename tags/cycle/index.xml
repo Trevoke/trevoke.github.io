@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cycle on Seven steps</title>
+    <title>Cycle on Seven steps</title>
     <link>http://blog.trevoke.net/tags/cycle/</link>
-    <description>Recent content in cycle on Seven steps</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Cycle on Seven steps</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/trevoke&#34;&gt;Aldric Giacomoni&lt;/a&gt; 2017-2019</copyright>
     <lastBuildDate>Wed, 02 Sep 2009 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.trevoke.net/tags/cycle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://blog.trevoke.net/tags/cycle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rails, HAML, alternatible CSS for tables</title>
       <link>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</link>
       <pubDate>Wed, 02 Sep 2009 00:00:00 +0000</pubDate>
-      
       <guid>http://blog.trevoke.net/post/import-rails-haml-alternatible-css-for-tables-publish/</guid>
-      <description>If you&amp;#39;ve done any kind of table display in Rails, you&amp;#39;ve probably discovered the useful &amp;#39;cycle&amp;#39; method:  &amp;lt;tr class=&amp;#34;&amp;lt;%= cycle(&amp;#34;even&amp;#34;, &amp;#34;odd&amp;#34;) %&amp;gt;&amp;#34;&amp;gt;  This works after you&amp;#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &amp;#39;lightbg&amp;#39; and &amp;#39;darkbg&amp;#39;, or something similar.</description>
+      <description>&lt;p&gt;&#xA;If you&amp;#39;ve done any kind of table display in Rails, you&amp;#39;ve probably discovered the useful &amp;#39;cycle&amp;#39; method:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;&amp;lt;tr class=&amp;#34;&amp;lt;%= cycle(&amp;#34;even&amp;#34;, &amp;#34;odd&amp;#34;) %&amp;gt;&amp;#34;&amp;gt;&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;This works after you&amp;#39;ve set two CSS classes between which you want to alternate - in my example, even and odd, because I have such amazing imagination. Come to think of it, to make my code more readable, it should be &amp;#39;lightbg&amp;#39; and &amp;#39;darkbg&amp;#39;, or something similar. I&amp;#39;ll fix that.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
