@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Git on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/git/</link>
-    <description>Recent content in Git on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 30 Aug 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>git usage conventions</title>
-      <link>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</link>
-      <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</guid>
-      <description>&lt;p&gt;&#xA;We&amp;#39;ve been using git at work for a greenfield project and, so far, this has worked for us. It could be a useful template to get another team started.&#xA;We have gotten rid of the name &amp;#39;master&amp;#39;, which is only a convention anyway, and instead are using a few permanent branches:&#xA;&amp;lt;ul&amp;gt;&#xA;        &amp;lt;li&amp;gt;production (only stable code which gets deployed to production goes there. The only branch to be merged in, EVER, is &amp;#39;stable&amp;#39;)&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;stable (only stable code which goes to the staging environment goes there. The only branch to be merged in, EVER, is &amp;#39;integration&amp;#39;))&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;integration (code from other branches goes here - tests should, of course, pass before merging in.)&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&#xA;And then we have, of course, other branches for work in progress and other stuff. we&amp;#39;ve used these prefixes to help with the naming, and called this the &amp;#39;buffers&amp;#39; convention (look at the first letters - BFRS):&#xA;&amp;lt;ul&amp;gt;&#xA;        &amp;lt;li&amp;gt;bug_&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;feature_&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;refactor_&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;spike_&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&#xA;&amp;lt;div&amp;gt;How have you organized your git repositories?&amp;lt;/div&amp;gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Git : moving a remote branch</title>
-      <link>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</link>
-      <pubDate>Tue, 29 Dec 2009 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
-      <description>&lt;p&gt;&#xA;One can&amp;#39;t actually move a remote branch, but you can copy a branch and delete a branch, so…&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Copy &lt;code&gt;oldbranch&lt;/code&gt; in repo to &lt;code&gt;newbranch&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;src src-text&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push {repo} {oldbranch}:heads/{newbranch}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;Ex: &lt;code&gt;git push origin foobranch:barbranch&lt;/code&gt;&#xA;renames &lt;code&gt;foobranch to barbranch&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Remove a remote branch: it’s all about the colon!&lt;/p&gt;&#xA;&lt;div class=&#34;src src-text&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;Example: &lt;code&gt;git push origin :heads/some-branch&lt;/code&gt; removes &lt;code&gt;some-branch&lt;/code&gt; from the remote repo (apparently &lt;code&gt;git push origin :some-branch&lt;/code&gt; works as well).&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Git on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/git/</link>
+		<description>Recent content in Git on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 30 Aug 2011 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>git usage conventions</title>
+				<link>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</link>
+				<pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-git-usage-conventions-publish/</guid>
+				<description>&lt;p&gt;&#xA;We&amp;#39;ve been using git at work for a greenfield project and, so far, this has worked for us. It could be a useful template to get another team started.&#xA;We have gotten rid of the name &amp;#39;master&amp;#39;, which is only a convention anyway, and instead are using a few permanent branches:&#xA;&amp;lt;ul&amp;gt;&#xA;        &amp;lt;li&amp;gt;production (only stable code which gets deployed to production goes there. The only branch to be merged in, EVER, is &amp;#39;stable&amp;#39;)&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;stable (only stable code which goes to the staging environment goes there. The only branch to be merged in, EVER, is &amp;#39;integration&amp;#39;))&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;integration (code from other branches goes here - tests should, of course, pass before merging in.)&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&#xA;And then we have, of course, other branches for work in progress and other stuff. we&amp;#39;ve used these prefixes to help with the naming, and called this the &amp;#39;buffers&amp;#39; convention (look at the first letters - BFRS):&#xA;&amp;lt;ul&amp;gt;&#xA;        &amp;lt;li&amp;gt;bug_&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;feature_&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;refactor_&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;spike_&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&#xA;&amp;lt;div&amp;gt;How have you organized your git repositories?&amp;lt;/div&amp;gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Git : moving a remote branch</title>
+				<link>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</link>
+				<pubDate>Tue, 29 Dec 2009 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-git-moving-a-remote-branch-publish/</guid>
+				<description>&lt;p&gt;&#xA;One can&amp;#39;t actually move a remote branch, but you can copy a branch and delete a branch, so…&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Copy &lt;code&gt;oldbranch&lt;/code&gt; in repo to &lt;code&gt;newbranch&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;src src-text&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push {repo} {oldbranch}:heads/{newbranch}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;Ex: &lt;code&gt;git push origin foobranch:barbranch&lt;/code&gt;&#xA;renames &lt;code&gt;foobranch to barbranch&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Remove a remote branch: it’s all about the colon!&lt;/p&gt;&#xA;&lt;div class=&#34;src src-text&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push &amp;lt;remote_repo&amp;gt; :heads/&amp;lt;branch&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&#xA;Example: &lt;code&gt;git push origin :heads/some-branch&lt;/code&gt; removes &lt;code&gt;some-branch&lt;/code&gt; from the remote repo (apparently &lt;code&gt;git push origin :some-branch&lt;/code&gt; works as well).&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

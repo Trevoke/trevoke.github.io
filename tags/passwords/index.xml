@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Passwords on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/passwords/</link>
-    <description>Recent content in Passwords on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/passwords/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hologic R2 service password</title>
-      <link>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</link>
-      <pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</guid>
-      <description>&lt;p&gt;&#xA;I feel kinda bad plaintexting this.. You can contact me if you can&amp;#39;t figure it out yourself.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The service password for the R2 unit is in this sentence.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Passwords, passwords</title>
-      <link>http://blog.trevoke.net/post/import-passwords-passwords-publish/</link>
-      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
-      <description>&lt;p&gt;&#xA;Default passwords for MSSQL, Sybase, and mySQL:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;, , ,&lt;/p&gt;&#xA;&lt;p&gt;&#xA;That&amp;#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&amp;#39;s the kind of knowledge that can come in handy.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Passwords on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/passwords/</link>
+		<description>Recent content in Passwords on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 14 Oct 2009 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/passwords/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Hologic R2 service password</title>
+				<link>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</link>
+				<pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</guid>
+				<description>&lt;p&gt;&#xA;I feel kinda bad plaintexting this.. You can contact me if you can&amp;#39;t figure it out yourself.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The service password for the R2 unit is in this sentence.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Passwords, passwords</title>
+				<link>http://blog.trevoke.net/post/import-passwords-passwords-publish/</link>
+				<pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-passwords-passwords-publish/</guid>
+				<description>&lt;p&gt;&#xA;Default passwords for MSSQL, Sybase, and mySQL:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;, , ,&lt;/p&gt;&#xA;&lt;p&gt;&#xA;That&amp;#39;s right.. All three have blank root / sa passwords by default. Talk about secure! That&amp;#39;s the kind of knowledge that can come in handy.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

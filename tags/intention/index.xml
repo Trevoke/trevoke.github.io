@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Intention on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/intention/</link>
-    <description>Recent content in Intention on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 27 Apr 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/intention/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>School creed</title>
-      <link>http://blog.trevoke.net/post/import-school-creed-publish/</link>
-      <pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-school-creed-publish/</guid>
-      <description>&lt;p&gt;&#xA;In the dojo where I spent my formative years as a martial artist, there is a school creed. A quick search online has revealed that many schools have a similar creed. Every class says it as we begin, after bowing in, before calisthenics. I hear it and/or say it about three times per dojo night.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;It&amp;#39;s a simple creed, and clearly not unique. Here&amp;#39;s what it says:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;blockquote&amp;gt;I intend to develop myself in a positive manner&#xA;and avoid anything that would reduce my mental&#xA;growth or physical health.&#xA;I intend to develop self-discipline, in order to&#xA;bring out the best in myself and others.&#xA;I intend to use what I learn in class&#xA;constructively and defensively, to help myself&#xA;and others and never be abusive or offensive.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Intention on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/intention/</link>
+		<description>Recent content in Intention on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 27 Apr 2013 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/intention/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>School creed</title>
+				<link>http://blog.trevoke.net/post/import-school-creed-publish/</link>
+				<pubDate>Sat, 27 Apr 2013 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-school-creed-publish/</guid>
+				<description>&lt;p&gt;&#xA;In the dojo where I spent my formative years as a martial artist, there is a school creed. A quick search online has revealed that many schools have a similar creed. Every class says it as we begin, after bowing in, before calisthenics. I hear it and/or say it about three times per dojo night.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;It&amp;#39;s a simple creed, and clearly not unique. Here&amp;#39;s what it says:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;blockquote&amp;gt;I intend to develop myself in a positive manner&#xA;and avoid anything that would reduce my mental&#xA;growth or physical health.&#xA;I intend to develop self-discipline, in order to&#xA;bring out the best in myself and others.&#xA;I intend to use what I learn in class&#xA;constructively and defensively, to help myself&#xA;and others and never be abusive or offensive.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

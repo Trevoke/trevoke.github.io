@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Dave-Thomas on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/dave-thomas/</link>
-    <description>Recent content in Dave-Thomas on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 27 Oct 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/dave-thomas/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Extending Ruby for Fun and Profit</title>
-      <link>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</link>
-      <pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</guid>
-      <description>&lt;p&gt;&#xA;Wow. I just watched Dave Thomas&amp;#39; talk &amp;lt;a href=&amp;#34;&lt;a href=&#34;http://www.infoq.com/presentations/metaprogramming-ruby&#34;&gt;http://www.infoq.com/presentations/metaprogramming-ruby&lt;/a&gt;&amp;#34;&amp;gt;Ruby Metaprogramming: Extending Ruby for Fun and Profit&amp;lt;/a&amp;gt; and it explained so many things.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;It&amp;#39;s quite worth watching if you like Ruby and don&amp;#39;t know about metaprogramming and Ruby hooks and what &amp;#39;self&amp;#39; means, fully.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Dave-Thomas on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/dave-thomas/</link>
+		<description>Recent content in Dave-Thomas on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 27 Oct 2009 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/dave-thomas/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Extending Ruby for Fun and Profit</title>
+				<link>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</link>
+				<pubDate>Tue, 27 Oct 2009 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-extending-ruby-for-fun-and-profit-publish/</guid>
+				<description>&lt;p&gt;&#xA;Wow. I just watched Dave Thomas&amp;#39; talk &amp;lt;a href=&amp;#34;&lt;a href=&#34;http://www.infoq.com/presentations/metaprogramming-ruby&#34;&gt;http://www.infoq.com/presentations/metaprogramming-ruby&lt;/a&gt;&amp;#34;&amp;gt;Ruby Metaprogramming: Extending Ruby for Fun and Profit&amp;lt;/a&amp;gt; and it explained so many things.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;It&amp;#39;s quite worth watching if you like Ruby and don&amp;#39;t know about metaprogramming and Ruby hooks and what &amp;#39;self&amp;#39; means, fully.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Shoulders on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/shoulders/</link>
-    <description>Recent content in Shoulders on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 24 Feb 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/shoulders/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Relaxing the upper body.. aka &#34;drop your shoulders&#34;</title>
-      <link>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</link>
-      <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</guid>
-      <description>&lt;p&gt;&#xA;A friend of mine wrote about shoulder relaxation.. Apparently we both had the same mental block, but he solved it first - shoulder relaxation (and by extension, all relaxation) can be done up/down and … forward/back!&lt;/p&gt;&#xA;&lt;p&gt;&#xA;At first I didn&amp;#39;t think I had that issue, my western mind automatically went &amp;#34;Nah, I don&amp;#39;t have that issue, my shoulders are nice and straight!&amp;#34; .. And then training kicked in and the answer came : &amp;#34;Well, maybe they&amp;#39;re not supposed to be straight!&amp;#34;&#xA;So, I let my shoulders round forward a little, which required some spinal and pelvic adjustments.. But the result is that I suddenly &amp;#39;stopped feeling&amp;#39; my shoulders and upper back.&#xA;For my friend, who is more advanced than I am, the effect was more drastic, and he became aware quickly of more changes, like his arms being properly connected to the body, and feeling better rooted in spite of not having his legs bent as much.&#xA;I&amp;#39;m still playing with the feeling, the muscles around my spine don&amp;#39;t know what to do with this weight, I think.. I&amp;#39;ve got to work on this some more ;-)&#xA;Still, this is a good discovery.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Shoulders on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/shoulders/</link>
+		<description>Recent content in Shoulders on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 24 Feb 2009 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/shoulders/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Relaxing the upper body.. aka &#34;drop your shoulders&#34;</title>
+				<link>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</link>
+				<pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-relaxing-the-upper-body-aka-drop-your-shoulders-publish/</guid>
+				<description>&lt;p&gt;&#xA;A friend of mine wrote about shoulder relaxation.. Apparently we both had the same mental block, but he solved it first - shoulder relaxation (and by extension, all relaxation) can be done up/down and … forward/back!&lt;/p&gt;&#xA;&lt;p&gt;&#xA;At first I didn&amp;#39;t think I had that issue, my western mind automatically went &amp;#34;Nah, I don&amp;#39;t have that issue, my shoulders are nice and straight!&amp;#34; .. And then training kicked in and the answer came : &amp;#34;Well, maybe they&amp;#39;re not supposed to be straight!&amp;#34;&#xA;So, I let my shoulders round forward a little, which required some spinal and pelvic adjustments.. But the result is that I suddenly &amp;#39;stopped feeling&amp;#39; my shoulders and upper back.&#xA;For my friend, who is more advanced than I am, the effect was more drastic, and he became aware quickly of more changes, like his arms being properly connected to the body, and feeling better rooted in spite of not having his legs bent as much.&#xA;I&amp;#39;m still playing with the feeling, the muscles around my spine don&amp;#39;t know what to do with this weight, I think.. I&amp;#39;ve got to work on this some more ;-)&#xA;Still, this is a good discovery.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

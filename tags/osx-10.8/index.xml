@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Osx-10.8 on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/osx-10.8/</link>
-    <description>Recent content in Osx-10.8 on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 21 Aug 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/osx-10.8/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ruby: gem ffi on OSX Mountain Lion 10.8</title>
-      <link>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</link>
-      <pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</guid>
-      <description>&lt;p&gt;&#xA;EASY!&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;That&amp;#39;s it. You can now install ffi 1.5.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Osx-10.8 on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/osx-10.8/</link>
+		<description>Recent content in Osx-10.8 on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 21 Aug 2012 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/osx-10.8/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Ruby: gem ffi on OSX Mountain Lion 10.8</title>
+				<link>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</link>
+				<pubDate>Tue, 21 Aug 2012 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-ruby-gem-ffi-on-osx-mountain-lion-10-8-publish/</guid>
+				<description>&lt;p&gt;&#xA;EASY!&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code&gt;sudo ln -s /usr/bin/gcc /usr/bin/gcc-4.2&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;amp;nbsp;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;That&amp;#39;s it. You can now install ffi 1.5.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

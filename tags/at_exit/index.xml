@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>At_exit on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/at_exit/</link>
-    <description>Recent content in At_exit on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 06 Jan 2012 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/at_exit/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ruby: What is at_exit and how to write tests for it.</title>
-      <link>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</link>
-      <pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
-      <description>&lt;p&gt;&#xA;Ruby has a neat feature called &lt;code&gt;at_exit&lt;/code&gt; which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;ol&amp;gt;&#xA;        &amp;lt;li&amp;gt;It takes a block and converts it into a &lt;code&gt;Proc&lt;/code&gt; object at the time of parsing. This means that the data has to be available in the binding, or you&amp;#39;ll run into errors. Example: instance variables need to be set before you can use them in that block. Better idea: don&amp;#39;t use instance variables in there at all.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;You can &amp;#39;chain&amp;#39; &lt;code&gt;at_exit&lt;/code&gt; calls, and they will be resolved in a First In, Last Out (FILO) order.&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ol&amp;gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>At_exit on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/at_exit/</link>
+		<description>Recent content in At_exit on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 06 Jan 2012 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/at_exit/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Ruby: What is at_exit and how to write tests for it.</title>
+				<link>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</link>
+				<pubDate>Fri, 06 Jan 2012 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-ruby-what-is-at_exit-and-how-to-write-tests-for-it-publish/</guid>
+				<description>&lt;p&gt;&#xA;Ruby has a neat feature called &lt;code&gt;at_exit&lt;/code&gt; which takes a block and then executes the contents of this block when the program ends. There are a couple of VERY important details:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;ol&amp;gt;&#xA;        &amp;lt;li&amp;gt;It takes a block and converts it into a &lt;code&gt;Proc&lt;/code&gt; object at the time of parsing. This means that the data has to be available in the binding, or you&amp;#39;ll run into errors. Example: instance variables need to be set before you can use them in that block. Better idea: don&amp;#39;t use instance variables in there at all.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;You can &amp;#39;chain&amp;#39; &lt;code&gt;at_exit&lt;/code&gt; calls, and they will be resolved in a First In, Last Out (FILO) order.&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ol&amp;gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

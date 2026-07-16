@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Dell-Inspiron-Mini-10 on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/dell-inspiron-mini-10/</link>
-    <description>Recent content in Dell-Inspiron-Mini-10 on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 01 Mar 2010 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/dell-inspiron-mini-10/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gentoo on a Dell Inspiron Mini 10</title>
-      <link>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</link>
-      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
-      <description>&lt;p&gt;&#xA;There are a few gotchas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;If you have a SSD drive, you need to &amp;lt;em&amp;gt;modprobe pata_sch&amp;lt;/em&amp;gt; to see it.&lt;/li&gt;&#xA;&lt;li&gt;when using GRUB, install it on whatever drive the hard drive is, even if it&amp;#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.&lt;/li&gt;&#xA;&lt;li&gt;In the kernel, in the I2C options, don&amp;#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&amp;#39;t know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;For the rest, so far, it seems that the howto on the Gentoo wiki is good. I installed e17 very painlessly.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Dell-Inspiron-Mini-10 on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/dell-inspiron-mini-10/</link>
+		<description>Recent content in Dell-Inspiron-Mini-10 on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Mar 2010 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/dell-inspiron-mini-10/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Gentoo on a Dell Inspiron Mini 10</title>
+				<link>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</link>
+				<pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
+				<description>&lt;p&gt;&#xA;There are a few gotchas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;If you have a SSD drive, you need to &amp;lt;em&amp;gt;modprobe pata_sch&amp;lt;/em&amp;gt; to see it.&lt;/li&gt;&#xA;&lt;li&gt;when using GRUB, install it on whatever drive the hard drive is, even if it&amp;#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.&lt;/li&gt;&#xA;&lt;li&gt;In the kernel, in the I2C options, don&amp;#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&amp;#39;t know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;For the rest, so far, it seems that the howto on the Gentoo wiki is good. I installed e17 very painlessly.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

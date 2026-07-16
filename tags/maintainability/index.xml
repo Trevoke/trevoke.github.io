@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Maintainability on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/maintainability/</link>
-    <description>Recent content in Maintainability on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 23 Oct 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/maintainability/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Maintainability Is Relative</title>
-      <link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
-      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
-      <description>&lt;p&gt;&#xA;I just found a great example of the variability of the need of creating maintainable code.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Somewhere around 2006, I created a script that posts to the Livejournal community &lt;span style=&#34;text-decoration: underline;&#34;&gt;daily_tao&lt;/span&gt; a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I temporarily wasn&amp;#39;t sure of where that script was. I remembered it was running off of a cronjob, so… Some machine with a *nix-like OS. Then I remembered and found it. I&amp;#39;m going to offer two versions of the code to you: the one that is in the cronjob, and .. A rewrite that I never deleted (and now of course, I have no idea why I never did).&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Maintainability on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/maintainability/</link>
+		<description>Recent content in Maintainability on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 23 Oct 2016 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/maintainability/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Maintainability Is Relative</title>
+				<link>http://blog.trevoke.net/post/maintainability-is-relative/</link>
+				<pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/maintainability-is-relative/</guid>
+				<description>&lt;p&gt;&#xA;I just found a great example of the variability of the need of creating maintainable code.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Somewhere around 2006, I created a script that posts to the Livejournal community &lt;span style=&#34;text-decoration: underline;&#34;&gt;daily_tao&lt;/span&gt; a new chapter of the Tao Te Ching every day. Today in 2016, I had a need to look for the script, the second time in maybe the last eight years that I had to look at it.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I temporarily wasn&amp;#39;t sure of where that script was. I remembered it was running off of a cronjob, so… Some machine with a *nix-like OS. Then I remembered and found it. I&amp;#39;m going to offer two versions of the code to you: the one that is in the cronjob, and .. A rewrite that I never deleted (and now of course, I have no idea why I never did).&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
