@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Lean on Seven steps</title>
-		<link>http://blog.trevoke.net/tags/lean/</link>
-		<description>Recent content in Lean on Seven steps</description>
+		<title>Xp on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/xp/</link>
+		<description>Recent content in Xp on Seven steps</description>
 		<generator>Hugo</generator>
 		<language>en</language>
 		
@@ -12,20 +12,13 @@
 		
 			<lastBuildDate>Tue, 18 Aug 2026 09:00:00 -0400</lastBuildDate>
 		
-			<atom:link href="http://blog.trevoke.net/tags/lean/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://blog.trevoke.net/tags/xp/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>The Dark Factory Is A Lie</title>
 				<link>http://blog.trevoke.net/post/the-dark-software-factory-is-a-lie/</link>
 				<pubDate>Tue, 18 Aug 2026 09:00:00 -0400</pubDate>
 				<guid>http://blog.trevoke.net/post/the-dark-software-factory-is-a-lie/</guid>
 				<description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;The Siren Song of the &amp;#34;Dark Factory&amp;#34;&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;If someone offers to give me software for free, I’ll take it.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Honestly, who wouldn&amp;#39;t? The promise of the &amp;#34;Dark Software Factory&amp;#34; is oh-so seductive. It’s a Level 5&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; autonomy fantasy where you turn off the lights, lock the doors, and let the machines churn. You feed raw text into a LLM at night, and by morning, a flawless, production-ready feature exits the pipeline. No meetings, no handoffs, and most importantly, no expensive, messy human beings.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Agile and lean art delivery</title>
-				<link>http://blog.trevoke.net/post/agile-and-lean-art-delivery/</link>
-				<pubDate>Sat, 05 Sep 2020 10:26:00 -0400</pubDate>
-				<guid>http://blog.trevoke.net/post/agile-and-lean-art-delivery/</guid>
-				<description>&lt;p&gt;&#xA;I&amp;#39;ve been helping teams and organizations improve their approach to agile and lean delivery for a decade now, and by far one of the most difficult things to wrap one&amp;#39;s head around is the idea of iterative delivery of value. I don&amp;#39;t know about you, but I&amp;#39;m tired of these various hypothetical images depicting what agile delivery is supposed to look like. Is it a skateboard that becomes a car? Is it a tree swing? Fortunately, I came across a real-world example, and it&amp;#39;s actually images! It&amp;#39;s wonderful because you can literally &lt;strong&gt;see&lt;/strong&gt;:&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

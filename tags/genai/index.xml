@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 13 Apr 2025 21:12:27 -0400</lastBuildDate>
+			<lastBuildDate>Tue, 18 Aug 2026 09:00:00 -0400</lastBuildDate>
 		
 			<atom:link href="http://blog.trevoke.net/tags/genai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Dark Factory Is A Lie</title>
+				<link>http://blog.trevoke.net/post/the-dark-software-factory-is-a-lie/</link>
+				<pubDate>Tue, 18 Aug 2026 09:00:00 -0400</pubDate>
+				<guid>http://blog.trevoke.net/post/the-dark-software-factory-is-a-lie/</guid>
+				<description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;The Siren Song of the &amp;#34;Dark Factory&amp;#34;&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;If someone offers to give me software for free, I’ll take it.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Honestly, who wouldn&amp;#39;t? The promise of the &amp;#34;Dark Software Factory&amp;#34; is oh-so seductive. It’s a Level 5&lt;sup class=&#34;footnote-reference&#34;&gt;&lt;a id=&#34;footnote-reference-1&#34; href=&#34;#footnote-1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; autonomy fantasy where you turn off the lights, lock the doors, and let the machines churn. You feed raw text into a LLM at night, and by morning, a flawless, production-ready feature exits the pipeline. No meetings, no handoffs, and most importantly, no expensive, messy human beings.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>GenAI Is a Power Tool — Don’t Use It Like a Crutch</title>
 				<link>http://blog.trevoke.net/post/using-genai-without-losing-your-critical-thinking-skills/</link>
