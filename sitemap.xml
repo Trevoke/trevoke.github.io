@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://blog.trevoke.net/categories/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/tags/context-management/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/post/how-i-use-the-recs-files/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/categories/llm/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/post/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/tags/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/tags/the-recs-files/</loc>
+    <lastmod>2026-10-05T07:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://blog.trevoke.net/post/record-driven-development/</loc>
+    <lastmod>2026-10-05T06:00:00-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://blog.trevoke.net/tags/agile/</loc>
     <lastmod>2026-08-18T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -22,21 +67,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://blog.trevoke.net/post/</loc>
-    <lastmod>2026-08-18T09:00:00-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://blog.trevoke.net/</loc>
-    <lastmod>2026-08-18T09:00:00-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://blog.trevoke.net/tags/</loc>
-    <lastmod>2026-08-18T09:00:00-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>http://blog.trevoke.net/post/the-dark-software-factory-is-a-lie/</loc>
     <lastmod>2026-08-18T09:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -44,11 +74,6 @@
   </url><url>
     <loc>http://blog.trevoke.net/tags/xp/</loc>
     <lastmod>2026-08-18T09:00:00-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://blog.trevoke.net/categories/</loc>
-    <lastmod>2025-04-13T21:12:27-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>How I Use The Recs Files - Seven steps</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="An experience report: one workflow followed from its first records to working code, and what the records caught along the way. ">
+<link rel="canonical" href="http://blog.trevoke.net/post/how-i-use-the-recs-files/" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+<article id="main">
+  <section>
+<h1 class="content-title">How I Use The Recs Files</h1><p class=subtitle>An experience report</p></section>
+
+  
+
+  <section>
+<blockquote>
+<p><strong>SCULLY:</strong> &#34;Mulder, the theory is elegant. Append-only records, projections, routing. But I&#39;ve seen elegant theories before. Show me the case file.&#34;</p>
+<p>
+<strong>MULDER <em>(dropping a stack of folders on the desk)</em>:</strong> &#34;Fifteen hundred commits, Scully. Six registers and the vision. Almost four thousand pointers from the code back to the records.&#34;</p>
+<p>
+<strong>SCULLY:</strong> &#34;And the agent respected all of it?&#34;</p>
+<p>
+<strong>MULDER:</strong> &#34;Yes. That&#39;s what the records are for.&#34;</p>
+</blockquote>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Introduction
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>In <a href="./record-driven-development.html">the previous article</a>, we laid out the general behavior for <em>The Recs Files</em>, a record-driven system for agentic development.</p>
+<p>
+In this article, we show you how we use these records day to day on <strong>Stone</strong>, a Racket framework for creating and managing agentic facilities, allowing the user to treat an agentic run as a governed job (bounded, portable, auditable, and supervised). Every example below is pulled directly from Stone&#39;s repository.</p>
+<p>
+This is an experience report as much as a tutorial. We follow Stone&#39;s core workflow from its first records to working code, including the places where things went wrong: what decisions got surfaced, how they were recorded, and what they cost.</p>
+<p>
+The skills that drive this workflow, from brainstorming to plans to subagent execution, are published at <a href="https://github.com/Trevoke/the-recs-files">github.com/Trevoke/the-recs-files</a>, along with a kickstart skill for bringing records into an existing codebase.</p>
+<p>
+A word before we start. For teamwork, or any serious work, we highly recommend the records be written by hand<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Repository Layout &amp; The Context Budget
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>
+The repository layout follows <em>The Recs Files</em> - see the previous article for the explanation. Our records are org-mode files<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>:</p>
+<pre class="example">
+AGENTS.md                      ← How to work here; inlines files below
+docs/
+  vision.org                   ← Inlined whole
+  ubiquitous-language.org      ← Inlined whole
+  user-workflows.org           ← Inlined: preamble + one line per record
+  user-workflows/uw-2-get-a-long-job-done-without-watching-it.org
+  features.org                 ← Inlined: preamble + one line per record
+  features/f-7-match-on-routes-on-the-results-of-operations-already-run.org
+  architectural-decisions.org  ← Inlined: preamble + one line per record
+  architectural-decisions/adr-021-a-process-plan-names-no-resource.org
+  error-messages.org           ← Inlined: preamble + one line per record
+  error-messages/em-27-a-subscriber-that-raises-as-it-is-built-is-left-off-and-the-job-runs-on.org
+  deferred.org                 ← Decisions deliberately not made yet
+  knowledge-base/              ← Technical facts that took work to find out
+  plans/                       ← Dated implementation plans
+</pre>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Managing the Context Budget
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>
+Every session starts by reading <code class="verbatim">AGENTS.md</code>. This pulls in <code class="verbatim">vision.org</code> and <code class="verbatim">ubiquitous-language.org</code> in full, but loads every other record file <strong>by title only</strong>.</p>
+<p>
+This title-only listing forms a compact projection (a few hundred lines) that informs the agent of what records exist. The text of a record is read from its own file <strong>only</strong> when active work touches it. System instructions enforce this explicitly:</p>
+<blockquote>
+<p>Open a record&#39;s file before you cite a section of it, measure code, a test, a plan or a design against it, assert its text, propose a change to it, or frame a question to the user with it. Its title tells you which records bear on the work; it is never the evidence that something conforms.</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+What AGENTS.md Tells the Agent
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>Besides the inlined records, <code class="verbatim">AGENTS.md</code> sets up the behaviors every session and every subagent carries:</p>
+<dl>
+<dt>
+The records are the truth
+</dt>
+<dd>The agent does not modify them on its own, only at the user&#39;s request.</dd>
+<dt>
+How to write a record
+</dt>
+<dd>Define a thing by what it is, not by comparison to what it isn&#39;t. One record, one reason to change. The title is a headline, so a reader who stops there knows the substance. A retitle renames the file and sweeps every pointer to the old title.</dd>
+<dt>
+Which records may cite which
+</dt>
+<dd>A workflow may name features, error messages, terms and other workflows; a feature may name validation failures, terms and other features; an ADR may name other ADRs and terms; a term may name only other terms.</dd>
+<dt>
+Where a record belongs
+</dt>
+<dd>One line per register, plus the two placement tests for the hard cases.</dd>
+<dt>
+How to talk to the user
+</dt>
+<dd>Every record is named by number<sup class="footnote-reference"><a id="footnote-reference-3" href="#footnote-3">3</a></sup> <em>and</em> title. Every question opens from the workflow and the step it is in, then names the situation in the records&#39; own words, and only then the mechanism. No new term goes into any file before the user agrees to that specific word.</dd>
+<dt>
+How to write code
+</dt>
+<dd>A comment is a pointer to a record or to a knowledge-base heading, and nothing else. When the agent finds any other kind of comment, it looks for a record to point to, and removes the comment if there is none.</dd>
+<dt>
+The knowledge base
+</dt>
+<dd>What an entry holds, and where it came from: a manual, a specification, or a run, with the code and its output.</dd>
+<dt>
+Project mechanics
+</dt>
+<dd>The facts no skill should carry: the exact test command, that only one agent at a time may commit in a worktree, and which skills to use.</dd>
+</dl>
+<p>The skills stay generic so they can be reused in other projects; everything specific to Stone lives here.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-2">
+<h2 id="headline-5">
+Starting with <em>The Recs Files</em>: What to Write First
+</h2>
+<div id="outline-text-headline-5" class="outline-text-2">
+<p>If you want to start today, three records are absolutely required.</p>
+<dl>
+<dt>
+The vision
+</dt>
+<dd>What the product is for, and, crucially, what it isn&#39;t and doesn&#39;t do. Stone&#39;s vision says, among other things: &#34;No agent marketplace, no prompt library, no model zoo,&#34; and &#34;No hidden retries or silent fallbacks. Everything that spends is metered and appears in the log.&#34; This is the ultimate tie-breaker, and a very important way to keep ideas from even showing up in conversation, let alone in code.</dd>
+<dt>
+A ubiquitous language with a few terms
+</dt>
+<dd>Just the words the vision and the core workflow need. Stone adopts NIST&#39;s manufacturing control taxonomy (devices, machines, process plans, production plans). Define each term as clearly as you can: just as with the vision, you can&#39;t define purely by exclusion. And no word enters a file without the human agreeing to it. This feels painful at first, but it is a highly valuable exercise with high pay-off.</dd>
+<dt>
+The core user workflow
+</dt>
+<dd>The smallest set of things a user can do to get the core domain<sup class="footnote-reference"><a id="footnote-reference-4" href="#footnote-4">4</a></sup> value out of the product.</dd>
+</dl>
+<p>Everything else waits:</p>
+<dl>
+<dt>
+Architectural decisions
+</dt>
+<dd>Only the ones that are already clear and known. A missing ADR is cheap; a wrong one is expensive, because code gets built on it. Let the brainstorming sessions surface the situations that need deciding, and start with the smallest possible set.</dd>
+<dt>
+Features
+</dt>
+<dd>Much the same. Brainstorming the core workflow will surface the missing features and force them into existence.</dd>
+<dt>
+More user workflows
+</dt>
+<dd>Add them very slowly. A workflow is the largest lever in the system, so it creates the most potential work. Add each one so that it depends only on workflows that are already implemented.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-2">
+<h2 id="headline-6">
+How UW-1 Came To Be
+</h2>
+<div id="outline-text-headline-6" class="outline-text-2">
+<p>Stone&#39;s core workflow is <code class="verbatim">UW-1</code>, the activity users spend the most time on:</p>
+<pre class="example">
+* UW-1 Decompose a problem into a process plan
+:PROPERTIES:
+:LEVEL: user goal
+:ACTOR: Planner
+:END:
+
+The activity users spend the most time on, and the one Stone constrains least.
+
+- Precondition :: A goal that is too large for one workstation.
+
+** Main success scenario
+1. Planner decides what the pieces of work are, and what each must assert on finishing.
+2. Planner defines a machine for each, declares what each reads (F-34), and gives each a goal.
+3. Planner composes them with the combinators — ~sequence~ (F-1), ~fan-out~ (F-2), ~fan-in~ (F-3), ~map~ (F-4), ~reduce~ (F-5), ~loop~ (F-6) — and routes on results with ~match-on~ (F-7) and ~filter~ (F-8).
+...
+</pre>
+<p>
+Workflows are written in Alistair Cockburn&#39;s casual use-case form, describing an actor&#39;s goal. We have not yet felt the need for more structure, but gherkin-style text may be valuable here, as these records come close to describing acceptance tests. The main scenario is usually easy consensus. The extensions are where the work is: they define the edge cases, and each one cites the feature or error record that covers it.</p>
+<p>
+I already knew what I wanted this to look like, and I wanted to see how much I could do at once. I let the agent interview me to create this record, but I did two things I now recommend against: I let the agent write this record, and in the same commit, I added another 11 user workflows, 24 features, and 26 ADRs.</p>
+<p>
+Today I strongly recommend starting with just one user workflow record. If you know you want other user workflows, put them somewhere that the agent can&#39;t read them.</p>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Who Writes What
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>The rule we arrived at:</p>
+<dl>
+<dt>
+New records are written by people
+</dt>
+<dd>This is work the team should do together. An agent can help elicit the knowledge, ask the questions the new record needs to answer, and even propose wording, but the humans decide what goes in the file. The drift between what an agent writes and what we want it to mean is <span style="text-decoration: underline;">always</span> non-zero, and not always noticeable.</dd>
+<dt>
+An amendment can go to the agent
+</dt>
+<dd>Once the surrounding records have been reworded carefully enough, the intent of a correction is clear and unambiguous, and the agent can be given the wording. You explain how the record is wrong; it proposes the fix; you approve it.</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+How Slightly Wrong Words Compound
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>The typical failure in the agent-written records was much harder to catch than an invented decision: it was a word slightly off. For example, <code class="verbatim">UW-1</code>&#39;s extension 5a said that choosing a model &#34;belongs to release&#34;: it named the moment, when it meant the place, a <code class="verbatim">production plan</code>.</p>
+<p>
+One such word is easy to fix. Many of them add up, and eventually they add up to a decision that cannot be reconciled.</p>
+<p>
+For example: the combinator features said that one operation&#39;s result was handed to the next. The architecture said something else: <code class="verbatim">ADR-002</code> has an operation reach another by reading its <code class="verbatim">part</code> from the <code class="verbatim">as-built</code>, the record of everything a job produced. As the agent did the work, it turned out that the code followed the features, so there was no mechanism for querying the <code class="verbatim">as-built</code> at all, only the assumption that data always comes from the operation right before. In addition, <code class="verbatim">ADR-002</code></p>
+<p>
+It survived a long time. It came to light five intense weeks of agentic implementation later, during a conversation about how information enters a machine (implementing <code class="verbatim">#:reads</code>), when it became clear that nothing could ask the as-built for anything. The features were badly worded, and <code class="verbatim">ADR-002</code> was what I had always meant. The message for the commit that settled it:</p>
+<blockquote>
+<p>The combinator records described a delivery the architecture never said happened. […] Sequence, fan-in and reduce had drifted into handing parts over, and the walk followed them.</p>
+</blockquote>
+<p>
+As a result, here&#39;s what had to happen:</p>
+<ul>
+<li>A new feature record, <code class="verbatim">F-34: A machine declares what it reads</code>.</li>
+<li><code class="verbatim">UW-1</code> step 2 rewritten, so that a planner &#34;declares what each reads&#34;.</li>
+<li>The combinator features reworded, and one vocabulary term (<code class="verbatim">command</code>) put back to being a noun. When a word changes, it changes everywhere in one commit: docs, code, comments, and tests.</li>
+<li>The implementation plan in flight for the next workflow, <code class="verbatim">UW-2</code>, stopped from Task 12 onward, then reworked against F-34 (<code class="verbatim">d6814837</code>).</li>
+<li>A new plan for the reads, and the code for it.</li>
+</ul>
+<p>The records worked: the mismatch surfaced as soon as a conversation touched it, and the fix went records first, then plans, then code. But letting the agent write the records is what created that rework, and it could have been avoided. The careful reader will note that this surfaced during implementation of <code class="verbatim">UW-2</code>, not <code class="verbatim">UW-1</code>, which would have been more desirable.</p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-2">
+<h2 id="headline-9">
+Working Through UW-1
+</h2>
+<div id="outline-text-headline-9" class="outline-text-2">
+<p>The rest of <code class="verbatim">UW-1</code> shows the process running as intended. Work moves through three phases, each driven by a skill: brainstorming, writing the plan, and subagent-driven development.</p>
+<p>
+I brought the set of combinators with me: <code>sequence</code>, <code>loop</code>, <code>match-on</code>, <code>fan-out</code>, <code>fan-in</code>, <code>map</code>, <code>reduce</code> and <code>filter</code>. Working with the agent, the question was what to build first. The order I chose followed two rules: whatever is required to get <code class="verbatim">UW-1</code> going, then whatever is simplest, building new ones on top of the previous ones where possible.</p>
+<p>
+<code>loop</code> came last. It is the combinator whose <code class="verbatim">as-built</code> differs most from its plan (the as-built holds the loop unrolled), and there was work to do to figure out what its stopping rule would do and how it would operate.</p>
+<div id="outline-container-headline-10" class="outline-3">
+<h3 id="headline-10">
+The Brainstorm Surfaces a Wrong Record
+</h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<p>A brainstorm starts with the agent reading the records, then refining the idea with me one question at a time, always citing records by number and title. It proposes two or three approaches, then presents the chosen design in short sections, each approved before moving on. New terms get discussed, but enter no file until I agree to them.</p>
+<p>
+The loop brainstorm ran over a few real-time days (limited time to really sit and focus on it), and as it started, it hit the same problem again. <code class="verbatim">F-6</code> said the stopping rule was &#34;run on each pass&#39;s result&#34;: the implied &#34;get the last machine&#39;s result&#34;, where the intent had always been for the rule to query whatever it needs, explicitly, to decide whether to go round again.</p>
+<p>
+This time, I explained to the agent how the record was wrong, and it proposed the new wording. That was acceptable, because enough of the surrounding records had been reworded carefully that the intent was unambiguous. The change:</p>
+<div class="src src-diff">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"><span class="gd">- ~#:while~ takes a target, run on each pass&#39;s result; the loop goes round again while it succeeds (ADR-031).
+</span></span></span><span class="line"><span class="cl"><span class="gi">+ ~#:while~ names a workstation, or a composite with one exit, run once each pass; the loop goes round again while its result succeeds (ADR-031).
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+You will notice we modify ADR-031 in place. In practice, this is a clarification of intent; the ADR was not fundamentally incorrect, even though some rework in the code is required after this change. This is why I recommend writing the records by hand: you don&#39;t want to have to decide, as a team, whether you should supersede your own <code class="verbatim">ADR-031</code> or edit it in-place.</p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+Records First
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<p>Each decision the brainstorm agrees on is routed to its record type (workflow, feature, ADR, vocabulary, error message) and proposed along with whatever it would make false. The decisions landed as record commits within half an hour, before any code, of course. Among them:</p>
+<ul>
+<li><code class="verbatim">F-6</code>&#39;s stopping rule, a new validation failure refusing a stopping rule with several exits (which has no single result to test), and a narrowed consequence in <code class="verbatim">ADR-031</code>.</li>
+<li><code class="verbatim">F-1</code> through <code class="verbatim">F-8</code> saying which building block each combinator supplies, and why.</li>
+<li>The empty cases settled (what an empty collection and an empty composite do), and a counted loop deferred.</li>
+</ul>
+<p>The first bullet is the two placement tests from <a href="./record-driven-development.html">the previous article</a> at work: what a planner can do went into the feature, and what follows from the architecture went into the ADR. Features we write in plain text (gherkin structure may serve better here too); ADRs follow Nygard&#39;s format: Context, Decision, Consequences.</p>
+<p>
+Through some amount of path of least resistance, I allowed deferred decisions to go in a <code class="verbatim">deferred.org</code> file, as <code class="verbatim">DEF-</code> records. Similarly to the &#34;future user workflows&#34;, I would now recommend putting those somewhere the agent can&#39;t reach.</p>
+<pre class="example">
+* DEF-24 A counted loop
+
+- Question :: Does the plan language supply a loop that runs a fixed number of passes — ~(loop digger #:count 3)~ — and is it ~loop~ with a second keyword or a combinator of its own?
+- Now :: No. A loop goes round again while its stopping rule&#39;s result succeeds (F-6); a fixed count is a machine in the body whose part is the count, and a stopping rule that reads it (F-7).
+- What deciding it would need :: [...]
+- Cost of deferring :: A fixed count is two machines a planner writes and a reader reads, where the building block is one keyword.
+</pre>
+<p>
+A counted loop is more API surface, more for the user to read and understand, and is syntactic sugar for something which is already possible, if inelegantly. It doesn&#39;t bring enough new value to the project to be added right away, but I didn&#39;t want to just discard the idea.</p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+The Design Document
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>Whatever the brainstorm settled that isn&#39;t a record goes into a dated design document. Code may never cite it. The loop&#39;s design document opens by listing the four record commits it builds on and stating its place:</p>
+<blockquote>
+<p>What follows is what the records do not carry: how the walk and the plan language come to honour them. The records are the measure; where this document and a record disagree, the record stands.</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+The Plan
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>The implementation plan is written for an engineer with zero context: exact paths, complete code, exact commands and their expected output, and each task citing its records. Every plan carries four mandatory sections:</p>
+<dl>
+<dt>
+How to Speak
+</dt>
+<dd>The vocabulary in play.</dd>
+<dt>
+Do Not Modify
+</dt>
+<dd>The files no task may touch.</dd>
+<dt>
+Reading List
+</dt>
+<dd>The records to read first.</dd>
+<dt>
+Cataloged-Text Ordering
+</dt>
+<dd>Error text settled before the test that asserts it.</dd>
+</dl>
+<p>Each task is a test-first cycle: write the failing test, see it fail, write the minimal code, see it pass, commit. If the plan and a record disagree, the record wins: planning stops and the disagreement goes to the human.</p>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
+<h3 id="headline-14">
+Execution
+</h3>
+<div id="outline-text-headline-14" class="outline-text-3">
+<p>Each task goes to a fresh implementer subagent, given the full task and record text. It can ask questions, then implements test-first, commits, and reviews its own work. Implementers run one at a time, since a worktree has one git index.</p>
+<p>
+Two read-only reviewers then check the task&#39;s commits in turn: first against the spec and records (error text must match exactly), then for code quality. Any finding goes back to the implementer and is re-reviewed until approved. No subagent ever edits a record. A final review covers the whole branch before it&#39;s finished.</p>
+<p>
+The plan landed late in the morning; the loop work was done the next afternoon. I was mostly away, coming back to approve, or to settle the questions the agents raised.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+When a Record Is Silent
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>One of those questions shows what a settled question looks like.</p>
+<p>
+While reviewing Task 5, the reviewer found that the operation after a <code>match-on</code> waited on the exits of <em>every</em> branch, so it waited forever on the branches not taken. <code class="verbatim">F-7</code> did not contradict the code; it said nothing at all about what follows a <code>match-on</code>.</p>
+<p>
+A silent record means the decision is not made, or was made somewhere else and not linked. So the first thing to do is to have the agent re-check the other records, just in case. After that, the missing decision goes to the human, and the question opens with the workflow and clause it addresses before getting into any technical mechanics. Agents sometimes see a gap that isn&#39;t there, or ask for a decision to be recorded when it doesn&#39;t need to be. But sometimes they surface a real problem: a missing product behavior for a situation a user will certainly be in, or the consequence of an architectural decision in a scenario nobody walked through. It is always better to surface it.</p>
+<p>
+This silence was a real problem. The series of events:</p>
+<dl>
+<dt>
+12:16 <code class="verbatim">08d98a85</code>
+</dt>
+<dd><code class="verbatim">F-7</code> gains a sentence: &#34;What follows a match-on follows the branch it took. The operation after one waits on that branch&#39;s exits, and runs once they have produced a result. Where no clause matches, nothing follows it.&#34;</dd>
+<dt>
+12:17 <code class="verbatim">689e2940</code>
+</dt>
+<dd>The plan gains Task 5b.</dd>
+<dt>
+12:20 <code class="verbatim">7a99dbb4</code>
+</dt>
+<dd>The code follows the record.</dd>
+</dl>
+<div id="outline-container-headline-16" class="outline-3">
+<h3 id="headline-16">
+Pulling The Red Cord
+</h3>
+<div id="outline-text-headline-16" class="outline-text-3">
+<p>A failing test is not a reason to stop: it is the normal state of a test-first cycle, and the implementer (or a dedicated fix subagent) handles it.</p>
+<p>
+A contradiction with a record, however, is a reason to stop, and so is a silence where a record should have an explicit decision. When a plan disagrees with a record, or a task could only be completed by changing or extending one:</p>
+<ol>
+<li><strong>Halt:</strong> Work stops at the point of disagreement. Nothing is planned or coded around the record, and no agent &#34;fixes&#34; the record to fit.</li>
+<li><strong>Yield Control:</strong> The disagreement goes to the human.</li>
+</ol>
+<p>The human resolves it, either by correcting the plan or by amending the record. The <code class="verbatim">F-34</code> story above is the large version of this: a plan for another workflow stopped at Task 12 until the records were right.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-2">
+<h2 id="headline-17">
+Consequences Are Not Records
+</h2>
+<div id="outline-text-headline-17" class="outline-text-2">
+<p>The loop design document holds a decision that looks like it should be a record: the plan value carries each loop&#39;s body as a field, and the walk reads it rather than deriving it.</p>
+<p>
+But is it a decision? Or is it an inescapable consequence of decisions already made: there is a plan, there is an as-built, and everything in the plan produces, during a release, a part that goes into the as-built? This is one of the most powerful aspects of using <em>The Recs Files</em>: combinations of decisions don&#39;t need to become records, because they can be figured out again from the records they follow from<sup class="footnote-reference"><a id="footnote-reference-5" href="#footnote-5">5</a></sup>.</p>
+</div>
+</div>
+<div id="outline-container-headline-18" class="outline-2">
+<h2 id="headline-18">
+Code Cites the Records
+</h2>
+<div id="outline-text-headline-18" class="outline-text-2">
+<p>In code, comments exist purely as citations pointing back to records or knowledge-base files. One trail from <code class="verbatim">UW-2</code> shows the whole chain. Its extension 2a:</p>
+<pre class="example">
+* UW-2 Get a long job done without watching it
+...
+** Extensions
+- 2a. A subscriber cannot be built :: The job runs without it, and the release says so where it was run (EM-27); nothing a subscriber does can affect what a job does (F-13).
+</pre>
+<p>
+The extension cites <code class="verbatim">EM-27</code>, an error-message record, which holds the exact words:</p>
+<pre class="example">
+* EM-27 A subscriber that raises as it is built is left off, and the job runs on
+: release: cannot be attached, subscriber &#39;(historian &#34;h.sock&#34;) raised: (exn:fail &#34;unix-socket-connect: failed to connect socket\n  path: \&#34;h.sock\&#34;\n  errno: 2\n  error: No such file or directory&#34; #&lt;continuation-mark-set&gt;)
+
+The job runs without it, so this is written where the release was
+run and the release carries on. The subscriber is written as the production
+plan wrote it, arguments included, since one subscriber may be written twice
+with different arguments. What raised is printed as EM-24 prints it.
+</pre>
+<p>
+And the code cites both:</p>
+<div class="src src-racket">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-racket" data-lang="racket"><span class="line"><span class="cl"><span class="c1">;; EM-27: A subscriber that raises as it is built is left off, and the job runs on</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;; UW-2 §Extensions 2a: Get a long job done without watching it</span>
+</span></span><span class="line"><span class="cl"><span class="c1">;; EM-24: Anything a machine raises becomes a machine fault</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="k">define</span> <span class="p">(</span><span class="n">say-a-subscriber-was-not-attached</span> <span class="n">a-subscriber</span> <span class="n">raised</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">...</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+Because these messages serve as diagnostic interfaces for humans and feedback loops for plan-authoring agents, we also decided that <strong>tests assert error messages in full</strong>, never via regex or substring matching.</p>
+<div id="outline-container-headline-19" class="outline-3">
+<h3 id="headline-19">
+The Knowledge Base
+</h3>
+<div id="outline-text-headline-19" class="outline-text-3">
+<p>Not every hard-won fact is a decision. Racket&#39;s behavior is a fact, and re-discovering it costs time and tokens on every task that needs it. So, often, I forced the creation of knowledge-base documents to settle core Racket behavior questions once: concurrency, the HTTP client, JSON, metaprogramming<sup class="footnote-reference"><a id="footnote-reference-6" href="#footnote-6">6</a></sup>. Each claim comes with a probe, a small program that demonstrates it, so the entry can be checked rather than trusted. Most were written ahead of the <code class="verbatim">UW-1</code> implementation tasks that needed them.</p>
+<p>
+Code cites them the same way it cites records. From the code behind <code class="verbatim">EM-27</code>:</p>
+<div class="src src-racket">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-racket" data-lang="racket"><span class="line"><span class="cl"><span class="c1">;; docs/knowledge-base/racket-strings.org §~~e~ cuts its value at ~error-print-width~, and the other directives do not</span>
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="nb">eprintf</span> <span class="s2">&#34;release: cannot be attached, subscriber ~e raised: ~e</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="k">...</span><span class="p">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-20" class="outline-2">
+<h2 id="headline-20">
+Conclusion
+</h2>
+<div id="outline-text-headline-20" class="outline-text-2">
+<p>
+<em>The Recs Files</em> enables a workflow with a clear separation of informational concerns:</p>
+<pre class="example">
+[ Brainstorming ] ──► [ Records (UW, F, ADR, EM), human-approved ]
+│
+▼
+[ Implementation Plan ]
+│
+▼
+[ Subagent Execution + Review ]
+
+Any record contradiction, at any stage ──► [ Halt, yield to human ]
+</pre>
+<p>
+This enables us to move closer to congruence over time, because it reveals incongruence faster. The skills that drive each phase are in <a href="https://github.com/Trevoke/the-recs-files">the-recs-files</a>, if you want the full detail.</p>
+</div>
+</div>
+<div id="outline-container-headline-21" class="outline-2">
+<h2 id="headline-21">
+Footnotes
+</h2>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator"/>
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>We have had some success in letting the agent write the records, but this has <strong>always</strong> meant that down the line, a dedicated amount of time went to making semantic corrections to the records, which necessarily trickled down to some code updates - in essence, a waste of time. If you really want to let the agent draft, I can tell you that the Claude 5 family is terrible at it, that the Claude 5.5 family is better, and that I need more experience reports of letting the agent draft records that have proven to be good over a long period of time, because problems with records show up down the line, not immediately.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p>Markdown is the more common choice for records like these, and it works fine. We use org-mode because it is a more powerful syntax: property drawers, tables, status keywords, timestamps, and executable source blocks, which a knowledge base can use to demonstrate what it claims.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-3"><a href="#footnote-reference-3">3</a></sup>
+<div class="footnote-body">
+<p>For teams, we recommend timestamps and not monotonically increasing numbers</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-4"><a href="#footnote-reference-4">4</a></sup>
+<div class="footnote-body">
+<p>In Domain-Driven Design, the core domain is the part of the business domain that is most valuable and most distinctive: the reason the software exists, and where modeling effort should be concentrated. Eric Evans <a href="https://gojko.net/2010/06/11/eric-evans-domain-driven-design-redefined/">discusses focusing on it here</a>.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-5"><a href="#footnote-reference-5">5</a></sup>
+<div class="footnote-body">
+<p>It might be good to record these second-order decisions, by indicating what they were derived from, but I haven&#39;t found this necessary yet.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-6"><a href="#footnote-reference-6">6</a></sup>
+<div class="footnote-body">
+<p>Also worth noting, the agents prefer figuring things out themselves to reading the documentation. It turns out most programming languages have excellent documentation, and they should use that as a basis for the knowledge base docs they write.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="http://blog.trevoke.net/post/record-driven-development/?ref=footer">« The Recs Files</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+</ul>
+
+
+
+
+<div class="copyright">
+<p>
+  
+  &copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2025
+  
+</p>
+</div>
+
+
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="/">Home</a></li>
+    
+        <li><a href="/post/">Archives</a></li>
+    
+        <li><a href="/tags/">Tags</a></li>
+    
+        <li><a href="/categories/">Categories</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
+
+
+
+
+
+</body>
+
+</html>

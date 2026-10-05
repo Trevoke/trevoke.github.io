@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>The Recs Files - Seven steps</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="The way to manage the truth of your codebase ">
+<link rel="canonical" href="http://blog.trevoke.net/post/record-driven-development/" />
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+<article id="main">
+  <section>
+<h1 class="content-title">The Recs Files</h1><p class=subtitle>The Truth Is In Here</p></section>
+
+  
+
+  <section>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Problem: Agent Drift and the Illusion of Velocity
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<blockquote>
+<p><strong>SCULLY:</strong> &#34;Mulder, I’ve reviewed the latest commits. It’s chaotic. It introduced a second retry wrapper, bypassed the authentication middleware we wrote ten days ago, and renamed <code class="verbatim">Account</code> to <code class="verbatim">Subscriber</code> across four separate modules.&#34;</p>
+<p>
+<strong>MULDER:</strong> &#34;It’s agent drift, Scully. A classic case. The codebase isn&#39;t just failing to maintain state—it&#39;s actively fabricating a new reality.&#34;</p>
+<p>
+<strong>SCULLY:</strong> &#34;There’s a perfectly rational explanation, Mulder. LLMs are non-deterministic, probabilistic prediction engines. As codebases grow, asking an agent to maintain long-term architectural consistency is a fool&#39;s errand. Hallucination is baked into the math.&#34;</p>
+<p>
+<strong>MULDER <em>(staring at the terminal screen)</em></strong>: &#34;That’s where you’re wrong, Scully. You’re blaming the engine for failing to navigate chaos. We keep searching for the solution <em>out there</em>, hoping a bigger context window, a smarter model, or a bigger prompt dump will magically fix our engineering.&#34;</p>
+<p>
+<strong>SCULLY:</strong> &#34;And what&#39;s your alternative hypothesis?&#34;</p>
+<p>
+<strong>MULDER:</strong> &#34;Stop treating context like an unstructured chat log and start treating it like an engineered runtime state. <em>The Recs Files, Scully. The truth is in here.</em>&#34;</p>
+</blockquote>
+<p>
+If you’ve spent more than a few weeks building a system alongside AI coding agents, that conversation isn&#39;t science fiction. It’s your Tuesday afternoon.</p>
+<p>
+When an agent operates over long-running projects without explicit structural boundaries, all the decisions you haven&#39;t made explicit were never made at all. Left unconstrained, the model default-fills architectural ambiguity with plausible, localized guesses. The codebase slowly degrades into a patchwork of competing idioms, duplicate abstractions, and shifted vocabulary.</p>
+<p>
+Two diametrally opposed behaviors eventually trigger this drift:</p>
+<ol>
+<li><em>Context Flooding (&#34;The Truth is Out There&#34;</em>): Dumping raw pull requests, issue threads, chat histories, and full API docs into a massive context window. This creates prompt pollution, high token burn, and subtle reasoning errors.</li>
+<li><em>Blind Discovery</em>: Giving the agent a minimal prompt and letting it inspect files haphazardly to &#34;figure it out.&#34; This leads to runtime discovery sprawl and unguided guesses.</li>
+</ol>
+<p>Both approaches stem from the same flawed premise: treating agent context as an unstructured, growing chat log.</p>
+<p>
+If we want to build complex systems alongside autonomous agents without watching our architecture disintegrate, we must treat context differently. Context is not a conversation history. It is an engineered runtime state. And if we want our software to remain congruent over time, we need a deterministic architecture that keeps humans in firm control of decisions, while directing the agent to execute bounded plans.</p>
+<p>
+Welcome to… <em>The Recs Files</em> (tuuh daah duuh daah dee daah…).</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Solution: The Context Architecture
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>To replace the growing chat log with an engineered runtime state, <em>The Recs Files</em> architecture separates history from active state. Borrowing from Event Sourcing<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup> and CQRS<sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup>, we split our context infrastructure into three distinct artifacts: a root unifying anchor, append-only decision records, and active state projections.</p>
+<pre class="example">
+                         [ VISION.md ]
+                     (Root Unifying Anchor)
+                               │
+                               ▼
+                   [ APPEND-ONLY RECORDS ]
+                 (The &#34;Files&#34; in Recs Files)
+               (docs/adr/, docs/user-workflows/...)
+                Log of immutable choices &amp; changes
+                               │
+                               │ Trigger: Record added/superseded
+                               ▼
+                  [ ACTIVE STATE PROJECTIONS ]
+                   (Read-Only Ground Truth)
+            Single materialized file per record type
+</pre>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+The Root Unifying Anchor (VISION.md)
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>At the root of the repository sits <code class="verbatim">VISION.md</code>. It is the single, non-negotiable North Star that defines the system&#39;s core purpose, target audience, primary capabilities, and non-goals. When individual architectural choices or feature requirements conflict, <code class="verbatim">VISION.md</code> serves as the ultimate tie-breaker across all records, ensuring every automated decision aligns with the software&#39;s overarching design intent.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Append-Only Decision Records
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>The &#34;Files&#34; in <em>The Recs Files</em> are each a decision, captured as an immutable, append-only <sup class="footnote-reference"><a id="footnote-reference-3" href="#footnote-3">3</a></sup> record under version control (e.g., <code class="verbatim">docs/architectural-decision-records/</code>, <code class="verbatim">docs/user-workflows/</code>, <code class="verbatim">docs/features/</code>).</p>
+<p>
+When a decision changes, we never edit an existing record to alter its historical meaning. We write a new record that explicitly supersedes or amends the old one.</p>
+<p>
+Record files follow a strict naming convention: <code class="verbatim">[TYPE_PREFIX]-[ID]-[descriptive-headline].md</code> <sup class="footnote-reference"><a id="footnote-reference-4" href="#footnote-4">4</a></sup></p>
+<ul>
+<li><code class="verbatim">ADR-012-use-redis-for-session-caching.md</code></li>
+<li><code class="verbatim">UW-004-user-initiates-passwordless-login.md</code></li>
+<li><code class="verbatim">FR-008-stripe-webhook-idempotency-handling.md</code></li>
+<li><code class="verbatim">ADR-019-use-memcached-for-session-caching.md</code> (superseding the above ADR-012)</li>
+</ul>
+<p><strong>The Inverted Pyramid</strong> - Records follow the <a href="https://en.wikipedia.org/wiki/Inverted_pyramid_(journalism)">inverted pyramid</a> of news writing: the most important information comes first. The title states the decision itself, not a category label. A title like <code class="verbatim">ADR-012-caching.md</code> tells an agent nothing without parsing the document body. A title like <code class="verbatim">ADR-012-use-redis-for-session-caching.md</code> immediately declares the active decision. If you cannot write a single title that states the decision, you either have no decision yet, or you have two.</p>
+<p>
+<strong>Humans write the records.</strong> An agent can help you think a decision through, but the record itself should be written, and amended, by a human. Records the agent wrote have, in our experience, always come back later as semantic corrections that trickled down into code.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+What should be a record
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>Left to its own devices, your agent will want to make everything into a record. It&#39;s on you to stop it. The core rule:</p>
+<blockquote>
+<p>A record is anything worth a team-level decision. If a teammate (or agent) implemented this differently, would you want to have agreed on it first?</p>
+</blockquote>
+<dl>
+<dt>
+What belongs
+</dt>
+<dd>What a user is trying to achieve and what happens at the edges (<code class="verbatim">UW-</code>); surface area, inputs, outputs and rules (<code class="verbatim">FR-</code>); non-obvious trade-offs, mechanisms and boundaries (<code class="verbatim">ADR-</code>); the exact sentences a user reads when something fails (<code class="verbatim">ERR-</code>); terms with wide reach across modules, messages or records (<code class="verbatim">CURRENT_VOCABULARY.md</code>).</dd>
+<dt>
+What does not
+</dt>
+<dd>Local implementation mechanics such as helper splits or variable names (that is what code review is for); facts about third-party tools (they go in a knowledge base); decisions not made yet (they go in a deferred list, where they bind no code).</dd>
+</dl>
+<p>Two tests settle where a decision is filed:</p>
+<ol>
+<li><strong>Verb/Sequence:</strong> If describing it requires a verb, an argument or a sequence of steps, it is a feature, not an ADR.</li>
+<li><strong>Implementation Survival:</strong> If a word survives swapping the implementation, it belongs in the vocabulary. If the swap retires the word (e.g., &#34;middleware&#34;), it belongs in an ADR.</li>
+</ol>
+<p>Finally, a record has <strong>one reason to change</strong>. A record that holds an &#34;or&#34; is two records; split it before one half goes stale while the other stays true.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Active State Projections
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>While append-only records preserve an accurate audit trail, feeding an agent forty historical ADRs, ten of which are superseded, three abandoned, and two contradictory, wastes context window budget and introduces reasoning errors.</p>
+<p>
+This is where <strong>Projections</strong> enter the picture.</p>
+<p>
+A Projection is a single, read-only materialized view compiled from all active, non-superseded records of a given type: a short preamble, then one line per active record. There is exactly one projection file per record category:</p>
+<ul>
+<li><code class="verbatim">user-workflows.md</code></li>
+<li><code class="verbatim">features.md</code></li>
+<li><code class="verbatim">architectural-decisions.md</code></li>
+<li><code class="verbatim">CURRENT_VOCABULARY.md</code></li>
+</ul>
+<p>When a new decision occurs that supersedes an old one, e.g. <code class="verbatim">ADR-019-use-memcached-for-session-caching.md</code>, the agent updates the projection file, removes ADR-012, and adds ADR-019. We keep the ADR-012 file around because the code may not be up to date yet, and may still have references to ADR-012. ADR-012 indicates it was superseded by ADR-019; when the work to bring the codebase up to date with ADR-019 is finished, we can delete the ADR-012 file.</p>
+<p>
+Operationally, while working in an interactive harness (e.g. Claude Code), the old decision is now going to be in the context window and is going to make the agent slightly worse. So, as soon as a change in record enters the picture, it becomes important to start a new chat with a new context window as soon as possible.</p>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Automated Materialization &amp; The Maintenance Boundary
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>Projections are maintained by the agent itself, subject to a strict operational invariant: the agent updates projections immediately whenever a record is created or updated<sup class="footnote-reference"><a id="footnote-reference-5" href="#footnote-5">5</a></sup>, but during code implementation and review passes, projections are strictly read-only.</p>
+<p>
+Because record titles follow the inverted pyramid, a projection can often be as compact as a bulleted list of active headlines alongside concise summary rules. The agent reads <code class="verbatim">architectural-decisions.md</code> as part of its <code class="verbatim">AGENTS.md</code>, seeding the context window when it starts, gaining unpolluted ground truth without wading through historical dead ends.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-2">
+<h2 id="headline-8">
+Record Precedence &amp; Targeted Context Routing (<code>UW-</code> →  <code>FR-</code> → <code>ADR-</code>)
+</h2>
+<div id="outline-text-headline-8" class="outline-text-2">
+<p>Even with clean projections, a mature repository can accumulate dozens of active state files across different domains. If we dump every projection file into every prompt, we fall right back into context window bloat and reasoning pollution—searching for truth out in the noise.</p>
+<p>
+To keep token spend flat and focus agent reasoning, context assembly in <em>The Recs Files</em> follows a strict Order of Precedence anchored in user value.</p>
+<pre class="example">
+                             [ VISION.md ]
+                         (Root Unifying Anchor)
+                                   │
+                                   ▼
+                       [ CURRENT_VOCABULARY.md ]
+                         (Ubiquitous Language)
+                                   │
+                                   ▼
+                      [ USER WORKFLOW RECORDS ]
+                    (Primary Driver / User Value)
+                                   │
+                                   ▼
+                      [ FEATURE DECISION RECORDS ]
+                    (Implementation Specs &amp; Details)
+                                   │
+               ┌───────────────────┴───────────────────┐
+               ▼                                       ▼
+ [ ERROR / PERFORMANCE RECORDS ]         [ ARCHITECTURAL DECISION RECORDS ]
+ (Specialized Constraints)               (Dynamically Filtered Subset)
+</pre>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Vocabulary: The Words Underneath Everything
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<p>Directly under the vision sits the ubiquitous language, <code class="verbatim">CURRENT_VOCABULARY.md</code>. Every record, conversation and line of code is written in its words, so it outranks all of them. No new term enters any file without a human agreeing to it.</p>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
+<h3 id="headline-10">
+User Workflows (<code class="verbatim">UW-</code>): Where Every Session Starts
+</h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<p>Every coding session begins with a User Workflow record. User workflows represent the direct, observable value the software delivers (e.g., <code class="verbatim">UW-014-checkout-flow.md</code>).</p>
+<p>
+Because software exists to serve user capabilities, User Workflows take precedence over all other decision records except the vision and the vocabulary. They define what needs to be built and why, establishing the local boundary for the entire task.</p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+Feature Records (<code class="verbatim">FR-</code>): Operational Behavior
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<p>User Workflows refer directly to Feature Records (<code class="verbatim">FR-</code>), which supply the operational details, domain boundaries, and edge-case behavior required to execute the workflow.</p>
+<p>
+For instance, <code class="verbatim">UW-014-checkout-flow.md</code> references <code class="verbatim">FR-003-stripe-webhook-handling.md</code> and <code class="verbatim">FR-009-cart-tax-calculation.md</code>. Feature records may in turn attach specialized constraint records, such as error-handling schemas (<code class="verbatim">ERR-</code> ) or latency targets (<code class="verbatim">PERF-</code>).</p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Architectural Decision Records (<code class="verbatim">ADR-</code>): Dynamic Filtering
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>Instead of loading the content of all the active architectural decision records into the prompt, the agent performs targeted context routing:</p>
+<p>
+The agent reads the target <code class="verbatim">UW-</code> record and its referenced <code class="verbatim">FR-</code> records.</p>
+<p>
+It analyzes the technical capabilities required by those features (e.g., background job queueing, relational persistence, external API calls).</p>
+<p>
+It scans <code class="verbatim">architectural-decisions.md</code> and selects only the ADR headlines and rules relevant to those capabilities.</p>
+<p>
+If you are implementing an offline batch processing job, the agent selects <code class="verbatim">ADR-005-use-sidekiq-for-background-jobs.md</code>, and ignores <code class="verbatim">ADR-019-use-memcached-for-session-caching.md</code> and <code class="verbatim">ADR-022-oauth2-token-revocation.md</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">
+Context Window Bounding in Practice
+</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<p>Routed this way, the context window holds all of the local intent (the target <code class="verbatim">UW-</code> and its <code class="verbatim">FR-</code> records), all of the active constraints (the filtered <code class="verbatim">ADR-</code> rules), and none of the unrelated noise. Token consumption scales with the task at hand, not with the age or size of the repository.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-2">
+<h2 id="headline-14">
+The Rules of Execution
+</h2>
+<div id="outline-text-headline-14" class="outline-text-2">
+<p>With our context routed and bounded, we can turn records into production code.</p>
+<p>
+I built my workflow on an evolution of <a href="https://github.com/obra/superpowers">obra/superpowers</a>, and <a href="./how-i-use-the-recs-files.html">the next article</a> shows how it runs day to day. You can use whatever implementation workflow you want, as long as it respects three rules:</p>
+<ol>
+<li><strong>Records first.</strong> No code is generated or modified without first creating or updating the record that governs it. If a requirement changes, or a bug exposes a case nobody considered, you do not ask the agent to &#34;fix the code&#34;. You update the record, the agent updates the projection, and only then does work on the code begin.</li>
+<li><strong>Records are read-only during execution.</strong> While planning, implementing or reviewing, the agent never modifies records or projections.</li>
+<li><strong>Contradictions halt the work.</strong> When the agent finds a conflict or an ambiguity between the task and a record, it stops, surfaces the conflict to the human, and may propose resolutions grounded in <code class="verbatim">VISION.md</code>. The human decides and updates the record, and work resumes.</li>
+</ol>
+<p>The third rule is the circuit breaker: it keeps the agent from quietly inventing architectural workarounds under the hood.</p>
+</div>
+</div>
+<div id="outline-container-headline-15" class="outline-2">
+<h2 id="headline-15">
+Code Comments as Traceability Anchors
+</h2>
+<div id="outline-text-headline-15" class="outline-text-2">
+<p>Even with a clean plan, codebases evolve over months of active development. If code becomes detached from its governing records, future agent passes will struggle to understand why specific abstractions exist, leading right back to accidental duplication and architectural drift.</p>
+<p>
+To tie source code to its records permanently, we enforce one last invariant: <strong>code comments are citations, and nothing else</strong>.</p>
+<div class="src src-ruby">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="c1"># UW-014-user-initiates-passwordless-login</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># FR-008-stripe-webhook-idempotency-handling</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ADR-012-use-redis-for-session-caching</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># knowledge-base/webhook-retries.org §Lock ordering</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">process_payment</span><span class="p">(</span><span class="n">account</span><span class="p">,</span> <span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># ... implementation</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+</div>
+<p>
+When an agent (or human) inspects this code months later, there is no need to guess why the logic was structured this way. The anchors point directly to the original design intent and boundary conditions.</p>
+<p>
+A comment that explains what the code does, or which business rule it obeys, is deleted, and the rule goes into the record where it belongs. A comment that explains technical mechanics (an algorithm choice, a concurrency control, a workaround for a third-party bug) moves into a knowledge base, and the code cites it there. The knowledge base is somewhere the explanation can be verified rather than merely asserted: an instruction manual, or an executable notebook (org-mode, Jupyter) that demonstrates the behavior.</p>
+</div>
+</div>
+<div id="outline-container-headline-16" class="outline-2">
+<h2 id="headline-16">
+Stop Searching the Window: the Truth is in Here
+</h2>
+<div id="outline-text-headline-16" class="outline-text-2">
+<p>Building software alongside AI coding agents does not require us to choose between two bad choices: flooding prompts with disorganized chat logs or surrendering our architectural authority to an LLM&#39;s localized guesses.</p>
+<p>
+By treating context as an <strong>engineered runtime state</strong>, <em>The Recs Files</em> establish an understandable and maintainable pipeline for software development:</p>
+<ol>
+<li><code class="verbatim">VISION.md</code> sets the immutable North Star.</li>
+<li><strong>Append-Only Records</strong> (e.g. <code class="verbatim">ADR-</code>, <code class="verbatim">UW-</code>, <code class="verbatim">FR-</code>) log every choice explicitly.</li>
+<li><strong>Active Projections</strong> provide compact, unpolluted ground truth.</li>
+<li><strong>Targeted Context Routing</strong> keeps token spend bounded and focused on user value.</li>
+<li><strong>Three Rules of Execution</strong> keep humans in control: records first, records read-only while work runs, and every contradiction halted and handed back.</li>
+<li><strong>Traceability Anchors</strong> keep source code permanently connected to design intent.</li>
+</ol>
+<p>When we build with this architecture, rapid iteration stops being a descent into chaos. Agents execute bounded plans at high speed, while human developers remain in firm, unambiguous control of system design.</p>
+<p>
+The truth about your architecture isn&#39;t scattered out in a 200,000-token prompt log or buried in ephemeral chat histories.</p>
+<p>
+<em>The Recs Files. The truth is in here.</em></p>
+</div>
+</div>
+<div id="outline-container-headline-17" class="outline-2">
+<h2 id="headline-17">
+Footnotes
+</h2>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator"/>
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>Event Sourcing captures every change to an application&#39;s state as a sequence of events, so the current state can always be rebuilt by replaying them. See Martin Fowler&#39;s <a href="https://martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a>.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p>CQRS, Command Query Responsibility Segregation, uses a different model to update information than the model used to read it. See Martin Fowler&#39;s <a href="https://martinfowler.com/bliki/CQRS.html">CQRS</a>.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-3"><a href="#footnote-reference-3">3</a></sup>
+<div class="footnote-body">
+<p>The key here is immutability of intent; if you must fix a typo, or clarify something, or even add an elment of definition which was intended but that was not identified at creation time, that might be OK. Do what works for your team.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-4"><a href="#footnote-reference-4">4</a></sup>
+<div class="footnote-body">
+<p>In a team setting, timestamps are recommended over monotonically increasing numbers, to avoid unnecessary conflicts on record files. Here we use numbers for illustrative purposes.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-5"><a href="#footnote-reference-5">5</a></sup>
+<div class="footnote-body">
+<p>Here again, note, it is about immutability of intent, not immutability of text.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="http://blog.trevoke.net/post/the-dark-software-factory-is-a-lie/?ref=footer">« The Dark Factory Is A Lie</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+  <a class="link-reverse" href="http://blog.trevoke.net/post/how-i-use-the-recs-files/?ref=footer">How I Use The Recs Files »</a>
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+</ul>
+
+
+
+
+<div class="copyright">
+<p>
+  
+  &copy; <a href="https://github.com/trevoke">Aldric Giacomoni</a> 2017-2025
+  
+</p>
+</div>
+
+
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="/">Home</a></li>
+    
+        <li><a href="/post/">Archives</a></li>
+    
+        <li><a href="/tags/">Tags</a></li>
+    
+        <li><a href="/categories/">Categories</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
+
+
+
+
+
+</body>
+
+</html>
