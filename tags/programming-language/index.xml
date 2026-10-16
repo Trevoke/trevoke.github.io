@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Programming-Language on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/programming-language/</link>
-    <description>Recent content in Programming-Language on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/programming-language/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The first step in learning any new programming language</title>
-      <link>http://blog.trevoke.net/post/learn-a-new-prog/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
-      <description>&lt;p&gt;&#xA;Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&amp;#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT! If you are able to write some fundamental code with the language, then all other doors open to you, largely because it&amp;#39;s so much easier to understand all other resources.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Programming-Language on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/programming-language/</link>
+		<description>Recent content in Programming-Language on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/programming-language/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The first step in learning any new programming language</title>
+				<link>http://blog.trevoke.net/post/learn-a-new-prog/</link>
+				<pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/learn-a-new-prog/</guid>
+				<description>&lt;p&gt;&#xA;Part of being a professional programmer is learning new languages (seriously — past a certain point, you should be fluent in a couple of languages, but that&amp;#39;s another blog post), and part of being a good programmer is being effective at doing so. The very first step in learning a new language is being able to write some code with it. Further steps usually involve mastering the syntax as well as whatever new paradigms the language may throw at you, BUT! If you are able to write some fundamental code with the language, then all other doors open to you, largely because it&amp;#39;s so much easier to understand all other resources.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Poetry on Seven steps</title>
-    <link>http://blog.trevoke.net/categories/poetry/</link>
-    <description>Recent content in Poetry on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 10 Jul 2011 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/categories/poetry/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>L&#39;inventaire - Jacques Prevert</title>
-      <link>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</link>
-      <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</guid>
-      <description>&lt;p&gt;&#xA;Une pierre&lt;/p&gt;&#xA;&lt;p&gt;&#xA;deux maisons&lt;/p&gt;&#xA;&lt;p&gt;&#xA;trois ruines&lt;/p&gt;&#xA;&lt;p&gt;&#xA;quatre fossoyeurs&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un jardin&lt;/p&gt;&#xA;&lt;p&gt;&#xA;des fleurs&lt;/p&gt;&#xA;&lt;p&gt;&#xA;et un raton laveur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une douzaine d&amp;#39;huitres un citron un pain&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un rayon de soleil&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une lame de fond&lt;/p&gt;&#xA;&lt;p&gt;&#xA;six musiciens&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une porte avec son paillasson&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un monsieur décoré de la légion d&amp;#39;honneur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;et un autre raton laveur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un sculpteur qui sculpte des Napoléon&lt;/p&gt;&#xA;&lt;p&gt;&#xA;la fleur qu&amp;#39;on appelle souci&lt;/p&gt;&#xA;&lt;p&gt;&#xA;deux amoureux sur un grand lit&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un receveur des contributions &lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Poetry on Seven steps</title>
+		<link>http://blog.trevoke.net/categories/poetry/</link>
+		<description>Recent content in Poetry on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 10 Jul 2011 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/categories/poetry/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>L&#39;inventaire - Jacques Prevert</title>
+				<link>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</link>
+				<pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-linventaire-jacques-prevert-publish/</guid>
+				<description>&lt;p&gt;&#xA;Une pierre&lt;/p&gt;&#xA;&lt;p&gt;&#xA;deux maisons&lt;/p&gt;&#xA;&lt;p&gt;&#xA;trois ruines&lt;/p&gt;&#xA;&lt;p&gt;&#xA;quatre fossoyeurs&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un jardin&lt;/p&gt;&#xA;&lt;p&gt;&#xA;des fleurs&lt;/p&gt;&#xA;&lt;p&gt;&#xA;et un raton laveur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une douzaine d&amp;#39;huitres un citron un pain&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un rayon de soleil&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une lame de fond&lt;/p&gt;&#xA;&lt;p&gt;&#xA;six musiciens&lt;/p&gt;&#xA;&lt;p&gt;&#xA;une porte avec son paillasson&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un monsieur décoré de la légion d&amp;#39;honneur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;et un autre raton laveur&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un sculpteur qui sculpte des Napoléon&lt;/p&gt;&#xA;&lt;p&gt;&#xA;la fleur qu&amp;#39;on appelle souci&lt;/p&gt;&#xA;&lt;p&gt;&#xA;deux amoureux sur un grand lit&lt;/p&gt;&#xA;&lt;p&gt;&#xA;un receveur des contributions &lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

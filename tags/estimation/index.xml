@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Estimation on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/estimation/</link>
-    <description>Recent content in Estimation on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 02 Apr 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/estimation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The value of estimates for a team</title>
-      <link>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</link>
-      <pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</guid>
-      <description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;What this entry is and is not about&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;&#xA;This entry talks about estimates in a relatively perfect world. This entry does &lt;em&gt;not&lt;/em&gt; talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-2&#34;&gt;&#xA;Why talk about estimating at all&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;Estimating work to be done before it is done. Great if you know what the work is. Software development teams often have no idea what the work really will be until they do it. Give a sculptor a block of wood and they&amp;#39;ll have to work carefully, as they uncover the imperfections within the wood. How long will it take to reveal a bust of Artemis drawing an arrow? The sculptor doesn&amp;#39;t really know beforehand.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Estimation on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/estimation/</link>
+		<description>Recent content in Estimation on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 02 Apr 2015 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/estimation/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The value of estimates for a team</title>
+				<link>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</link>
+				<pubDate>Thu, 02 Apr 2015 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/the-value-of-estimates-for-a-team/</guid>
+				<description>&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-1&#34;&gt;&#xA;What this entry is and is not about&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;&#xA;This entry talks about estimates in a relatively perfect world. This entry does &lt;em&gt;not&lt;/em&gt; talk about problems that teams run into when dealing with estimates in a world where estimates are often misunderstood and where parties try to pile up additional meanings and metrics to estimates.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-2&#34;&gt;&#xA;&lt;h2 id=&#34;headline-2&#34;&gt;&#xA;Why talk about estimating at all&#xA;&lt;/h2&gt;&#xA;&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-2&#34;&gt;&#xA;&lt;p&gt;Estimating work to be done before it is done. Great if you know what the work is. Software development teams often have no idea what the work really will be until they do it. Give a sculptor a block of wood and they&amp;#39;ll have to work carefully, as they uncover the imperfections within the wood. How long will it take to reveal a bust of Artemis drawing an arrow? The sculptor doesn&amp;#39;t really know beforehand.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

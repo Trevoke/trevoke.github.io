@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Growth on Seven steps</title>
-    <link>http://blog.trevoke.net/tags/growth/</link>
-    <description>Recent content in Growth on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 18 Feb 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/tags/growth/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shu ha ri and evolution of a skill</title>
-      <link>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</link>
-      <pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</guid>
-      <description>&lt;p&gt;&#xA;Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and &amp;lt;a title=&amp;#34;Alistair Cockburn&amp;#39;s words on Shu Ha Ri&amp;#34; href=&amp;#34;&lt;a href=&#34;http://alistair.cockburn.us/Shu+Ha+Ri&#34;&gt;http://alistair.cockburn.us/Shu+Ha+Ri&lt;/a&gt;&amp;#34;&amp;gt;Agile development&amp;lt;/a&amp;gt;. Roughly, &amp;#34;shu ha ri&amp;#34; means &amp;#34;learn / detach / transcend&amp;#34;. The link has some words about that meaning. I&amp;#39;d like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot&#xA;conversation with a martial arts teacher friend of mine:&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Growth on Seven steps</title>
+		<link>http://blog.trevoke.net/tags/growth/</link>
+		<description>Recent content in Growth on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 18 Feb 2014 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/tags/growth/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Shu ha ri and evolution of a skill</title>
+				<link>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</link>
+				<pubDate>Tue, 18 Feb 2014 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-shu-ha-ri-and-evolution-of-a-skill-publish/</guid>
+				<description>&lt;p&gt;&#xA;Shu Ha Ri comes from the world of Japanese Noh theater, and has been since attached to the world of martial arts and &amp;lt;a title=&amp;#34;Alistair Cockburn&amp;#39;s words on Shu Ha Ri&amp;#34; href=&amp;#34;&lt;a href=&#34;http://alistair.cockburn.us/Shu+Ha+Ri&#34;&gt;http://alistair.cockburn.us/Shu+Ha+Ri&lt;/a&gt;&amp;#34;&amp;gt;Agile development&amp;lt;/a&amp;gt;. Roughly, &amp;#34;shu ha ri&amp;#34; means &amp;#34;learn / detach / transcend&amp;#34;. The link has some words about that meaning. I&amp;#39;d like to talk about my particular take on Shu Ha Ri, which came out of a parking-lot&#xA;conversation with a martial arts teacher friend of mine:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

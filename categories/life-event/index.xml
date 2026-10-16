@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Life-Event on Seven steps</title>
-    <link>http://blog.trevoke.net/categories/life-event/</link>
-    <description>Recent content in Life-Event on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 22 Apr 2010 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/categories/life-event/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>New position at Cyrus</title>
-      <link>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</link>
-      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</guid>
-      <description>&lt;p&gt;&#xA;On Monday, April 26th, I am starting a new job at Cyrus Innovation. It may well be fair that I am starting a new career - it&amp;#39;s a hop, skip and jump for me. I&amp;#39;m switching from Systems Administration / Tech Support / Hell desk (not a typo, sadly) to Development / Programming.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I am very much looking forward to it. It means a hobby/job switch: I will now do sysadmin stuff as a hobby, and programming as a full-time job. We&amp;#39;ll see how it works out :)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Nidan test</title>
-      <link>http://blog.trevoke.net/post/import-nidan-test-publish/</link>
-      <pubDate>Fri, 19 Mar 2010 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-nidan-test-publish/</guid>
-      <description>&lt;p&gt;&#xA;On February 28th, 2010, I took the test to become a second-degree black belt.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Here is a summary of what I had to do, besides the calisthenics:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;ul&amp;gt;&#xA;        &amp;lt;li&amp;gt;All my empty-hand forms, opposite side. There are eight of them. This meant that if the first step was with the left foot, I had to do it with the right foot. I suppose you could also call that &amp;#39;mirror&amp;#39;. The names are : seisan, seiuchin, naihanchi, wonsu, chinto, kusanku, sunsu, and sanchin. I admit we did not do sanchin opposite side, but that&amp;#39;s not too surprising. It&amp;#39;s not a complex form, but there&amp;#39;s nothing to be gained from being able to do it regular and opposite side.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;My first weapon form, opposite side. This is a bo (long staff) form. The name is tokumine no kun.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;My third weapon form. This is a bo form. The name is urashi bo (sometimes called urashi no kun).&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;My fourth weapon form. This is a sai form. the name is chatan yara no sai.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;The fifth weapon form. Note that I said &amp;#34;The&amp;#34; and not &amp;#34;My&amp;#34; … Because I hadn&amp;#39;t learned it. I was told to stay with the group and keep up. I did. That is my proud moment. :) It is a tonfa form. The name is hamahiga no tonfa.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;Self-defense, including bunkai (analysis) from the various empty-hand forms.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;Knife defenses&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;Sparring. This was actually rather fun, about thirty people in line and we (everyone testing for nidan) fought them one after another.&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Life-Event on Seven steps</title>
+		<link>http://blog.trevoke.net/categories/life-event/</link>
+		<description>Recent content in Life-Event on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 22 Apr 2010 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/categories/life-event/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>New position at Cyrus</title>
+				<link>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</link>
+				<pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-new-position-at-cyrus-publish/</guid>
+				<description>&lt;p&gt;&#xA;On Monday, April 26th, I am starting a new job at Cyrus Innovation. It may well be fair that I am starting a new career - it&amp;#39;s a hop, skip and jump for me. I&amp;#39;m switching from Systems Administration / Tech Support / Hell desk (not a typo, sadly) to Development / Programming.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;I am very much looking forward to it. It means a hobby/job switch: I will now do sysadmin stuff as a hobby, and programming as a full-time job. We&amp;#39;ll see how it works out :)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Nidan test</title>
+				<link>http://blog.trevoke.net/post/import-nidan-test-publish/</link>
+				<pubDate>Fri, 19 Mar 2010 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-nidan-test-publish/</guid>
+				<description>&lt;p&gt;&#xA;On February 28th, 2010, I took the test to become a second-degree black belt.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Here is a summary of what I had to do, besides the calisthenics:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;ul&amp;gt;&#xA;        &amp;lt;li&amp;gt;All my empty-hand forms, opposite side. There are eight of them. This meant that if the first step was with the left foot, I had to do it with the right foot. I suppose you could also call that &amp;#39;mirror&amp;#39;. The names are : seisan, seiuchin, naihanchi, wonsu, chinto, kusanku, sunsu, and sanchin. I admit we did not do sanchin opposite side, but that&amp;#39;s not too surprising. It&amp;#39;s not a complex form, but there&amp;#39;s nothing to be gained from being able to do it regular and opposite side.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;My first weapon form, opposite side. This is a bo (long staff) form. The name is tokumine no kun.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;My third weapon form. This is a bo form. The name is urashi bo (sometimes called urashi no kun).&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;My fourth weapon form. This is a sai form. the name is chatan yara no sai.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;The fifth weapon form. Note that I said &amp;#34;The&amp;#34; and not &amp;#34;My&amp;#34; … Because I hadn&amp;#39;t learned it. I was told to stay with the group and keep up. I did. That is my proud moment. :) It is a tonfa form. The name is hamahiga no tonfa.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;Self-defense, including bunkai (analysis) from the various empty-hand forms.&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;Knife defenses&amp;lt;/li&amp;gt;&#xA;        &amp;lt;li&amp;gt;Sparring. This was actually rather fun, about thirty people in line and we (everyone testing for nidan) fought them one after another.&amp;lt;/li&amp;gt;&#xA;&amp;lt;/ul&amp;gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

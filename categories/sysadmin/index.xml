@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sysadmin on Seven steps</title>
-    <link>http://blog.trevoke.net/categories/sysadmin/</link>
-    <description>Recent content in Sysadmin on Seven steps</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 07 Feb 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.trevoke.net/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Add a user to the wheel group in OSX</title>
-      <link>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</link>
-      <pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
-      <description>&lt;p&gt;&#xA;Why are these things always so weird? Someday I&amp;#39;ll understand why OSX is set up that way. And on that day, I&amp;#39;ll probably weep.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;blockquote&amp;gt;$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt;&#xA;&amp;lt;p style=&amp;#34;padding-left: 30px;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;&#xA;&amp;lt;/blockquote&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;This was found here : &lt;a href=&#34;https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0&#34;&gt;https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Grepping a single file for &#39;dynamic&#39; content</title>
-      <link>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</link>
-      <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</guid>
-      <description>&lt;p&gt;&#xA;You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file?&#xA;Like this:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code class=&#34;verbatim&#34;&gt;echo &amp;#34;your fancy word finder stuff here&amp;#34; | xargs -i bash -c &amp;#39;grep -n &amp;#34;{}&amp;#34; your/file/here&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Not something that&amp;#39;s useful every day, but when you want it, hot damn is it nice to have.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Gentoo on a Dell Inspiron Mini 10</title>
-      <link>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</link>
-      <pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
-      <description>&lt;p&gt;&#xA;There are a few gotchas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;If you have a SSD drive, you need to &amp;lt;em&amp;gt;modprobe pata_sch&amp;lt;/em&amp;gt; to see it.&lt;/li&gt;&#xA;&lt;li&gt;when using GRUB, install it on whatever drive the hard drive is, even if it&amp;#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.&lt;/li&gt;&#xA;&lt;li&gt;In the kernel, in the I2C options, don&amp;#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&amp;#39;t know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;For the rest, so far, it seems that the howto on the Gentoo wiki is good. I installed e17 very painlessly.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hologic R2 service password</title>
-      <link>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</link>
-      <pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</guid>
-      <description>&lt;p&gt;&#xA;I feel kinda bad plaintexting this.. You can contact me if you can&amp;#39;t figure it out yourself.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The service password for the R2 unit is in this sentence.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MIMVista and auto-deletion of archived studies</title>
-      <link>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</link>
-      <pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
-      <guid>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</guid>
-      <description>&lt;p&gt;&#xA;The MIM keeps 60 days by default. That may be too much for you..&lt;/p&gt;&#xA;&lt;p&gt;&#xA;By default, the folder C:Program Files\MIM\config should make you really happy, it&amp;#39;s got lots of plain text files with configuration for all kinds of settings.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;cleanup.txt has &amp;#34;ARCHIVE LEFTOVER AGE (DAYS) := 60&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Change that to whatever you feel is appropriate for you needs.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Sysadmin on Seven steps</title>
+		<link>http://blog.trevoke.net/categories/sysadmin/</link>
+		<description>Recent content in Sysadmin on Seven steps</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 07 Feb 2013 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://blog.trevoke.net/categories/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Add a user to the wheel group in OSX</title>
+				<link>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</link>
+				<pubDate>Thu, 07 Feb 2013 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-add-a-user-to-the-wheel-group-in-osx-publish/</guid>
+				<description>&lt;p&gt;&#xA;Why are these things always so weird? Someday I&amp;#39;ll understand why OSX is set up that way. And on that day, I&amp;#39;ll probably weep.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&amp;lt;blockquote&amp;gt;$ sudo /usr/bin/dscl . -append /groups/wheel GroupMembership &amp;lt;em&amp;gt;username&amp;lt;/em&amp;gt;&#xA;&amp;lt;p style=&amp;#34;padding-left: 30px;&amp;#34;&amp;gt;&amp;lt;/p&amp;gt;&#xA;&amp;lt;/blockquote&amp;gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;This was found here : &lt;a href=&#34;https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0&#34;&gt;https://discussions.apple.com/thread/1230828?start=0&amp;amp;amp;tstart=0&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Grepping a single file for &#39;dynamic&#39; content</title>
+				<link>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</link>
+				<pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-grepping-a-single-file-for-dynamic-content-publish/</guid>
+				<description>&lt;p&gt;&#xA;You can use xargs to grep the same word through different files. But how do you use xargs to grep different words through the same file?&#xA;Like this:&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;code class=&#34;verbatim&#34;&gt;echo &amp;#34;your fancy word finder stuff here&amp;#34; | xargs -i bash -c &amp;#39;grep -n &amp;#34;{}&amp;#34; your/file/here&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Not something that&amp;#39;s useful every day, but when you want it, hot damn is it nice to have.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Gentoo on a Dell Inspiron Mini 10</title>
+				<link>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</link>
+				<pubDate>Mon, 01 Mar 2010 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-gentoo-on-a-dell-inspiron-mini-10-publish/</guid>
+				<description>&lt;p&gt;&#xA;There are a few gotchas:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;If you have a SSD drive, you need to &amp;lt;em&amp;gt;modprobe pata_sch&amp;lt;/em&amp;gt; to see it.&lt;/li&gt;&#xA;&lt;li&gt;when using GRUB, install it on whatever drive the hard drive is, even if it&amp;#39;s /dev/sdc – and let your FSTAB use /dev/sda. Chances are that /dev/sda is your liveUSB.&lt;/li&gt;&#xA;&lt;li&gt;In the kernel, in the I2C options, don&amp;#39;t let it pick automatically - instead, select the algorithm options in the menu that appears (I don&amp;#39;t know it off-hand, will edit this post later to add the important information). This will allow you to install the kernel driver for the poulsbo card (kmod-psb, I believe).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;For the rest, so far, it seems that the howto on the Gentoo wiki is good. I installed e17 very painlessly.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Hologic R2 service password</title>
+				<link>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</link>
+				<pubDate>Wed, 14 Oct 2009 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-hologic-r2-service-password-publish/</guid>
+				<description>&lt;p&gt;&#xA;I feel kinda bad plaintexting this.. You can contact me if you can&amp;#39;t figure it out yourself.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;The service password for the R2 unit is in this sentence.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>MIMVista and auto-deletion of archived studies</title>
+				<link>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</link>
+				<pubDate>Tue, 04 Nov 2008 00:00:00 +0000</pubDate>
+				<guid>http://blog.trevoke.net/post/import-mimvista-and-auto-deletion-of-archived-studies-publish/</guid>
+				<description>&lt;p&gt;&#xA;The MIM keeps 60 days by default. That may be too much for you..&lt;/p&gt;&#xA;&lt;p&gt;&#xA;By default, the folder C:Program Files\MIM\config should make you really happy, it&amp;#39;s got lots of plain text files with configuration for all kinds of settings.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;cleanup.txt has &amp;#34;ARCHIVE LEFTOVER AGE (DAYS) := 60&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Change that to whatever you feel is appropriate for you needs.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
